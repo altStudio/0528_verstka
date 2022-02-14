@@ -611,22 +611,22 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .set('.section-form ', {opacity: 0})
         .to('.section-ways-slider', { opacity: 0, duration: 0.5 }, )
         .set('.section-invert', { zIndex: 21 })
-        .fromTo('.section-invert', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } )
+        .fromTo('.section-invert', { opacity: 0 }, { opacity: 1, duration: 1 } )
         .addLabel("label14")
 
         .to('.section-invert', { opacity: 0, duration: 0.5 })
         .set('.section-monic', { zIndex: 22 })
-        .fromTo('.section-monic', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } )
+        .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 } )
         .addLabel("label15")
 
         .to('.section-monic', { opacity: 0, duration: 0.5 })
         .set('.section-earn', { zIndex: 23 })
-        .fromTo('.section-earn', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } )
+        .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 } )
         .addLabel("label16")
 
         .to('.section-earn', { opacity: 0, duration: 0.5 })
         .set('.section-offer', { zIndex: 24 })
-        .fromTo('.section-offer', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } ) 
+        .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 } ) 
         .addLabel("label17")
 
         .to('.section-offer', { opacity: 0, duration: 0.5 })
@@ -650,7 +650,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
         .to('.how-works-section', { opacity: 0, duration: 0.5 })
         .set('.marque-glasses', { zIndex: 26, opacity: 0 })
-        .to('.marque-glasses', { opacity: 1, duration: 0.6 } ) 
+        .to('.marque-glasses', { opacity: 1, duration: 1 } ) 
         .addLabel("label20")
 
         .to('.marque-glasses', { opacity: 0, duration: 0.5 })
@@ -671,13 +671,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
         .addLabel("label22")
 
-        .to('.time-matters', { opacity: 0, duration: 0.5 })
+        .to('.time-matters', { opacity: 0, duration: 1 })
         .set('.section-road-map', { zIndex: 28, opacity: 1 })
         .fromTo('.road-map-slider', {y: 3000, opacity: 0}, {y: 0, opacity: 1, duration: 1.2})
         .addLabel("label23")
 
         
-        .to('.section-road-map', { opacity: 0, duration: 0.5 })
+        .to('.section-road-map', { opacity: 0, duration: 1 })
         .set('.sect-mission', { zIndex: 29, opacity: 1 })
         .addLabel("label24")
 
@@ -814,22 +814,22 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .set('.section-form ', {opacity: 0})
         .to('.section-ways-slider .wrapper', { opacity: 0, duration: 0.5 }, )
         .set('.section-invert', { zIndex: 21 })
-        .fromTo('.section-invert', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } )
+        .fromTo('.section-invert', { opacity: 0 }, { opacity: 1, duration: 1 } )
         .addLabel("label14")
 
         .to('.section-invert', { opacity: 0, duration: 0.5 })
         .set('.section-monic', { zIndex: 22 })
-        .fromTo('.section-monic', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } )
+        .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 } )
         .addLabel("label15")
 
         .to('.section-monic', { opacity: 0, duration: 0.5 })
         .set('.section-earn', { zIndex: 23 })
-        .fromTo('.section-earn', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } )
+        .fromTo('.section-earn', { opacity: 0}, { opacity: 1, duration: 1 } )
         .addLabel("label16")
 
         .to('.section-earn', { opacity: 0, duration: 0.5 })
         .set('.section-offer', { zIndex: 24 })
-        .fromTo('.section-offer', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } ) 
+        .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 } ) 
         .addLabel("label17")
 
         .to('.section-offer', { opacity: 0, duration: 0.5 })
