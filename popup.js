@@ -21,7 +21,7 @@ const openModal = (triggerOpen,modal,triggerClose) => {
 
 }
 
-openModal('site-menu', 'menu-modal', 'close-btn');
+openModal('site-menu', 'menu-modal', 'close-btn-trigger');
 openModal('subscribe-open', 'subscribe-modal', 'close-btn');
 openModal('policy-btn-for-modal', 'privacy-policy', 'close-btn');
 openModal('cookie-btn-for-modal', 'cookie-policy', 'close-btn');

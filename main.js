@@ -5,6 +5,7 @@ function stopVid() {
 }
 stopVid();
 
+let currentActiveSection = document.querySelector(".scroll-section.first");
 
 function playVid() {
     vid.play()
@@ -236,7 +237,15 @@ $('.button-8').on('click', function() {
   goToSection(document.getElementById("skip-video"), "label7", "label8");
 })
 
-function goToSection(section, from, to, duration = 1) {
+$(".go-to-section").click(function(event) {
+  event.preventDefault();
+  goToSection(currentActiveSection, `label` + (Number(this.dataset.labelNumber) - 1), `label` + Number(this.dataset.labelNumber));
+});
+
+function goToSection(section, from, to, duration = 0.1) {
+  currentActiveLabel = to;
+  currentActiveSection = $(section).next()[0];
+
   console.log('goto section fired', from, to);
     // if (from === "label2" && to === "label3") {
     //   $(".video-hidden").css({"opacity" : "1", "visibility" : "visible" });
