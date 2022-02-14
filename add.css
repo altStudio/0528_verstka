@@ -2598,7 +2598,12 @@ a.my-underline:hover {
 @media only screen and (max-height: 800px) and (min-width: 1200px) {
     .section-2.screenone .text-block-3 .text-sect {
         line-height: 130%;
-        max-width: 600px;
+        max-width: 1000px;
+        margin: 12vh auto 0;
+    }
+     .section-2.screenone .text-block-3 .text-sect.second-anim-text {
+        max-width: 800px;
+        margin: 12vh auto 0;
     }
     
     .society-container {

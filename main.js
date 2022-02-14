@@ -236,20 +236,9 @@ $('.button-8').on('click', function() {
   goToSection(document.getElementById("skip-video"), "label7", "label8");
 })
 
-function goToSection(section, from, to, duration = 1) {
+function goToSection(section, from, to, duration = 0.4) {
   console.log('goto section fired', from, to);
-    // if (from === "label2" && to === "label3") {
-    //   $(".video-hidden").css({"opacity" : "1", "visibility" : "visible" });
-    // } else {
-    //   $(".video-hidden").css({"opacity" : "0", "visibility" : "hidden" });
-    // }
-
-    if (!isNotMob && Date.now() - isScrolled < 1000 ) {
-    return;
-    }
-    // if (isNotMob && Date.now() - isScrolled < 200 ) {
-    // return;
-    // }
+    
     
   if (scrolling.enabled && to) { // skip if a scroll tween is in progress
     isScrolled = Date.now();
@@ -281,8 +270,8 @@ scrollSections.forEach((section, i) => {
 
   ScrollTrigger.create({
     trigger: section,
-    start: window.matchMedia("(min-width: 768px)").matches ? "top bottom-=1" : "top bottom-=50px",
-    end: window.matchMedia("(min-width: 768px)").matches ?  "bottom top+=1": "bottom top+=50px",
+    start: "top bottom-=1",
+    end: "bottom top+=1",
     onEnter: () => goToSection(section, tl2.currentLabel(), tl2.nextLabel()),
     onEnterBack: () => goToSection(section, tl2.currentLabel(), tl2.previousLabel())
   });
@@ -563,17 +552,17 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .addLabel("label7")
 
         .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function() { vid2.pause() }, onReverseComplete: function() { vid2.play() } }, )
-        .to('.section-6', { zIndex: 17 }, )
-        .fromTo('.image-43', { scale: 6, duration: 1.2, }, { scale: 0.4, duration: 0.8 }, '<')
-        .from('.text-block-58 ', { scale: 100, y: 0, duration: 1.5 }, '<')
-        .to('.alantext', { opacity: 1, duration: 0.5 })
+        .set('.section-6', { zIndex: 17 }, )
+        .fromTo('.image-43', { scale: 6 }, { scale: 0.4, duration: 1 }, '<')
+        .from('.text-block-58 ', { scale: 100, y: 0, duration: 1 }, '<')
+        .to('.alantext', { opacity: 1, duration: 1 }, '<')
         .addLabel("label8")
 
-        .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.5 }, )
+        .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 0.5 }, )
         .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
-        .to('.image-43', { scale: 1, duration: 0.5 }, '<')
-        .to('.text-block-56', { scale: 1, y: 0, duration: 1.5 }, '<')
-        .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 }, '-=0.5')
+        .to('.image-43', { scale: 0.6, duration: 0.5 }, '<')
+        .to('.text-block-56', { scale: 1, y: 0, duration: 0.5 }, '<')
+        .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 }, '<')
         .addLabel("label9")
 
         .to('.section-6', { opacity: 0, duration: 1.5 }, )
@@ -660,8 +649,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .addLabel("label19")
 
         .to('.how-works-section', { opacity: 0, duration: 0.5 })
-        .set('.marque-glasses', { zIndex: 26 })
-        .fromTo('.marque-glasses', { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 } ) 
+        .set('.marque-glasses', { zIndex: 26, opacity: 0 })
+        .to('.marque-glasses', { opacity: 1, duration: 0.6 } ) 
         .addLabel("label20")
 
         .to('.marque-glasses', { opacity: 0, duration: 0.5 })
@@ -766,15 +755,15 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         
         .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function() { vid2.pause() }, onReverseComplete: function() { vid2.play() } }, ) // исчезает старое видео
         .set('.section-6', { zIndex: 17 }, ) // показываем слой "глаза"
-        .fromTo('.image-43', { scale: 6, duration: 1.2, }, { scale: 0.5, duration: 0.8 }, '<') // уменьшаем глаз
-        .from('.text-block-58 ', { scale: 100, y: 300, duration: 1.5 }, '<')
-        .to('.alantext', { opacity: 1, duration: 0.5 })
+        .fromTo('.image-43', { scale: 6, duration: 1.2, }, { scale: 0.5, duration: 1 }, '<') // уменьшаем глаз
+        .from('.text-block-58 ', { scale: 100, y: 300, duration: 1 }, '<')
+        .to('.alantext', { opacity: 1, duration: 1 })
         .addLabel("label8")
 
         .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.5 }, )
         .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
-        .to('.image-43', { scale: 1, duration: 0.5 }, '<')
-        .to('.text-block-56', { scale: 1, y: 0, duration: 1.5 }, '<' )
+        .to('.image-43', { scale: 0.6, duration: 0.5 }, '<')
+        .to('.text-block-56', { scale: 1, y: 0, duration: 0.5 }, '<' )
         .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 }, '-=0.5')
         .addLabel("label9")
 
