@@ -131,8 +131,7 @@
   <div class="wrapper">
     <div class="content">
       <div class="text">Mobile website will be available soon.</div>
-      <div class="text">Meanwhile, check out desktop version!</div>
-      <a class="to-desktop" href="/">To desktop version</a>
+      <div class="to-desktop">Please try from desktop</div>
     </div>
     <div class="footer">
       <a class="link-to-social-networks" href="https://t.me/metapax">
