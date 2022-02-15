@@ -370,8 +370,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
         .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
         .set('.section-ways-slider', { zIndex: 20 }, )
-        .to('.mother', {top: 0, duration: 0.8} )
-        .to('.secondsect-father', {opacity: 0, duration: 1.5}, '<' )
+        .to('.mother', {top: 0, duration: 1.2} )
+        .to('.secondsect-father', {opacity: 0, duration: 0.6}, '<' )
         .set('.ssecondsect-father', { visibility: 'hidden' } )
         .addLabel("label13")
 
