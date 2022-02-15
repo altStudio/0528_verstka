@@ -236,7 +236,15 @@ $('.button-8').on('click', function() {
   goToSection(document.getElementById("skip-video"), "label7", "label8");
 })
 
-function goToSection(section, from, to, duration = 0.4) {
+
+$(".go-to-section").click(function(event) {
+  event.preventDefault();
+  let newSection = document.querySelector('.'+this.dataset.sectionClass);
+  goToSection(newSection, `label` + (Number(this.dataset.labelNumber) - 1), `label` + Number(this.dataset.labelNumber));
+});
+
+function goToSection(section, from, to, duration = 0.2) {
+
   console.log('goto section fired', from, to);
     
     

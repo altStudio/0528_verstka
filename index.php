@@ -421,11 +421,11 @@
         </div>
         <div class="scroll-section first"></div>
         <div class="scroll-section"></div>
-        <div class="scroll-section"></div>
-        <div class="scroll-section mobile-hidden"></div>
-        <div class="scroll-section"></div>
+        <div class="scroll-section intro-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
+        <div class="scroll-section"></div>
+        <div class="scroll-section video-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section" id="skip-video"></div>
         <div class="scroll-section"></div>
@@ -991,26 +991,35 @@
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
+        <div class="scroll-section how-it-works-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
+        <div class="scroll-section roadmap-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
-        <div class="scroll-section"></div>
-        <div class="scroll-section"></div>
-        <div class="scroll-section"></div>
-        <div class="scroll-section"></div>
+        <div class="scroll-section contact-section"></div>
+        <div class="scroll-section mobile-hidden"></div>
     </div>
-    
+
     <div class="menu-modal main-modal">
         <div class="backdrop-filter-menu"></div>
-        <div class="menu-modal-content"><a href="#" class="button-4 close-btn-hover close-btn w-button">close</a>
-            <div class="w-layout-grid grid"><a href="#start" class="modal-menu-link my-underline ways">Ways to MetaPax</a><a href="#3sec" class="modal-menu-link my-underline creator">Pax creator</a><a href="#get" class="modal-menu-link my-underline paxer">Paxer</a><a href="#give" class="modal-menu-link my-underline how-it">How it works</a><a href="#howitworks" class="modal-menu-link my-underline hot-to">How to earn</a><a href="#howto" id="w-node-_96bc8b47-d6a3-934f-2dba-4335e9587b21-ce89513f" class="modal-menu-link my-underline voices">Voice &amp; text chat</a><a href="#roadmap" class="modal-menu-link my-underline road">Road map</a><a href="#mission" class="modal-menu-link my-underline our-mission">Our mission</a><a href="#blockchain" class="modal-menu-link my-underline blockchain">Blockchain</a><a href="#" class="modal-menu-link my-underline contact">Contact us</a></div>
+        <div class="menu-modal-content">
+            <a href="#" class="button-4 close-btn-hover close-btn close-btn-trigger w-button"></a>
+            <div class="w-layout-grid grid">
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="3" data-section-class="intro-section">Intro</a>
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="18" data-section-class="how-it-works-section">How it works</a>
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="7" data-section-class="video-section">Video</a>
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="23" data-section-class="roadmap-section">Roadmap</a>
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="27" data-section-class="contact-section">Contact</a>
+                <a href="" class="modal-menu-link my-underline download" download="">Roadmap</a>
+                <a href="./images/metapax-pitch-deck.pdf" class="modal-menu-link my-underline download" target="_blank" download="">Pitch-deck</a>
+            </div>
             <div class="menu-footer">
-                <div class="menu-policy-container"><a href="#" class="menu-policy-btn policy-btn-for-modal w-button">Privacy Policy</a><a href="#" class="menu-policy-btn menu-policy-btn-margin-bottom-none cookie-btn-for-modal w-button">Cookie Policy</a></div>
-                <div class="how-btn-container menu-hover-btn"><a href="#" class="button-2 how-btn-1 black-btn orange-border not-opacity subscribe-open w-button">How it works?</a><a href="#" class="button-2 how-btn-2 orange-border not-padding w-button"><span class="btn-sticky-text modal-menu-span color-white">How it works?</span></a></div>
+                <!-- <div class="menu-policy-container"><a href="#" class="menu-policy-btn policy-btn-for-modal w-button">Privacy Policy</a><a href="#" class="menu-policy-btn menu-policy-btn-margin-bottom-none cookie-btn-for-modal w-button">Cookie Policy</a></div>
+                <div class="how-btn-container menu-hover-btn"><a href="#" class="button-2 how-btn-1 black-btn orange-border not-opacity subscribe-open w-button">How it works?</a><a href="#" class="button-2 how-btn-2 orange-border not-padding w-button"><span class="btn-sticky-text modal-menu-span color-white">How it works?</span></a></div> -->
             </div>
         </div>
     </div>

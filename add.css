@@ -426,7 +426,7 @@ opacity: 0;
 
     .text-block-3 {
         overflow: hidden;
-        max-width: 1150px;
+        max-width: 1180px;
     }
 }
 
@@ -1579,12 +1579,6 @@ body {
 
 
 /* Меню */
-
-
-.site-menu {
-    display: none !important;
-}
-
 @media screen and (min-width: 1440px) {
     .image-7 {
         top: 10%;
@@ -1959,9 +1953,81 @@ body {
     display: block;
 }
 
+.menu-modal .close-btn {
+    position: relative;
+    right: -10px;
+
+    width: 60px;
+    height: 60px;
+    border: 0;
+}
+
+.menu-modal .close-btn::before,
+.menu-modal .close-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 58px;
+    height: 1px;
+    background-color: #3c3c3c;
+
+    transform: translate(-50%, -50%) rotate(49deg);
+}
+
+.menu-modal .close-btn::after {
+    transform: translate(-50%, -50%) rotate(-49deg);
+}
+
 .menu-modal .menu-modal-content {
+    max-width: 390px;
+    padding-top: 80px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
     animation: menuModalAnim 0.8s;
     animation-direction: alternate;
+}
+
+.menu-modal-content .w-layout-grid {
+    margin-top: 62px;
+    grid-row-gap: 32px;
+    grid-column-gap: 32px;
+}
+
+.menu-modal-content .modal-menu-link {
+    font-size: 25px;
+    font-weight: 500;
+    color: #565656;
+}
+
+.menu-modal .modal-menu-link.download {
+    position: relative;
+
+    padding-right: 27px;
+}
+
+.menu-modal .modal-menu-link.download::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 17px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 18 22'%3E%3Cpath fill='%23565656' fill-rule='evenodd' d='M1.566 18.977h14.868a1.062 1.062 0 1 1 0 2.123H1.566a1.062 1.062 0 0 1 0-2.123zm8.496-6.186l3.444-3.443 1.502 1.501L9 16.857l-6.007-6.008 1.501-1.501 3.444 3.443V.923h2.124v11.868z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    transform: translateY(-50%);
 }
 
 .subscribe-modal {
@@ -1975,6 +2041,7 @@ body {
     animation: backdropAnim 0.4s;
     animation-fill-mode: both;
     animation-delay: 0.8s;
+    background: rgba(4, 4, 4, 0.21);
 }
 
 .main-modal.modal-show .backdrop-filter-menu {
@@ -2002,8 +2069,8 @@ body {
     100% {
         display: block;
         opacity: 1;
-        backdrop-filter: blur(1px);
-        filter: blur(5px);
+        backdrop-filter: blur(21px);
+        filter: blur(21px);
     }
 }
 
@@ -3033,9 +3100,6 @@ a.my-underline:hover {
     }
     .menu-modal .how-btn-container.menu-hover-btn {
         margin-left: 170px;
-    }
-    .menu-modal .menu-modal-content {
-        max-width: 760px;
     }
 
     .subscribe-modal .subscribe-modal-content {
