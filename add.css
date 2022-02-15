@@ -2452,6 +2452,12 @@ a.my-underline:hover {
 .text-block-19, .button-8, .text-block-34, .earns-section-2 .text-block-49, .section-road-map .road-map-slider_text, .mission-text, .border-text {
     font-size: 22px;
 }
+.section-earn .text-block-33.gradient-text.new.font-size-120 {
+    font-size: 85px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+}
 
 
 
