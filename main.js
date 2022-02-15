@@ -209,22 +209,21 @@ let activeSection = null;
 let isNotMob = window.matchMedia("(min-width: 768px)").matches;
 
 $('.button-8').on('click', function() {
-  goToSection(document.getElementById("skip-video"), "label7", "label8");
+  goToSection( "label7", "label8");
 })
 
 
 $(".go-to-section").click(function(event) {
   event.preventDefault();
-  let newSection = document.querySelector('.'+this.dataset.sectionClass);
-  goToSection(newSection, `label` + (Number(this.dataset.labelNumber) - 1), `label` + Number(this.dataset.labelNumber));
+  goToSection(`label` + (Number(this.dataset.labelNumber) - 1), `label` + Number(this.dataset.labelNumber));
 });
 
 function getSectionNumber(animationLabelString) {
     return animationLabelString.substr(5) ? parseInt(animationLabelString.substr(5)) : 0;
 }
 
-function goToSection(section, from, to, duration = 0.2) {
-  console.log('goto section fired', from, to, section);
+function goToSection(from, to, duration = 0.2) {
+  console.log('goto section fired', from, to);
     
   if (scrolling.enabled && to) { // skip if a scroll tween is in progress
     scrollTriggers.forEach((trigger) => { trigger.disable() });
@@ -236,7 +235,7 @@ function goToSection(section, from, to, duration = 0.2) {
       scrollTo: {y: targetSection, autoKill: false},
       duration: duration
     });
-    console.log('goto section fired successfully', from, to, section);
+    console.log('goto section fired successfully', from, to);
 
     tl2.tweenFromTo(from, to, {
         onComplete: function () {
@@ -259,8 +258,8 @@ scrollSections.forEach((section, i) => {
     trigger: section,
     start: "top bottom-=1",
     end: "bottom top+=1",
-    onEnter: () => goToSection(section, tl2.currentLabel(), tl2.nextLabel()),
-    onEnterBack: () => goToSection(section, tl2.currentLabel(), tl2.previousLabel())
+    onEnter: () => goToSection(tl2.currentLabel(), tl2.nextLabel()),
+    onEnterBack: () => goToSection(tl2.currentLabel(), tl2.previousLabel())
   }));
  
 });
@@ -371,6 +370,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
         .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
         .to('.secondsect-father', {opacity: 0, duration: 1.5} )
+        .set('.ssecondsect-father', { visibility: 'hidden' } )
         .set('.section-ways-slider', { zIndex: 20 }, )
         .to('.mother', {top: 0, duration: 1}, '<')
         .addLabel("label13")
@@ -395,23 +395,27 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to(invertText, { opacity: 0, duration: 1 }, )
         .to(invertText2, { opacity: 0, duration: 1 }, "<")
         .to('.section-invert', { opacity: 0, duration: 1 }, )
+        .set('.section-invert', {visibility: 'hidden'})
         .set('.section-monic', { zIndex: 22 }, )
         .to('.section-monic', { opacity: 1, duration: 0.5 }, )
         .addLabel("label15")
 
         .to('.section-monic', { opacity: 0, duration: 1 }, )
+        .set('.section-monic', {visibility: 'hidden'})
         .set('.section-earn', { zIndex: 23 }, )
         .to('.section-earn', { opacity: 1, duration: 0.5 }, )
         .addLabel("label16")
 
         .to(earnText, { opacity: 0, duration: 1.2 })
         .to(earnText2, { opacity: 0, duration: 1.2 }, "<")
-        .to('.section-earn', { opacity: 0, duration: 1 }, )
+        .to('.section-earn', { opacity: 0, duration: 1 } )
+        .set('.section-earn', {visibility: 'hidden'})
         .set('.section-offer', { zIndex: 24 }, )
         .to('.section-offer', { opacity: 1, duration: 0.5 }, )
         .addLabel("label17")
 
         .to('.section-offer', { opacity: 0, duration: 1 },)
+        .set('.section-offer', {visibility: 'hidden'})
         .set('.text-block-38', { opacity: 0, x: -200 })
         .set('.hiw-img1, image-52', {opacity: 0})
         .set('.how-works-section', { zIndex: 25 },)
@@ -420,7 +424,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
         .addLabel("label18")
 
-        .from('.how-works-rotate-image1', { opacity: 0, duration: 1.8 })
+        .from('.how-works-rotate-image1', { opacity: 0, duration: 1.6 })
         // .to('.how-works-rotate-container', {rotation: -180, duration: 2, ease: "none"})
         .to('.hiw-img1', { opacity: 0, duration: 1 }, '<')
         .to('.text-block-38', { opacity: 0, duration: 1.8 }, '<')
@@ -430,12 +434,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to('.hiw-unvis', { opacity: 1, duration: 1.8 }, '<')
         .addLabel("label19")
 
-        .to('.how-works-section', { opacity: 0, duration: 1 }, '+=0.5')
+        .to('.how-works-section', { opacity: 0, duration: 1 }, )
         .set('.marque-glasses', {zIndex: 26}, )
         .to('.marque-glasses', { opacity: 1, duration: 1 }, )
         .addLabel("label20")
 
         .to('.marque-glasses', { opacity: 0, duration: 1 }, )
+        .set('.marque-glasses', {visibility: 'hidden'})
         .to('.time-matters', { zIndex: 27 }, )
         .to('.time-matters', { opacity: 1, duration: 1 }, )
         .to('.blur-1', { x: -100, duration: 1.2, onComplete: function() { $('.blur-1').addClass('unblur'); }, onReverseComplete: function() { $('.blur-1').removeClass('unblur'); } })
@@ -450,30 +455,34 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .addLabel("label22")
 
         .to('.time-matters', { opacity: 0, duration: 1 }, )
+        .set('.time-matters', {visibility: 'hidden'})
         .set('.section-road-map', { zIndex: 28 }, )
-        .to('.section-road-map', { opacity: 1, duration: 1 }, )
+        .to('.section-road-map', { opacity: 1, duration: 0.6 }, )
         .addLabel("label23")
 
         // .to(slickScroll, {x:-3000, duration: 3})
         .to('.section-road-map', { opacity: 0, duration: 1 }, )
+        .set('.section-road-map', {visibility: 'hidden'})
         .set('.sect-mission', { zIndex: 29 }, )
-        .to('.sect-mission', { opacity: 1, duration: 1 }, )
+        .to('.sect-mission', { opacity: 1, duration: 0.6 }, )
         .addLabel("label24")
 
-        .to('.vis-mis', { opacity: 0, duration: 1.8 })
-        .to('.mis-text-vis', { opacity: 0, duration: 1.8 }, '<')
-        .to('.mis-text-invs', { opacity: 1, duration: 1.8 })
-        .to('.invis-mis', { opacity: 1, duration: 1.8 }, '<')
+        .to('.vis-mis', { opacity: 0, duration: 1.6 })
+        .to('.mis-text-vis', { opacity: 0, duration: 1.6 }, '<')
+        .to('.mis-text-invs', { opacity: 1, duration: 1.6 })
+        .to('.invis-mis', { opacity: 1, duration: 1.6 }, '<')
         .addLabel("label25")
 
         .to('.sect-mission', { opacity: 0, duration: 1 }, )
+        .set('.sect-mission', {visibility: 'hidden'})
         .set('.blockchain-section', { zIndex: 30 }, )
-        .to('.blockchain-section', { opacity: 1, duration: 1 }, )
+        .to('.blockchain-section', { opacity: 1, duration: 0.6 }, )
         .addLabel("label26")
 
         .to('.blockchain-section', { opacity: 0, duration: 1 }, )
+        .set('.blockchain-section', {visibility: 'hidden'})
         .set('.section-form', { zIndex: 31 }, )
-        .to('.section-form', { opacity: 1, duration: 1 }, )
+        .to('.section-form', { opacity: 1, duration: 0.6 }, )
         .addLabel("label27")
 
 
@@ -575,8 +584,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .addLabel("label12")
 
         .set('.section-ways-slider', { zIndex: 20 }, )
-        .set('.secondsect-father', {top: getEdgePosition().pos, position: "absolute"}, )
-        .to('.secondsect-father', {opacity: 0, duration: 1.5} )
+        .to('.secondsect-father', {opacity: 0, top: '-100vh', duration: 1.5} )
         .to('.mother', {top: 0, duration: 1.8}, '<' )
         .addLabel("label13")
 
@@ -781,8 +789,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
 
         .set('.section-ways-slider', { zIndex: 20 }, )
-        .set('.secondsect-father', {top: getEdgePosition().pos, position: "absolute"}, )
-        .to('.secondsect-father', {opacity: 0, duration: 1.5} )
+        .to('.secondsect-father', {opacity: 0, top: '-100vh', duration: 1.5} )
         .to('.mother', {top: 0, duration: 1.8}, '<' )
         .addLabel("label13")
 
@@ -867,7 +874,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         
         .to('.section-road-map', { opacity: 0, duration: 0.6 })
         .set('.sect-mission', { zIndex: 29 })
-        .to('.ssect-mission', {  opacity: 1, duration: 1 })
+        .to('.sect-mission', {  opacity: 1, duration: 1 })
         .addLabel("label24")
 
         
