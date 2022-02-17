@@ -719,6 +719,7 @@ body {
 
 .sections-block {
     position: relative;
+    height: 100vh;
 }
 .secondsect-father {
     position: fixed;
@@ -1802,22 +1803,9 @@ body {
     width: 90%;
     margin-left: 100px;
 }
-
-
- @media screen and (max-width: 900px)  {
-    .text-block-56 {
-        transform: scale(100) translate(0, -80px);
-    }
- }
-
-
- @media screen and (max-width: 479px) {
-    .image-20.image-scale.not-auto-width.glasses-rotate {
-        display: block;
-        position: absolute;
-        transform: scale(1.1);
-    }
- }
+.image-40.mob-glass {
+    display: none;
+}
 
 .how-works-section .how-works-rotate-container {
     margin-left: -100px;
@@ -2047,6 +2035,7 @@ body {
 .main-modal.modal-show .backdrop-filter-menu {
     display: block;
 }
+
 
 @keyframes display {
     0% {
@@ -2457,6 +2446,9 @@ a.my-underline:hover {
     margin: 0 auto;
     display: block;
     align-items: center;
+}
+.hide-for-desk {
+    display: none !important;
 }
 
 
@@ -3402,7 +3394,80 @@ a.my-underline:hover {
     }
 
     
+ @media screen and (max-width: 900px)  {
+    .text-block-56 {
+        transform: scale(100) translate(0, -80px);
+    }
+    .image-40 {
+        display: none;
+    }
+    .image-40.mob-glass {
+        display: block;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+    .section-inner.first-inner {
+        max-width: none;
+    }
+    .first-head-section .text-block-3 .text-sect {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .hide-for-mob {
+        display: none !important;
+    }
+    .hide-for-desk {
+        display: block !important;
+    }
+    .text-block-59.marcel-4.hide-for-desk {
+        top: auto;
+        bottom: 0;
+        text-align: center;
+    }
+    #time .text-go br:nth-child(1), #time .text-go br:nth-child(2), #time .text-go br:nth-child(3), #time .text-go br:nth-child(6) {
+        display: none;
+    }
+    #time .text-go {
+        padding: 0 16%;
+    }
+    .how-works-bottom-text {
+        padding: 0 14%;
+        margin-bottom: 5%;
+    }
+    .text-go.center-text.hiw-vis {
+        text-align: center;
+    }
+    .text-block-38.title-visible {
+        text-align: center;
+    }
+    .div-block-29 {
+        margin-right: 0;
+    }
+    .text-go.marcel-3 {
+        text-align: center;
+    }
+    .text-block-51.titile-invs {
+        text-align: center;
+    }
+    .text-block-51.titile-invs br:nth-child(2) {
+        display: none;
+    }
+    .text-go.center-text.hiw-unvis {
+        text-align: center;
+    }
+ }
 
+
+ @media screen and (max-width: 479px) {
+    .image-20.image-scale.not-auto-width.glasses-rotate {
+        display: block;
+        position: absolute;
+        transform: scale(1.1);
+    }
+ }
    
    
 
