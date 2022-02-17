@@ -22,7 +22,7 @@
   <style>
     @font-face {
       font-family: 'Agrandir Grand';
-      src: url('https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61b33f8733b808fd7fa4f572_Agrandir%20Grand%20Heavy%20800.otf') format('opentype');
+      src: url('../fonts/61b33f8733b808fd7fa4f572_Agrandir_Grand_Heavy_800.otf') format('opentype');
       font-weight: 800;
       font-style: normal;
       font-display: swap;

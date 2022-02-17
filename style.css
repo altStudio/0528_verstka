@@ -2661,7 +2661,7 @@
   bottom: 0%;
   z-index: -1;
   width: 100%;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61c5d2d4cb9ad6ec0f863491_how-works-bg2.svg");
+  background-image: url("./images/svg-6.svg");
   background-position: 0px 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2945,13 +2945,13 @@
 }
 
 .section-11.sect-mission._wf-section.mission-section.section {
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61f7bf23e86d1d1f75c847c3_Group%202046.png");
+  background-image: url("./images/61f7bf23e86d1d1f75c847c3_Group_2046.png");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .section-11.section-form._wf-section.section.contact-section {
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61f7c5ae529721858c9d513f_Group%202046%20(1).png");
+  background-image: url("./images/61f7c5ae529721858c9d513f_Group_2046_(1).png");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3245,19 +3245,19 @@
   border-width: 1px;
   border-color: #fff;
   border-radius: 14px;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61caf0f94bb27e526135a5c0_Group%202063.svg");
+  background-image: url("./images/svg-2.svg");
   background-position: 0px 0px;
   background-size: auto;
 }
 
 .div-block-17.block-bg-3 {
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61caf12b9a14f6a913e1b347_Group%202086.svg");
+  background-image: url("./images/svg-3.svg");
   background-position: 0px 0px;
   background-size: auto;
 }
 
 .div-block-17.block-bg-5 {
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61caf14c308c171f005d611d_Group%201657.svg");
+  background-image: url("./images/svg-4.svg");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -3272,7 +3272,7 @@
 }
 
 .div-block-19 {
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61caf17a6637248d29fe689c_Rectangle%2088.svg");
+  background-image: url("./images/svg-1.svg");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3324,7 +3324,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61b3444a0618d924f2ddea6c_Desktop%20(2).png");
+  background-image: url("./images/61b3444a0618d924f2ddea6c_Desktop_(2).png");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -3578,7 +3578,7 @@
   width: 70px;
   height: 70px;
   background-color: transparent;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61dbefcab66b1226bda14493_close-icon.svg");
+  background-image: url("./images/cross-exit.svg");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3786,7 +3786,7 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61de96c4f09347b070c46df7_map.svg");
+  background-image: url("./images/svg-5-map.svg");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -4011,7 +4011,7 @@
   right: 0%;
   bottom: 0%;
   display: none;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61e0028d46b7ddcbc7a36ab0_image%201431.png");
+  background-image: url("./images/61e0028d46b7ddcbc7a36ab0_image_1431.png");
   background-position: 50% 50%;
   background-size: auto;
 }
@@ -4484,7 +4484,7 @@
 .society-item.society-instagram {
   width: 85px;
   height: 85px;
-  background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61f3ff3b9a4276317bcf3ee1_9920775951556105709.svg");
+  background-image: url("./images/svg-7.svg");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -4770,7 +4770,7 @@
     overflow: visible;
     max-height: 100vh;
     min-height: 100vh;
-    background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61b3444a0618d924f2ddea6c_Desktop%20(2).png");
+    background-image: url("./images/61b3444a0618d924f2ddea6c_Desktop_(2).png");
     background-position: 0px 0px;
     background-size: cover;
   }
@@ -4990,7 +4990,7 @@
     z-index: 10;
     width: 760px;
     height: 260px;
-    background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61cae6ba43a756296cd2db60_image%201432%201.png");
+    background-image: url("./images/61cae6ba43a756296cd2db60_image_1432_1.png");
     background-size: cover;
   }
 
@@ -5130,7 +5130,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61c4368050b3d21ee8af4e73_production%20ID_3735731_Moment%201.png");
+    background-image: url('./images/61c4368050b3d21ee8af4e73_production ID_3735731_Moment 1.png');
     background-position: 50% 50%;
     background-size: cover;
   }
@@ -6148,7 +6148,7 @@
   }
 
   .section.how-works-section._wf-section {
-    background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61f3ca984f75446e9465ab26_iPhone%20SE.png");
+    background-image: url("./images/61f3ca984f75446e9465ab26_iPhone_SE.png");
   }
 
   .what-do-content {
@@ -7122,7 +7122,7 @@
     bottom: 0%;
     width: 86px;
     height: 86px;
-    background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61e6995d289c471d730b33a9_play-icon.svg");
+    background-image: url("./images/svg-8.svg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -7242,7 +7242,7 @@
 }
 @font-face {
   font-family: 'Agrandir grand 800';
-  src: url('https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61b33f8733b808fd7fa4f572_Agrandir%20Grand%20Heavy%20800.otf') format('opentype');
+  src: url('./fonts/61b33f8733b808fd7fa4f572_Agrandir_Grand_Heavy_800.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;

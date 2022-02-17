@@ -3341,7 +3341,7 @@ a.my-underline:hover {
     }
 
     .section-10.section-monic {
-        background-image: url("https://uploads-ssl.webflow.com/61b3254e99f137210789513e/61f7c5ae529721858c9d513f_Group%202046%20(1).png");
+        background-image: url("./images/61f7c5ae529721858c9d513f_Group_2046_(1).png");
         background-position: 50% 50%;
         background-size: cover;
     }
@@ -3378,6 +3378,11 @@ a.my-underline:hover {
 
     .road-map-slider {
         padding-left: 15px;
+        overflow-x: auto;
+        justify-content: start;
+    }
+    .section-road-map .road-map-slider_text {
+        font-size: 17px;
     }
 
 
