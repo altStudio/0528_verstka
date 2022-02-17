@@ -423,7 +423,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         .to('.section-offer', { opacity: 0, duration: 1 },)
         .set('.section-offer', {visibility: 'hidden'})
         .set('.text-block-38', { opacity: 0, x: -200 })
-        .set('.hiw-img1, image-52', {opacity: 0})
+        .set('.hiw-img1, .image-52', {opacity: 0})
         .set('.how-works-section', { zIndex: 25 },)
         .to('.how-works-section', { opacity: 1, duration: 0.5 }, )        
         .to('.hiw-img1', { opacity: 1, duration: 1 }, '<')
