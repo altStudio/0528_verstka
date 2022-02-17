@@ -215,6 +215,10 @@ $('.button-8').on('click', function() {
 
 $(".go-to-section").click(function(event) {
   event.preventDefault();
+  if (window.matchMedia("(max-width: 1100px)").matches && this.dataset.labelNumber == 7) {
+    goToSection(`label5`, `label7`);
+    return;
+  }
   goToSection(`label` + (Number(this.dataset.labelNumber) - 1), `label` + Number(this.dataset.labelNumber));
 });
 
