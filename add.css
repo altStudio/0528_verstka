@@ -2401,7 +2401,7 @@ a.my-underline:hover {
 }
 .section-2.screenone .text-block-3 .text-sect {
     line-height: 130%;
-    max-width: 600px;
+    max-width: 1000px;
 }
 .image-49 {
     max-height: 76px;
@@ -2451,6 +2451,9 @@ a.my-underline:hover {
     display: none !important;
 }
 .bg-earn-learn-evolve .how-works-bottom-text .text-go br {
+    display: none;
+}
+.text-span-3-mob br {
     display: none;
 }
 
@@ -3488,6 +3491,33 @@ a.my-underline:hover {
     .section-earn .text-block-33.gradient-text.new.font-size-120 {
         font-size: 42px;
     }
+    .div-block-27 {
+        margin-top: 58px;
+    }
+    .image-27.right-im.person-img {
+        width: 50%;
+        top: -10%;
+        max-width: none;
+        max-height: none;
+    }
+    .section-10.section.section-earn {
+        background-position: 66% -6%;
+    }
+    .text-block-29 {
+        margin: 0 auto;
+    }
+    .image-44.guy-glasses {
+        margin-bottom: auto;
+    }
+    .your-time .text-span-3 {
+        border-bottom: none;
+    }
+    .text-span-3-mob {
+        border-bottom: 3px solid #f48b44;
+    }
+    .text-span-3-mob br {
+        display: block;
+    }
  }
 
 
@@ -3497,6 +3527,21 @@ a.my-underline:hover {
         position: absolute;
         transform: scale(1.1);
     }
+    .div-block-10 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+    .earn-content-2 {
+        margin-top: 20px;
+    }
+    .image-53 {
+        position: absolute;
+        left: auto;
+        right: -20%;
+        bottom: -50%;
+        width: 200%;
+        max-width: none;
+        }
  }
    
    

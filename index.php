@@ -175,7 +175,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=1.5">
+    <link rel="stylesheet" href="./add.css?ver=1.6">
 </head>
 
 <body class="body">
@@ -198,7 +198,7 @@
                         </div>
                         <div class="text-block-3">
                             <div class="text-sect first-anim-text">Imagine that you can see the world through someone else’s eyes... <br>Literally</div>
-                            <div class="text-sect second-anim-text">You can guide that person and make him act as you wish...</div>
+                            <div class="text-sect second-anim-text">You can guide that person <br />and make him act as you <br />wish...</div>
                         </div>
                     </div><img src="./images/bg-main-page.png" loading="eager" sizes="100vw" srcset="./images/bg-main-page-sm.png 500w, ./images/bg-main-page-lg.png 2100w" alt="" class="image-7" /><img src="./images/bg-main-page2.png" loading="eager" srcset="./images/bg-main-page2-sm.png 500w, ./images/bg-main-page2-lg.png 2030w" sizes="100vw" alt="" class="image-6" />
                 </div><img src="./images/glasses.png" loading="eager" sizes="100vw" srcset="./images/glasses-500.png 500w, ./images/glasses-800.png 800w, ./images/glasses-1080.png 1080w, ./images/glasses-1600.png 1600w, ./images/glasses-2000.png 2000w, ./images/glasses.png 2159w" alt="" class="image-40" />
@@ -845,7 +845,7 @@
                             <div class="earn-title">
                                 <div class="text-block-45">Your time matters</div>
                                 <div class="your-time">
-                                    <div class="text-block-46"><span class="text-span-3">MetaРax Beholders</span> are getting increased value of their time with concentrated experiences and on-demand remote execution of whatever they need. And they are happy to pay for it!<br /><br />No more exhausting travelling or time spent on remote problem solving. Be present.</div>
+                                    <div class="text-block-46"><span class="text-span-3">MetaРax Beholders</span> are getting increased value of their time with concentrated experiences and on-demand remote execution of whatever they need. And they <span class="text-span-3-mob"> <br />are happy to pay for it!</span><br /><br />No more exhausting travelling or time spent on remote problem solving. Be present.</div>
                                     <div class="text-block-63"><span class="text-span-27">MetaPax</span> Streamers get your stuff done in minutes, not weeks -- no matter where in the world you are. Increased efficiency is what will change the world. <br />‍<br />Streamers will charge a reasonable fee for their services, but after all - did you ever had a chance to buy yourself some time before?</div>
                                 </div>
                             </div>
@@ -1079,7 +1079,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./lottie.js"></script>
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.0"></script>
+    <script src="./main.js?ver=2.1"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
 </body>
