@@ -175,7 +175,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=1.6">
+    <link rel="stylesheet" href="./add.css?ver=1.7">
 </head>
 
 <body class="body">
@@ -200,7 +200,7 @@
                             <div class="text-sect first-anim-text">Imagine that you can see the world through someone else’s eyes... <br>Literally</div>
                             <div class="text-sect second-anim-text">You can guide that person <br />and make him act as you <br />wish...</div>
                         </div>
-                    </div><img src="./images/bg-main-page.png" loading="eager" sizes="100vw" srcset="./images/bg-main-page-sm.png 500w, ./images/bg-main-page-lg.png 2100w" alt="" class="image-7" /><img src="./images/bg-main-page2.png" loading="eager" srcset="./images/bg-main-page2-sm.png 500w, ./images/bg-main-page2-lg.png 2030w" sizes="100vw" alt="" class="image-6" />
+                    </div><img src="./images/bg-main-page.png" loading="eager" sizes="100vw" srcset="./images/bg-main-page-sm.png 500w, ./images/bg-main-page-lg.png 2100w" alt="" class="image-7" /><img src="./images/bg-main-page2.svg" loading="eager" srcset="./images/bg-main-page2-sm.png 500w, ./images/bg-main-page2-lg.png 2030w" sizes="100vw" alt="" class="image-6" />
                 </div><img src="./images/glasses.png" loading="eager" sizes="100vw" srcset="./images/glasses-500.png 500w, ./images/glasses-800.png 800w, ./images/glasses-1080.png 1080w, ./images/glasses-1600.png 1600w, ./images/glasses-2000.png 2000w, ./images/glasses.png 2159w" alt="" class="image-40" />
                 <img src="./images/glasses-500.png" class="image-40 mob-glass">
                 <div class="scroll-dv">

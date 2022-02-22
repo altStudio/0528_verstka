@@ -2456,6 +2456,32 @@ a.my-underline:hover {
 .text-span-3-mob br {
     display: none;
 }
+.image-6 {
+    top: -120%;
+}
+.image-7 {
+    top: 30%;
+}
+.image-10 {
+    left: -35%;
+}
+.image-11 {
+    top: -90%;
+    right: -50%;
+}
+.image-21 {
+    left: -20%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+}
+.section-11.sect-mission._wf-section.mission-section.section {
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
 
 
 

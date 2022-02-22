@@ -334,7 +334,7 @@
             </svg>
           </a>
           <a class="link-to-social-networks" href="http://youtu.be/CX1AQl8d758">
-            <img src="../images/youtube.svg">
+            <img src="../images/youtube.png">
           </a>
           <a class="link-to-social-networks" href="http://instagram.com/metapax.io">
             <svg viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
