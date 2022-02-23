@@ -1671,6 +1671,10 @@
   opacity: 1;
   line-height: 130%;
 }
+.padding-x__30{
+   padding: 0px 30px;
+}
+
 
 .text-go.center-text.content-bottom-second-hiiden-text {
   position: absolute;
@@ -2727,16 +2731,7 @@
 }
 
 .image-29 {
-  width: auto;
-  max-width: 70%;
-  min-height: auto;
-  margin: 115px auto auto;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  display: none;
 }
 
 .image-29.copyglasses {
@@ -2754,6 +2749,36 @@
   -o-object-fit: fill;
   object-fit: fill;
 }
+  .image-camera5-left{
+    display: inline-block!important;
+    top: 10%;
+    position: absolute;
+    right: calc(0% - 15px);
+  }
+  .image-camera5-right{
+    display: inline-block!important;
+    left: calc(0% - 15px);
+    top: 42%;
+    position: absolute;
+  }
+  .text-circle-container__right-text {
+    position: absolute;
+    display: inline-block!important;
+    width: calc(100% - 175px);
+    top: 47%;
+    right: 0;
+  }
+  .text-circle-container__left-text {
+    position: absolute;
+    display: inline-block!important;
+    left: 0;
+    width: calc(100% - 193px);
+    top: 24%;
+  }
+  .section.marque-glasses._wf-section.wf-section .text-circle-container{
+    display: none;
+  }
+
 
 .text-circle.text-circle-right {
   left: auto;

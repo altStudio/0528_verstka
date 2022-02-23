@@ -277,15 +277,16 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     // Анимация для мобилок, tl2 - таймлайн для экранов
     tl2.addLabel("start")
 
-        .to(".image-40", { y: 400, opacity: 0, duration: 1.5 })
+        .to(".image-40", { y: -360, duration: 1.5 })
         .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
         .to(".image-41", { y: 0, x: 300, opacity: 1, duration: 1.5 }, '<')
-        .to(".image-42", { x: -140, opacity: 1, duration: 1.5 }, '<')
+        .to(".image-42", { x: -400, opacity: 1, duration: 1.5 }, '<')
         .to('.first-anim-text', { opacity: 0, duration: 1.5 }, '<')
         .to('.second-anim-text', { opacity: 1, duration: 1 }, )
         .addLabel("label1")
 
         .to(".text-block-3", { y: -300, opacity: 0, duration: 1 }, )
+        .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
         .to(".image-41", { y: 0, x: 1000, opacity: 1, duration: 1 }, '<')
         .to(".image-42", { x: -2000, opacity: 1, duration: 1 }, '<')
         .to(".image-8", { x: 0, opacity: 1, duration: 1 })

@@ -1593,7 +1593,7 @@ body {
 .image-42 {
     left: auto;
     right: -850px;
-    bottom: -106px;
+    bottom: -200px;
 
     width: 1050px;
     max-width: none;
@@ -2400,7 +2400,7 @@ a.my-underline:hover {
     font-weight: 300;
 }
 .section-2.screenone .text-block-3 .text-sect {
-    line-height: 130%;
+    line-height: 150%;
     max-width: 1000px;
 }
 .image-49 {
@@ -2470,18 +2470,32 @@ a.my-underline:hover {
     right: -50%;
 }
 .image-21 {
-    left: -20%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    width: 100%;
-    height: auto;
+    position: absolute;
+left: -10%;
+top: auto;
+right: auto;
+bottom: -10%;
+width: 115%;
+height: 100%;
+max-width: none;
+max-height: none;
+min-width: -webkit-fill-available;
+min-height: auto;
 }
 .section-11.sect-mission._wf-section.mission-section.section {
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
- }
+}
+.what-do-text {
+    margin-bottom: 0;
+}
+.what-do-content {
+    justify-content: end;
+}
+.what-do-laptop {
+    margin: 6% 0;
+}
 
 
 
@@ -3444,6 +3458,7 @@ a.my-underline:hover {
         right: 0;
         width: 100%;
         height: auto;
+        top: 33%;
     }
     .section-inner.first-inner {
         max-width: none;
@@ -3460,8 +3475,7 @@ a.my-underline:hover {
         display: block !important;
     }
     .text-block-59.marcel-4.hide-for-desk {
-        top: auto;
-        bottom: 0;
+        top: 73%;
         text-align: center;
     }
     #time .text-go br:nth-child(1), #time .text-go br:nth-child(2), #time .text-go br:nth-child(3), #time .text-go br:nth-child(6) {
@@ -3544,6 +3558,12 @@ a.my-underline:hover {
     .text-span-3-mob br {
         display: block;
     }
+    .text-sect.second-anim-text {
+        top: 50%;
+    }
+    .scroll-dv {
+        top: 70%;
+    }
  }
 
 
@@ -3553,6 +3573,75 @@ a.my-underline:hover {
         position: absolute;
         transform: scale(1.1);
     }
+     #howto {
+         background-image: url(./images/bg-paxcreator.png);
+         background-size: auto 80%;
+         background-repeat: no-repeat;
+         background-position: bottom;
+     }
+     #howto .horizontal-swipe-icon {
+         display: block;
+         margin: 10vh auto 0;
+     }
+     #howto .horizontal-swipe-icon span{
+         margin-top: 2px;
+         font-family: Manrope, sans-serif;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 12px;
+         line-height: 130%;
+         color: #FFFFFF;
+     }
+     #howto .container-slide-indicator{
+         margin: 16px 0 auto;
+         display: flex!important;
+         justify-content: center;
+         align-items: center;
+     }
+     #howto .container-slide-indicator__item{
+         height: 4px;
+         width: 4px;
+         clip-path: circle(50%);
+         background: rgba(255, 255, 255, 0.5);
+         margin-right: 8px;
+     }
+     #howto .container-slide-indicator__item-active{
+         height: 8px;
+         width: 8px;
+         clip-path: circle(50%);
+         background: #F48B44;
+         margin-right: 4px;
+     }
+     #howto .ways-sliders-container {
+         margin-top: 5vh;
+     }
+     #howto .ways-slider-item_text {
+         order: 1;
+     }
+     #howto .ways-slider-item_text .text-block-29{
+         display: none;
+     }
+     #howto .ways-slider-item_text h3{
+         font-size: 22px;
+         margin-top: 30px;
+     }
+     #howto .ways-slider-item_text h3 br{
+         display: none;
+     }
+     #howto .ways-sliders-container .slider-bottom-text {
+         top: 88%;
+         max-width: 85%;
+     }
+     #howto .ways-sliders-container .slider-bottom-text .text-block-64 .text-span-34{
+         border-bottom: unset;
+     }
+     #howto .ways-sliders-container .slider-bottom-text .text-block-64 .text-span-39{
+         border-bottom: 1px solid #f48b44;;
+     }
+     #howto .ways-sliders-container .slider-bottom-text .text-block-64 .br-text-block-64 {
+         display: none;
+     }
+
     .div-block-10 {
         margin-top: 60px;
         margin-bottom: 0px;
