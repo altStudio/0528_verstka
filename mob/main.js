@@ -1,59 +1,59 @@
 
 const vid = document.querySelector('.background-video video');
 function stopVid() {
-    vid.pause();
+  vid.pause();
 }
 stopVid();
 
 function playVid() {
-    vid.play()
+  vid.play()
 }
 
 let debugMessages = [];
 
 function renderDebug(message) {
-    debugMessages.push(message);
-    $('.mobile-debug').html(debugMessages.map((item, i) => i+': '+item).join('<br>'));
-    document.querySelector('.mobile-debug').scrollTop = document.querySelector('.mobile-debug').scrollHeight;
+  debugMessages.push(message);
+  $('.mobile-debug').html(debugMessages.map((item, i) => i + ': ' + item).join('<br>'));
+  document.querySelector('.mobile-debug').scrollTop = document.querySelector('.mobile-debug').scrollHeight;
 }
-    
-$('.hidden-how-btn-1').on('click', function() {
-    $('body').addClass('no-scroll')
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $(".section-ways-slider").offset().top
-    }, 2000);
-    $('body').removeClass('no-scroll')
+
+$('.hidden-how-btn-1').on('click', function () {
+  $('body').addClass('no-scroll')
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(".section-ways-slider").offset().top
+  }, 2000);
+  $('body').removeClass('no-scroll')
 })
 
 
 const scaleNote = () => {
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-        return 4
-    } else if (window.matchMedia("(max-width: 1440px)").matches) {
-        return 6
-    }
+  if (window.matchMedia("(min-width: 1600px)").matches) {
+    return 4
+  } else if (window.matchMedia("(max-width: 1440px)").matches) {
+    return 6
+  }
 }
 
 const scaleNoteY = () => {
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-        return 200
-    } else if (window.matchMedia("(max-width: 1440px)").matches) {
-        return 100
-    }
+  if (window.matchMedia("(min-width: 1600px)").matches) {
+    return 200
+  } else if (window.matchMedia("(max-width: 1440px)").matches) {
+    return 100
+  }
 }
 
 
 const becomeTextHeight = () => {
-    let height;
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-        height = 135
-        $('.text-left').toggleClass('text-left-anim')
-        $('.text-right').toggleClass('text-left-anim')
-    } else if (window.matchMedia("(max-width: 1440px)").matches) {
-        $('.text-left').toggleClass('text-left-anim')
-        $('.text-right').toggleClass('text-left-anim')
-        height = 90
-    }
+  let height;
+  if (window.matchMedia("(min-width: 1600px)").matches) {
+    height = 135
+    $('.text-left').toggleClass('text-left-anim')
+    $('.text-right').toggleClass('text-left-anim')
+  } else if (window.matchMedia("(max-width: 1440px)").matches) {
+    $('.text-left').toggleClass('text-left-anim')
+    $('.text-right').toggleClass('text-left-anim')
+    height = 90
+  }
 }
 
 
@@ -74,13 +74,13 @@ lottieVid.pause();
 
 
 lottieVid.addEventListener('ended', (event) => {
-    console.log('video ended')
-    const offset = window.pageYOffset
-    window.scrollTo({
-        top: offset + 100,
-        left: 0,
-        behavior: 'smooth'
-    });
+  console.log('video ended')
+  const offset = window.pageYOffset
+  window.scrollTo({
+    top: offset + 100,
+    left: 0,
+    behavior: 'smooth'
+  });
 
 });
 
@@ -89,53 +89,53 @@ $('.visible-text').css('opacity', '0')
 
 
 function textblock7() {
-    return 0
+  return 0
 }
 
 const vid2 = document.querySelector('.big-video');
 vid2.muted = true;
 
 Pace.once("done", function () {
-//   $('#embed-video-1').html(`
-//   <source src="./images/foot-mp4.mp4" data-wf-ignore="true" />
-// `);
+  //   $('#embed-video-1').html(`
+  //   <source src="./images/foot-mp4.mp4" data-wf-ignore="true" />
+  // `);
 
-$('#embed-video-2').html(`
+  $('#embed-video-2').html(`
   <source src="./images/video-in-laptop-mp4.mp4" data-wf-ignore="true" />
   <source src="./images/video-in-laptop-webm.webm" data-wf-ignore="true" />
 `);
 
-$('#embed-video-3').html(`
+  $('#embed-video-3').html(`
   <source src="./images/now-you-can-video-mp4.mp4" data-wf-ignore="true" />
   <source src="./images/now-you-can-video-webm.webm" data-wf-ignore="true" />
 `);
 
-$('#embed-video-4').html(`
+  $('#embed-video-4').html(`
   <source src="./images/space-mp4.mp4" data-wf-ignore="true" />
   <source src="./images/space-webm.webm" data-wf-ignore="true" />
 `);
 
-$('#embed-video-5').html(`
+  $('#embed-video-5').html(`
   <source src="./images/parachute-video-mp4.mp4" data-wf-ignore="true" />
   <source src="./images/parachute-video-webm.webm" data-wf-ignore="true" />
 `);
 
-$('#embed-video-6').html(`
+  $('#embed-video-6').html(`
   <source src="./images/petri-mp4.mp4" data-wf-ignore="true" />
   <source src="./images/petri-webm.webm" data-wf-ignore="true" />
 `);
 
-$('#embed-video-7').html(`
+  $('#embed-video-7').html(`
   <source src="./images/backyard-mp4.mp4" data-wf-ignore="true" />
   <source src="/images/backyard-webm.webm" data-wf-ignore="true" />
 `);
 
-$('#embed-video-8').html(`
+  $('#embed-video-8').html(`
   <source src="./images/package-mp4.mp4" data-wf-ignore="true" />
   <source src="./images/package-webm.webm" data-wf-ignore="true" />
 `);
 
-$('.big-video').html(`
+  $('.big-video').html(`
   <source src="./images/MetapaxFinal1080p.mp4" type="video/mp4">
 `);
 });
@@ -143,36 +143,36 @@ $('.big-video').html(`
 
 
 function playVid2() {
-    vid2.play()
-    console.log('height')
-    vid2.onended = function() {
-        $('.become-video').addClass('shadow-filter')
-        becomeTextHeight()
-    };
+  vid2.play()
+  console.log('height')
+  vid2.onended = function () {
+    $('.become-video').addClass('shadow-filter')
+    becomeTextHeight()
+  };
 }
 
-$('.trigger-invite-btn').on('click', function() {
-    $('.trigger-invite-img-2').addClass('show')
-    $(this).addClass('hide')
+$('.trigger-invite-btn').on('click', function () {
+  $('.trigger-invite-img-2').addClass('show')
+  $(this).addClass('hide')
 })
 
-$('.video-play-icon').on('click', function() {
-    if ($('.video-play-icon').hasClass('hide-play-btn')) {
-        vid2.pause()
-        $(this).removeClass('hide-play-btn')
+$('.video-play-icon').on('click', function () {
+  if ($('.video-play-icon').hasClass('hide-play-btn')) {
+    vid2.pause()
+    $(this).removeClass('hide-play-btn')
 
-    } else {
-        $(this).addClass('hide-play-btn')
-        $('.become-video').addClass('unblur')
-        vid2.play()
-        vid2.muted = false
-        console.log('work')
-    }
+  } else {
+    $(this).addClass('hide-play-btn')
+    $('.become-video').addClass('unblur')
+    vid2.play()
+    vid2.muted = false
+    console.log('work')
+  }
 })
 
 
 let tl2 = gsap.timeline({
-    paused: true
+  paused: true
 });
 
 const scrollSections = document.querySelectorAll(".scroll-section");
@@ -181,39 +181,39 @@ const scrollSections = document.querySelectorAll(".scroll-section");
 // some browsers (like iOS Safari) handle scrolling on a separate thread and can cause things to get out of sync (jitter/jumpy), so when we're animating the scroll position, force an update of GSAP tweens when there's a scroll event in order to maintain synchronization)
 
 const scrolling = {
-    enabled: true,
-    events: "scroll,wheel,mousewheel,touchmove,pointermove".split(","),
-    prevent: e => e.preventDefault(),
-    disable() {
-      if (scrolling.enabled) {
-        console.log('DISABLED');
-        scrolling.enabled = false;
-        document.querySelector('body').style.overflow = 'hidden';
-        window.addEventListener("scroll", gsap.ticker.tick, {passive: true});
-        scrolling.events.forEach((e, i) => (i ? document : window).addEventListener(e, scrolling.prevent, {passive: false}));
-      }
-    },
-    enable() {
-      if (!scrolling.enabled) {
-        console.log('ENABLED');   
-        window.removeEventListener("scroll", gsap.ticker.tick);
-        scrolling.events.forEach((e, i) => (i ? document : window).removeEventListener(e, scrolling.prevent));
-        document.querySelector('body').style.overflow = '';
-        scrolling.enabled = true;
-      }
+  enabled: true,
+  events: "scroll,wheel,mousewheel,touchmove,pointermove".split(","),
+  prevent: e => e.preventDefault(),
+  disable() {
+    if (scrolling.enabled) {
+      console.log('DISABLED');
+      scrolling.enabled = false;
+      document.querySelector('body').style.overflow = 'hidden';
+      window.addEventListener("scroll", gsap.ticker.tick, { passive: true });
+      scrolling.events.forEach((e, i) => (i ? document : window).addEventListener(e, scrolling.prevent, { passive: false }));
     }
+  },
+  enable() {
+    if (!scrolling.enabled) {
+      console.log('ENABLED');
+      window.removeEventListener("scroll", gsap.ticker.tick);
+      scrolling.events.forEach((e, i) => (i ? document : window).removeEventListener(e, scrolling.prevent));
+      document.querySelector('body').style.overflow = '';
+      scrolling.enabled = true;
+    }
+  }
 };
 
 let activeSection = null;
 
 let isNotMob = window.matchMedia("(min-width: 768px)").matches;
 
-$('.button-8').on('click', function() {
-  goToSection( "label7", "label8");
+$('.button-8').on('click', function () {
+  goToSection("label7", "label8");
 })
 
 
-$(".go-to-section").click(function(event) {
+$(".go-to-section").click(function (event) {
   event.preventDefault();
   if (window.matchMedia("(max-width: 1100px)").matches && this.dataset.labelNumber == 7) {
     goToSection(`label5`, `label7`);
@@ -223,37 +223,37 @@ $(".go-to-section").click(function(event) {
 });
 
 function getSectionNumber(animationLabelString) {
-    return animationLabelString.substr(5) ? parseInt(animationLabelString.substr(5)) : 0;
+  return animationLabelString.substr(5) ? parseInt(animationLabelString.substr(5)) : 0;
 }
 
 function goToSection(from, to, duration = 0.2) {
   console.log('goto section fired', from, to);
-    
+
   if (scrolling.enabled && to) { // skip if a scroll tween is in progress
     scrollTriggers.forEach((trigger) => { trigger.disable() });
     scrolling.disable();
 
     let targetSection = scrollSections[getSectionNumber(to)];
-    
+
     gsap.to(window, {
-      scrollTo: {y: targetSection, autoKill: false},
+      scrollTo: { y: targetSection, autoKill: false },
       duration: duration
     });
     console.log('goto section fired successfully', from, to);
 
     tl2.tweenFromTo(from, to, {
-        onComplete: function () {
-            gsap.to(window, {
-              scrollTo: {y: targetSection, autoKill: false},
-              duration: 0,
-              onComplete: function () {
-                    scrollTriggers.forEach((trigger) => { trigger.enable() });
-                    scrolling.enable();
-                }
-            });
-        }
+      onComplete: function () {
+        gsap.to(window, {
+          scrollTo: { y: targetSection, autoKill: false },
+          duration: 0,
+          onComplete: function () {
+            scrollTriggers.forEach((trigger) => { trigger.enable() });
+            scrolling.enable();
+          }
+        });
+      }
     });
-  } 
+  }
 }
 let scrollTriggers = [];
 scrollSections.forEach((section, i) => {
@@ -265,672 +265,682 @@ scrollSections.forEach((section, i) => {
     onEnter: () => goToSection(tl2.currentLabel(), tl2.nextLabel()),
     onEnterBack: () => goToSection(tl2.currentLabel(), tl2.previousLabel())
   }));
- 
+
 });
 
 function getEdgePosition() {
-    let topPosition = 12 * $('.scroll-section').height();
-    return {pos: topPosition, height: $('.scroll-section').height()};
+  let topPosition = 12 * $('.scroll-section').height();
+  return { pos: topPosition, height: $('.scroll-section').height() };
 }
 
 if (window.matchMedia("(max-width: 1100px)").matches) {
-    // Анимация для мобилок, tl2 - таймлайн для экранов
-    tl2.addLabel("start")
+  // Анимация для мобилок, tl2 - таймлайн для экранов
+  tl2.addLabel("start")
 
-        .to(".image-40", { y: 400, opacity: 0, duration: 1.5 })
-        .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
-        .to(".image-41", { y: 0, x: 300, opacity: 1, duration: 1.5 }, '<')
-        .to(".image-42", { x: -140, opacity: 1, duration: 1.5 }, '<')
-        .to('.first-anim-text', { opacity: 0, duration: 1.5 }, '<')
-        .to('.second-anim-text', { opacity: 1, duration: 1 }, )
-        .addLabel("label1")
+    .to(".image-40", { y: 400, opacity: 0, duration: 1.5 })
+    .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
+    .to(".image-41", { y: 0, x: 300, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-42", { x: -140, opacity: 1, duration: 1.5 }, '<')
+    .to('.first-anim-text', { opacity: 0, duration: 1.5 }, '<')
+    .to('.second-anim-text', { opacity: 1, duration: 1 },)
+    .addLabel("label1")
 
-        .to(".text-block-3", { y: -300, opacity: 0, duration: 1 }, )
-        .to(".image-41", { y: 0, x: 1000, opacity: 1, duration: 1 }, '<')
-        .to(".image-42", { x: -2000, opacity: 1, duration: 1 }, '<')
-        .to(".image-8", { x: 0, opacity: 1, duration: 1 })
-        .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
-        .addLabel("label2")
+    .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
+    .to(".image-41", { y: 0, x: 1000, opacity: 1, duration: 1 }, '<')
+    .to(".image-42", { x: -2000, opacity: 1, duration: 1 }, '<')
+    .to(".image-8", { x: 0, opacity: 1, duration: 1 })
+    .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
+    .addLabel("label2")
 
-        .set('.secondsect', { zIndex: 13, x: 1000 }, )
-        .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
-        .to('.screenone', { opacity: 0 })
-        .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function() { vid.play() } }, )
-        .addLabel("label3")
+    .set('.secondsect', { zIndex: 13, x: 1000 },)
+    .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
+    .to('.screenone', { opacity: 0 })
+    .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
+    .addLabel("label3")
 
-        .to('.div-block-7', { y: -500, opacity: 0, duration: 1 }, )
-        .to('.secondsect', { opacity: 0, duration: 1 })
-        .set('.section-3', { zIndex: 14 })
-        .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 }, )
-        .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
-        .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
-        .addLabel("label4")
+    .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
+    .to('.secondsect', { opacity: 0, duration: 1 })
+    .set('.section-3', { zIndex: 14 })
+    .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
+    .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
+    .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
+    .addLabel("label4")
 
-        .to('.laptop-int', { opacity: 1, duration: 1.5 }, )        
-        .to('.mobile-section-title-item', { opacity: 0, duration: 1.5 }, "<")
-        .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
-        .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
-        .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-        .to('.image-10', {x: -500, opacity: 0, duration: 1.5}, "<")//При изменении текста нижний градиент уходит
-        .to('.image-11', {y: '11%', x: '-17%', width: '180%', duration: 1.5}, "<")//верхний занимает больше экрана
-        .addLabel("label5")
+    .to('.laptop-int', { opacity: 1, duration: 1.5 },)
+    .to('.mobile-section-title-item', { opacity: 0, duration: 1.5 }, "<")
+    .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
+    .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
+    .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
+    .to('.image-10', { x: -500, opacity: 0, duration: 1.5 }, "<")
+    .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
+    .addLabel("label5")
 
-        .to('.section-3', { opacity: 0, duration: 1.5, onComplete: function() { playVid2() }, onReverseComplete: function() { vid2.pause() } }, )
-        // .set('.section-4', { zIndex: 15 })
-        // .set('.text-block-14', { opacity: 0, 'display': 'block' })
-        // .set('.text-block-15', { opacity: 0, 'display': 'block' })
-        // .to('.text-block-14', { opacity: 1, duration: 1 }, '<')
-        // .to('.text-block-15', { opacity: 1, duration: 1 }, '<')
-        // .addLabel("label6")
+    .set('.text-block-14', { opacity: 1, 'display': 'block', y: '75px', 'font-size': '228%' })             //появляется заголовок
+    .set('.text-block-15', { opacity: 1, 'display': 'block', y: '75px', 'font-size': '128%' })             //появляется заголовок
+    .to('.section-3', { opacity: 0, duration: 1 },)                                   //исчезает предыдущий слайд
+    .to('.mobile-section-title-item-hidden', { y: '-75px', duration: 1 }, '<')        //поднимается текст пред. слайда
+    .to('.hidden-text-2', { y: '-75px', duration: 1 }, '<')                           //поднимается текст пред. слайда
+    .to('.text-block-14', { opacity: 1, y: '0px', duration: 1 }, '<')                 //поднимается новый текст на место пред.
+    .to('.text-block-15', { opacity: 1, y: '0px', duration: 1 }, '<')                 //поднимается новый текст на место пред.
+    .set('.section-4', { zIndex: 15 })                                                //новый слайд выходит на первый план
+    .set('.glasses-in-now-you-can', { 'min-width': '100%' })                          //задается ширина очков
+    .addLabel("label6")
 
-        //.to('.section-4 ', { opacity: 0, duration: 1, onComplete: function() { playVid2() }, onReverseComplete: function() { vid2.pause() } }, )
-        .set('.special-sect', { zIndex: 16 })
-        .addLabel("label7")
+    .to('.glasses-in-now-you-can', { 'min-width': '365%', duration: 1 },)             //очки расширяются
+    .to('.glasses-in-now-you-can', { y: '-140px', duration: 1 }, '<')                 //очки поднимаются, иначе при расширении их верхняя точка останется на месте
+    .to('.text-blocks-holder', { y: '-185px', duration: 1 }, '<')                     //текст сопротивляется выталкиванию от очков
+    .addLabel('youCan-VideoLabel')
 
-        .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function() { vid2.pause() }, }, )
-        .set('.section-6', { zIndex: 17 }, )
-        .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
-        .from('.text-block-58 ', { scale: 100, y: 300, duration: 1.5 }, '<')
-        .to('.alantext', { opacity: 1, duration: 0.5 })
-        .addLabel("label8")
+    .to('.section-4 ', { opacity: 0, duration: 1, onComplete: function () { playVid2() }, onReverseComplete: function () { vid2.pause() } },) //запускается видик, ну и стопится тоже
+    .to('.text-block-14', { 'font-size': '150%', y: '-50px', duration: 1 }, '<') // уменьшается и поднимается текст
+    .to('.text-block-15', { 'font-size': '66%', y: '-50px', duration: 1 }, '<')  // уменьшается и поднимается текст
+    .set('.special-sect', { zIndex: 16 })
+    .addLabel("label7")
 
-        .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1 }, )
-        .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
-        .to('.image-43', { scale: 0.7, duration: 0.5 }, '<')
-        .to('.text-block-56', { scale: 1, y: 0, duration: 1 }, '<')
-        .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
-        .addLabel("label9")
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, },)
+    .set('.section-6', { zIndex: 17 },)
+    .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
+    .from('.text-block-58 ', { scale: 100, y: 300, duration: 1.5 }, '<')
+    .to('.alantext', { opacity: 1, duration: 0.5 })
+    .addLabel("label8")
 
-        .set('.layers-1', { x: 300 }, )
-        .set('.layers-2', { y: -300 }, )
-        .set('.layers-3', { x: -300, y: -100 },)
-        .set('.marcel-1', { x: -100, opacity: 0, })
-        .set('.marcel-3', { x: -100, opacity: 0, })
-        .set('.text-block-16', { x: -100, opacity: 0})
-        .to('.section-6', { opacity: 0, duration: 0.5 }, )
-        .set('.section-7', { zIndex: 18 })
-        .to('.layers-1', { x: 0, duration: 0.8 })
-        .to('.layers-2', { y: 0, duration: 0.8 }, '<')        
-        .to('.layers-3', { x: 0, y: 0, duration: 0.8 }, '<')
-        .to('.text-block-16', { x: 0, opacity: 1, duration: 0.5 })
-        .to('.image-19', { opacity: 1, duration: 0.5 }, '<')
-        .to('.marcel-1', { x: 0, opacity: 1, duration: 0.5 })        
-        .to('.marcel-3', { x: 0, opacity: 1, duration: 0.5 })
-        .addLabel("label10")
+    .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1 },)
+    .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
+    .to('.image-43', { scale: 0.7, duration: 0.5 }, '<')
+    .to('.text-block-56', { scale: 1, y: 0, duration: 1 }, '<')
+    .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
+    .addLabel("label9")
 
-        .to('.marcel-1', { opacity: 0, duration: 0.5 }, )
-        .to('.marcel-3', { opacity: 0, duration: 0.5 }, '<')
-        .to('.image-19', { opacity: 0 }, '<')
-        .to('.marcel-2', { opacity: 1, duration: 0.5 }, )
-        .to('.marcel-4', { opacity: 1, duration: 0.5 }, '<')
-        .to('.glasses-rotate', { opacity: 1, duration: 1 }, '<')
-        .to('.change-text', { opacity: 0, duration: 1 }, '<')
-        .to('.give', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label11")
+    .set('.layers-1', { x: 300 },)
+    .set('.layers-2', { y: -300 },)
+    .set('.layers-3', { x: -300, y: -100 },)
+    .set('.marcel-1', { x: -100, opacity: 0, })
+    .set('.marcel-3', { x: -100, opacity: 0, })
+    .set('.text-block-16', { x: -100, opacity: 0 })
+    .to('.section-6', { opacity: 0, duration: 0.5 },)
+    .set('.section-7', { zIndex: 18 })
+    .to('.layers-1', { x: 0, duration: 0.8 })
+    .to('.layers-2', { y: 0, duration: 0.8 }, '<')
+    .to('.layers-3', { x: 0, y: 0, duration: 0.8 }, '<')
+    .to('.text-block-16', { x: 0, opacity: 1, duration: 0.5 })
+    .to('.image-19', { opacity: 1, duration: 0.5 }, '<')
+    .to('.marcel-1', { x: 0, opacity: 1, duration: 0.5 })
+    .to('.marcel-3', { x: 0, opacity: 1, duration: 0.5 })
+    .addLabel("label10")
 
-        .set('.white-section', { zIndex: 19, x: 2000 })
-        .to('.white-section', { x: 0, zIndex: 19, duration: 1 })
-        .to('.text-block-26', { x: -415, duration: 1 })
-        .addLabel("label12")
+    .to('.marcel-1', { opacity: 0, duration: 0.5 },)
+    .to('.marcel-3', { opacity: 0, duration: 0.5 }, '<')
+    .to('.image-19', { opacity: 0 }, '<')
+    .to('.marcel-2', { opacity: 1, duration: 0.5 },)
+    .to('.marcel-4', { opacity: 1, duration: 0.5 }, '<')
+    .to('.glasses-rotate', { opacity: 1, duration: 1 }, '<')
+    .to('.change-text', { opacity: 0, duration: 1 }, '<')
+    .to('.give', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label11")
 
-        .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
-        .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
-        .set('.h2', { visibility: 'hidden' } )
-        .set('.text-block-18', { visibility: 'hidden' } )
-        .set('.section-ways-slider', { zIndex: 20 }, )
-        .to('.mother', {top: 0, duration: 1.2} )
-        .to('.secondsect-father', {opacity: 0, duration: 0.6}, '<' )
-        .set('.secondsect-father', { visibility: 'hidden' } )
-        .addLabel("label13")
+    .set('.white-section', { zIndex: 19, x: 2000 })
+    .to('.white-section', { x: 0, zIndex: 19, duration: 1 })
+    .to('.text-block-26', { x: -415, duration: 1 })
+    .addLabel("label12")
 
-        .set('.section-invert', {opacity: 0})
-        .set('.section-monic', {opacity: 0})
-        .set('.section-earn', {opacity: 0})
-        .set('.section-offer', {opacity: 0})
-        .set('.how-works-section', {opacity: 0})
-        .set('.marque-glasses', {opacity: 0})
-        .set('.section-road-map', {opacity: 0})
-        .set('.time-matters', {opacity: 0})
-        .set('.sect-mission', {opacity: 0})
-        .set('.blockchain-section', {opacity: 0})
-        .set('.section-form ', {opacity: 0})
-        .set('.section-invert', { opacity: 0 })
-        .to('.section-ways-slider', { opacity: 0, duration: 1 }, )
-        .set('.section-invert', { zIndex: 21 })
-        .to('.section-invert', { opacity: 1, duration: 1 })
-        .addLabel("label14")
+    .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
+    .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
+    .set('.h2', { visibility: 'hidden' })
+    .set('.text-block-18', { visibility: 'hidden' })
+    .set('.section-ways-slider', { zIndex: 20 },)
+    .to('.mother', { top: 0, duration: 1.2 })
+    .to('.secondsect-father', { opacity: 0, duration: 0.6 }, '<')
+    .set('.secondsect-father', { visibility: 'hidden' })
+    .addLabel("label13")
 
-        .to(invertText, { opacity: 0, duration: 1 }, )
-        .to(invertText2, { opacity: 0, duration: 1 }, "<")
-        .to('.section-invert', { opacity: 0, duration: 1 }, )
-        .set('.section-invert', {visibility: 'hidden'})
-        .set('.section-monic', { zIndex: 22 }, )
-        .to('.section-monic', { opacity: 1, duration: 0.5 }, )
-        .addLabel("label15")
+    .set('.section-invert', { opacity: 0 })
+    .set('.section-monic', { opacity: 0 })
+    .set('.section-earn', { opacity: 0 })
+    .set('.section-offer', { opacity: 0 })
+    .set('.how-works-section', { opacity: 0 })
+    .set('.marque-glasses', { opacity: 0 })
+    .set('.section-road-map', { opacity: 0 })
+    .set('.time-matters', { opacity: 0 })
+    .set('.sect-mission', { opacity: 0 })
+    .set('.blockchain-section', { opacity: 0 })
+    .set('.section-form ', { opacity: 0 })
+    .set('.section-invert', { opacity: 0 })
+    .to('.section-ways-slider', { opacity: 0, duration: 1 },)
+    .set('.section-invert', { zIndex: 21 })
+    .to('.section-invert', { opacity: 1, duration: 1 })
+    .addLabel("label14")
 
-        .to('.section-monic', { opacity: 0, duration: 1 }, )
-        .set('.section-monic', {visibility: 'hidden'})
-        .set('.section-earn', { zIndex: 23 }, )
-        .to('.section-earn', { opacity: 1, duration: 0.5 }, )
-        .addLabel("label16")
+    .to(invertText, { opacity: 0, duration: 1 },)
+    .to(invertText2, { opacity: 0, duration: 1 }, "<")
+    .to('.section-invert', { opacity: 0, duration: 1 },)
+    .set('.section-invert', { visibility: 'hidden' })
+    .set('.section-monic', { zIndex: 22 },)
+    .to('.section-monic', { opacity: 1, duration: 0.5 },)
+    .addLabel("label15")
 
-        .to(earnText, { opacity: 0, duration: 1.2 })
-        .to(earnText2, { opacity: 0, duration: 1.2 }, "<")
-        .to('.section-earn', { opacity: 0, duration: 1 } )
-        .set('.section-earn', {visibility: 'hidden'})
-        .set('.section-offer', { zIndex: 24 }, )
-        .to('.section-offer', { opacity: 1, duration: 0.5 }, )
-        .addLabel("label17")
+    .to('.section-monic', { opacity: 0, duration: 1 },)
+    .set('.section-monic', { visibility: 'hidden' })
+    .set('.section-earn', { zIndex: 23 },)
+    .to('.section-earn', { opacity: 1, duration: 0.5 },)
+    .addLabel("label16")
 
-        .to('.section-offer', { opacity: 0, duration: 1 },)
-        .set('.section-offer', {visibility: 'hidden'})
-        .set('.text-block-38', { opacity: 0, x: -200 })
-        .set('.hiw-img1, .image-52', {opacity: 0})
-        .set('.how-works-section', { zIndex: 25 },)
-        .to('.how-works-section', { opacity: 1, duration: 0.5 }, )        
-        .to('.hiw-img1', { opacity: 1, duration: 1 }, '<')
-        .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
-        .addLabel("label18")
+    .to(earnText, { opacity: 0, duration: 1.2 })
+    .to(earnText2, { opacity: 0, duration: 1.2 }, "<")
+    .to('.section-earn', { opacity: 0, duration: 1 })
+    .set('.section-earn', { visibility: 'hidden' })
+    .set('.section-offer', { zIndex: 24 },)
+    .to('.section-offer', { opacity: 1, duration: 0.5 },)
+    .addLabel("label17")
 
-        .from('.how-works-rotate-image1', { opacity: 0, duration: 1.6 })
-        // .to('.how-works-rotate-container', {rotation: -180, duration: 2, ease: "none"})
-        .to('.hiw-img1', { opacity: 0, duration: 1 }, '<')
-        .to('.text-block-38', { opacity: 0, duration: 1.8 }, '<')
-        .to('.hiw-vis', { opacity: 0, duration: 1.8 }, '<')
-        .to('.text-block-51', { opacity: 1, duration: 1.8 }, )
-        .to('.image-52', { opacity: 1, duration: 1 }, '<')
-        .to('.hiw-unvis', { opacity: 1, duration: 1.8 }, '<')
-        .addLabel("label19")
+    .to('.section-offer', { opacity: 0, duration: 1 },)
+    .set('.section-offer', { visibility: 'hidden' })
+    .set('.text-block-38', { opacity: 0, x: -200 })
+    .set('.hiw-img1, .image-52', { opacity: 0 })
+    .set('.how-works-section', { zIndex: 25 },)
+    .to('.how-works-section', { opacity: 1, duration: 0.5 },)
+    .to('.hiw-img1', { opacity: 1, duration: 1 }, '<')
+    .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
+    .addLabel("label18")
 
-        .to('.how-works-section', { opacity: 0, duration: 1 }, )
-        .set('.marque-glasses', {zIndex: 26}, )
-        .to('.marque-glasses', { opacity: 1, duration: 1 }, )
-        .addLabel("label20")
+    .from('.how-works-rotate-image1', { opacity: 0, duration: 1.6 })
+    // .to('.how-works-rotate-container', {rotation: -180, duration: 2, ease: "none"})
+    .to('.hiw-img1', { opacity: 0, duration: 1 }, '<')
+    .to('.text-block-38', { opacity: 0, duration: 1.8 }, '<')
+    .to('.hiw-vis', { opacity: 0, duration: 1.8 }, '<')
+    .to('.text-block-51', { opacity: 1, duration: 1.8 },)
+    .to('.image-52', { opacity: 1, duration: 1 }, '<')
+    .to('.hiw-unvis', { opacity: 1, duration: 1.8 }, '<')
+    .addLabel("label19")
 
-        .to('.marque-glasses', { opacity: 0, duration: 1 }, )
-        .set('.marque-glasses', {visibility: 'hidden'})
-        .to('.time-matters', { zIndex: 27 }, )
-        .to('.time-matters', { opacity: 1, duration: 1 }, )
-        .to('.blur-1', { x: -100, duration: 1.2, onComplete: function() { $('.blur-1').addClass('unblur'); }, onReverseComplete: function() { $('.blur-1').removeClass('unblur'); } })
-        .to('.blur-2', { x: 100, duration: 1.2, onComplete: function() { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function() { $('.blur-2').removeClass('blur-effect'); } }, '<')
-        .addLabel("label21")
+    .to('.how-works-section', { opacity: 0, duration: 1 },)
+    .set('.marque-glasses', { zIndex: 26 },)
+    .to('.marque-glasses', { opacity: 1, duration: 1 },)
+    .addLabel("label20")
 
-        .to('.blur-1', { opacity: 0, duration: 1.8 })
-        .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
-        .to('.blur-3', { opacity: 1, duration: 1.8 })
-        .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
-        .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
-        .addLabel("label22")
+    .to('.marque-glasses', { opacity: 0, duration: 1 },)
+    .set('.marque-glasses', { visibility: 'hidden' })
+    .to('.time-matters', { zIndex: 27 },)
+    .to('.time-matters', { opacity: 1, duration: 1 },)
+    .to('.blur-1', { x: -100, duration: 1.2, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
+    .to('.blur-2', { x: 100, duration: 1.2, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
+    .addLabel("label21")
 
-        .to('.time-matters', { opacity: 0, duration: 1 }, )
-        .set('.time-matters', {visibility: 'hidden'})
-        .set('.section-road-map', { zIndex: 28 }, )
-        .to('.section-road-map', { opacity: 1, duration: 0.6 }, )
-        .addLabel("label23")
+    .to('.blur-1', { opacity: 0, duration: 1.8 })
+    .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
+    .to('.blur-3', { opacity: 1, duration: 1.8 })
+    .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
+    .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
+    .addLabel("label22")
 
-        // .to(slickScroll, {x:-3000, duration: 3})
-        .to('.section-road-map', { opacity: 0, duration: 1 }, )
-        .set('.section-road-map', {visibility: 'hidden'})
-        .set('.sect-mission', { zIndex: 29 }, )
-        .to('.sect-mission', { opacity: 1, duration: 0.6 }, )
-        .addLabel("label24")
+    .to('.time-matters', { opacity: 0, duration: 1 },)
+    .set('.time-matters', { visibility: 'hidden' })
+    .set('.section-road-map', { zIndex: 28 },)
+    .to('.section-road-map', { opacity: 1, duration: 0.6 },)
+    .addLabel("label23")
 
-        .to('.vis-mis', { opacity: 0, duration: 1.6 })
-        .to('.mis-text-vis', { opacity: 0, duration: 1.6 }, '<')
-        .to('.mis-text-invs', { opacity: 1, duration: 1.6 })
-        .to('.invis-mis', { opacity: 1, duration: 1.6 }, '<')
-        .addLabel("label25")
+    // .to(slickScroll, {x:-3000, duration: 3})
+    .to('.section-road-map', { opacity: 0, duration: 1 },)
+    .set('.section-road-map', { visibility: 'hidden' })
+    .set('.sect-mission', { zIndex: 29 },)
+    .to('.sect-mission', { opacity: 1, duration: 0.6 },)
+    .addLabel("label24")
 
-        .to('.sect-mission', { opacity: 0, duration: 1 }, )
-        .set('.sect-mission', {visibility: 'hidden'})
-        .set('.blockchain-section', { zIndex: 30 }, )
-        .to('.blockchain-section', { opacity: 1, duration: 0.6 }, )
-        .addLabel("label26")
+    .to('.vis-mis', { opacity: 0, duration: 1.6 })
+    .to('.mis-text-vis', { opacity: 0, duration: 1.6 }, '<')
+    .to('.mis-text-invs', { opacity: 1, duration: 1.6 })
+    .to('.invis-mis', { opacity: 1, duration: 1.6 }, '<')
+    .addLabel("label25")
 
-        .to('.blockchain-section', { opacity: 0, duration: 1 }, )
-        .set('.blockchain-section', {visibility: 'hidden'})
-        .set('.section-form', { zIndex: 31 }, )
-        .to('.section-form', { opacity: 1, duration: 0.6 }, )
-        .addLabel("label27")
+    .to('.sect-mission', { opacity: 0, duration: 1 },)
+    .set('.sect-mission', { visibility: 'hidden' })
+    .set('.blockchain-section', { zIndex: 30 },)
+    .to('.blockchain-section', { opacity: 1, duration: 0.6 },)
+    .addLabel("label26")
+
+    .to('.blockchain-section', { opacity: 0, duration: 1 },)
+    .set('.blockchain-section', { visibility: 'hidden' })
+    .set('.section-form', { zIndex: 31 },)
+    .to('.section-form', { opacity: 1, duration: 0.6 },)
+    .addLabel("label27")
 
 
 } else if (window.matchMedia("(min-width: 1100px)").matches && window.matchMedia("(max-width: 1440px)").matches) {
-    // Анимация для ноута, tl2 - таймлайн для экранов
-    tl2.addLabel("start")
+  // Анимация для ноута, tl2 - таймлайн для экранов
+  tl2.addLabel("start")
 
-        .to(".image-40", { y: 400, opacity: 0, duration: 1.5 })
-        .to('.scroll-dv', { opacity: 0, duration: 1.5 }, '<')
-        .to(".image-41", { y: 150, x: 300, opacity: 1, duration: 1.5 }, '<')
-        .to(".image-42", { x: '-42%', opacity: 1, duration: 1.5 }, '<')
-        .to(".image-7", { x: 450, y: -350, duration: 1.2 }, '<')
-        .to('.first-anim-text', { opacity: 0, duration: 1 }, '<0.5')
-        .to('.second-anim-text', { opacity: 1, duration: 1 }, '>')       
-        .to(".image-6", { x: -600, y: 0, duration: 1.5 }, "-=2")
-        .addLabel("label1")
-        
-        .to(".text-block-3", { y: -300, opacity: 0, duration: 1 })
-        .to(".image-41", { y: 150, x: -300, opacity: 0, duration: 1 }, '<')
-        .to(".image-42", { x: 0, y: -150, opacity: 0, duration: 1 }, '<')
-        .to(".image-8", { x: 0, opacity: 1, duration: 1 })
-        .to(".image-7", { x: 300, y: -450, duration: 2 }, "<")
-        .to(".image-6", { x: -350, y: 400, duration: 2 }, "<")
-        .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
-        .addLabel("label2")
+    .to(".image-40", { y: 400, opacity: 0, duration: 1.5 })
+    .to('.scroll-dv', { opacity: 0, duration: 1.5 }, '<')
+    .to(".image-41", { y: 150, x: 300, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-42", { x: '-42%', opacity: 1, duration: 1.5 }, '<')
+    .to(".image-7", { x: 450, y: -350, duration: 1.2 }, '<')
+    .to('.first-anim-text', { opacity: 0, duration: 1 }, '<0.5')
+    .to('.second-anim-text', { opacity: 1, duration: 1 }, '>')
+    .to(".image-6", { x: -600, y: 0, duration: 1.5 }, "-=2")
+    .addLabel("label1")
 
-        .set('.secondsect', { zIndex: 13, x: 2000 })
-        .to('.secondsect', { x: 0, zIndex: 13, duration: 2 })
-        .set('.screenone', { opacity: 0 })
-        .to('.div-block-7', { opacity: 1, duration: 1, onComplete: function() { vid.play() } }, )
-        .addLabel("label3")
+    .to(".text-block-3", { y: -300, opacity: 0, duration: 1 })
+    .to(".image-41", { y: 150, x: -300, opacity: 0, duration: 1 }, '<')
+    .to(".image-42", { x: 0, y: -150, opacity: 0, duration: 1 }, '<')
+    .to(".image-8", { x: 0, opacity: 1, duration: 1 })
+    .to(".image-7", { x: 300, y: -450, duration: 2 }, "<")
+    .to(".image-6", { x: -350, y: 400, duration: 2 }, "<")
+    .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
+    .addLabel("label2")
 
-        .to('.div-block-7', { y: -500, opacity: 0, duration: 1 })
-        .to('.secondsect', { opacity: 0, duration: 1 })
-        .set('.section-3', { zIndex: 14 })
-        .to('.visible-title', { opacity: 1, duration: 1.5 }, )
-        .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
-        .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
-        .addLabel("label4")
+    .set('.secondsect', { zIndex: 13, x: 2000 })
+    .to('.secondsect', { x: 0, zIndex: 13, duration: 2 })
+    .set('.screenone', { opacity: 0 })
+    .to('.div-block-7', { opacity: 1, duration: 1, onComplete: function () { vid.play() } },)
+    .addLabel("label3")
 
-        
-        .to('.laptop-int', { opacity: 1, duration: 1.5 }, )
-        .to('.visible-title', { opacity: 0, duration: 1.5 }, "<")
-        .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
-        .to('.hidden-text1', { opacity: 1, duration: 1.5 }, )
-        .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-        .to('.image-10', { x: '33%', y: '-15%', duration: 3 }, 'label4')
-        .to('.image-11', { x: '-40%', y: '10%', duration: 3 }, '<')
-        .addLabel("label5")
+    .to('.div-block-7', { y: -500, opacity: 0, duration: 1 })
+    .to('.secondsect', { opacity: 0, duration: 1 })
+    .set('.section-3', { zIndex: 14 })
+    .to('.visible-title', { opacity: 1, duration: 1.5 },)
+    .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
+    .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
+    .addLabel("label4")
 
-        .to('.section-3', { opacity: 0, duration: 1, onComplete: function() { lottieVid.play() }, onReverseComplete: function() { lottieVid.pause(); lottieVid.set } }, '+=1')
-        .set('.section-4', { zIndex: 15 })
-        .to('.section-4', { opacity: 1 })        
-        .addLabel("label6")
 
-        .to('.section-4 ', { opacity: 0, duration: 1.5, onComplete: function() { playVid2(); lottieVid.pause() }, onReverseComplete: function() { vid2.pause() } }, )
-        .to('.special-sect', { zIndex: 16 })
-        .addLabel("label7")
+    .to('.laptop-int', { opacity: 1, duration: 1.5 },)
+    .to('.visible-title', { opacity: 0, duration: 1.5 }, "<")
+    .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
+    .to('.hidden-text1', { opacity: 1, duration: 1.5 },)
+    .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
+    .to('.image-10', { x: '33%', y: '-15%', duration: 3 }, 'label4')
+    .to('.image-11', { x: '-40%', y: '10%', duration: 3 }, '<')
+    .addLabel("label5")
 
-        .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function() { vid2.pause() }, onReverseComplete: function() { vid2.play() } }, )
-        .set('.section-6', { zIndex: 17 }, )
-        .fromTo('.image-43', { scale: 6 }, { scale: 0.4, duration: 1 }, '<')
-        .from('.text-block-58 ', { scale: 100, y: 0, duration: 1 }, '<')
-        .to('.alantext', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label8")
+    .to('.section-3', { opacity: 0, duration: 1, onComplete: function () { lottieVid.play() }, onReverseComplete: function () { lottieVid.pause(); lottieVid.set } }, '+=1')
+    .set('.section-4', { zIndex: 15 })
+    .to('.section-4', { opacity: 1 })
+    .addLabel("label6")
 
-        .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 0.5 }, )
-        .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
-        .to('.image-43', { scale: 0.6, duration: 0.5 }, '<')
-        .to('.text-block-56', { scale: 1, y: 0, duration: 0.5 }, '<')
-        .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 1 }, )
-        .addLabel("label9")
+    .to('.section-4 ', { opacity: 0, duration: 1.5, onComplete: function () { playVid2(); lottieVid.pause() }, onReverseComplete: function () { vid2.pause() } },)
+    .to('.special-sect', { zIndex: 16 })
+    .addLabel("label7")
 
-        .to('.section-6', { opacity: 0, duration: 1.5 }, )
-        .set('.marcel-1', { x: -100, opacity: 0 }, '<')
-        .set('.marcel-3', { x: -100, opacity: 0 }, '<')
-        .set('.text-block-16', { x: -100, opacity: 0 }, '<')
-        .set('.section-7', { zIndex: 18 })
-        .to('.text-block-16', { x: 0, opacity: 1, duration: 1 }, )
-        .to('.image-19', { opacity: 1, duration: 1 }, '<')
-        .to('.marcel-1', { x: 0, opacity: 1, duration: 1 }, '<')
-        .to('.marcel-3', { x: 0, opacity: 1, duration: 1 }, '<')
-        .addLabel("label10")
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },)
+    .set('.section-6', { zIndex: 17 },)
+    .fromTo('.image-43', { scale: 6 }, { scale: 0.4, duration: 1 }, '<')
+    .from('.text-block-58 ', { scale: 100, y: 0, duration: 1 }, '<')
+    .to('.alantext', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label8")
 
-        .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
-        .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
-        .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
-        .to('.marcel-2', { opacity: 1, duration: 1 }, '-=0.5')
-        .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
-        .to('.image-19', { opacity: 0, duration: 1 }, '<')
-        .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
-        .to('.change-text', { opacity: 0, duration: 1 }, '<')
-        .to('.give', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label11")
+    .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 0.5 },)
+    .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
+    .to('.image-43', { scale: 0.6, duration: 0.5 }, '<')
+    .to('.text-block-56', { scale: 1, y: 0, duration: 0.5 }, '<')
+    .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 1 },)
+    .addLabel("label9")
 
-        .set('.white-section', { zIndex: 19, x: 2000 }, )
-        .to('.white-section', { x: 0, duration: 2 })
-        .to('.text-block-26', { x: -1000, duration: 1.5 }, '-=0.5')
-        .addLabel("label12")
+    .to('.section-6', { opacity: 0, duration: 1.5 },)
+    .set('.marcel-1', { x: -100, opacity: 0 }, '<')
+    .set('.marcel-3', { x: -100, opacity: 0 }, '<')
+    .set('.text-block-16', { x: -100, opacity: 0 }, '<')
+    .set('.section-7', { zIndex: 18 })
+    .to('.text-block-16', { x: 0, opacity: 1, duration: 1 },)
+    .to('.image-19', { opacity: 1, duration: 1 }, '<')
+    .to('.marcel-1', { x: 0, opacity: 1, duration: 1 }, '<')
+    .to('.marcel-3', { x: 0, opacity: 1, duration: 1 }, '<')
+    .addLabel("label10")
 
-        .set('.section-ways-slider', { zIndex: 20 }, )
-        .to('.secondsect-father', {opacity: 0, top: '-100vh', duration: 1.5} )
-        .to('.mother', {top: 0, duration: 1.8}, '<' )
-        .addLabel("label13")
+    .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
+    .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
+    .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
+    .to('.marcel-2', { opacity: 1, duration: 1 }, '-=0.5')
+    .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
+    .to('.image-19', { opacity: 0, duration: 1 }, '<')
+    .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
+    .to('.change-text', { opacity: 0, duration: 1 }, '<')
+    .to('.give', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label11")
 
-        .set('.section-invert', {opacity: 0})
-        .set('.section-monic', {opacity: 0})
-        .set('.section-earn', {opacity: 0})
-        .set('.section-offer', {opacity: 0})
-        .set('.how-works-section', {opacity: 0})
-        .set('.marque-glasses', {opacity: 0})
-        .set('.section-road-map', {opacity: 0})
-        .set('.time-matters', {opacity: 0})
-        .set('.sect-mission', {opacity: 0})
-        .set('.blockchain-section', {opacity: 0})
-        .set('.section-form ', {opacity: 0})
-        .to('.section-ways-slider', { opacity: 0, duration: 0.5 }, )
-        .set('.section-invert', { zIndex: 21 })
-        .fromTo('.section-invert', { opacity: 0 }, { opacity: 1, duration: 1 } )
-        .addLabel("label14")
+    .set('.white-section', { zIndex: 19, x: 2000 },)
+    .to('.white-section', { x: 0, duration: 2 })
+    .to('.text-block-26', { x: -1000, duration: 1.5 }, '-=0.5')
+    .addLabel("label12")
 
-        .to('.section-invert', { opacity: 0, duration: 0.6 })
-        .set('.section-monic', { zIndex: 22 })
-        .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 } )
-        .addLabel("label15")
+    .set('.section-ways-slider', { zIndex: 20 },)
+    .to('.secondsect-father', { opacity: 0, top: '-100vh', duration: 1.5 })
+    .to('.mother', { top: 0, duration: 1.8 }, '<')
+    .addLabel("label13")
 
-        .to('.section-monic', { opacity: 0, duration: 0.6 })
-        .set('.section-earn', { zIndex: 23 })
-        .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 } )
-        .addLabel("label16")
+    .set('.section-invert', { opacity: 0 })
+    .set('.section-monic', { opacity: 0 })
+    .set('.section-earn', { opacity: 0 })
+    .set('.section-offer', { opacity: 0 })
+    .set('.how-works-section', { opacity: 0 })
+    .set('.marque-glasses', { opacity: 0 })
+    .set('.section-road-map', { opacity: 0 })
+    .set('.time-matters', { opacity: 0 })
+    .set('.sect-mission', { opacity: 0 })
+    .set('.blockchain-section', { opacity: 0 })
+    .set('.section-form ', { opacity: 0 })
+    .to('.section-ways-slider', { opacity: 0, duration: 0.5 },)
+    .set('.section-invert', { zIndex: 21 })
+    .fromTo('.section-invert', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label14")
 
-        .to('.section-earn', { opacity: 0, duration: 0.6 })
-        .set('.section-offer', { zIndex: 24 })
-        .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 } ) 
-        .addLabel("label17")
+    .to('.section-invert', { opacity: 0, duration: 0.6 })
+    .set('.section-monic', { zIndex: 22 })
+    .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label15")
 
-        .to('.section-offer', { opacity: 0, duration: 0.5 })
-        .set('.how-works-section', { zIndex: 25, opacity: 1 })
-        .set('.how-works-rotate-image1', { opacity: 0 })
-        .set('.how-works-rotate-container', { rotation: -40 })
-        .set('.hiw-vis', { x: -200, opacity: 0 })
-        .set('.text-block-38', { opacity: 0, x: -200 })
-        .to('.how-works-rotate-image1', { opacity: 1, duration: 1 })
-        .to('.how-works-rotate-container', { rotation: 0 , duration: 1 }, '<')
-        .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
-        .to('.hiw-vis', { opacity: 1, x: 0, duration: 1 }, '<')
-        .addLabel("label18")
+    .to('.section-monic', { opacity: 0, duration: 0.6 })
+    .set('.section-earn', { zIndex: 23 })
+    .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label16")
 
-        .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
-        .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
-        .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
-        .to('.text-block-51', { opacity: 1, duration: 1 }, '<')
-        .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label19")
+    .to('.section-earn', { opacity: 0, duration: 0.6 })
+    .set('.section-offer', { zIndex: 24 })
+    .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label17")
 
-        .to('.how-works-section', { opacity: 0, duration: 0.6 })
-        .set('.marque-glasses', { zIndex: 26, opacity: 0 })
-        .to('.marque-glasses', { opacity: 1, duration: 1 } ) 
-        .addLabel("label20")
+    .to('.section-offer', { opacity: 0, duration: 0.5 })
+    .set('.how-works-section', { zIndex: 25, opacity: 1 })
+    .set('.how-works-rotate-image1', { opacity: 0 })
+    .set('.how-works-rotate-container', { rotation: -40 })
+    .set('.hiw-vis', { x: -200, opacity: 0 })
+    .set('.text-block-38', { opacity: 0, x: -200 })
+    .to('.how-works-rotate-image1', { opacity: 1, duration: 1 })
+    .to('.how-works-rotate-container', { rotation: 0, duration: 1 }, '<')
+    .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
+    .to('.hiw-vis', { opacity: 1, x: 0, duration: 1 }, '<')
+    .addLabel("label18")
 
-        .to('.marque-glasses', { opacity: 0, duration: 0.5 })
-        .set('.time-matters', { zIndex: 27, opacity: 1 })
-        .to('.blur-2', { x: 300, duration: 1.8, onComplete: function() { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function() { $('.blur-2').removeClass('blur-effect'); } },)
-        .to('.image-53', { x: '30%', y: '-45%', duration: 1.8 }, "<+0.2")
-        .fromTo('.blur-1', {scale: 0.2, opacity: 0}, {opacity: 1, scale: 1, x: -400, duration: 1.5, onComplete: function() { $('.blur-1').addClass('unblur'); }, onReverseComplete: function() { $('.blur-1').removeClass('unblur'); } }, '<+0.2')
-        .fromTo('.earn-title', {x: -400, opacity: 0}, {x: 0, opacity: 1, duration: 1.8}, '<')
-        .addLabel("label21")
+    .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
+    .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
+    .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
+    .to('.text-block-51', { opacity: 1, duration: 1 }, '<')
+    .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label19")
 
-        
-        .to('.blur-1', { opacity: 0, duration: 1.8 })
-        .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
-        //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
-        .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
-        .to('.blur-3', { opacity: 1, duration: 1 })
-        .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
-        .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label22")
+    .to('.how-works-section', { opacity: 0, duration: 0.6 })
+    .set('.marque-glasses', { zIndex: 26, opacity: 0 })
+    .to('.marque-glasses', { opacity: 1, duration: 1 })
+    .addLabel("label20")
 
-        .to('.time-matters', { opacity: 0, duration: 1 })
-        .set('.section-road-map', { zIndex: 28, opacity: 1 })
-        .fromTo('.road-map-slider', {y: 3000, opacity: 0}, {y: 0, opacity: 1, duration: 1.2})
-        .addLabel("label23")
+    .to('.marque-glasses', { opacity: 0, duration: 0.5 })
+    .set('.time-matters', { zIndex: 27, opacity: 1 })
+    .to('.blur-2', { x: 300, duration: 1.8, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } },)
+    .to('.image-53', { x: '30%', y: '-45%', duration: 1.8 }, "<+0.2")
+    .fromTo('.blur-1', { scale: 0.2, opacity: 0 }, { opacity: 1, scale: 1, x: -400, duration: 1.5, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } }, '<+0.2')
+    .fromTo('.earn-title', { x: -400, opacity: 0 }, { x: 0, opacity: 1, duration: 1.8 }, '<')
+    .addLabel("label21")
 
-        
-        .to('.section-road-map', { opacity: 0, duration: 1 })
-        .set('.sect-mission', { zIndex: 29})
-        .to('.sect-mission', {opacity: 1, duration: 1.2 })
-        .addLabel("label24")
 
-        
-        .to('.vis-mis', { opacity: 0, duration: 1 })
-        .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
-        .to('.mis-text-invs', { opacity: 1, duration: 1 })
-        .to('.invis-mis', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label25")
+    .to('.blur-1', { opacity: 0, duration: 1.8 })
+    .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
+    //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
+    .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
+    .to('.blur-3', { opacity: 1, duration: 1 })
+    .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
+    .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label22")
 
-        .to('.sect-mission', { opacity: 0, duration: 1 })
-        .set('.blockchain-section', { zIndex: 30 })
-        .to('.blockchain-section', { opacity: 1, duration: 1.2 })
-        .addLabel("label26")
+    .to('.time-matters', { opacity: 0, duration: 1 })
+    .set('.section-road-map', { zIndex: 28, opacity: 1 })
+    .fromTo('.road-map-slider', { y: 3000, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2 })
+    .addLabel("label23")
 
-        .to('.blockchain-section', { opacity: 0, duration: 1 })
-        .set('.section-form', { zIndex: 31 })
-        .set('.section-form', { opacity: 1, duration: 1.2 })
-        .addLabel("label27")
 
-       
+    .to('.section-road-map', { opacity: 0, duration: 1 })
+    .set('.sect-mission', { zIndex: 29 })
+    .to('.sect-mission', { opacity: 1, duration: 1.2 })
+    .addLabel("label24")
+
+
+    .to('.vis-mis', { opacity: 0, duration: 1 })
+    .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
+    .to('.mis-text-invs', { opacity: 1, duration: 1 })
+    .to('.invis-mis', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label25")
+
+    .to('.sect-mission', { opacity: 0, duration: 1 })
+    .set('.blockchain-section', { zIndex: 30 })
+    .to('.blockchain-section', { opacity: 1, duration: 1.2 })
+    .addLabel("label26")
+
+    .to('.blockchain-section', { opacity: 0, duration: 1 })
+    .set('.section-form', { zIndex: 31 })
+    .set('.section-form', { opacity: 1, duration: 1.2 })
+    .addLabel("label27")
+
+
 
 } else {
-    // Анимация для десктоп, tl2 - таймлайн для экранов
-    tl2.addLabel("start")
-    
-        .to(".image-40", { y: 400, opacity: 0, duration: 1.6 })
-        .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
-        .to(".image-41", { y: 150, x: 300, opacity: 1, duration: 1.5 }, '<')
-        .to(".image-42", { x: -600, opacity: 1, duration: 1.5 }, '<')
-        .to(".image-7", { x: 600, y: -100, duration: 1.2 }, '<')
-        .to('.first-anim-text', { opacity: 0, duration: 1 }, '<0.5')
-        .to('.second-anim-text', { opacity: 1, duration: 1 }, '>')
-        .to(".image-6", { x: -600, y: 0, duration: 1.5 }, "-=2")
-        .addLabel("label1")
-        
-        .to(".text-block-3", { y: -300, opacity: 0, duration: 1 }) // пропадает надпись
-        .to(".image-41", { y: 150, x: -300, opacity: 0, duration: 1 }, '<') // улетают очки
-        .to(".image-42", { x: 0, y: -150, opacity: 0, duration: 1 }, '<') // улетают очки
-        .to(".image-8", { x: 0, opacity: 1, duration: 1 }) // прилетает лого
-        .to(".image-7", { x: 600, y: -600, duration: 2 }, "<") // блики сдвигаются
-        .to(".image-6", { x: -600, y: 200, duration: 2 }, "<") // блики сдвигаются
-        .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1") // нижняя подпись
-        .addLabel("label2")
+  // Анимация для десктоп, tl2 - таймлайн для экранов
+  tl2.addLabel("start")
 
-        .set('.secondsect', { zIndex: 13, x: 2000 })
-        .to('.secondsect', { x: 0, zIndex: 13, duration: 2 }) // выезжает экран справа
-        .set('.screenone', { opacity: 0 })
-        .to('.div-block-7', { opacity: 1, duration: 1, onComplete: function() { vid.play() } }) // проявляется текст, после проявления запускается видос
-        .addLabel("label3")
+    .to(".image-40", { y: 400, opacity: 0, duration: 1.6 })
+    .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
+    .to(".image-41", { y: 150, x: 300, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-42", { x: -600, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-7", { x: 600, y: -100, duration: 1.2 }, '<')
+    .to('.first-anim-text', { opacity: 0, duration: 1 }, '<0.5')
+    .to('.second-anim-text', { opacity: 1, duration: 1 }, '>')
+    .to(".image-6", { x: -600, y: 0, duration: 1.5 }, "-=2")
+    .addLabel("label1")
 
-        .to('.div-block-7', { y: -500, opacity: 0, duration: 1 }) // уходит вверх, исчезая текст
-        .to('.secondsect', { opacity: 0, duration: 1 }) // пропадает видос
-        .set('.section-3', { zIndex: 14 })
-        .to('.visible-title', { opacity: 1, duration: 1.5 }, ) // появляется первый текст у ноута
-        .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
-        .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1") // уменьшается ноут
-        .addLabel("label4")
-        
-        .to('.laptop-int', { opacity: 1, duration: 1.5 }, ) // футер внутри ноута
-        .to('.visible-title', { opacity: 0, duration: 1.5 }, "<")
-        .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
-        .to('.hidden-text1', { opacity: 1, duration: 1.5 }, ) // смена текста
-        .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-        .to('.image-10', { x: '30%', y: '-30%', duration: 3 }, 'label4') // блики
-        .to('.image-11', { x: '-70%', y: '0%', duration: 3 }, '<')
-        .addLabel("label5")
+    .to(".text-block-3", { y: -300, opacity: 0, duration: 1 }) // пропадает надпись
+    .to(".image-41", { y: 150, x: -300, opacity: 0, duration: 1 }, '<') // улетают очки
+    .to(".image-42", { x: 0, y: -150, opacity: 0, duration: 1 }, '<') // улетают очки
+    .to(".image-8", { x: 0, opacity: 1, duration: 1 }) // прилетает лого
+    .to(".image-7", { x: 600, y: -600, duration: 2 }, "<") // блики сдвигаются
+    .to(".image-6", { x: -600, y: 200, duration: 2 }, "<") // блики сдвигаются
+    .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1") // нижняя подпись
+    .addLabel("label2")
 
-        .to('.section-3', { opacity: 0, duration: 1, onComplete: function() { lottieVid.play() }, onReverseComplete: function() { lottieVid.pause() } }, '+=1') // скрываем блок с лаптопом включаем видос
-        .set('.section-4', { zIndex: 15 })
-        .to('.section-4', { opacity: 1, duration: 1 })        
-        .addLabel("label6")
+    .set('.secondsect', { zIndex: 13, x: 2000 })
+    .to('.secondsect', { x: 0, zIndex: 13, duration: 2 }) // выезжает экран справа
+    .set('.screenone', { opacity: 0 })
+    .to('.div-block-7', { opacity: 1, duration: 1, onComplete: function () { vid.play() } }) // проявляется текст, после проявления запускается видос
+    .addLabel("label3")
 
-        .to('.section-4 ', { opacity: 0, duration: 1.6, onComplete: function() { playVid2(); lottieVid.pause() }, onReverseComplete: function() { vid2.pause() } }, ) // скрываем блок прошлого видоса, проигрываем новый
-        .set('.special-sect', { zIndex: 16 })
-        .addLabel("label7")
-        
-        .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function() { vid2.pause() }, onReverseComplete: function() { vid2.play() } }, ) // исчезает старое видео
-        .set('.section-6', { zIndex: 17 }, ) // показываем слой "глаза"
-        .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<') // уменьшаем глаз
-        .from('.text-block-58 ', { scale: 100, y: 300, duration: 1 }, '<')
-        .to('.alantext', { opacity: 1, duration: 1 })
-        .addLabel("label8")
+    .to('.div-block-7', { y: -500, opacity: 0, duration: 1 }) // уходит вверх, исчезая текст
+    .to('.secondsect', { opacity: 0, duration: 1 }) // пропадает видос
+    .set('.section-3', { zIndex: 14 })
+    .to('.visible-title', { opacity: 1, duration: 1.5 },) // появляется первый текст у ноута
+    .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
+    .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1") // уменьшается ноут
+    .addLabel("label4")
 
-        .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.6 }, )
-        .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
-        .to('.image-43', { scale: 0.6, duration: 0.5 }, '<')
-        .to('.text-block-56', { scale: 1, y: 0, duration: 0.5 }, '<' )
-        .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 } )
-        .addLabel("label9")
+    .to('.laptop-int', { opacity: 1, duration: 1.5 },) // футер внутри ноута
+    .to('.visible-title', { opacity: 0, duration: 1.5 }, "<")
+    .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
+    .to('.hidden-text1', { opacity: 1, duration: 1.5 },) // смена текста
+    .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
+    .to('.image-10', { x: '30%', y: '-30%', duration: 3 }, 'label4') // блики
+    .to('.image-11', { x: '-70%', y: '0%', duration: 3 }, '<')
+    .addLabel("label5")
 
-        .to('.section-6', { opacity: 0, duration: 1.5 }, )
-        .set('.marcel-1', { x: -100, opacity: 0 }, '<')
-        .set('.marcel-3', { x: -100, opacity: 0 }, '<')
-        .set('.text-block-16', { x: -100, opacity: 0 }, '<')
-        .set('.section-7', { zIndex: 18 }, )
-        .to('.text-block-16', { x: 0, opacity: 1, duration: 1 }, )
-        .to('.image-19', { opacity: 1, duration: 1 }, '<')
-        .to('.marcel-1', { x: 0, opacity: 1, duration: 1 }, '<')
-        .to('.marcel-3', { x: 0, opacity: 1, duration: 1 }, '<')
-        .addLabel("label10")
+    .to('.section-3', { opacity: 0, duration: 1, onComplete: function () { lottieVid.play() }, onReverseComplete: function () { lottieVid.pause() } }, '+=1') // скрываем блок с лаптопом включаем видос
+    .set('.section-4', { zIndex: 15 })
+    .to('.section-4', { opacity: 1, duration: 1 })
+    .addLabel("label6")
 
-        .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
-        .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
-        .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
-        .to('.marcel-2', { opacity: 1, duration: 1 }, '-=0.5')
-        .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
-        .to('.image-19', { opacity: 0, duration: 1 }, '<')
-        .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
-        .to('.change-text', { opacity: 0, duration: 1 }, '<')
-        .to('.give', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label11")
+    .to('.section-4 ', { opacity: 0, duration: 1.6, onComplete: function () { playVid2(); lottieVid.pause() }, onReverseComplete: function () { vid2.pause() } },) // скрываем блок прошлого видоса, проигрываем новый
+    .set('.special-sect', { zIndex: 16 })
+    .addLabel("label7")
 
-        .set('.white-section', { zIndex: 19, x: 2000 },)
-        .to('.white-section', { x: 0, duration: 2 })
-        .to('.text-block-26', { x: -1550, duration: 1.5 }, '-=0.5')
-        .addLabel("label12")
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },) // исчезает старое видео
+    .set('.section-6', { zIndex: 17 },) // показываем слой "глаза"
+    .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<') // уменьшаем глаз
+    .from('.text-block-58 ', { scale: 100, y: 300, duration: 1 }, '<')
+    .to('.alantext', { opacity: 1, duration: 1 })
+    .addLabel("label8")
+
+    .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.6 },)
+    .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
+    .to('.image-43', { scale: 0.6, duration: 0.5 }, '<')
+    .to('.text-block-56', { scale: 1, y: 0, duration: 0.5 }, '<')
+    .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
+    .addLabel("label9")
+
+    .to('.section-6', { opacity: 0, duration: 1.5 },)
+    .set('.marcel-1', { x: -100, opacity: 0 }, '<')
+    .set('.marcel-3', { x: -100, opacity: 0 }, '<')
+    .set('.text-block-16', { x: -100, opacity: 0 }, '<')
+    .set('.section-7', { zIndex: 18 },)
+    .to('.text-block-16', { x: 0, opacity: 1, duration: 1 },)
+    .to('.image-19', { opacity: 1, duration: 1 }, '<')
+    .to('.marcel-1', { x: 0, opacity: 1, duration: 1 }, '<')
+    .to('.marcel-3', { x: 0, opacity: 1, duration: 1 }, '<')
+    .addLabel("label10")
+
+    .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
+    .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
+    .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
+    .to('.marcel-2', { opacity: 1, duration: 1 }, '-=0.5')
+    .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
+    .to('.image-19', { opacity: 0, duration: 1 }, '<')
+    .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
+    .to('.change-text', { opacity: 0, duration: 1 }, '<')
+    .to('.give', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label11")
+
+    .set('.white-section', { zIndex: 19, x: 2000 },)
+    .to('.white-section', { x: 0, duration: 2 })
+    .to('.text-block-26', { x: -1550, duration: 1.5 }, '-=0.5')
+    .addLabel("label12")
 
 
-        .set('.section-ways-slider', { zIndex: 20 }, )
-        .to('.secondsect-father', {opacity: 0, top: '-100vh', duration: 1.5} )
-        .to('.mother', {top: 0, duration: 1.8}, '<' )
-        .addLabel("label13")
+    .set('.section-ways-slider', { zIndex: 20 },)
+    .to('.secondsect-father', { opacity: 0, top: '-100vh', duration: 1.5 })
+    .to('.mother', { top: 0, duration: 1.8 }, '<')
+    .addLabel("label13")
 
-        .set('.section-invert', {opacity: 0})
-        .set('.section-monic', {opacity: 0})
-        .set('.section-earn', {opacity: 0})
-        .set('.section-offer', {opacity: 0})
-        .set('.how-works-section', {opacity: 0})
-        .set('.marque-glasses', {opacity: 0})
-        .set('.section-road-map', {opacity: 0})
-        .set('.time-matters', {opacity: 0})
-        .set('.sect-mission', {opacity: 0})
-        .set('.blockchain-section', {opacity: 0})
-        .set('.section-form ', {opacity: 0})
-        .to('.section-ways-slider .wrapper', { opacity: 0, duration: 1 }, )
-        .set('.section-invert', { zIndex: 21 })
-        .fromTo('.section-invert', { opacity: 0 }, { opacity: 1, duration: 1 } )
-        .addLabel("label14")
+    .set('.section-invert', { opacity: 0 })
+    .set('.section-monic', { opacity: 0 })
+    .set('.section-earn', { opacity: 0 })
+    .set('.section-offer', { opacity: 0 })
+    .set('.how-works-section', { opacity: 0 })
+    .set('.marque-glasses', { opacity: 0 })
+    .set('.section-road-map', { opacity: 0 })
+    .set('.time-matters', { opacity: 0 })
+    .set('.sect-mission', { opacity: 0 })
+    .set('.blockchain-section', { opacity: 0 })
+    .set('.section-form ', { opacity: 0 })
+    .to('.section-ways-slider .wrapper', { opacity: 0, duration: 1 },)
+    .set('.section-invert', { zIndex: 21 })
+    .fromTo('.section-invert', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label14")
 
-        .to('.section-invert', { opacity: 0, duration: 0.6 })
-        .set('.section-monic', { zIndex: 22 })
-        .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 } )
-        .addLabel("label15")
+    .to('.section-invert', { opacity: 0, duration: 0.6 })
+    .set('.section-monic', { zIndex: 22 })
+    .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label15")
 
-        .to('.section-monic', { opacity: 0, duration: 0.6 })
-        .set('.section-earn', { zIndex: 23 })
-        .fromTo('.section-earn', { opacity: 0}, { opacity: 1, duration: 1 } )
-        .addLabel("label16")
+    .to('.section-monic', { opacity: 0, duration: 0.6 })
+    .set('.section-earn', { zIndex: 23 })
+    .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label16")
 
-        .to('.section-earn', { opacity: 0, duration: 0.6 })
-        .set('.section-offer', { zIndex: 24 })
-        .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 } ) 
-        .addLabel("label17")
+    .to('.section-earn', { opacity: 0, duration: 0.6 })
+    .set('.section-offer', { zIndex: 24 })
+    .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label17")
 
-        .to('.section-offer', { opacity: 0, duration: 0.6 })
-        .set('.how-works-section', { zIndex: 25, opacity: 1 })
-        .set('.how-works-rotate-image1', { opacity: 0 })
-        .set('.how-works-rotate-container', { rotation: -40 })
-        .set('.hiw-vis', { x: -200, opacity: 0 })
-        .set('.text-block-38', { opacity: 0, x: -200 })
-        .to('.how-works-rotate-image1', { opacity: 1, duration: 1 })
-        .to('.how-works-rotate-container', { rotation: 0 , duration: 1 }, '<')
-        .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
-        .to('.hiw-vis', { opacity: 1, x: 0, duration: 1 }, '<')
-        .addLabel("label18")
+    .to('.section-offer', { opacity: 0, duration: 0.6 })
+    .set('.how-works-section', { zIndex: 25, opacity: 1 })
+    .set('.how-works-rotate-image1', { opacity: 0 })
+    .set('.how-works-rotate-container', { rotation: -40 })
+    .set('.hiw-vis', { x: -200, opacity: 0 })
+    .set('.text-block-38', { opacity: 0, x: -200 })
+    .to('.how-works-rotate-image1', { opacity: 1, duration: 1 })
+    .to('.how-works-rotate-container', { rotation: 0, duration: 1 }, '<')
+    .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
+    .to('.hiw-vis', { opacity: 1, x: 0, duration: 1 }, '<')
+    .addLabel("label18")
 
-        .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
-        .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
-        .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
-        .to('.text-block-51', { opacity: 1, duration: 1 }, '<')
-        .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
-        .addLabel("label19")
+    .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
+    .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
+    .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
+    .to('.text-block-51', { opacity: 1, duration: 1 }, '<')
+    .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label19")
 
-        .to('.how-works-section', { opacity: 0, duration: 0.6 })
-        .set('.marque-glasses', { zIndex: 26 })
-        .fromTo('.marque-glasses', { opacity: 0 }, { opacity: 1, duration: 1 } ) 
-        .addLabel("label20")
+    .to('.how-works-section', { opacity: 0, duration: 0.6 })
+    .set('.marque-glasses', { zIndex: 26 })
+    .fromTo('.marque-glasses', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .addLabel("label20")
 
-        .to('.marque-glasses', { opacity: 0, duration: 0.8 })
-        .set('.time-matters', { zIndex: 27, opacity: 1 })
-        .to('.blur-2', { x: 300, duration: 1.8, onComplete: function() { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function() { $('.blur-2').removeClass('blur-effect'); } },)
-        .to('.image-53', { x: '30%', y: '-45%', duration: 1.8 }, "<+0.2")
-        .fromTo('.blur-1', {scale: 0.2, opacity: 0}, {opacity: 1, scale: 1, x: -400, duration: 1.5, onComplete: function() { $('.blur-1').addClass('unblur'); }, onReverseComplete: function() { $('.blur-1').removeClass('unblur'); } }, '<+0.2')
-        .fromTo('.earn-title', {x: -400, opacity: 0}, {x: 0, opacity: 1, duration: 1.8}, '<')
-        .addLabel("label21")
+    .to('.marque-glasses', { opacity: 0, duration: 0.8 })
+    .set('.time-matters', { zIndex: 27, opacity: 1 })
+    .to('.blur-2', { x: 300, duration: 1.8, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } },)
+    .to('.image-53', { x: '30%', y: '-45%', duration: 1.8 }, "<+0.2")
+    .fromTo('.blur-1', { scale: 0.2, opacity: 0 }, { opacity: 1, scale: 1, x: -400, duration: 1.5, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } }, '<+0.2')
+    .fromTo('.earn-title', { x: -400, opacity: 0 }, { x: 0, opacity: 1, duration: 1.8 }, '<')
+    .addLabel("label21")
 
-        
-        .to('.blur-1', { opacity: 0, duration: 1.8 })
-        .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
-        //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
-        .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
-        .to('.blur-3', { opacity: 1, duration: 1.8 })
-        .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
-        .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
-        .addLabel("label22")
 
-        .to('.time-matters', { opacity: 0, duration: 0.6 })
-        .set('.section-road-map', { zIndex: 28, opacity: 1 })
-        .fromTo('.road-map-slider', {y: 3000, opacity: 0}, {y: 0, opacity: 1, duration: 1.2})
-        .addLabel("label23")
+    .to('.blur-1', { opacity: 0, duration: 1.8 })
+    .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
+    //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
+    .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
+    .to('.blur-3', { opacity: 1, duration: 1.8 })
+    .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
+    .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
+    .addLabel("label22")
 
-        
-        .to('.section-road-map', { opacity: 0, duration: 0.6 })
-        .set('.sect-mission', { zIndex: 29 })
-        .to('.sect-mission', {  opacity: 1, duration: 1 })
-        .addLabel("label24")
+    .to('.time-matters', { opacity: 0, duration: 0.6 })
+    .set('.section-road-map', { zIndex: 28, opacity: 1 })
+    .fromTo('.road-map-slider', { y: 3000, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2 })
+    .addLabel("label23")
 
-        
-        .to('.vis-mis', { opacity: 0, duration: 1 })
-        .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
-        .to('.mis-text-invs', { opacity: 1, duration: 1 })
-        .addLabel("label25")
 
-        .to('.sect-mission', { opacity: 0, duration: 1 })
-        .set('.blockchain-section', { zIndex: 30 })
-        .to('.blockchain-section', { opacity: 1, duration: 1 }, )
-        .addLabel("label26")
+    .to('.section-road-map', { opacity: 0, duration: 0.6 })
+    .set('.sect-mission', { zIndex: 29 })
+    .to('.sect-mission', { opacity: 1, duration: 1 })
+    .addLabel("label24")
 
-        .to('.blockchain-section', { opacity: 0, duration: 1 })
-        .set('.section-form', { zIndex: 31 })
-        .to('.section-form', { opacity: 1, duration: 1 })
-        .addLabel("label27")
+
+    .to('.vis-mis', { opacity: 0, duration: 1 })
+    .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
+    .to('.mis-text-invs', { opacity: 1, duration: 1 })
+    .addLabel("label25")
+
+    .to('.sect-mission', { opacity: 0, duration: 1 })
+    .set('.blockchain-section', { zIndex: 30 })
+    .to('.blockchain-section', { opacity: 1, duration: 1 },)
+    .addLabel("label26")
+
+    .to('.blockchain-section', { opacity: 0, duration: 1 })
+    .set('.section-form', { zIndex: 31 })
+    .to('.section-form', { opacity: 1, duration: 1 })
+    .addLabel("label27")
 
 }
 
 
 
 
-$('.mac-svg').on('click', function() {
-    $('.ded').toggleClass('show')
-    $('.add-paxer').toggleClass('hide')
+$('.mac-svg').on('click', function () {
+  $('.ded').toggleClass('show')
+  $('.add-paxer').toggleClass('hide')
 })
 
 
 
 
 
-$('.video-mutte-play').on('click', function() {
-    vid2.muted = false
-    console.log('play audio')
-    $(this).addClass('hide')
-    $(this).removeClass('show')
-    $('.video-mutte-stop').removeClass('hide')
-    $('.video-mutte-stop').addClass('show')
+$('.video-mutte-play').on('click', function () {
+  vid2.muted = false
+  console.log('play audio')
+  $(this).addClass('hide')
+  $(this).removeClass('show')
+  $('.video-mutte-stop').removeClass('hide')
+  $('.video-mutte-stop').addClass('show')
 })
 
 
-$('.video-mutte-stop').on('click', function() {
-    vid2.muted = true
-    $(this).addClass('hide')
-    $(this).removeClass('show')
-    $('.video-mutte-play').removeClass('hide')
-    $('.video-mutte-play').addClass('show')
+$('.video-mutte-stop').on('click', function () {
+  vid2.muted = true
+  $(this).addClass('hide')
+  $(this).removeClass('show')
+  $('.video-mutte-play').removeClass('hide')
+  $('.video-mutte-play').addClass('show')
 })
 
 
@@ -1137,7 +1147,7 @@ $('.vehicles').html(`<a href="#" class="hover-icon">
 
 
 if (window.matchMedia("(min-width: 1200px)").matches) {
-    $('.mac-svg').html(` <svg width="589" height="535" viewBox="0 0 589 535" fill="none" xmlns="http://www.w3.org/2000/svg">
+  $('.mac-svg').html(` <svg width="589" height="535" viewBox="0 0 589 535" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g class="add-paxer">
     <path  d="M141.576 310L148.718 289.264H151.526L158.669 310H156.466L149.683 290.445H150.518L143.779 310H141.576ZM144.758 304.974V302.987H155.472V304.974H144.758ZM167.303 310.432C165.853 310.432 164.615 310.072 163.587 309.352C162.56 308.622 161.773 307.638 161.226 306.4C160.679 305.162 160.405 303.765 160.405 302.21C160.405 300.664 160.674 299.272 161.211 298.034C161.759 296.795 162.541 295.816 163.559 295.096C164.576 294.376 165.795 294.016 167.216 294.016C168.675 294.016 169.904 294.371 170.903 295.082C171.901 295.792 172.655 296.766 173.163 298.005C173.682 299.234 173.941 300.635 173.941 302.21C173.941 303.755 173.687 305.152 173.178 306.4C172.669 307.638 171.92 308.622 170.931 309.352C169.943 310.072 168.733 310.432 167.303 310.432ZM167.519 308.459C168.623 308.459 169.535 308.19 170.255 307.653C170.975 307.115 171.512 306.376 171.867 305.435C172.223 304.485 172.4 303.41 172.4 302.21C172.4 300.99 172.223 299.915 171.867 298.984C171.512 298.043 170.975 297.309 170.255 296.781C169.544 296.253 168.647 295.989 167.562 295.989C166.448 295.989 165.527 296.262 164.797 296.81C164.067 297.357 163.525 298.101 163.17 299.042C162.824 299.982 162.651 301.038 162.651 302.21C162.651 303.39 162.829 304.456 163.184 305.406C163.549 306.347 164.091 307.091 164.811 307.638C165.531 308.186 166.434 308.459 167.519 308.459ZM172.4 310V298.293H172.17V289.264H174.301V310H172.4ZM184.375 310.432C182.925 310.432 181.687 310.072 180.659 309.352C179.632 308.622 178.845 307.638 178.298 306.4C177.751 305.162 177.477 303.765 177.477 302.21C177.477 300.664 177.746 299.272 178.283 298.034C178.831 296.795 179.613 295.816 180.631 295.096C181.648 294.376 182.867 294.016 184.288 294.016C185.747 294.016 186.976 294.371 187.975 295.082C188.973 295.792 189.727 296.766 190.235 298.005C190.754 299.234 191.013 300.635 191.013 302.21C191.013 303.755 190.759 305.152 190.25 306.4C189.741 307.638 188.992 308.622 188.003 309.352C187.015 310.072 185.805 310.432 184.375 310.432ZM184.591 308.459C185.695 308.459 186.607 308.19 187.327 307.653C188.047 307.115 188.584 306.376 188.939 305.435C189.295 304.485 189.472 303.41 189.472 302.21C189.472 300.99 189.295 299.915 188.939 298.984C188.584 298.043 188.047 297.309 187.327 296.781C186.616 296.253 185.719 295.989 184.634 295.989C183.52 295.989 182.599 296.262 181.869 296.81C181.139 297.357 180.597 298.101 180.242 299.042C179.896 299.982 179.723 301.038 179.723 302.21C179.723 303.39 179.901 304.456 180.256 305.406C180.621 306.347 181.163 307.091 181.883 307.638C182.603 308.186 183.506 308.459 184.591 308.459ZM189.472 310V298.293H189.242V289.264H191.373V310H189.472ZM150 347.432C148.57 347.432 147.36 347.072 146.371 346.352C145.382 345.622 144.634 344.638 144.125 343.4C143.616 342.152 143.362 340.755 143.362 339.21C143.362 337.635 143.616 336.234 144.125 335.005C144.643 333.766 145.402 332.792 146.4 332.082C147.398 331.371 148.627 331.016 150.086 331.016C151.507 331.016 152.726 331.376 153.744 332.096C154.762 332.816 155.539 333.795 156.077 335.034C156.624 336.272 156.898 337.664 156.898 339.21C156.898 340.765 156.624 342.162 156.077 343.4C155.53 344.638 154.742 345.622 153.715 346.352C152.688 347.072 151.45 347.432 150 347.432ZM143.002 353.912V331.448H144.902V343.155H145.133V353.912H143.002ZM149.784 345.459C151.869 345.459 151.771 345.186 152.491 344.638C153.211 344.091 153.749 343.347 154.104 342.406C154.469 341.456 154.651 340.39 154.651 339.21C154.651 338.038 154.474 336.982 154.118 336.042C153.763 335.101 153.221 334.357 152.491 333.81C151.771 333.262 151.854 332.989 149.741 332.989C148.656 332.989 147.754 333.253 147.034 333.781C146.323 334.309 145.79 335.043 145.435 335.984C145.08 336.915 144.902 337.99 144.902 339.21C144.902 340.41 145.08 341.485 145.435 342.435C145.79 343.376 146.328 344.115 147.048 344.653C147.768 345.19 148.68 345.459 149.784 345.459ZM164.509 347.432C163.338 347.432 162.354 347.221 161.557 346.798C160.77 346.376 160.18 345.814 159.786 345.114C159.393 344.413 159.196 343.65 159.196 342.824C159.196 341.979 159.364 341.259 159.7 340.664C160.045 340.059 160.511 339.565 161.097 339.181C161.692 338.797 162.378 338.504 163.156 338.302C163.943 338.11 164.812 337.942 165.762 337.798C166.722 337.645 167.658 337.515 168.57 337.41C169.492 337.294 170.298 337.184 170.989 337.078L170.24 337.539C170.269 336.003 169.972 334.866 169.348 334.126C168.724 333.387 167.639 333.018 166.093 333.018C165.028 333.018 164.125 333.258 163.386 333.738C162.657 334.218 162.143 334.976 161.845 336.013L159.786 335.408C160.141 334.016 161.857 332.936 161.932 332.168C163.007 331.4 164.404 331.016 166.122 331.016C167.543 331.016 168.748 331.285 169.736 331.822C170.735 332.35 171.44 333.118 171.853 334.126C172.045 334.578 172.17 335.082 172.228 335.638C172.285 336.195 172.314 336.762 172.314 337.338V347H170.428V343.098L170.975 343.328C170.447 344.662 169.626 345.68 168.512 346.381C167.399 347.082 166.065 347.432 164.509 347.432ZM164.754 345.603C165.743 345.603 166.607 345.426 167.346 345.07C168.085 344.715 168.68 344.23 169.132 343.616C169.583 342.992 169.876 342.291 170.01 341.514C170.125 341.014 170.188 340.467 170.197 339.872C170.207 339.267 170.212 338.816 170.212 338.518L171.018 338.936C170.298 339.032 169.516 339.128 168.671 339.224C167.836 339.32 167.01 339.43 166.194 339.555C165.388 339.68 164.658 339.829 164.005 340.002C163.564 340.126 163.137 340.304 162.724 340.534C162.311 340.755 161.97 341.053 161.701 341.427C161.442 341.802 161.313 342.267 161.313 342.824C161.313 343.275 161.423 343.712 161.644 344.134C161.874 344.557 162.239 344.907 162.738 345.186C163.247 345.464 163.919 345.603 164.754 345.603ZM174.335 347L180.412 339.138L174.464 331.448H176.999L181.65 337.51L186.258 331.448H188.792L182.845 339.138L188.936 347H186.388L181.65 340.765L176.884 347H174.335ZM197.269 347.432C195.752 347.432 194.437 347.096 193.323 346.424C192.219 345.752 191.36 344.806 190.745 343.587C190.131 342.368 189.824 340.938 189.824 339.296C189.824 337.597 190.126 336.128 190.731 334.89C191.336 333.651 192.185 332.696 193.28 332.024C194.384 331.352 195.685 331.016 197.182 331.016C198.718 331.016 200.029 331.371 201.113 332.082C202.198 332.782 203.019 333.79 203.576 335.106C204.133 336.421 204.387 337.99 204.339 339.814H202.179V339.066C202.141 337.05 201.704 335.528 201.869 334.501C200.043 333.474 198.833 332.96 197.24 332.96C195.569 332.96 194.288 333.502 193.395 334.587C192.512 335.672 192.07 337.218 192.07 339.224C192.07 341.182 192.512 342.704 193.395 343.789C194.288 344.864 195.55 345.402 197.182 345.402C198.296 345.402 199.265 345.147 200.091 344.638C200.926 344.12 201.584 343.376 202.064 342.406L204.037 343.17C203.422 344.523 202.515 345.574 201.315 346.323C200.125 347.062 198.776 347.432 197.269 347.432ZM191.321 339.814V338.043H203.201V339.814H191.321ZM207.535 347V331.448H209.435V335.192L209.061 334.702C209.234 334.242 209.459 333.819 209.738 333.435C210.016 333.042 210.319 332.72 210.645 332.47C211.048 332.115 211.519 331.846 212.056 331.664C212.594 331.472 213.136 331.362 213.683 331.333C214.231 331.294 214.73 331.333 215.181 331.448V333.435C214.615 333.291 213.995 333.258 213.323 333.334C212.651 333.411 212.032 333.68 211.466 334.141C210.947 334.544 210.559 335.029 210.299 335.595C210.04 336.152 209.867 336.747 209.781 337.381C209.695 338.005 209.651 338.624 209.651 339.238V347H207.535Z" fill="white"/>
    <path d="M242 317.867H233.975V325H232.025V317.867H224V316.133H232.025V309H233.975V316.133H242V317.867Z" fill="#F48B44"/>
@@ -1472,7 +1482,7 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
 </defs>
 </svg>`)
 } else if (window.matchMedia("(max-width: 1200px)").matches) {
-    $('.mac-svg').html(`<svg width="290" height="193" viewBox="0 0 290 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+  $('.mac-svg').html(`<svg width="290" height="193" viewBox="0 0 290 193" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M231.082 123.752C231.082 123.752 231.272 118.988 228.89 115.942C226.508 112.896 224.366 110.627 223.403 110.202C222.441 109.777 221.053 109.506 220.357 108.439C219.661 107.373 218.328 105.556 216.99 105.393C215.657 105.235 212.557 104.697 212.557 104.697L210.315 102.401V101.172C210.315 101.172 211.702 101.281 212.236 100.851C212.769 100.422 214.428 96.2052 213.998 94.9759C213.569 93.7466 211.861 93.0008 211.861 93.0008C211.861 93.0008 208.977 84.242 205.077 82.5879C201.177 80.9338 188.68 84.0839 188.68 84.0839C188.68 84.0839 187.772 93.376 187.717 93.2178C187.663 93.0596 184.78 92.4178 184.78 92.4178C184.78 92.4178 184.78 97.4932 185.901 98.1847C187.021 98.8807 187.609 98.9847 187.609 98.9847C187.609 98.9847 187.13 101.764 187.821 104.164C188.513 106.564 190.172 109.022 190.172 109.022C190.172 109.022 181.413 112.173 179.65 113.881C177.888 115.589 171.746 123.706 169.771 127.873C167.796 132.04 167.208 133.907 165.979 134.87C164.749 135.832 162.987 137.007 162.453 137.541C161.92 138.074 161.17 139.249 160.37 141.12C159.57 142.991 155.561 147.795 155.561 147.795L175.162 149.449C175.162 149.449 180.129 145.978 181.462 144.537C182.796 143.095 183.334 142.132 183.334 142.132L186.217 149.449C186.217 149.449 162.77 149.02 159.511 148.649C156.253 148.274 150.911 147.366 148.561 146.995C146.21 146.62 134.568 144.112 133.072 144.591C131.576 145.07 127.997 146.783 126.984 148.008C125.968 149.237 124.422 153.029 125.222 155.004C126.022 156.979 129.493 158.638 130.134 158.796C130.776 158.954 133.447 159.758 134.085 159.917C134.722 160.075 136.005 160.504 136.914 160.025C137.822 159.546 138.997 158.742 138.997 158.742C138.997 158.742 140.972 158.208 142.468 157.779C143.964 157.35 149.573 156.979 150.585 156.925C151.602 156.87 156.248 158.154 156.248 158.154C156.248 158.154 155.231 159.971 155.502 160.717C155.769 161.462 158.653 164.987 158.653 164.987L161.857 164.667L162.874 166L166.132 165.091L167.466 165.837L169.707 165.516C169.707 165.516 191.817 161.137 195.396 157.824C198.976 154.511 224.506 137.902 224.506 137.902L231.082 123.752Z" fill="#161616"/>
   <path d="M213.13 105.089C213.13 105.089 218.404 105.699 219.742 107.475C221.08 109.251 222.413 110.015 223.936 110.715C225.459 111.416 230.928 117.133 230.928 119.425" stroke="white" stroke-width="0.594249" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M178.779 163.177C178.779 163.177 152.044 156.685 149.988 156.934C147.932 157.178 145.342 157.372 144.361 157.372C143.38 157.372 141.378 158.547 140.009 158.597C138.639 158.647 138.639 158.647 138.639 158.647C138.639 158.647 137.32 160.165 135.706 160.21C134.093 160.26 132.773 159.184 132.773 159.184C132.773 159.184 130.572 159.234 129.591 158.497C128.615 157.765 128.81 156.197 128.81 156.197C128.81 156.197 126.952 155.56 126.509 154.828C126.071 154.095 126.265 152.577 126.265 152.577C126.265 152.577 125.533 149.594 125.922 148.907C126.315 148.22 131.987 144.65 133.6 144.605C135.214 144.555 141.478 146.168 144.949 146.611C148.42 147.05 154.634 147.737 160.112 148.469C165.589 149.201 180.264 149.644 184.079 149.594C187.893 149.544 190.243 148.762 190.243 148.762" stroke="white" stroke-width="0.594249" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>

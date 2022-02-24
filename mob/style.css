@@ -2607,6 +2607,17 @@ textarea.w-input, textarea.w-select {
   bottom: 0%;
 }
 
+.now-you-can-bg{
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120%;
+}
+
 .text-block-6 {
   margin-bottom: auto;
   font-family: 'Agrandir grand 800', sans-serif;
@@ -2667,8 +2678,8 @@ textarea.w-input, textarea.w-select {
 .section-4 {
   position: relative;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#161616), to(#161616));
-  background-image: linear-gradient(180deg, #161616, #161616);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(180deg, #fff, #fff);
   color: #333;
 }
 
@@ -6740,6 +6751,25 @@ textarea.w-input, textarea.w-select {
   top: 150px;
 }
 
+.div-for-relative-position{
+  position: relative;
+  top: 32.3vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.glasses-in-now-you-can{
+  margin-bottom: 10.6vh;
+}
+
+.text-blocks-holder{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .link-3 {
   color: #fff;
 }
@@ -8312,16 +8342,16 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-14.hidden-title {
-    font-size: 22px;
+    font-size: 32px;
     line-height: 130%;
     text-align: center;
   }
 
   .text-block-15.hidden-subtitle {
-    max-width: 150px;
+    max-width: 90%;
     margin-right: auto;
     margin-left: auto;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 130%;
     text-align: center;
   }
