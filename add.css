@@ -2370,6 +2370,11 @@ a.my-underline:hover {
     background-repeat: no-repeat;
     background-position: right;
 }
+.bg-earn-learn-evolve2 {
+    background-image: url('./images/bg-13.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
 .earn-content-2 {
     position: relative;
 }
@@ -2484,6 +2489,9 @@ a.my-underline:hover {
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
+ }
+ .text-block-29 {
+    width: 101%;
  }
 
 
