@@ -1896,10 +1896,6 @@ body {
     max-width: 100%;
 }
 
-.section-invert .image-26 {
-    top: 11px;
-}
-
 .unblur {
     filter: blur(0);
 }
@@ -2420,7 +2416,7 @@ a.my-underline:hover {
     background-repeat: no-repeat;
 }*/
 .bg-pax-creator {
-    background-image: url('./images/bg-paxcreator.png');
+    background-image: url("./images/gradient-for-invents.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -2489,9 +2485,10 @@ a.my-underline:hover {
 }
 
 .image-26 {
-    width: 25%;
     margin-right: 0;
     max-width: 90%;
+    height: 100%;
+    z-index: 1;
 }
 
 .text-block-33.gradient-text.new.font-size-120 {
@@ -2499,7 +2496,8 @@ a.my-underline:hover {
 }
 
 .image-27 {
-    width: 25%;
+    height: 100%;
+    z-index: 1;
 }
 
 .youtube-icon {
