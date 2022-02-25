@@ -83,6 +83,9 @@ opacity: 0;
     margin-right: 10px;
     margin-left: 10px;
 }
+.society-link:last-child {
+    margin-left: 0;
+}
 
 
 .society-link .w-embed {
