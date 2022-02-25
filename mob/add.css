@@ -2394,7 +2394,11 @@ a.my-underline:hover {
 .society-container {
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.society-container div:first-child {
+    margin-bottom: 30px;
 }
 
 .content-bottom.flex-end {
