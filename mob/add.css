@@ -2542,7 +2542,11 @@ a.my-underline:hover {
 }
 
 .image-7 {
-    top: 0%;
+    top: 150%;
+}
+.image-6 {
+    top: -1000px;
+    right: -65%;
 }
 
 .image-10 {
@@ -2581,7 +2585,7 @@ min-height: auto;
     justify-content: end;
 }
 .what-do-laptop {
-    margin: 6% 0;
+    margin: 11% 0;
 }
 
 
@@ -3680,7 +3684,7 @@ min-height: auto;
         display: block !important;
     }
     .text-block-59.marcel-4.hide-for-desk {
-        top: 73%;
+        top: 65%;
         text-align: center;
     }
     #time .text-go br:nth-child(1), #time .text-go br:nth-child(2), #time .text-go br:nth-child(3), #time .text-go br:nth-child(6) {
