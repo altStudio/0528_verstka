@@ -13,6 +13,14 @@ body {
   margin: 0
 }
 
+.not-rendering {
+  visibility: hidden;
+}
+
+.zero-opacity{
+  opacity: 0;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block
 }
@@ -1239,7 +1247,7 @@ textarea.w-input, textarea.w-select {
   z-index: -100;
 }
 
-#embed-video-1, #embed-video-2{
+#embed-video-1, #embed-video-2 {
   height: 50%;
 }
 
@@ -2607,7 +2615,7 @@ textarea.w-input, textarea.w-select {
   bottom: 0%;
 }
 
-.now-you-can-bg{
+.now-you-can-bg {
   position: absolute;
   z-index: -2;
   left: 0;
@@ -3134,7 +3142,7 @@ textarea.w-input, textarea.w-select {
   align-items: flex-end;
 }
 
-.being-beholder-text{
+.being-beholder-text {
   top: calc(180px + 1.6vh);
 }
 
@@ -3636,21 +3644,18 @@ textarea.w-input, textarea.w-select {
 }
 
 .text-block-14.hidden-title {
-  display: none;
   text-align: center;
 }
 
 .text-block-15 {
   font-family: Manrope, sans-serif;
   color: #fff;
-  font-size: 24px;
+  font-size: 128%;
   line-height: 31px;
   font-weight: 300;
   text-align: center;
-}
-
-.text-block-15.hidden-subtitle {
-  display: none;
+  position: relative;
+  top: 75px;
 }
 
 .well-glasses {
@@ -3856,7 +3861,7 @@ textarea.w-input, textarea.w-select {
   margin-top: 105px;
 }
 
-.how-works-bottom-text-invents{
+.how-works-bottom-text-invents {
   margin-top: 0;
 }
 
@@ -3872,8 +3877,9 @@ textarea.w-input, textarea.w-select {
   opacity: 1;
   line-height: 130%;
 }
-.padding-x__30{
-   padding: 0px 30px;
+
+.padding-x__30 {
+  padding: 0px 30px;
 }
 
 
@@ -4951,35 +4957,40 @@ textarea.w-input, textarea.w-select {
   -o-object-fit: fill;
   object-fit: fill;
 }
-  .image-camera5-left{
-    display: inline-block!important;
-    top: 10%;
-    position: absolute;
-    right: calc(0% - 15px);
-  }
-  .image-camera5-right{
-    display: inline-block!important;
-    left: calc(0% - 15px);
-    top: 42%;
-    position: absolute;
-  }
-  .text-circle-container__right-text {
-    position: absolute;
-    display: inline-block!important;
-    width: calc(100% - 175px);
-    top: 47%;
-    right: 0;
-  }
-  .text-circle-container__left-text {
-    position: absolute;
-    display: inline-block!important;
-    left: 0;
-    width: calc(100% - 193px);
-    top: 24%;
-  }
-  .section.marque-glasses._wf-section.wf-section .text-circle-container{
-    display: none;
-  }
+
+.image-camera5-left {
+  display: inline-block !important;
+  top: 10%;
+  position: absolute;
+  right: calc(0% - 15px);
+}
+
+.image-camera5-right {
+  display: inline-block !important;
+  left: calc(0% - 15px);
+  top: 42%;
+  position: absolute;
+}
+
+.text-circle-container__right-text {
+  position: absolute;
+  display: inline-block !important;
+  width: calc(100% - 175px);
+  top: 47%;
+  right: 0;
+}
+
+.text-circle-container__left-text {
+  position: absolute;
+  display: inline-block !important;
+  left: 0;
+  width: calc(100% - 193px);
+  top: 24%;
+}
+
+.section.marque-glasses._wf-section.wf-section .text-circle-container {
+  display: none;
+}
 
 
 .text-circle.text-circle-right {
@@ -5178,7 +5189,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .section-11.section-form._wf-section.section.contact-section {
-  background-image: url("./images/61f7c5ae529721858c9d513f_Group_2046_(1).png");
+  background-image: url("./images/61f7c5ae529721858c9d513f_Group_2.png");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -6776,7 +6787,7 @@ textarea.w-input, textarea.w-select {
   margin: auto;
 }
 
-.div-for-absolute-position-fix-height{
+.div-for-absolute-position-fix-height {
   height: 26vh;
 }
 
@@ -6788,7 +6799,7 @@ textarea.w-input, textarea.w-select {
   top: 150px;
 }
 
-.div-for-relative-position{
+.div-for-relative-position {
   position: relative;
   top: 32.3vh;
   display: flex;
@@ -6797,14 +6808,16 @@ textarea.w-input, textarea.w-select {
   align-items: center;
 }
 
-.glasses-in-now-you-can{
+.glasses-in-now-you-can {
   margin-bottom: 10.6vh;
+  min-width: 100%;
 }
 
-.text-blocks-holder{
+.text-blocks-holder {
   display: flex;
   flex-flow: column;
   align-items: center;
+  width: 100%;
 }
 
 .link-3 {
@@ -8038,10 +8051,6 @@ textarea.w-input, textarea.w-select {
     display: none;
   }
 
-  .mother {
-    display: block;
-  }
-
   .div-block-28 {
     width: 100%;
     min-height: 100vh;
@@ -8374,8 +8383,10 @@ textarea.w-input, textarea.w-select {
     margin-bottom: 15px;
     font-family: 'Agrandir grand 800', sans-serif;
     color: #fff;
-    font-size: 72px;
+    font-size: 228%;
     line-height: 108px;
+    position: relative;
+    top: 75px;
   }
 
   .text-block-14.hidden-title {
@@ -9235,6 +9246,7 @@ textarea.w-input, textarea.w-select {
     width: auto;
     height: 105px;
     max-width: 150%;
+    display: flex;
   }
 
   .text-block-56 {

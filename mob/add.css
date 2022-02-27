@@ -2550,7 +2550,7 @@ a.my-underline:hover {
 
 .image-6 {
     top: -1000px;
-    right: -65%;
+    right: -75%;
 }
 
 .image-10 {
@@ -3600,13 +3600,13 @@ a.my-underline:hover {
     }
 
     .section-10.section-monic {
-        background-image: url("./images/61f7c5ae529721858c9d513f_Group_2046_(1).png");
+        background-image: url("./images/61f7c5ae529721858c9d513f_Group_2.png");
         background-position: 50% 50%;
         background-size: cover;
     }
 
     .section-10.section.section-earn {
-        background-image: url("./images/how-to-earn-bg.png");
+        background-image: url("./images/bg-how-to-earn.png");
         background-position: right -1500px center;
         background-repeat: no-repeat;
     }
