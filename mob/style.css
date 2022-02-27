@@ -3879,7 +3879,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .padding-x__30 {
-  padding: 0px 30px;
+  padding: 0px 5%;
 }
 
 
@@ -4378,6 +4378,7 @@ textarea.w-input, textarea.w-select {
   line-height: 130%;
   font-weight: 400;
   text-align: center;
+  margin-top: 3px;
 }
 
 .text-span-9 {
