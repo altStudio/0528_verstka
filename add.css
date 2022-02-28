@@ -1366,6 +1366,7 @@ body {
 
 .mission-title {
     position: relative;
+    top: -3vh;
 }
 
 .mission-title_invis {
@@ -1553,10 +1554,6 @@ body {
 
 .how-works-section {
     /* display: none; */
-}
-
-.text-block-37 {
-    display: none;
 }
 
 .mother {
@@ -2429,9 +2426,6 @@ a.my-underline:hover {
 .text-block-33.gradient-text.new.font-size-120 {
     margin-right: 0;
 }
-.image-27 {
-    width: 25%;
-}
 .youtube-icon {
     width: 46px;
     height: 46px;
@@ -2450,10 +2444,14 @@ a.my-underline:hover {
     font-size: 22px;
 }
 .section-earn .text-block-33.gradient-text.new.font-size-120 {
-    font-size: 85px;
+    font-size: 120px;
     margin: 0 auto;
     display: block;
     align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 50%;
 }
 .hide-for-desk {
     display: none !important;

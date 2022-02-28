@@ -423,6 +423,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.section-offer', { opacity: 1, duration: 0.5 },)
     .addLabel("label17")
 
+    .to('.vis-mis', { opacity: 0, duration: 1 })
     .to('.section-offer', { opacity: 0, duration: 1 },)
     .set('.section-offer', { visibility: 'hidden' })
     .set('.text-block-38', { opacity: 0, x: -200 })
@@ -472,6 +473,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     // .to(slickScroll, {x:-3000, duration: 3})
     .to('.section-road-map', { opacity: 0, duration: 1 },)
     .set('.section-road-map', { visibility: 'hidden' })
+    .set('vis-mis', { opacity: 1 })
     .set('.sect-mission', { zIndex: 29 },)
     .to('.sect-mission', { opacity: 1, duration: 0.6 },)
     .addLabel("label24")
@@ -479,7 +481,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.vis-mis', { opacity: 0, duration: 1.6 })
     .to('.mis-text-vis', { opacity: 0, duration: 1.6 }, '<')
     .to('.mis-text-invs', { opacity: 1, duration: 1.6 })
-    .to('.invis-mis', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-title-border', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-title', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-subtitle', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-subtitle-2', { opacity: 1, duration: 1.6 }, '<')
     .addLabel("label25")
 
     .to('.sect-mission', { opacity: 0, duration: 1 },)
@@ -629,6 +634,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
     .addLabel("label17")
 
+    .set('.vis-mis', { opacity: 0, duration: 1 })
     .to('.section-offer', { opacity: 0, duration: 0.5 })
     .set('.how-works-section', { zIndex: 25, opacity: 1, top: 0 })
     .set('.how-works-rotate-image1', { opacity: 0 })
@@ -678,6 +684,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
 
     .to('.section-road-map', { opacity: 0, duration: 1 })
+    .set('.vis-mis', { opacity: 1 })
     .set('.sect-mission', { zIndex: 29, top: 0 })
     .to('.sect-mission', { opacity: 1, duration: 1.2 })
     .addLabel("label24")
@@ -686,7 +693,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.vis-mis', { opacity: 0, duration: 1 })
     .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
     .to('.mis-text-invs', { opacity: 1, duration: 1 })
-    .to('.invis-mis', { opacity: 1, duration: 1 }, '<')
+    .to('.invis-title-border', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-title', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-subtitle', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-subtitle-2', { opacity: 1, duration: 1.6 }, '<')
     .addLabel("label25")
 
     .to('.sect-mission', { opacity: 0, duration: 1 })
@@ -834,6 +844,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
     .addLabel("label17")
 
+    .set('.vis-mis', { opacity: 0, duration: 1 })
     .to('.section-offer', { opacity: 0, duration: 0.6 })
     .set('.how-works-section', { zIndex: 25, opacity: 1, top: 0 })
     .set('.how-works-rotate-image1', { opacity: 0 })
@@ -883,6 +894,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
 
     .to('.section-road-map', { opacity: 0, duration: 0.6 })
+    .set('.vis-mis', { opacity: 1 })
     .set('.sect-mission', { zIndex: 29, top: 0 })
     .to('.sect-mission', { opacity: 1, duration: 1 })
     .addLabel("label24")
@@ -891,6 +903,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.vis-mis', { opacity: 0, duration: 1 })
     .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
     .to('.mis-text-invs', { opacity: 1, duration: 1 })
+    .to('.invis-title-border', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-title', { opacity: 1, zIndex: 30, duration: 1.6 }, '<')
+    .to('.invis-subtitle', { opacity: 1, duration: 1.6 }, '<')
+    .to('.invis-subtitle-2', { opacity: 1, duration: 1.6 }, '<')
     .addLabel("label25")
 
     .to('.sect-mission', { opacity: 0, duration: 1 })
