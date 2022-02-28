@@ -140,7 +140,9 @@ Pace.once("done", function () {
 `);
 });
 
-
+const parachuteVid = document.querySelector('#embed-video-5');
+parachuteVid.muted = true;
+parachuteVid.pause();
 
 function playVid2() {
   vid2.play()
@@ -279,7 +281,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to(".image-40", { y: -360, duration: 1.5 })
     .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
-    .to(".image-41", { y: 0, x: 300, opacity: 1, duration: 1.5 }, '<')
     .to(".image-42", { x: -400, opacity: 1, duration: 1.5 }, '<')
     .to(".image-7", { x: -60, y: -100, duration: 1.5 }, '<')
     .to(".image-6", { x: 150, duration: 1.5 }, '<')
@@ -289,22 +290,23 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
     .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
-    .to(".image-41", { y: 0, x: 1000, opacity: 1, duration: 1 }, '<')
-    .to(".image-42", { x: -2000, opacity: 1, duration: 1 }, '<')
+    .to(".image-42", { x: -2000, duration: 1 }, '<')
     .to(".image-7", { x: -100, y: -500, duration: 1.5 }, '<')
-    .to(".image-6", { x: -100, y: 900, width: '250vw', height:'700px', duration: 1.5 }, '<')
+    .to(".image-6", { x: -100, y: 900, width: '250vw', height: '700px', duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, x: 1000 },)
+    .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible' })
+    .set('.section-3', { visibility: 'visible' })
     .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
-    .to('.screenone', { opacity: 0 })
+    .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
     .addLabel("label3")
 
     .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
     .to('.secondsect', { opacity: 0, duration: 1 })
+    .set('.secondsect', { visibility: 'hidden' })
     .set('.section-3', { zIndex: 14 })
     .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
     .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
@@ -320,32 +322,35 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
 
-    .set('.text-block-14', { opacity: 1, 'display': 'block', y: '75px', 'font-size': '228%' })             //появляется заголовок
-    .set('.text-block-15', { opacity: 1, 'display': 'block', y: '75px', 'font-size': '128%' })             //появляется заголовок
-    .to('.section-3', { opacity: 0, duration: 1 },)                                   //исчезает предыдущий слайд
-    .to('.mobile-section-title-item-hidden', { y: '-75px', duration: 1 }, '<')        //поднимается текст пред. слайда
-    .to('.hidden-text-2', { y: '-75px', duration: 1 }, '<')                           //поднимается текст пред. слайда
-    .to('.text-block-14', { opacity: 1, y: '0px', duration: 1 }, '<')                 //поднимается новый текст на место пред.
-    .to('.text-block-15', { opacity: 1, y: '0px', duration: 1 }, '<')                 //поднимается новый текст на место пред.
-    .set('.section-4', { zIndex: 15 })                                                //новый слайд выходит на первый план
-    .set('.glasses-in-now-you-can', { 'min-width': '100%' })                          //задается ширина очков
+    .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() } })
+    .set('.text-block-14', { 'font-size': '228%' })
+    .set('.text-block-15', { 'font-size': '128%' })
+    .to('.section-3', { opacity: 0, duration: 1 })//исчезает предыдущий слайд
+    .to('.mobile-section-title-item-hidden', { y: '-75px', duration: 1 }, '<')//поднимается текст пред. слайда
+    .to('.hidden-text-2', { y: '-75px', duration: 1 }, '<')//поднимается текст пред. слайда
+    .to('.text-block-14', { y: '-75px', duration: 1 }, '<')//поднимается новый текст на место пред.
+    .to('.text-block-15', { y: '-75px', duration: 1 }, '<')//поднимается новый текст на место пред.
+    .set('.section-4', { zIndex: 15 })//новый слайд выходит на первый план
+    .set('.section-3', { visibility: 'hidden' })//убирается пред. див
     .addLabel("label6")
 
-    .to('.glasses-in-now-you-can', { 'min-width': '365%', duration: 1 },)             //очки расширяются
-    .to('.glasses-in-now-you-can', { y: '-140px', duration: 1 }, '<')                 //очки поднимаются, иначе при расширении их верхняя точка останется на месте
-    .to('.text-blocks-holder', { y: '-185px', duration: 1 }, '<')                     //текст сопротивляется выталкиванию от очков
-    .addLabel('youCan-VideoLabel')
+    .to('.glasses-in-now-you-can', { 'min-width': '365%', y: '-140px', duration: 1 },) //очки расширяются
+    .to('.text-blocks-holder', { y: '-185px', duration: 1 }, '<')//текст сопротивляется выталкиванию от очков
+    .addLabel('youCan-videoLabel')
 
+    .set('.special-sect', { visibility: 'visible' })
     .to('.section-4 ', { opacity: 0, duration: 1, onComplete: function () { playVid2() }, onReverseComplete: function () { vid2.pause() } },) //запускается видик, ну и стопится тоже
-    .to('.text-block-14', { 'font-size': '150%', y: '-50px', duration: 1 }, '<') // уменьшается и поднимается текст
-    .to('.text-block-15', { 'font-size': '66%', y: '-50px', duration: 1 }, '<')  // уменьшается и поднимается текст
+    .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1 }, '<') // уменьшается и поднимается текст
+    .to('.text-block-15', { 'font-size': '66%', y: '-100px', duration: 1 }, '<')  // уменьшается и поднимается текст
     .set('.special-sect', { zIndex: 16 })
+    .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")
 
-    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, },)
-    .set('.section-6', { zIndex: 17 },)
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },)
+    .set('.section-6', { zIndex: 17, visibility: 'visible' },)
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
     .from('.text-block-58 ', { scale: 100, y: 300, duration: 1.5 }, '<')
+    .set('special-sect', { visibility: 'hidden' })
     .to('.alantext', { opacity: 1, duration: 0.5 })
     .addLabel("label8")
 
@@ -356,6 +361,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
     .addLabel("label9")
 
+    .set('.section-7', { visibility: 'visible' })
     .set('.layers-1', { x: 300 },)
     .set('.layers-2', { y: -300 },)
     .set('.layers-3', { x: -300, y: -100 },)
@@ -364,6 +370,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.text-block-16', { x: -100, opacity: 0 })
     .to('.section-6', { opacity: 0, duration: 0.5 },)
     .set('.section-7', { zIndex: 18 })
+    .set('.section-6', { visibility: 'hidden' })
     .to('.layers-1', { x: 0, duration: 0.8 })
     .to('.layers-2', { y: 0, duration: 0.8 }, '<')
     .to('.layers-3', { x: 0, y: 0, duration: 0.8 }, '<')
@@ -383,35 +390,24 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.give', { opacity: 1, duration: 1 }, '<')
     .addLabel("label11")
 
-    .set('.white-section', { zIndex: 19, x: 2000 })
+    .set('.white-section', { zIndex: 19, x: 2000, visibility: 'visible' })
     .to('.white-section', { x: 0, zIndex: 19, duration: 1 })
     .to('.text-block-26', { x: -415, duration: 1 })
+    .set('.section-7', { visibility: 'hidden' })
     .addLabel("label12")
 
+    .set('#howto', { visibility: 'visible' })
     .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
     .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
-    .set('.h2', { visibility: 'hidden' })
-    .set('.text-block-18', { visibility: 'hidden' })
+    .set('.section-7', { opacity: 0, visibility: 'hidden' })
     .set('.section-ways-slider', { zIndex: 20 },)
-    .to('.mother', { top: 0, duration: 1.2 })
-    .to('.secondsect-father', { opacity: 0, duration: 0.6 }, '<')
-    .set('.secondsect-father', { visibility: 'hidden' })
+    .to('#howto', { y: '-100vh', duration: 1.2, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })
+    .to('.white-section', { opacity: 0, duration: 0.6 }, '<')
     .addLabel("label13")
 
-    .set('.section-invert', { opacity: 0 })
-    .set('.section-monic', { opacity: 0 })
-    .set('.section-earn', { opacity: 0 })
-    .set('.section-offer', { opacity: 0 })
-    .set('.how-works-section', { opacity: 0 })
-    .set('.marque-glasses', { opacity: 0 })
-    .set('.section-road-map', { opacity: 0 })
-    .set('.time-matters', { opacity: 0 })
-    .set('.sect-mission', { opacity: 0 })
-    .set('.blockchain-section', { opacity: 0 })
-    .set('.section-form ', { opacity: 0 })
-    .set('.section-invert', { opacity: 0 })
-    .to('.section-ways-slider', { opacity: 0, duration: 1 },)
-    .set('.section-invert', { zIndex: 21 })
+    .to('.section-ways-slider', { opacity: 0, duration: 1 })
+    .set('.section-ways-slider', { visibility: 'hidden' })
+    .set('.section-invert', { zIndex: 21, visibility: 'visible' })
     .to('.section-invert', { opacity: 1, duration: 1 })
     .addLabel("label14")
 
@@ -419,21 +415,21 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(invertText2, { opacity: 0, duration: 1 }, "<")
     .to('.section-invert', { opacity: 0, duration: 1 },)
     .set('.section-invert', { visibility: 'hidden' })
-    .set('.section-monic', { zIndex: 22 },)
+    .set('.section-monic', { zIndex: 22, visibility: 'visible'})
     .to('.section-monic', { opacity: 1, duration: 0.5 },)
     .addLabel("label15")
 
     .to('.section-monic', { opacity: 0, duration: 1 },)
     .set('.section-monic', { visibility: 'hidden' })
-    .set('.section-earn', { zIndex: 23 },)
-    .to('.section-earn', { opacity: 1, duration: 0.5 },)
+    .set('.section-earn', { zIndex: 23, visibility: 'visible' })
+    .to('.section-earn', { opacity: 1, duration: 0.5 })
     .addLabel("label16")
 
     .to(earnText, { opacity: 0, duration: 1.2 })
     .to(earnText2, { opacity: 0, duration: 1.2 }, "<")
     .to('.section-earn', { opacity: 0, duration: 1 })
     .set('.section-earn', { visibility: 'hidden' })
-    .set('.section-offer', { zIndex: 24 },)
+    .set('.section-offer', { zIndex: 24, visibility: 'visible' },)
     .to('.section-offer', { opacity: 1, duration: 0.5 },)
     .addLabel("label17")
 
@@ -441,7 +437,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-offer', { visibility: 'hidden' })
     .set('.text-block-38', { opacity: 0, x: -200 })
     .set('.hiw-img1, .image-52', { opacity: 0 })
-    .set('.how-works-section', { zIndex: 25 },)
+    .set('.how-works-section', { zIndex: 25, visibility: 'visible' })
     .to('.how-works-section', { opacity: 1, duration: 0.5 },)
     .to('.hiw-img1', { opacity: 1, duration: 1 }, '<')
     .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
@@ -457,14 +453,15 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.hiw-unvis', { opacity: 1, duration: 1.8 }, '<')
     .addLabel("label19")
 
-    .to('.how-works-section', { opacity: 0, duration: 1 },)
-    .set('.marque-glasses', { zIndex: 26 },)
-    .to('.marque-glasses', { opacity: 1, duration: 1 },)
+    .to('.how-works-section', { opacity: 0, duration: 1 })
+    .set('.how-works-section', {visibility: 'hidden'})
+    .set('.marque-glasses', { zIndex: 26, visibility: 'visible' },)
+    .to('.marque-glasses', { opacity: 1, duration: 1 })
     .addLabel("label20")
 
     .to('.marque-glasses', { opacity: 0, duration: 1 },)
     .set('.marque-glasses', { visibility: 'hidden' })
-    .to('.time-matters', { zIndex: 27 },)
+    .to('.time-matters', { zIndex: 27, visibility: 'visible' },)
     .to('.time-matters', { opacity: 1, duration: 1 },)
     .to('.blur-1', { x: -100, duration: 1.2, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
     .to('.blur-2', { x: 100, duration: 1.2, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
@@ -479,14 +476,14 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.time-matters', { opacity: 0, duration: 1 },)
     .set('.time-matters', { visibility: 'hidden' })
-    .set('.section-road-map', { zIndex: 28 },)
+    .set('.section-road-map', { zIndex: 28, visibility: 'visible' },)
     .to('.section-road-map', { opacity: 1, duration: 0.6 },)
     .addLabel("label23")
 
     // .to(slickScroll, {x:-3000, duration: 3})
     .to('.section-road-map', { opacity: 0, duration: 1 },)
     .set('.section-road-map', { visibility: 'hidden' })
-    .set('.sect-mission', { zIndex: 29 },)
+    .set('.sect-mission', { zIndex: 29, visibility: 'visible' },)
     .to('.sect-mission', { opacity: 1, duration: 0.6 },)
     .addLabel("label24")
 
@@ -498,13 +495,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.sect-mission', { opacity: 0, duration: 1 },)
     .set('.sect-mission', { visibility: 'hidden' })
-    .set('.blockchain-section', { zIndex: 30 },)
+    .set('.blockchain-section', { zIndex: 30, visibility: 'visible' },)
     .to('.blockchain-section', { opacity: 1, duration: 0.6 },)
     .addLabel("label26")
 
     .to('.blockchain-section', { opacity: 0, duration: 1 },)
     .set('.blockchain-section', { visibility: 'hidden' })
-    .set('.section-form', { zIndex: 31 },)
+    .set('.section-form', { zIndex: 31, visibility: 'visible' },)
     .to('.section-form', { opacity: 1, duration: 0.6 },)
     .addLabel("label27")
 
