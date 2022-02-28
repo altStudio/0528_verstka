@@ -1365,8 +1365,8 @@ body {
 }
 
 .mission-title {
-    position: relative;
-    top: -3vh;
+    position: absolute;
+    top: 50px;
 }
 
 .mission-title_invis {
@@ -1583,6 +1583,9 @@ body {
 @media screen and (min-width: 1440px) {
     .image-7 {
         top: 10%;
+    }
+    .div-block-27{
+        margin-top: 10vh;
     }
 }
 
@@ -2503,6 +2506,8 @@ a.my-underline:hover {
        59 = 50
        24 = 18
         */
+
+    
     .image-8.first-screen-logo {
         margin-bottom: 80px;
         max-width: 400px;
@@ -2518,7 +2523,16 @@ a.my-underline:hover {
         max-width: 100%;
     }
     
+    .image-26{
+        top: 12px;
+        max-height: 39vh;
+        width: 50%;
+        right: 5vw;
+    }
 
+    .div-block-27{
+        justify-content: space-around;
+    }
 
     .text-block-3 {
         max-width: 1200px;
@@ -2927,11 +2941,10 @@ a.my-underline:hover {
         height: 330px;
         object-fit: contain;
         top: -10px;
-        left: -75px;
+        left: -45px;
     }
     .section-earn .div-block-27 {
         margin-bottom: 0;
-        margin-top: 30px;
     }
     
     .text-block-34.not-border-bottom.intro-black.no-wrap.right {
@@ -3525,9 +3538,6 @@ a.my-underline:hover {
     }
     .section-earn .text-block-33.gradient-text.new.font-size-120 {
         font-size: 42px;
-    }
-    .div-block-27 {
-        margin-top: 58px;
     }
     .image-27.right-im.person-img {
         width: 50%;

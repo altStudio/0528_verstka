@@ -4485,6 +4485,20 @@ textarea.w-input, textarea.w-select {
   display: none;
 }
 
+svg {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+}
+
+.contact-svg{
+  position: inherit;
+}
+
+.contact-half-section{
+  display: flex;
+}
+
 .heading-3 {
   margin-top: 0px;
   margin-bottom: 0px;
