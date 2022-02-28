@@ -2531,9 +2531,6 @@
   max-height: 540px;
   max-width: 400px;
   margin-left: 0px;
-  -webkit-transform: translate(-35%, 0px);
-  -ms-transform: translate(-35%, 0px);
-  transform: translate(-35%, 0px);
 }
 
 .image-27.right-im {
@@ -2617,7 +2614,6 @@
 }
 
 .text-block-37 {
-  display: none;
   background-image: linear-gradient(40deg, #9564d3 18%, #c7a4f4 21%, #b46487 32%, #d27a68 39%, #ffae44 53%, #fe7624 74%, #ff8a2a 88%, #ff4d1b);
   font-family: 'Agrandir grand 800', sans-serif;
   color: #fff;
@@ -2860,7 +2856,6 @@
   position: absolute;
   width: 287px;
   height: 195px;
-  margin-top: -95px;
 }
 
 .left-padding-column {
@@ -3443,6 +3438,12 @@
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.m-auto{
+  margin-right: auto;
+  width: 50%;
+  margin-top: 0;
 }
 
 .menu-footer {
@@ -4293,8 +4294,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: auto;
+  margin-top: 15vh;
   margin-bottom: auto;
+  justify-content: space-between;
 }
 
 .flex-column {
@@ -5188,7 +5190,7 @@
 
   .text-block-33.gradient-text {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, #955385), color-stop(30%, #5d77c6), color-stop(62%, #d66b57), color-stop(78%, #ffeaa4), to(#ffc969));
-    background-image: linear-gradient(90deg, #955385 15%, #5d77c6 30%, #d66b57 62%, #ffeaa4 78%, #ffc969);
+    background-image: linear-gradient(42deg, #955385 15%, #5d77c6 50%, #d66b57 60%, #ffeaa4 80%, #ffc969);
     color: #fff;
     -webkit-background-clip: text;
     background-clip: text;
@@ -5267,10 +5269,6 @@
     object-fit: contain;
   }
 
-  .image-27.right-im.person-img {
-    margin-top: 12px;
-  }
-
   .section-10 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#161616), to(#161616));
     background-image: linear-gradient(180deg, #161616, #161616);
@@ -5304,7 +5302,6 @@
   .image-33 {
     width: 287px;
     height: 195px;
-    margin-top: -95px;
     margin-left: 0px;
     -o-object-fit: contain;
     object-fit: contain;

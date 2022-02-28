@@ -1,12 +1,16 @@
 <?php
-  require_once "./libs/Mobile_Detect.php";
+require_once "./libs/Mobile_Detect.php";
 
-  $detect = new Mobile_Detect();
+$detect = new Mobile_Detect();
 
-  if ($detect->isMobile()) {
+if ($detect->isMobile()) {
     header('Location: /mob/'); // страница для переадресации
     exit(0);
-  }
+}
+else {
+    header('Location: /index.html'); // страница для переадресации
+    exit(0);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -195,12 +199,12 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=1.9">
+    <link rel="stylesheet" href="./add.css?ver=1.7">
 </head>
 
 <body class="body">
     <script src="./lottie.js"></script>
-    <script src="./pace.min.js?ver=1.2"></script>
+    <script src="./pace.min.js"></script>
     <script type="text/javascript">
         window.paceOptions = {
             ajax: false, // disabled
@@ -862,7 +866,9 @@
                                 Streamer</span></div>
                         <div class="div-block-27"><img
                                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAzMjAgNDIwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjMuNTUyIDMxLjg4YTIuODY1IDIuODY1IDAgMSAxLTEuOTc5LTUuMzc2IDIuODY1IDIuODY1IDAgMCAxIDEuOTggNS4zNzZ6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTYzLjQzMyAyOC45MjNsMTIuMjQxIDguNTItNS4yNDQgNC4zMDgtNy43MTgtMTEuNzEuNzItMS4xMTh6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMTYxNjE2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTM5LjQ2IDI0LjU4OFMxOTcuNDAxLjc5NyAyMDUuNTI3IDMuNDUzYzguMTMgMi42NjgtMTY1LjMxIDE3Ny43NjItMTY1LjMxIDE3Ny43NjJzLTkuODM2LTcuNjQ5LjExOC0zNi44NjVDNTAuMjkgMTE1LjEzNSA2MC4zMiA5Ny41NjcgNjAuMzIgOTcuNTY3czIyLjc5Ny00Ni4yMjcgMzQuNzg1LTU0Ljg1YzExLjk4OC04LjYyIDQ0LjM1NS0xOC4xMyA0NC4zNTUtMTguMTN6Ii8+PHBhdGggZmlsbD0iIzE2MTYxNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTM4LjMgMjUuMjQzcy0zMi42NzQtMTYuMDctNjQuOTUyIDkuMTYzQzQxLjA4IDU5LjYzNiA1OS4yMiA5OS4yODIgNTkuMjIgOTkuMjgyczcuMDU2LTE0LjgzMyAyOC44NTUtMzguMjMyQzExNC4xNTEgMzMuMDYyIDEzOC4zIDI1LjI0MyAxMzguMyAyNS4yNDN6Ii8+PHBhdGggZmlsbD0iIzE2MTYxNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTM5LjU3OCAxODIuMjUxYzguOTE1IDcuNjY5IDU2LjgxOS0yMi44MzIgMTA0LjM3My03MS4yNTIgNDcuNTczLTQ4LjQ0IDc0LjgzMi05Ni41NCA2NS40MDgtMTA2LjM4Ny04LjEyNS04LjQ5NS01OS40MjQgMTkuNzk2LTEwNi4zMDEgNjguODgzLTUwLjAzNCA1Mi4zOTgtNzQuMTU2IDk5LjU4NC02My40OCAxMDguNzU2eiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNjcuMTkgNjAuNDc1cy0xOS41NDYgNS4yNi00My43OTMgMzIuNjUxYy0yMi40MTUgMjUuMzE4LTI2LjIxIDQzLjc5Ni0yNi4yMSA0My43OTZzMTQuNDQtMS45OTQgMjMuNjY2LTUuNjQ0YzIzLjc3OS05LjQxMyA0MC41OC0yMy4zNDIgNDYuMzY4LTU1LjAzIDEuOTU3LTEwLjcxOC0uMDMxLTE1Ljc3My0uMDMxLTE1Ljc3M3oiLz48cGF0aCBzdHJva2U9IiNGNDhCNDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xNzIgMTE1LjA1MWw5OS42NDIgMzQuNzU1TTI1Mi4zMzUgMjEwLjkzOGwtODguMzMzLTc4LjgwNE0xNDIuMDAyIDE0OS4yODNsMTc2LjA1IDI1My45ODVNMTI0LjA1MSAxNTVsMTkuNzY1IDE4OS4zNDIiLz48L3N2Zz4="
-                                alt="" class="image-26" />
+                                alt="" class="image-26" style="-webkit-transform: translate(-10%, -5%);
+                                -ms-transform: translate(-100%, -5%);
+                                transform: translate(-10%, -5%)" />
                             <div class="text-block-33 gradient-text new font-size-120">Earn<br />Learn<br />Impress
                             </div>
                             <img src="./images/boy-with-glasses.svg" loading="lazy" alt=""
@@ -874,8 +880,9 @@
                             </div>
                         </div>
                         <div class="content-bottom flex-end w-row">
-                            <div class="how-works-bottom-text w-col w-col-10">
-                                <div class="text-go center-text _w-960">Traveller, local geek or science prodigy --
+                            <div class="how-works-bottom-text w-col w-col-10" style="width: 100%;">
+                                <div class="text-go center-text _w-960 m-auto">Traveller, local geek or science prodigy
+                                    --
                                     whoever
                                     you are, MetaPax awaits. Millions of people around the globe <span
                                         class="text-span-11">are waiting to explore</span> your talents and deep dive in
@@ -883,7 +890,7 @@
                                     be
                                     suprised by how much you could benefit from it.</div>
                             </div>
-                            <div class="column-2 pagin pagin-revert w-col w-col-2">
+                            <div class="column-2 pagin pagin-revert w-col w-col-2" style="position: absolute;">
                                 <div class="text-block-34">04<span class="text-span-8 subpagin-black">/10</span></div>
                                 <div class="text-block-34 not-border-bottom intro-black">MetaPax <br />streamer</div>
                             </div>
@@ -1250,10 +1257,10 @@
                                     <div class="text-block-37 mission-title vis-mis">Technology <br />of
                                         dissolving<br />the
                                         borders</div>
-                                    <div class="border-text invis-mis"><span class="text-span-11">More than
+                                    <div class="border-text invis-mis invis-title-border"><span class="text-span-11">More than
                                             platform.</span>
                                     </div>
-                                    <div class="text-block-37 mission-title invis-mis">It&#x27;s a new<br />way to
+                                    <div class="text-block-37 mission-title invis-mis invis-title">It&#x27;s a new<br />way to
                                         life,<br />leisure<br />and work</div>
                                 </div>
                                 <div class="padding-right-column w-col w-col-5">
@@ -1276,13 +1283,13 @@
                                         In a blink of an eye you can 'teleport' yourself wherever you want and interact
                                         with
                                         the world through someone else’s eyes. Future has come.</div>
-                                    <div class="border-text invis-mis"><span class="text-span-11">MetaPax is a
+                                    <div class="border-text invis-mis invis-subtitle"><span class="text-span-11">MetaPax is a
                                             future</span>
                                     </div>
                                 </div>
                                 <div class="not-padding-col w-col w-col-2">
                                     <div class="border-text vis-mis"><span class="text-span-11">Our mission</span></div>
-                                    <div class="border-text invis-mis"><span class="text-span-11">True time
+                                    <div class="border-text invis-mis invis-subtitle-2"><span class="text-span-11">True time
                                             disruption.</span></div>
                                     <div class="mission-text mis-text-vis mission-sto">Inspire people to interact with
                                         each
@@ -1353,22 +1360,34 @@
                         </div>
                         <div class="society-container">
                             <a href="http://t.me/metapax" target="_blank" class="society-link w-inline-block">
-                                <div class="w-embed"><svg width="71" height="100%" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M35.6837 0.160254C26.4276 0.204478 17.5653 4.00007 11.0354 10.7167C4.50556 17.4334 0.839743 26.5244 0.839844 36.001C0.839844 45.5066 4.5281 54.6229 11.0932 61.3443C17.6584 68.0658 26.5626 71.8418 35.8471 71.8418C45.1316 71.8418 54.0359 68.0658 60.601 61.3443C67.1661 54.6229 70.8544 45.5066 70.8544 36.001C70.8544 26.4955 67.1661 17.3792 60.601 10.6578C54.0359 3.93633 45.1316 0.160254 35.8471 0.160254C35.7927 0.160124 35.7382 0.160124 35.6837 0.160254ZM50.1592 21.7364C50.451 21.7304 51.0957 21.8051 51.5158 22.1546C51.7949 22.4027 51.9729 22.7491 52.0146 23.1252C52.0613 23.403 52.1197 24.0392 52.073 24.535C51.5479 30.2038 49.2666 43.9547 48.1055 50.3015C47.6154 52.9896 46.6498 53.8886 45.7133 53.9752C43.6829 54.1693 42.1397 52.6013 40.1705 51.2812C37.0899 49.2114 35.3483 47.9241 32.3581 45.905C28.9011 43.5754 31.1416 42.2911 33.1107 40.2004C33.6271 39.6508 42.5831 31.3089 42.7581 30.5532C42.7786 30.4577 42.799 30.1052 42.5948 29.9201C42.3906 29.7349 42.0872 29.7976 41.8684 29.8484C41.5591 29.9201 36.6377 33.2532 27.104 39.839C25.7038 40.8246 24.4406 41.3025 23.3058 41.2726C22.0572 41.2487 19.6533 40.5528 17.865 39.9585C15.6713 39.2267 13.9296 38.8414 14.0813 37.6019C14.1601 36.9568 15.0295 36.2967 16.6865 35.6217C26.8911 31.0699 33.6942 28.0683 37.1015 26.6197C46.8219 22.4801 48.8436 21.7603 50.1592 21.7364Z" fill="white" />
+                                <div class="w-embed"><svg width="71" height="100%" viewBox="0 0 71 72" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M35.6837 0.160254C26.4276 0.204478 17.5653 4.00007 11.0354 10.7167C4.50556 17.4334 0.839743 26.5244 0.839844 36.001C0.839844 45.5066 4.5281 54.6229 11.0932 61.3443C17.6584 68.0658 26.5626 71.8418 35.8471 71.8418C45.1316 71.8418 54.0359 68.0658 60.601 61.3443C67.1661 54.6229 70.8544 45.5066 70.8544 36.001C70.8544 26.4955 67.1661 17.3792 60.601 10.6578C54.0359 3.93633 45.1316 0.160254 35.8471 0.160254C35.7927 0.160124 35.7382 0.160124 35.6837 0.160254ZM50.1592 21.7364C50.451 21.7304 51.0957 21.8051 51.5158 22.1546C51.7949 22.4027 51.9729 22.7491 52.0146 23.1252C52.0613 23.403 52.1197 24.0392 52.073 24.535C51.5479 30.2038 49.2666 43.9547 48.1055 50.3015C47.6154 52.9896 46.6498 53.8886 45.7133 53.9752C43.6829 54.1693 42.1397 52.6013 40.1705 51.2812C37.0899 49.2114 35.3483 47.9241 32.3581 45.905C28.9011 43.5754 31.1416 42.2911 33.1107 40.2004C33.6271 39.6508 42.5831 31.3089 42.7581 30.5532C42.7786 30.4577 42.799 30.1052 42.5948 29.9201C42.3906 29.7349 42.0872 29.7976 41.8684 29.8484C41.5591 29.9201 36.6377 33.2532 27.104 39.839C25.7038 40.8246 24.4406 41.3025 23.3058 41.2726C22.0572 41.2487 19.6533 40.5528 17.865 39.9585C15.6713 39.2267 13.9296 38.8414 14.0813 37.6019C14.1601 36.9568 15.0295 36.2967 16.6865 35.6217C26.8911 31.0699 33.6942 28.0683 37.1015 26.6197C46.8219 22.4801 48.8436 21.7603 50.1592 21.7364Z"
+                                            fill="white" />
                                     </svg></div>
                             </a>
-                            <a href="http://instagram.com/metapax.io/" target="_blank" class="society-link w-inline-block">
-                                <div class="html-embed-6 w-embed"><svg width="61" height="100%" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M30.4399 0.617188C22.2511 0.617188 21.2287 0.654364 18.0134 0.795634C14.8032 0.94434 12.6178 1.4425 10.6962 2.1786C8.71432 2.937 7.03133 3.95563 5.35588 5.60874C3.68043 7.26185 2.64552 8.91992 1.87938 10.8779C1.13334 12.7739 0.625937 14.9301 0.477733 18.0975C0.327018 21.2699 0.296875 22.2786 0.296875 30.3583C0.296875 38.438 0.334554 39.4467 0.477733 42.6191C0.628448 45.7841 1.13334 47.9428 1.87938 49.8388C2.64803 51.7918 3.68043 53.4548 5.35588 55.1079C7.03133 56.7585 8.71181 57.7821 10.6962 58.538C12.6204 59.2717 14.8057 59.7748 18.0134 59.921C21.2287 60.0697 22.2511 60.0994 30.4399 60.0994C38.6288 60.0994 39.6511 60.0623 42.8664 59.921C46.0741 59.7723 48.262 59.2717 50.1836 58.538C52.163 57.7796 53.8485 56.7585 55.5239 55.1079C57.1969 53.4548 58.2343 51.7992 59.0004 49.8388C59.744 47.9428 60.2539 45.7841 60.4021 42.6191C60.5528 39.4467 60.583 38.438 60.583 30.3583C60.583 22.2786 60.5453 21.2699 60.4021 18.0975C60.2514 14.9326 59.744 12.7714 59.0004 10.8779C58.2318 8.9224 57.1969 7.26185 55.5239 5.60874C53.8485 3.95563 52.1705 2.93452 50.1836 2.1786C48.262 1.4425 46.0741 0.941862 42.8664 0.795634C39.6511 0.646929 38.6288 0.617188 30.4399 0.617188ZM30.4399 5.97059C38.4856 5.97059 39.4451 6.01025 42.6227 6.14656C45.5617 6.28287 47.1567 6.76369 48.2168 7.17511C49.6285 7.71293 50.6282 8.35732 51.6882 9.39578C52.7407 10.4367 53.3938 11.4256 53.9389 12.8185C54.3509 13.8644 54.8432 15.4382 54.9763 18.3379C55.1195 21.4756 55.1522 22.4174 55.1522 30.3583C55.1522 38.2992 55.1145 39.2435 54.9663 42.3787C54.8131 45.2785 54.3232 46.8523 53.9088 47.8982C53.3461 49.291 52.7056 50.2774 51.6506 51.3233C50.5981 52.3618 49.5807 53.0062 48.1841 53.544C47.1291 53.9505 45.5089 54.4362 42.57 54.5676C39.3698 54.7089 38.4278 54.7411 30.3646 54.7411C22.2988 54.7411 21.3568 54.7039 18.1591 54.5577C15.2177 54.4065 13.5975 53.9232 12.5425 53.5143C11.1132 52.9591 10.131 52.3271 9.07855 51.2862C8.02103 50.2477 7.34532 49.2439 6.81782 47.8659C6.40335 46.825 5.91604 45.2264 5.76281 42.3266C5.64978 39.2038 5.60959 38.2397 5.60959 30.3211C5.60959 22.4001 5.64978 21.4335 5.76281 18.2735C5.91604 15.3737 6.40335 13.7776 6.81782 12.7367C7.34532 11.324 8.02103 10.3574 9.07855 9.31399C10.131 8.27553 11.1132 7.60635 12.5425 7.08836C13.5975 6.67694 15.1825 6.19365 18.1215 6.04494C21.3242 5.93341 22.2661 5.89624 30.3269 5.89624L30.4399 5.97059ZM30.4399 15.0862C21.8868 15.0862 14.9615 21.9267 14.9615 30.3583C14.9615 38.7974 21.8944 45.6304 30.4399 45.6304C38.993 45.6304 45.9184 38.7899 45.9184 30.3583C45.9184 21.9193 38.9855 15.0862 30.4399 15.0862ZM30.4399 40.272C24.8886 40.272 20.3922 35.8356 20.3922 30.3583C20.3922 24.881 24.8886 20.4446 30.4399 20.4446C35.9913 20.4446 40.4876 24.881 40.4876 30.3583C40.4876 35.8356 35.9913 40.272 30.4399 40.272ZM50.1484 14.484C50.1484 16.4543 48.5257 18.0529 46.5313 18.0529C44.5343 18.0529 42.9141 16.4519 42.9141 14.484C42.9141 12.5161 44.5368 10.9175 46.5313 10.9175C48.5232 10.9151 50.1484 12.5161 50.1484 14.484Z" fill="white" />
+                            <a href="http://instagram.com/metapax.io/" target="_blank"
+                                class="society-link w-inline-block">
+                                <div class="html-embed-6 w-embed"><svg width="61" height="100%" viewBox="0 0 61 61"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M30.4399 0.617188C22.2511 0.617188 21.2287 0.654364 18.0134 0.795634C14.8032 0.94434 12.6178 1.4425 10.6962 2.1786C8.71432 2.937 7.03133 3.95563 5.35588 5.60874C3.68043 7.26185 2.64552 8.91992 1.87938 10.8779C1.13334 12.7739 0.625937 14.9301 0.477733 18.0975C0.327018 21.2699 0.296875 22.2786 0.296875 30.3583C0.296875 38.438 0.334554 39.4467 0.477733 42.6191C0.628448 45.7841 1.13334 47.9428 1.87938 49.8388C2.64803 51.7918 3.68043 53.4548 5.35588 55.1079C7.03133 56.7585 8.71181 57.7821 10.6962 58.538C12.6204 59.2717 14.8057 59.7748 18.0134 59.921C21.2287 60.0697 22.2511 60.0994 30.4399 60.0994C38.6288 60.0994 39.6511 60.0623 42.8664 59.921C46.0741 59.7723 48.262 59.2717 50.1836 58.538C52.163 57.7796 53.8485 56.7585 55.5239 55.1079C57.1969 53.4548 58.2343 51.7992 59.0004 49.8388C59.744 47.9428 60.2539 45.7841 60.4021 42.6191C60.5528 39.4467 60.583 38.438 60.583 30.3583C60.583 22.2786 60.5453 21.2699 60.4021 18.0975C60.2514 14.9326 59.744 12.7714 59.0004 10.8779C58.2318 8.9224 57.1969 7.26185 55.5239 5.60874C53.8485 3.95563 52.1705 2.93452 50.1836 2.1786C48.262 1.4425 46.0741 0.941862 42.8664 0.795634C39.6511 0.646929 38.6288 0.617188 30.4399 0.617188ZM30.4399 5.97059C38.4856 5.97059 39.4451 6.01025 42.6227 6.14656C45.5617 6.28287 47.1567 6.76369 48.2168 7.17511C49.6285 7.71293 50.6282 8.35732 51.6882 9.39578C52.7407 10.4367 53.3938 11.4256 53.9389 12.8185C54.3509 13.8644 54.8432 15.4382 54.9763 18.3379C55.1195 21.4756 55.1522 22.4174 55.1522 30.3583C55.1522 38.2992 55.1145 39.2435 54.9663 42.3787C54.8131 45.2785 54.3232 46.8523 53.9088 47.8982C53.3461 49.291 52.7056 50.2774 51.6506 51.3233C50.5981 52.3618 49.5807 53.0062 48.1841 53.544C47.1291 53.9505 45.5089 54.4362 42.57 54.5676C39.3698 54.7089 38.4278 54.7411 30.3646 54.7411C22.2988 54.7411 21.3568 54.7039 18.1591 54.5577C15.2177 54.4065 13.5975 53.9232 12.5425 53.5143C11.1132 52.9591 10.131 52.3271 9.07855 51.2862C8.02103 50.2477 7.34532 49.2439 6.81782 47.8659C6.40335 46.825 5.91604 45.2264 5.76281 42.3266C5.64978 39.2038 5.60959 38.2397 5.60959 30.3211C5.60959 22.4001 5.64978 21.4335 5.76281 18.2735C5.91604 15.3737 6.40335 13.7776 6.81782 12.7367C7.34532 11.324 8.02103 10.3574 9.07855 9.31399C10.131 8.27553 11.1132 7.60635 12.5425 7.08836C13.5975 6.67694 15.1825 6.19365 18.1215 6.04494C21.3242 5.93341 22.2661 5.89624 30.3269 5.89624L30.4399 5.97059ZM30.4399 15.0862C21.8868 15.0862 14.9615 21.9267 14.9615 30.3583C14.9615 38.7974 21.8944 45.6304 30.4399 45.6304C38.993 45.6304 45.9184 38.7899 45.9184 30.3583C45.9184 21.9193 38.9855 15.0862 30.4399 15.0862ZM30.4399 40.272C24.8886 40.272 20.3922 35.8356 20.3922 30.3583C20.3922 24.881 24.8886 20.4446 30.4399 20.4446C35.9913 20.4446 40.4876 24.881 40.4876 30.3583C40.4876 35.8356 35.9913 40.272 30.4399 40.272ZM50.1484 14.484C50.1484 16.4543 48.5257 18.0529 46.5313 18.0529C44.5343 18.0529 42.9141 16.4519 42.9141 14.484C42.9141 12.5161 44.5368 10.9175 46.5313 10.9175C48.5232 10.9151 50.1484 12.5161 50.1484 14.484Z"
+                                            fill="white" />
                                     </svg></div>
                             </a>
-                            <a href="http://facebook.com/metapax.io" target="_blank" class="society-link w-inline-block">
-                                <div class="w-embed"><svg width="73" height="100%" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M72.2078 36.2185C72.2078 16.3053 56.2504 0.160156 36.5687 0.160156C16.8871 0.160156 0.929688 16.3053 0.929688 36.2185C0.929688 54.2176 13.9617 69.1338 31.0001 71.8382V46.6424H21.9508V36.2155H31.0001V28.2767C31.0001 19.241 36.3222 14.247 44.4628 14.247C48.3593 14.247 52.44 14.9531 52.44 14.9531V23.8265H47.9435C43.5154 23.8265 42.1344 26.606 42.1344 29.4576V36.2185H52.0183L50.4383 46.6454H42.1344V71.8411C59.1758 69.1338 72.2078 54.2146 72.2078 36.2185Z" fill="white" />
+                            <a href="http://facebook.com/metapax.io" target="_blank"
+                                class="society-link w-inline-block">
+                                <div class="w-embed"><svg width="73" height="100%" viewBox="0 0 73 72" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M72.2078 36.2185C72.2078 16.3053 56.2504 0.160156 36.5687 0.160156C16.8871 0.160156 0.929688 16.3053 0.929688 36.2185C0.929688 54.2176 13.9617 69.1338 31.0001 71.8382V46.6424H21.9508V36.2155H31.0001V28.2767C31.0001 19.241 36.3222 14.247 44.4628 14.247C48.3593 14.247 52.44 14.9531 52.44 14.9531V23.8265H47.9435C43.5154 23.8265 42.1344 26.606 42.1344 29.4576V36.2185H52.0183L50.4383 46.6454H42.1344V71.8411C59.1758 69.1338 72.2078 54.2146 72.2078 36.2185Z"
+                                            fill="white" />
                                     </svg></div>
                             </a>
-                            <a href="https://www.youtube.com/channel/UCtyhkuP70QFBs_7nUgDbWdA" target="_blank" class="society-link w-inline-block youtube-icon">
-                                    <img src="./images/icons8-youtube.svg">
+                            <a href="https://www.youtube.com/channel/UCtyhkuP70QFBs_7nUgDbWdA" target="_blank"
+                                class="society-link w-inline-block youtube-icon">
+                                <img src="./images/icons8-youtube.svg">
                             </a>
                             <a href="mailto:info@metapax.io?subject=info%40metapax.io"
                                 class="society-link w-inline-block">
@@ -1387,6 +1406,7 @@
                                             fill="white" />
                                     </svg></div>
                             </a>
+
                         </div>
                         <div class="form-container contacts-form">
                             <div class="form-block w-form">
@@ -1632,7 +1652,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.3"></script>
+    <script src="./main.js?ver=2.1"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
 </body>

@@ -6,6 +6,8 @@
   if (!$detect->isMobile()) {
     header('Location: /'); // страница для переадресации
     exit(0);
+  }else{
+    header('Location: /index.html');
   }
 ?>
 <!DOCTYPE html>
