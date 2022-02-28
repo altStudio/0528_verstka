@@ -636,6 +636,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.vis-mis', { opacity: 0, duration: 1 })
     .to('.section-offer', { opacity: 0, duration: 0.5 })
+    .set('.vis-mis', { opacity: 0 })
     .set('.how-works-section', { zIndex: 25, opacity: 1, top: 0 })
     .set('.how-works-rotate-image1', { opacity: 0 })
     .set('.how-works-rotate-container', { rotation: -40 })
@@ -846,6 +847,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.vis-mis', { opacity: 0, duration: 1 })
     .to('.section-offer', { opacity: 0, duration: 0.6 })
+    .set('.vis-mis', { opacity: 0 })
     .set('.how-works-section', { zIndex: 25, opacity: 1, top: 0 })
     .set('.how-works-rotate-image1', { opacity: 0 })
     .set('.how-works-rotate-container', { rotation: -40 })
