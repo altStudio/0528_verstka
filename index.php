@@ -4,7 +4,11 @@ require_once "./libs/Mobile_Detect.php";
 $detect = new Mobile_Detect();
 
 if ($detect->isMobile()) {
-    header('Location: /mob/'); // страница для переадресации
+    header('Location: /mob/index.html'); // страница для переадресации
+    exit(0);
+}
+else {
+    header('Location: index.html'); // страница для переадресации
     exit(0);
 }
 ?>
