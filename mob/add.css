@@ -2401,6 +2401,9 @@ a.my-underline:hover {
 .society-container div:first-child {
     margin-bottom: 30px;
 }
+.society-container div {
+    display: flex;
+}
 
 .content-bottom.flex-end {
     justify-content: flex-end;
@@ -2506,19 +2509,10 @@ a.my-underline:hover {
 }
 
 .youtube-icon {
-    width: 46px;
-    height: 46px;
-    position: relative;
     overflow: hidden;
-    border-radius: 10px;
 }
 
-.youtube-icon img {
-    position: absolute;
-    left: -12px;
-    top: -13px;
-    width: 73px;
-    max-width: none;
+.youtube-icon .youtube-png {
 }
 
 .text-block-19, .button-8, .text-block-34, .earns-section-2 .text-block-49, .section-road-map .road-map-slider_text, .mission-text, .border-text {
