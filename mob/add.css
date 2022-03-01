@@ -3931,7 +3931,12 @@ a.my-underline:hover {
             width: 200%;
             max-width: none;
         }
-
+        .heading.h2 {
+            display: block;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 150%;
+        }
 
 
     }
@@ -3957,5 +3962,10 @@ a.my-underline:hover {
     @media screen and (min-width: 1200px) and (max-width: 1440px) {
         .text-sect.second-anim-text {
             margin-top: 12vh;
+        }
+    }
+    @media screen and (max-height: 650px) {
+        .image-6 {
+            top: -1050px;
         }
     }
