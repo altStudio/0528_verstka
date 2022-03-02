@@ -421,7 +421,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 22px!important;
   line-height: 36px;
   margin-top: 20px
 }
@@ -4166,11 +4166,6 @@ textarea.w-input, textarea.w-select {
   text-align: center;
 }
 
-.heading.h2 {
-  min-height: 100%;
-  font-size: 72px;
-}
-
 .div-block-10 {
   position: relative;
 }
@@ -4192,6 +4187,7 @@ textarea.w-input, textarea.w-select {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  margin-top: 30px;
   display: flex;
   height: 100%;
   min-height: 100%;
@@ -4201,9 +4197,9 @@ textarea.w-input, textarea.w-select {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: space-evenly;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -6597,6 +6593,7 @@ textarea.w-input, textarea.w-select {
 
 .text-block-61 {
   opacity: 0;
+  display: none;
 }
 
 
@@ -8601,17 +8598,11 @@ textarea.w-input, textarea.w-select {
     margin-bottom: -60vh;
   }
 
-  .heading.h2 {
-    display: none;
-  }
-
   .div-block-10 {
-    margin-top: 100px;
     margin-bottom: 0px;
   }
 
   .text-block-26 {
-    margin-top: 50%;
     font-size: 100px;
   }
 
@@ -8625,6 +8616,11 @@ textarea.w-input, textarea.w-select {
     max-width: 500px;
     min-height: 1000px;
     min-width: 1000px;
+  }
+  
+  .text-block-18{
+    margin-top: 20px!important;
+    margin-bottom: 0!important;
   }
 
   .matters-hidden-block {
@@ -8774,7 +8770,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-35 {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     font-size: 16px;
     line-height: 130%;
     text-align: center;
@@ -8784,6 +8780,12 @@ textarea.w-input, textarea.w-select {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    top: 30px;
+  }
+
+  .text-block-65{
+    margin-top: 7vh;
+    margin-bottom: 0!important;
   }
 
   .heading-5.header-title {

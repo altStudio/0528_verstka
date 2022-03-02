@@ -3527,7 +3527,19 @@ a.my-underline:hover {
     .mac-svg {
         flex: 0 0 100%;
         text-align: center;
-        margin-top: 100px;
+        display: flex;
+        margin-top: 2vh;
+    }
+
+    .boy-and-girl-image{
+        height: 23vh;
+        position: relative;
+        top: 5vh;
+        right: 2vw;
+    }
+
+    .laptop-with-circles-image{
+        height: 27vh;
     }
 
     .mac-svg svg {
@@ -3714,7 +3726,8 @@ a.my-underline:hover {
         }
 
         #time .text-go {
-            padding: 0 16%;
+            padding: 0 10%;
+            white-space: pre-line;
         }
 
         .how-works-bottom-text {
@@ -3755,7 +3768,7 @@ a.my-underline:hover {
         }
 
         .text-block-29 {
-            max-width: 80%;
+            white-space: pre-line;
         }
 
         .how-works-bottom-text.w-col, .text-block-59.marcel-4 {
@@ -3915,7 +3928,6 @@ a.my-underline:hover {
         }
 
         .div-block-10 {
-            margin-top: 60px;
             margin-bottom: 0px;
         }
 
@@ -3931,12 +3943,7 @@ a.my-underline:hover {
             width: 200%;
             max-width: none;
         }
-        .heading.h2 {
-            display: block;
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 150%;
-        }
+
 
 
     }
@@ -3962,10 +3969,5 @@ a.my-underline:hover {
     @media screen and (min-width: 1200px) and (max-width: 1440px) {
         .text-sect.second-anim-text {
             margin-top: 12vh;
-        }
-    }
-    @media screen and (max-height: 650px) {
-        .image-6 {
-            top: -1050px;
         }
     }
