@@ -463,8 +463,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.marque-glasses', { visibility: 'hidden' })
     .to('.time-matters', { zIndex: 27, visibility: 'visible' },)
     .to('.time-matters', { opacity: 1, duration: 1 },)
-    .to('.blur-1', { x: -100, duration: 1.2, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
-    .to('.blur-2', { x: 100, duration: 1.2, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
+    .to('.blur-1', { x: '-50vw', duration: 1.2, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
+    .to('.blur-2', { x: '20vw', duration: 1.2, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
     .addLabel("label21")
 
     .to('.blur-1', { opacity: 0, duration: 1.8 })
