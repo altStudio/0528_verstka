@@ -3730,7 +3730,7 @@ textarea.w-input, textarea.w-select {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding-top: 8vh;
+  padding-top: 25px;
   padding-bottom: 90px;
   background-color: #161616;
 }
@@ -9016,7 +9016,7 @@ textarea.w-input, textarea.w-select {
 
   .earn-title {
     max-width: 100%;
-    margin-top: 45px;
+    margin-top: 7vh;
   }
 
   .text-block-45 {
@@ -9090,14 +9090,13 @@ textarea.w-input, textarea.w-select {
   }
 
   .image-37.blur-1 {
-    height: 162px;
+    height: 26vh;
     margin-right: 0%;
   }
 
   .image-38.blur-2 {
-    height: auto;
-    max-width: 202px;
-    margin-top: -80px;
+    height: 26vh;
+    margin-top: -12vh;
   }
 
   .menu-modal.main-modal {

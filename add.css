@@ -83,9 +83,6 @@ opacity: 0;
     margin-right: 10px;
     margin-left: 10px;
 }
-.society-link:last-child {
-    margin-left: 0;
-}
 
 
 .society-link .w-embed {
@@ -94,7 +91,7 @@ opacity: 0;
 
 .society-link .w-embed svg {
     height: 46px;
-    width: 100%;
+    width: 100%!important;
 }
 
 .screenone {
@@ -2733,6 +2730,7 @@ a.my-underline:hover {
     
     .society-link .w-embed svg {
         max-width: 90px;
+        width: 100%;
     }
     
     .road-map-slider_content.no-right-margin {
