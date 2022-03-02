@@ -4,10 +4,8 @@
   $detect = new Mobile_Detect();
 
   if (!$detect->isMobile()) {
-    header('Location: /'); // страница для переадресации
+    header('Location: ../index.html'); // страница для переадресации
     exit(0);
-  }else{
-    header('Location: /index.html');
   }
 ?>
 <!DOCTYPE html>
