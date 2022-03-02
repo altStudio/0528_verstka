@@ -5531,8 +5531,8 @@ textarea.w-input, textarea.w-select {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
   margin-bottom: 30px;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -9282,7 +9282,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .image-44.guy-glasses {
-    height: 320px;
+    height: 38vh;
   }
 
   .button-8 {
