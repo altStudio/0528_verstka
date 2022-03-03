@@ -91,6 +91,10 @@ opacity: 0;
 
 .society-link .w-embed svg, .society-link .w-embed img {
     height: 46px;
+    width: 46px;
+}
+
+#twitter-svg{
     width: 100%!important;
 }
 
@@ -2727,12 +2731,6 @@ a.my-underline:hover {
         max-width: 690px;
         margin: 0 auto;
     }
-    
-    .society-link .w-embed svg {
-        max-width: 90px;
-        width: 100%;
-    }
-    
     .road-map-slider_content.no-right-margin {
         max-width: 180px;
     }
