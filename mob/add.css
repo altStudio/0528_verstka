@@ -3525,17 +3525,20 @@ a.my-underline:hover {
         text-align: center;
         display: flex;
         margin-top: 2vh;
+        justify-content: center;
     }
 
     .boy-and-girl-image{
         height: 23vh;
         position: relative;
         top: 5vh;
-        right: 2vw;
+        right: 1vw;
     }
 
     .laptop-with-circles-image{
         height: 27vh;
+        position: relative;
+        left: 1vw;
     }
 
     .mac-svg svg {
