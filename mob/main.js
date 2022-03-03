@@ -417,6 +417,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-invert', { visibility: 'hidden' })
     .set('.section-monic', { zIndex: 22, visibility: 'visible'})
     .to('.section-monic', { opacity: 1, duration: 0.5 },)
+    .to('.op-0', {opacity: 1, duration: 2}, '+=2')
+    .to('#mac-svg-second', {opacity: 0, duration: 2}, '<')
     .addLabel("label15")
 
     .to('.section-monic', { opacity: 0, duration: 1 },)
@@ -465,6 +467,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.time-matters', { opacity: 1, duration: 1 },)
     .to('.blur-1', { x: '-50vw', duration: 1.2, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
     .to('.blur-2', { x: '20vw', duration: 1.2, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
+    .to('#text-block-46-first', {opacity: 0, duration: 1.5}, '+=4')
+    .to('#text-block-46-second', {opacity: 1, duration: 1.5}, '<')
     .addLabel("label21")
 
     .to('.blur-1', { opacity: 0, duration: 1.8 })

@@ -3528,6 +3528,11 @@ a.my-underline:hover {
         justify-content: center;
     }
 
+    #mac-svg-second{
+        position: absolute;
+        margin-top: 0;
+    }
+
     .boy-and-girl-image{
         height: 23vh;
         position: relative;
@@ -3539,6 +3544,10 @@ a.my-underline:hover {
         height: 27vh;
         position: relative;
         left: 1vw;
+    }
+
+    .op-0{
+        opacity: 0;
     }
 
     .mac-svg svg {
