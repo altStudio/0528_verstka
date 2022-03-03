@@ -4075,18 +4075,21 @@ textarea.w-input, textarea.w-select {
   align-items: center;
 }
 
+.regular-text{
+  max-width: 100%!important;
+  margin-top: 60px!important;
+}
+
 .image-20 {
   width: 79%;
   max-width: 876px;
   margin-right: 0px;
-  margin-left: 400px;
 }
 
 .image-20.image-scale {
   width: auto;
   max-height: none;
   max-width: 75%;
-  margin-left: 400px;
 }
 
 .image-20.image-scale.how-works-rotate-image-2 {
