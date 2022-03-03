@@ -3939,7 +3939,12 @@ a.my-underline:hover {
             max-width: none;
         }
 
-
+        .heading.h2 {
+            display: block;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 150%;
+        }
 
     }
 
@@ -3954,6 +3959,11 @@ a.my-underline:hover {
         }
     }
 
+    @media screen and (max-height: 750px) {
+        .image-6 {
+            top: -1050px;
+        }
+    }
 
     /*.mother .section {*/
     /*    position: relative !important;*/
@@ -3966,3 +3976,4 @@ a.my-underline:hover {
             margin-top: 12vh;
         }
     }
+}
