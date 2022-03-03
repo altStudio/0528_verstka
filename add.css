@@ -89,7 +89,7 @@ opacity: 0;
     height: 100%;
 }
 
-.society-link .w-embed svg {
+.society-link .w-embed svg, .society-link .w-embed img {
     height: 46px;
     width: 100%!important;
 }
