@@ -195,7 +195,7 @@ if ($detect->isMobile()) {
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=1.7">
+    <link rel="stylesheet" href="./add.css?ver=1.9">
 </head>
 
 <body class="body">
@@ -1646,7 +1646,7 @@ if ($detect->isMobile()) {
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.1"></script>
+    <script src="./main.js?ver=2.2"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
 </body>
