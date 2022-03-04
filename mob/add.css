@@ -3622,6 +3622,7 @@ a.my-underline:hover {
         background-image: url("./images/bg-earns-learns-evolves.png");
         background-position: bottom;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .section-10.section.section-invert._wf-section {
@@ -3837,6 +3838,7 @@ a.my-underline:hover {
             right: 0;
             bottom: 0;
             margin: auto;
+            margin-bottom: 40px;
         }
 
         #howto {
