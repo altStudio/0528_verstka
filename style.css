@@ -2422,8 +2422,10 @@
 }
 
 .text-block-33.gradient-text.font-size-120 {
-  margin-right: -50px;
-  margin-left: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 70%;
 }
 
 .text-span-14 {
@@ -2439,13 +2441,13 @@
   z-index: 1;
   max-height: 440px;
   max-width: 262px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: auto;
-  margin-bottom: auto;
+  margin-bottom: 0;
   padding-right: 0px;
-  -webkit-transform: translate(45%, 0px);
-  -ms-transform: translate(45%, 0px);
-  transform: translate(45%, 0px);
+  -webkit-transform: translate(20%, 0px);
+  -ms-transform: translate(20%, 0px);
+  transform: translate(20%, 0px);
 }
 
 .column-8 {
@@ -2525,8 +2527,7 @@
 .image-27 {
   position: relative;
   left: auto;
-  top: 33px;
-  right: auto;
+  right: 50px;
   bottom: auto;
   max-height: 540px;
   max-width: 400px;
@@ -4199,6 +4200,7 @@
   display: flex;
   margin-top: auto;
   margin-bottom: auto;
+  justify-content: space-between;
 }
 
 .text-span-24 {
@@ -5262,9 +5264,9 @@
     width: auto;
     max-width: 400px;
     margin-left: 0px;
-    -webkit-transform: translate(-45%, 0px);
-    -ms-transform: translate(-45%, 0px);
-    transform: translate(-45%, 0px);
+    -webkit-transform: translate(-25%, 0px);
+    -ms-transform: translate(-25%, 0px);
+    transform: translate(-25%, 0px);
     -o-object-fit: contain;
     object-fit: contain;
   }

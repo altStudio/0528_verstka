@@ -2419,9 +2419,7 @@ a.my-underline:hover {
     margin-top: 0;
 }
 .image-26 {
-    width: 25%;
     margin-right: 0;
-    max-width: 90%;
 }
 .text-block-33.gradient-text.new.font-size-120 {
     margin-right: 0;
@@ -2522,13 +2520,11 @@ a.my-underline:hover {
     
     .image-26{
         top: 12px;
-        max-height: 39vh;
         width: 50%;
-        right: 5vw;
     }
 
     .div-block-27{
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .text-block-3 {
@@ -2563,6 +2559,10 @@ a.my-underline:hover {
 
     .section-3 .center-text {
         font-size: 22px;
+    }
+
+    .m-auto{
+        font-size: 130%;
     }
 
     .section-3 .hidden-text1 {
@@ -2704,10 +2704,7 @@ a.my-underline:hover {
 
     .text-block-33.font-size-120 {
         font-size: 100px;
-    }
-
-    .image-26 {
-        max-width: 90%;
+        margin: 70px auto;
     }
 }
 
@@ -2861,6 +2858,9 @@ a.my-underline:hover {
         margin-bottom: 25px;
     }
 
+    .pax-creator-content{
+        justify-content: space-around;
+    }
     .section-invert .image-26 {
         max-width: 200px;
         object-fit: contain;
@@ -2868,6 +2868,7 @@ a.my-underline:hover {
     .section-invert .image-27 {
         object-fit: contain;
         max-width: 312px;
+        right: auto;
     }
     .section-invert .text-block-33.gradient-text.font-size-120 {
         font-size: 85px;
@@ -2937,6 +2938,7 @@ a.my-underline:hover {
     }
     .section-earn .div-block-27 {
         margin-bottom: 0;
+        justify-content: space-around;
     }
     
     .text-block-34.not-border-bottom.intro-black.no-wrap.right {
