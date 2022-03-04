@@ -392,7 +392,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.white-section', { zIndex: 19, x: 2000, visibility: 'visible' })
     .to('.white-section', { x: 0, zIndex: 19, duration: 1 })
-    .to('.text-block-26', { x: '-99vw', duration: 1 })
+    .to('.text-block-26', { x: '-99vw', duration: 2 })
     .set('.section-7', { visibility: 'hidden' })
     .addLabel("label12")
 
