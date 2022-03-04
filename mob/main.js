@@ -354,9 +354,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.alantext', { opacity: 1, duration: 0.5 })
     .addLabel("label8")
 
-    .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1 },)
-    .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
-    .to('.image-43', { scale: 0.7, duration: 0.5 }, '<')
+    .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.5 },)
+    .to('.alantext', { opacity: 0, duration: 1 }, '<')
+    .to('.image-43', { scale: 0.7, duration: 1 }, '<')
     .to('.text-block-56', { scale: 1, y: 0, duration: 1.5 }, '<')
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
     .addLabel("label9")
