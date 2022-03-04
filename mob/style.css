@@ -5163,7 +5163,7 @@ textarea.w-input, textarea.w-select {
 
 .mission-text.mis-text-invs.misson-sto {
   max-width: 100%;
-  top: -20px;
+  top: 35px;
 }
 
 .border-text {
@@ -8889,7 +8889,7 @@ textarea.w-input, textarea.w-select {
     padding-left: 0px;
   }
 
-  .mission-title.invis-mis {
+  .mission-title.invis-mis, .mission-title.vis-mis {
     background-image: linear-gradient(54deg, #9564d3 18%, #c7a4f4 21%, #b46487 32%, #d27a68 39%, #ffae44 53%, #fe7624 74%, #ff8a2a 88%, #ff4d1b);
     width: 100%;
     left: 0%;
@@ -8901,9 +8901,12 @@ textarea.w-input, textarea.w-select {
     font-size: 16px;
   }
 
+  .mission-title.vis-mis{
+    opacity: 1;
+  }
+
   .mission-title.vis-mis {
     margin-bottom: 24px;
-    font-size: 32px;
   }
 
   .not-padding-col {
@@ -8945,7 +8948,7 @@ textarea.w-input, textarea.w-select {
 
   .mission-text.mis-text-invs {
     left: 0px;
-    top: -60px;
+    top: 0px;
     opacity: 0;
     font-size: 14px;
   }
