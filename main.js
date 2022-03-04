@@ -651,7 +651,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
     .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
     .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
+<<<<<<< Updated upstream
     .to('.text-block-51', { opacity: 1, duration: 1 }, '<')
+=======
+    .to('.text-block-51', { opacity: 1, duration: 1 }, )
+>>>>>>> Stashed changes
     .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
     .addLabel("label19")
 
@@ -862,7 +866,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
     .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
     .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
+<<<<<<< Updated upstream
     .to('.text-block-51', { opacity: 1, duration: 1 }, '<')
+=======
+    .to('.text-block-51', { opacity: 1, duration: 1 }, )
+>>>>>>> Stashed changes
     .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
     .addLabel("label19")
 
