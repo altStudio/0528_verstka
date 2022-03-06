@@ -1483,6 +1483,19 @@ body {
     top: 0;
     width: 100%;
     z-index: -5;
+    /* background: url('./images/Group 2046.svg');
+    background-position: bottom;
+    background-size: cover; */
+}
+
+.time-matters-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .section-road-map {
@@ -1763,11 +1776,6 @@ body {
     display: block;
 }
 
-
-.black-bg {
-    opacity: 0;
-}
-
 .text-left-anim {
     max-height: 500px;
     transition: max-height 5s;
@@ -1787,10 +1795,6 @@ body {
     .image-39.blur-3.man-surfing {
         bottom: auto;
         height: 480px;
-    }
-
-    .black-bg {
-        display: none;
     }
 }
 
@@ -2426,12 +2430,46 @@ a.my-underline:hover {
 }
 
 .image-39.blur-3.man-surfing {
-    right: 0;
+    right: auto;
     bottom: 0;
     height: 420px;
-    left: auto;
+    left: -15px;
     top: auto;
     z-index: -1;
+    max-width: 100vw;
+}
+
+.gradient-under-sea-image{
+    position: absolute;
+    max-width: 100vw;
+    left: -15px;
+    right: -15px;
+    z-index: -2;
+    top: 50px;
+}
+
+.drowning-man-image{
+    position: absolute;
+    right: -25px;
+    top: 212px;
+    width: 70%;
+}
+
+.surfing-man-image{
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    width: 50%;
+}
+
+@media (max-width: 370px){
+    .surfing-man-image{
+        top: 100px;
+    }
+}
+
+.blur-3-container{
+    opacity: 0;
 }
 
 .text-block-63 {
@@ -2444,7 +2482,8 @@ a.my-underline:hover {
     height: 405px;
     background: #161616;
     bottom: 0;
-    z-index: 1;
+    z-index: -1;
+    display: none;
 }
 
 .how-earn-section .content-bottom.flex-end {
@@ -3955,10 +3994,6 @@ a.my-underline:hover {
         .image-39.blur-3.man-surfing {
             bottom: auto;
             height: 480px;
-        }
-
-        .black-bg {
-            display: none;
         }
     }
 

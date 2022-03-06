@@ -5861,7 +5861,6 @@ textarea.w-input, textarea.w-select {
   top: 20%;
   right: auto;
   bottom: auto;
-  opacity: 0;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -9029,7 +9028,7 @@ textarea.w-input, textarea.w-select {
 
   .earn-title {
     max-width: 100%;
-    margin-top: 7vh;
+    margin-top: 10vh;
   }
 
   .text-block-45 {
@@ -9118,10 +9117,6 @@ textarea.w-input, textarea.w-select {
 
   .subscribe-modal.main-modal {
     display: none;
-  }
-
-  .image-39.blur-3 {
-    opacity: 0;
   }
 
   .text-block-51.titile-invs {

@@ -415,10 +415,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(invertText2, { opacity: 0, duration: 1 }, "<")
     .to('.section-invert', { opacity: 0, duration: 1 },)
     .set('.section-invert', { visibility: 'hidden' })
-    .set('.section-monic', { zIndex: 22, visibility: 'visible'})
+    .set('.section-monic', { zIndex: 22, visibility: 'visible' })
     .to('.section-monic', { opacity: 1, duration: 0.5 },)
-    .to('.op-0', {opacity: 1, duration: 2}, '+=2')
-    .to('#mac-svg-second', {opacity: 0, duration: 2}, '<')
+    .to('.op-0', { opacity: 1, duration: 2 }, '+=2')
+    .to('#mac-svg-second', { opacity: 0, duration: 2 }, '<')
     .addLabel("label15")
 
     .to('.section-monic', { opacity: 0, duration: 1 },)
@@ -456,7 +456,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label19")
 
     .to('.how-works-section', { opacity: 0, duration: 1 })
-    .set('.how-works-section', {visibility: 'hidden'})
+    .set('.how-works-section', { visibility: 'hidden' })
     .set('.marque-glasses', { zIndex: 26, visibility: 'visible' },)
     .to('.marque-glasses', { opacity: 1, duration: 1 })
     .addLabel("label20")
@@ -467,15 +467,26 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.time-matters', { opacity: 1, duration: 1 },)
     .to('.blur-1', { x: '-50vw', duration: 1.2, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
     .to('.blur-2', { x: '20vw', duration: 1.2, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
-    .to('#text-block-46-first', {opacity: 0, duration: 1.5}, '+=4')
-    .to('#text-block-46-second', {opacity: 1, duration: 1.5}, '<')
+    .to('#text-block-46-first', { opacity: 0, duration: 1.5 }, '+=4')
+    .to('.time-matters-bg', { opacity: 0, duration: 1.5 }, '<')
+    .to('#text-block-46-second', { opacity: 1, duration: 1.5 }, '<')
     .addLabel("label21")
 
     .to('.blur-1', { opacity: 0, duration: 1.8 })
     .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
-    .to('.blur-3', { opacity: 1, duration: 1.8 })
+    .to('.blur-3-container', { opacity: 1, duration: 1.8 })
     .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
     .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
+    .to('.gradient-under-sea-image', {
+      opacity: 0, duration: 1, onComplete: () => {
+        $('.drowning-man-image').addClass('blur-effect');
+        $('.surfing-man-image').removeClass('blur-effect');
+      },
+      onReverseComplete: () => {
+        $('.drowning-man-image').removeClass('blur-effect');
+        $('.surfing-man-image').addClass('blur-effect');
+      }
+    }, '+=2')
     .addLabel("label22")
 
     .to('.time-matters', { opacity: 0, duration: 1 },)
@@ -1486,7 +1497,7 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
 </radialGradient>
 </defs>
 </svg>`)
-} 
+}
 // else if (window.matchMedia("(max-width: 1200px)").matches) {
 //   $('.mac-svg').html(`<svg width="290" height="193" viewBox="0 0 290 193" fill="none" xmlns="http://www.w3.org/2000/svg">
 //   <path d="M231.082 123.752C231.082 123.752 231.272 118.988 228.89 115.942C226.508 112.896 224.366 110.627 223.403 110.202C222.441 109.777 221.053 109.506 220.357 108.439C219.661 107.373 218.328 105.556 216.99 105.393C215.657 105.235 212.557 104.697 212.557 104.697L210.315 102.401V101.172C210.315 101.172 211.702 101.281 212.236 100.851C212.769 100.422 214.428 96.2052 213.998 94.9759C213.569 93.7466 211.861 93.0008 211.861 93.0008C211.861 93.0008 208.977 84.242 205.077 82.5879C201.177 80.9338 188.68 84.0839 188.68 84.0839C188.68 84.0839 187.772 93.376 187.717 93.2178C187.663 93.0596 184.78 92.4178 184.78 92.4178C184.78 92.4178 184.78 97.4932 185.901 98.1847C187.021 98.8807 187.609 98.9847 187.609 98.9847C187.609 98.9847 187.13 101.764 187.821 104.164C188.513 106.564 190.172 109.022 190.172 109.022C190.172 109.022 181.413 112.173 179.65 113.881C177.888 115.589 171.746 123.706 169.771 127.873C167.796 132.04 167.208 133.907 165.979 134.87C164.749 135.832 162.987 137.007 162.453 137.541C161.92 138.074 161.17 139.249 160.37 141.12C159.57 142.991 155.561 147.795 155.561 147.795L175.162 149.449C175.162 149.449 180.129 145.978 181.462 144.537C182.796 143.095 183.334 142.132 183.334 142.132L186.217 149.449C186.217 149.449 162.77 149.02 159.511 148.649C156.253 148.274 150.911 147.366 148.561 146.995C146.21 146.62 134.568 144.112 133.072 144.591C131.576 145.07 127.997 146.783 126.984 148.008C125.968 149.237 124.422 153.029 125.222 155.004C126.022 156.979 129.493 158.638 130.134 158.796C130.776 158.954 133.447 159.758 134.085 159.917C134.722 160.075 136.005 160.504 136.914 160.025C137.822 159.546 138.997 158.742 138.997 158.742C138.997 158.742 140.972 158.208 142.468 157.779C143.964 157.35 149.573 156.979 150.585 156.925C151.602 156.87 156.248 158.154 156.248 158.154C156.248 158.154 155.231 159.971 155.502 160.717C155.769 161.462 158.653 164.987 158.653 164.987L161.857 164.667L162.874 166L166.132 165.091L167.466 165.837L169.707 165.516C169.707 165.516 191.817 161.137 195.396 157.824C198.976 154.511 224.506 137.902 224.506 137.902L231.082 123.752Z" fill="#161616"/>
