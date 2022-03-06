@@ -13,7 +13,8 @@ if ($detect->isMobile()) {
 
 <head>
     <meta charset="utf-8">
-    <title>MetaPax</title>
+    <title>MetaPax - in vision the future</title>
+    <meta name="description" content="СMetaPax is a social platform 3.0 for Real Time First person view streaming via Glasses with an ability to remotely guide a person as you need.">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="./style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -749,12 +750,10 @@ if ($detect->isMobile()) {
                         <div class="content-bottom flex-end w-row">
                             <div class="how-works-bottom-text w-col w-col-10">
                                 <div class="text-go center-text _w-960">Being Beholder is very <span
-                                        class="text-span-14">rewarding -- but it also is a responsibility. A
+                                        class="text-span-29">rewarding -- but it also is a responsibility. A
                                     </span><br />constant learning on how to interact with streamers and how to get the
-                                    best
-                                    out of it... But in the end there is nothing more joyful than to be the one who
-                                    creates
-                                    the final picture.</div>
+                                    best<br/>out of it... But in the end there is nothing more joyful than to be the<br />one who
+                                    creates the final picture.</div>
                             </div>
                             <div class="column-2 pagin pagin-revert w-col w-col-2">
                                 <div class="text-block-34 pagin-white">03<span
