@@ -1377,6 +1377,10 @@ body {
     filter: blur(7px);
 }
 
+.blur-effect-2{
+    filter: blur(3px);
+}
+
 .mission-title {
     position: relative;
 }

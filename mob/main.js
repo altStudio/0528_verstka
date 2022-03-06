@@ -479,12 +479,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
     .to('.gradient-under-sea-image', {
       opacity: 0, duration: 1, onComplete: () => {
-        $('.drowning-man-image').addClass('blur-effect');
-        $('.surfing-man-image').removeClass('blur-effect');
+        $('.drowning-man-image').addClass('blur-effect-2');
+        $('.surfing-man-image').removeClass('blur-effect-2');
       },
       onReverseComplete: () => {
-        $('.drowning-man-image').removeClass('blur-effect');
-        $('.surfing-man-image').addClass('blur-effect');
+        $('.drowning-man-image').removeClass('blur-effect-2');
+        $('.surfing-man-image').addClass('blur-effect-2');
       }
     }, '+=2')
     .addLabel("label22")
