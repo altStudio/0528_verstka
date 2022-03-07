@@ -16,7 +16,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MetaPax - in vision the future</title>
-  <meta name="description" content="СMetaPax is a social platform 3.0 for Real Time First person view streaming via Glasses with an ability to remotely guide a person as you need.">
+  <meta name="description" content="MetaPax is a social platform 3.0 for Real Time First person view streaming via Glasses with an ability to remotely guide a person as you need.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:300,regular&amp;subset=cyrillic,latin" media="all">
 </head>
 
