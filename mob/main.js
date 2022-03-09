@@ -334,10 +334,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-3', { visibility: 'hidden' })//убирается пред. див
     .addLabel("label6")
 
-    .to('.glasses-in-now-you-can', { 'min-width': '365%', y: '-140px', duration: 1 },) //очки расширяются
-    .to('.text-blocks-holder', { y: '-185px', duration: 1 }, '<')//текст сопротивляется выталкиванию от очков
-    .addLabel('youCan-videoLabel')
-
     .set('.special-sect', { visibility: 'visible' })
     .to('.section-4 ', { opacity: 0, duration: 1, onComplete: function () { playVid2() }, onReverseComplete: function () { vid2.pause() } },) //запускается видик, ну и стопится тоже
     .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1 }, '<') // уменьшается и поднимается текст
