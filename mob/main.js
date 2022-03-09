@@ -281,7 +281,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to(".image-40", { x: 450, duration: 1.5 })
     .to('.scroll-dv', { left: 0, right: 0, top: 0, bottom: 0, width: '100vw', duration: 1.5 }, "<")
-    .to('.arrow-down', {margin: '0 49vw', duration: 1.5}, '<')
+    .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
     .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
     .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '15.5vw', y: '21vh', rotation: -62, duration: 1.5 }, '<')
@@ -290,10 +290,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label1")
 
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
-    .to(".scroll-dv", {opacity: 0, duration: 1}, '<')
+    .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
     .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
     .to(".image-42", { x: -2000, duration: 1 }, '<')
-    .to(".image-7", { x: '70vw', y: '-28vh', width:'160vw', height: '85vh', duration: 1.5 }, '<')
+    .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '-50vw', y: '70vh', width: '190vw', height: '90vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
@@ -514,6 +514,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.blockchain-section', { opacity: 0, duration: 1 },)
     .set('.blockchain-section', { visibility: 'hidden' })
+    .set('.site-logo', { opacity: 0 })
     .set('.section-form', { zIndex: 31, visibility: 'visible' },)
     .to('.section-form', { opacity: 1, duration: 0.6 },)
     .addLabel("label27")
