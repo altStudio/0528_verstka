@@ -2187,6 +2187,10 @@ textarea.w-input, textarea.w-select {
   display: none !important
 }
 
+.mb-0{
+  margin-bottom: 30px!important;
+}
+
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
@@ -2210,7 +2214,7 @@ textarea.w-input, textarea.w-select {
   bottom: auto;
   z-index: 0;
   width: 1762px;
-  height: 700px;
+  height: 106vh;
   opacity: 1;
 }
 
@@ -5205,8 +5209,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .section-11.section-form._wf-section.section.contact-section {
-  background-image: url("./images/61f7c5ae529721858c9d513f_Group_2.png");
-  background-position: 50% 50%;
+  background-image: url("./images/follow-us-bg.png");
   background-size: cover;
 }
 
@@ -5252,7 +5255,6 @@ textarea.w-input, textarea.w-select {
 
 .heading-9 {
   margin-top: 0px;
-  margin-bottom: 15px;
   font-size: 48px;
   line-height: 130%;
   font-weight: 600;
@@ -8105,7 +8107,7 @@ textarea.w-input, textarea.w-select {
 
 @media screen and (max-width: 479px) {
   .image-6 {
-    top: -750px;
+    top: -114vh;
     right: -10%;
     width: 300vw;
     max-width: 300vw;
@@ -8974,6 +8976,10 @@ textarea.w-input, textarea.w-select {
   .image-34 {
     max-width: 90%;
     margin-bottom: 0px;
+    position: absolute;
+    left: 0;
+    right: 3px;
+    bottom: 6vh;
   }
 
   .image-35 {
@@ -8988,11 +8994,12 @@ textarea.w-input, textarea.w-select {
   }
 
   .heading-9.header-title {
-    font-size: 14px;
+    font-size: 34px;
+    margin-top: 10vh;
+    font-family: 'Agrandir grand 800';
   }
 
   .text-block-41 {
-    margin-top: 45px;
     font-size: 14px;
   }
 
