@@ -403,7 +403,6 @@ opacity: 0;
 
 .section-inner.first-inner {
     max-width: 270px;
-    margin-top: 25vw;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1622,7 +1621,7 @@ body {
 
 .image-42 {
     left: auto;
-    right: -850px;
+    right: -730px;
     bottom: -200px;
 
     width: 1050px;
@@ -1712,7 +1711,6 @@ body {
 
 .image-42 {
     top: auto;
-    opacity: 0;
 }
 
 
@@ -2576,11 +2574,10 @@ a.my-underline:hover {
 }
 
 .image-7 {
-    top: 150%;
+    top: 50%;
 }
 
 .image-6 {
-    top: -1000px;
     right: -75%;
 }
 
@@ -3736,7 +3733,7 @@ a.my-underline:hover {
             right: 0;
             width: 100%;
             height: auto;
-            top: 33%;
+            top: 0;
         }
 
         .section-inner.first-inner {
@@ -3865,11 +3862,11 @@ a.my-underline:hover {
         }
 
         .text-sect.second-anim-text {
-            top: 50%;
+            top: -100%;
         }
 
         .scroll-dv {
-            top: 70%;
+            top: 120%;
         }
     }
 
@@ -4003,6 +4000,10 @@ a.my-underline:hover {
 
     @media screen and (max-height: 750px) {
         .image-6 {
+            top: -700px;
+        }
+
+        .image-6.preload{
             top: -1050px;
         }
     }

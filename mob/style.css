@@ -2210,8 +2210,13 @@ textarea.w-input, textarea.w-select {
   bottom: auto;
   z-index: 0;
   width: 1762px;
-  height: 1400px;
+  height: 700px;
   opacity: 1;
+}
+
+.image-6.preload{
+  height: 1400px;
+  top: -1000px;
 }
 
 .section-2 {
@@ -5038,10 +5043,8 @@ textarea.w-input, textarea.w-select {
 
 .scroll-dv {
   position: absolute;
-  left: 0%;
+  left: 15px;
   top: auto;
-  right: 0%;
-  bottom: 13vh;
   z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5054,9 +5057,7 @@ textarea.w-input, textarea.w-select {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
 }
 
 .text-block-39 {
@@ -5426,7 +5427,7 @@ textarea.w-input, textarea.w-select {
 .text-sect {
   max-width: 700px;
   font-size: 32px;
-  text-align: center;
+  text-align: left;
 }
 
 .text-sect.second-anim-text {
@@ -5443,6 +5444,7 @@ textarea.w-input, textarea.w-select {
   justify-content: center;
   opacity: 0;
   line-height: 1.4;
+  text-align: center;
 }
 
 .text-sect.first-anim-text {
@@ -8103,7 +8105,7 @@ textarea.w-input, textarea.w-select {
 
 @media screen and (max-width: 479px) {
   .image-6 {
-    top: -800px;
+    top: -750px;
     right: -10%;
     width: 300vw;
     max-width: 300vw;
@@ -8124,7 +8126,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .image-7 {
-    left: -40%;
+    left: -80%;
     top: 0px;
     right: 0%;
     bottom: -75vh;
@@ -8141,7 +8143,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .image-8.first-screen-logo {
-    max-width: 90%;
+    max-width: 70%;
   }
 
   .not-margin-bottom {
@@ -8272,7 +8274,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-7 {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 130%;
   }
 
