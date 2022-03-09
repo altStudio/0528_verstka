@@ -279,20 +279,22 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   // Анимация для мобилок, tl2 - таймлайн для экранов
   tl2.addLabel("start")
 
-    .to(".image-40", { y: -360, duration: 1.5 })
-    .to('.scroll-dv', { opacity: 0, duration: 1.5 }, "<")
-    .to(".image-42", { x: -400, opacity: 1, duration: 1.5 }, '<')
-    .to(".image-7", { x: -60, y: -100, duration: 1.5 }, '<')
-    .to(".image-6", { x: 150, duration: 1.5 }, '<')
-    .to('.first-anim-text', { opacity: 0, duration: 1.5 }, '<')
-    .to('.second-anim-text', { opacity: 1, duration: 1 },)
+    .to(".image-40", { x: 450, duration: 1.5 })
+    .to('.scroll-dv', { left: 0, right: 0, top: 0, bottom: 0, width: '100vw', duration: 1.5 }, "<")
+    .to('.arrow-down', {margin: '0 49vw', duration: 1.5}, '<')
+    .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-7", { x: -60, y: -30, duration: 1.5 }, '<')
+    .to(".image-6", { x: 50, y: 140, rotation: -62, duration: 1.5 }, '<')
+    .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
+    .to('.second-anim-text', { opacity: 1, duration: 1 }, '<')
     .addLabel("label1")
 
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
+    .to(".scroll-dv", {opacity: 0, duration: 1}, '<')
     .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
     .to(".image-42", { x: -2000, duration: 1 }, '<')
-    .to(".image-7", { x: -100, y: -500, duration: 1.5 }, '<')
-    .to(".image-6", { x: -100, y: 900, width: '250vw', height: '700px', duration: 1.5 }, '<')
+    .to(".image-7", { x: 240, y: -200, width:'150vw', height: 600, duration: 1.5 }, '<')
+    .to(".image-6", { x: -160, y: 450, width: '190vw', height: 600, rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
     .addLabel("label2")
@@ -334,10 +336,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-3', { visibility: 'hidden' })//убирается пред. див
     .addLabel("label6")
 
-    .to('.glasses-in-now-you-can', { 'min-width': '365%', y: '-140px', duration: 1 },) //очки расширяются
-    .to('.text-blocks-holder', { y: '-185px', duration: 1 }, '<')//текст сопротивляется выталкиванию от очков
-    .addLabel('youCan-videoLabel')
-
     .set('.special-sect', { visibility: 'visible' })
     .to('.section-4 ', { opacity: 0, duration: 1, onComplete: function () { playVid2() }, onReverseComplete: function () { vid2.pause() } },) //запускается видик, ну и стопится тоже
     .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1 }, '<') // уменьшается и поднимается текст
@@ -350,7 +348,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-6', { zIndex: 17, visibility: 'visible' },)
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
     .from('.text-block-58 ', { scale: 100, y: 300, duration: 1.5 }, '<')
-    .set('special-sect', { visibility: 'hidden' })
+    .set('.special-sect', { visibility: 'hidden' })
     .to('.alantext', { opacity: 1, duration: 0.5 })
     .addLabel("label8")
 
