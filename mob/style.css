@@ -2210,7 +2210,7 @@ textarea.w-input, textarea.w-select {
   bottom: auto;
   z-index: 0;
   width: 1762px;
-  height: 700px;
+  height: 106vh;
   opacity: 1;
 }
 
@@ -8105,7 +8105,7 @@ textarea.w-input, textarea.w-select {
 
 @media screen and (max-width: 479px) {
   .image-6 {
-    top: -750px;
+    top: -114vh;
     right: -10%;
     width: 300vw;
     max-width: 300vw;
