@@ -284,7 +284,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.arrow-down', {margin: '0 49vw', duration: 1.5}, '<')
     .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
     .to(".image-7", { x: -60, y: -30, duration: 1.5 }, '<')
-    .to(".image-6", { x: 50, y: 60, duration: 1.5 }, '<')
+    .to(".image-6", { x: 50, y: 140, rotation: -62, duration: 1.5 }, '<')
     .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
     .to('.second-anim-text', { opacity: 1, duration: 1 }, '<')
     .addLabel("label1")
