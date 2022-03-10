@@ -2702,7 +2702,7 @@ textarea.w-input, textarea.w-select {
 
 .section-4.section {
   overflow: hidden;
-  padding-top: 8vh;
+  padding-top: 4vh;
   padding-bottom: 90px;
 }
 
@@ -2851,6 +2851,14 @@ textarea.w-input, textarea.w-select {
   line-height: 88px;
 }
 
+.img-bg{
+  position: absolute;
+  width: 100vw;
+  height: 104vh;
+  top: -4vh;
+  filter: blur(7px);
+}
+
 .text-span-4 {
   display: block;
   margin-left: 15px;
@@ -2902,7 +2910,7 @@ textarea.w-input, textarea.w-select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: auto;
+  margin-top: 10vh;
   margin-bottom: auto;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -2910,7 +2918,7 @@ textarea.w-input, textarea.w-select {
   align-items: center;
   font-family: 'Agrandir grand 800', sans-serif;
   color: #fff;
-  font-size: 120px;
+  font-size: 36px;
   line-height: 110%;
   text-align: center;
 }
@@ -6842,7 +6850,7 @@ textarea.w-input, textarea.w-select {
 
 .div-for-relative-position {
   position: relative;
-  top: 32.3vh;
+  top: -18vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -8992,6 +9000,7 @@ textarea.w-input, textarea.w-select {
 
   .image-34 {
     max-width: 90%;
+    max-height: 30vh;
     margin-bottom: 0px;
     position: absolute;
     left: 0;
@@ -9432,6 +9441,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .video-play-icon {
+    z-index: 1;
     position: absolute;
     left: 50%;
     top: 50%;
