@@ -159,13 +159,14 @@ $('.trigger-invite-btn').on('click', function () {
 })
 
 $('.video-play-icon').on('click', function () {
-  if ($('.video-play-icon').hasClass('hide-play-btn')) {
+  if ($('.video-play-icon').hasClass('hide-play-btn') || $('.video-play-icon').css('opacity', 0)) {
     vid2.pause()
     $(this).removeClass('hide-play-btn')
+    $('.video-play-icon').css('opacity', 1)
 
   } else {
     $(this).addClass('hide-play-btn')
-    $('.become-video').addClass('unblur')
+    $('.video-play-icon').css('opacity', 0)
     vid2.play()
     vid2.muted = false
     console.log('work')
@@ -212,6 +213,11 @@ let isNotMob = window.matchMedia("(min-width: 768px)").matches;
 
 $('.button-8').on('click', function () {
   goToSection("label7", "label8");
+})
+
+$('.video-play-icon').on('click', function(){
+  goToSection("big-video-play", "label7")
+  $('.video-play-icon').css('display', 'none')
 })
 
 
@@ -336,12 +342,22 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-3', { visibility: 'hidden' })//убирается пред. див
     .addLabel("label6")
 
+    .set('.big-video', { visibility: 'hidden', opacity: 0 })
     .set('.special-sect', { visibility: 'visible' })
-    .to('.section-4 ', { opacity: 0, duration: 1, onComplete: function () { playVid2() }, onReverseComplete: function () { vid2.pause() } },) //запускается видик, ну и стопится тоже
+    .to('.section-4 ', { opacity: 0, duration: 1 })
     .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { 'font-size': '66%', y: '-100px', duration: 1 }, '<')  // уменьшается и поднимается текст
+    .to('.glasses-in-now-you-can', {y: '-40px', duration: 1}, '<')
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
+    .addLabel("label-video-play")
+
+    .set('.big-video', { visibility: 'visible' })
+    .to('.become-text', { opacity: 0, duration: 1 })
+    .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
+    .to('.button-8', { opacity: 0, duration: 1, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } }, '<')
+    .set('.video-play-icon', {display: 'none'})
+    .to('.big-video', { opacity: 1, duration: 1 }, '<')
     .addLabel("label7")
 
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },)
@@ -514,7 +530,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.blockchain-section', { opacity: 0, duration: 1 },)
     .set('.blockchain-section', { visibility: 'hidden' })
-    .set('.site-logo', { opacity: 0 })
+    .set('.site-logo', { opacity: 1 })
     .set('.section-form', { zIndex: 31, visibility: 'visible' },)
     .to('.section-form', { opacity: 1, duration: 0.6 },)
     .addLabel("label27")

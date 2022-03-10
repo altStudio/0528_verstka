@@ -622,6 +622,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.section-invert', { opacity: 0, duration: 0.6 })
     .set('.section-monic', { zIndex: 22, top: 0 })
     .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .set('.section-invert', {visibility: 'hidden'})
     .addLabel("label15")
 
     .to('.section-monic', { opacity: 0, duration: 0.6 })
