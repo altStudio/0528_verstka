@@ -3406,6 +3406,11 @@
   font-size: 28px;
 }
 
+.hidden-vis{
+  visibility: hidden;
+  display: block;
+}
+
 .button-3 {
   font-family: Manrope, sans-serif;
   font-size: 24px;
