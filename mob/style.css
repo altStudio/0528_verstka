@@ -6474,7 +6474,7 @@ textarea.w-input, textarea.w-select {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: auto;
-  bottom: 90px;
+  bottom: 120px;
 }
 
 .text-span-24 {
