@@ -215,8 +215,8 @@ $('.button-8').on('click', function () {
   goToSection("label8", "label9");
 })
 
-$('.video-play-icon').on('click', function(){
-  goToSection("big-video-play", "label8")
+$('.video-play-icon').on('click', function () {
+  goToSection("label7", "label8")
   $('.video-play-icon').css('display', 'none')
 })
 
@@ -347,18 +347,19 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.section-4 ', { opacity: 0, duration: 1.5 })
     .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { 'font-size': '66%', y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
-    .to('.glasses-in-now-you-can', {y: '-40px', duration: 1.5}, '<')
+    .to('.glasses-in-now-you-can', { y: '-40px', duration: 1.5 }, '<')
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")
 
     .set('.big-video', { visibility: 'visible' })
+    .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
     .to('.become-text', { opacity: 0, duration: 1 })
-    .to('.video-play-icon', { opacity: 0, duration: 0.5}, '<')
+    .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
     .to('.big-video', { opacity: 1, duration: 1.5 }, '<')
-    .to('.img-bg', {opacity: 0, duration: 1.5}, '<')
+    .to('.img-bg', { opacity: 0, duration: 1.5 }, '<')
     .to('.button-8', { opacity: 0, duration: 1, }, '<')
-    .set('.video-play-icon', {display: 'none', onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') }})
+    .set('.video-play-icon', { display: 'none' })
     .addLabel("label8")
 
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },)
@@ -514,7 +515,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.sect-mission', { opacity: 1, duration: 1 },)
     .addLabel("label25")
 
-    .to('.vis-mis', { opacity: 0, duration: 1.5})
+    .to('.vis-mis', { opacity: 0, duration: 1.5 })
     .to('.mis-text-vis', { opacity: 0, duration: 1.5 }, '<')
     .to('.mis-text-invs', { opacity: 1, duration: 1.5 })
     .to('.invis-mis', { opacity: 1, duration: 1.5 }, '<')
