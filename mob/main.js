@@ -298,7 +298,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
     .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
     .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
-    .to(".image-42", { x: -2000, duration: 1 }, '<')
+    .to(".image-42", { x: -2000, opacity: 0,duration: 1 }, '<')
     .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '-50vw', y: '70vh', width: '190vw', height: '90vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
@@ -347,7 +347,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.section-4 ', { opacity: 0, duration: 1.5 })
     .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { 'font-size': '66%', y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
-    .to('.glasses-in-now-you-can', { y: '-40px', duration: 1.5 }, '<')
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")
