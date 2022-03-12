@@ -4810,7 +4810,7 @@ textarea.w-input, textarea.w-select {
   top: auto;
   right: 0%;
   bottom: auto;
-  height: 450px;
+  height: 385px;
   max-height: none;
   max-width: 100%;
   margin-top: -25px;
@@ -8728,7 +8728,7 @@ textarea.w-input, textarea.w-select {
 
   .text-block-33.gradient-text.new.font-size-120 {
     margin-right: 0px;
-    text-align: center;
+    text-align: left;
   }
 
   .text-block-33.gradient-text.font-size-120 {
