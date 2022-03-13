@@ -6621,10 +6621,15 @@ textarea.w-input, textarea.w-select {
   display: none;
 }
 
-.bg-tech, .new-way-bg {
+.bg-tech, .new-way-bg, .bg-first-video-img {
   position: absolute;
   width: 100vw;
   height: 100vh;
+}
+
+.bg-first-video-img {
+  height: 120vh;
+  bottom: 0;
 }
 
 .new-way-bg {
@@ -6856,6 +6861,7 @@ textarea.w-input, textarea.w-select {
   box-shadow: 0px -34px 11px 30px #161616;
   height: 50px;
   top: 150px;
+  z-index: -1;
 }
 
 .div-for-relative-position {
