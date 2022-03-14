@@ -1495,6 +1495,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
+    z-index: 11;
 }
 
 .section-road-map {
@@ -2428,7 +2429,6 @@ a.my-underline:hover {
     right: auto;
     bottom: 0;
     height: 420px;
-    left: -15px;
     top: auto;
     z-index: -1;
     max-width: 100vw;
@@ -2437,8 +2437,6 @@ a.my-underline:hover {
 .gradient-under-sea-image {
     position: absolute;
     max-width: 100vw;
-    left: -15px;
-    right: -15px;
     z-index: -2;
     top: 50px;
 }
@@ -2446,14 +2444,14 @@ a.my-underline:hover {
 .drowning-man-image {
     position: absolute;
     right: -25px;
-    top: 212px;
+    top: 232px;
     width: 70%;
 }
 
 .surfing-man-image {
     position: absolute;
     left: 50px;
-    top: 70px;
+    top: 90px;
     width: 50%;
 }
 
@@ -3605,7 +3603,7 @@ a.my-underline:hover {
     }
 
     .div-block-27 .image-26 {
-        top: -40%;
+        top: -10vh;
         left: -5%;
     }
 

@@ -480,7 +480,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.blur-1', { x: '-50vw', duration: 1, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
     .to('.blur-2', { x: '20vw', duration: 1, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
     .to('#text-block-46-first', { opacity: 0, duration: 1.5 }, '+=4')
-    .to('.time-matters-bg', { opacity: 0, duration: 1.5 }, '<')
     .to('#text-block-46-second', { opacity: 1, duration: 1.5 }, '<')
     .addLabel("label22")
 
