@@ -1540,6 +1540,8 @@ body {
 
 .big-video {
     object-fit: cover;
+    visibility: hidden;
+    opacity: 0;
 }
 
 
