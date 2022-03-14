@@ -636,7 +636,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.section-monic', { opacity: 0, duration: 0.6 })
     .set('.section-earn', { zIndex: 23, top: 0, visibility: 'visible' })
     .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 })
-    .set('.section-earn', { visibility: 'hidden' })
+    .set('.section-monic', { visibility: 'hidden' })
     .addLabel("label16")
 
     .to('.section-earn', { opacity: 0, duration: 0.6 })
@@ -660,7 +660,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-offer', { visibility: 'hidden' })
     .addLabel("label18")
 
-    .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
+    .to('.how-works-rotate-container', { rotation: -65, duration: 1 })
+    .to('.how-works-rotate-container', { rotation: -180, duration: 1.5 })
     .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
     .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
     .to('.text-block-51', { opacity: 1, duration: 1 }, '-=0.5')
@@ -888,7 +889,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-offer', { visibility: 'hidden' })
     .addLabel("label18")
 
-    .to('.how-works-rotate-container', { rotation: -180, duration: 2 })
+    .to('.how-works-rotate-container', { rotation: -65, duration: 1 })
+    .to('.how-works-rotate-container', { rotation: -180, duration: 1.5 })
     .to('.text-block-38', { opacity: 0, duration: 1 }, '<')
     .to('.hiw-vis', { opacity: 0, duration: 1 }, '<')
     .to('.text-block-51', { opacity: 1, duration: 1 }, '-=0.5')
