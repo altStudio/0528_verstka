@@ -606,8 +606,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-ways-slider', { zIndex: 20, visibility: 'visible' },)
     .set('.section-7', { opacity: 0 })
     .to('.white-section', { opacity: 0, top: '-100vh', duration: 1.5 })
-    .to('#howto', { top: 0, duration: 1.8, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } }, '<')
+    .to('#howto', { top: '0vh', duration: 1.8, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } }, '<')
     .set('.white-section', { visibility: 'hidden' })
+    .to('.bg-ways', { opacity: 1, duration: 1 })
     .addLabel("label13")
 
     .set('.section-invert', { opacity: 0 })
