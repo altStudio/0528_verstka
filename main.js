@@ -560,17 +560,17 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label7")
 
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },)
+    .set('.special-sect', { visibility: 'hidden' })
     .set('.section-6', { zIndex: 17, visibility: 'visible' })
     .fromTo('.image-43', { scale: 6 }, { scale: 0.4, duration: 1 }, '<')
-    .from('.text-block-58 ', { scale: 100, y: 0, duration: 1 }, '<')
     .to('.alantext', { opacity: 1, duration: 1 }, '<')
-    .set('.special-sect', { visibility: 'hidden' })
+    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 0, duration: 1}, '-=0.5')
     .addLabel("label8")
 
     .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.2 },)
     .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
     .to('.image-43', { scale: 0.6, duration: 1.2 }, '<')
-    .to('.text-block-56', { scale: 1, y: 0, duration: 1.2 }, '<')
+    .to('.text-block-56', { scale: 1, y: 0, opacity: 1, duration: 1 }, '-=0.5')
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 },)
     .addLabel("label9")
 
@@ -793,7 +793,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },) // исчезает старое видео
     .set('.section-6', { zIndex: 17, visibility: 'visible' },) // показываем слой "глаза"
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<') // уменьшаем глаз
-    .from('.text-block-58 ', { scale: 100, y: 300, duration: 1 }, '<')
+    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 0, duration: 1}, '-=0.5')
     .to('.alantext', { opacity: 1, duration: 1 })
     .set('.special-sect', { visibility: 'hidden' })
     .addLabel("label8")
@@ -801,7 +801,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.2 },)
     .to('.alantext', { opacity: 0, duration: 0.5 }, '<')
     .to('.image-43', { scale: 0.6, duration: 1.2 }, '<')
-    .to('.text-block-56', { scale: 1, y: 0, duration: 1.2 }, '<')
+    .to('.text-block-56', { scale: 1, y: 0, opacity: 1, duration: 1 }, '-=0.5')
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
     .addLabel("label9")
 

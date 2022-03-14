@@ -1726,8 +1726,8 @@ body {
  }
 
 .text-block-56 {
-    transform: scale(100);
-
+    transform: scale(10);
+    opacity: 0;
 }
 
 .alantext {
