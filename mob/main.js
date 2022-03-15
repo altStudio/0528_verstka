@@ -317,7 +317,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
     .to(".image-42", { x: -2000, opacity: 0, duration: 1 }, '<')
     .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
-    .to(".image-6", { x: '-50vw', y: '70vh', width: '190vw', height: '90vh', rotation: 0, duration: 1.5 }, '<')
+    .to(".image-6", { x: '-50vw', y: '70vh', width: '130vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
     .addLabel("label2")
@@ -348,8 +348,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label5")
 
     .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() } })
-    .set('.text-block-14', { 'font-size': '228%' })
-    .set('.text-block-15', { 'font-size': '128%' })
+    .set('.text-block-14', { scale: 1 })
+    .set('.text-block-15', { scale: 1 })
     .to('.section-3', { opacity: 0, duration: 1 })//исчезает предыдущий слайд
     .to('.mobile-section-title-item-hidden', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
     .to('.hidden-text-2', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
@@ -361,8 +361,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.special-sect', { visibility: 'visible' })
     .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } })
-    .to('.text-block-14', { 'font-size': '150%', y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
-    .to('.text-block-15', { 'font-size': '66%', y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
+    .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
+    .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")

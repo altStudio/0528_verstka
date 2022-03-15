@@ -397,12 +397,24 @@ opacity: 0;
 
 .section-2.screenone.section.first.not-padding-top.first-head-section {
     align-items: flex-start;
+    background: url(./images/bg-map-first-screen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .section-inner.first-inner {
     max-width: 270px;
     margin-right: auto;
     margin-left: auto;
+}
+.section-4.section {
+    background: black;
+}
+.div-for-relative-position {
+    margin: 0 -15px;
+}
+.glasses-in-now-you-can {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -3985,7 +3997,12 @@ a.my-underline:hover {
             font-size: 22px;
             line-height: 150%;
         }
-
+        .text-container.margin-top-auto {
+            margin-top: 80%;
+        }
+        .text-block-14.hidden-title {
+            line-height: 150%;
+        }
     }
 
     @media screen and (max-width: 1025px) {
@@ -3997,7 +4014,7 @@ a.my-underline:hover {
 
     @media screen and (max-height: 750px) {
         .image-6 {
-            top: -700px;
+            top: -800px;
         }
 
         .image-6.preload {
