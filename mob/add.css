@@ -2308,10 +2308,6 @@ a.my-underline:hover {
     z-index: 10;
 }
 
-.video-play-icon {
-    transform: translate(-50%, -50%);
-}
-
 /* filter */
 .dark {
     filter: brightness(0.5);
@@ -2360,10 +2356,13 @@ a.my-underline:hover {
     display: flex;
     flex-shrink: 0;
     flex-wrap: nowrap;
+    margin-top: 30vh;
 }
 
 .road-map-slider_content {
     flex-shrink: 0;
+    width: 161px;
+    height: fit-content;
 }
 
 .road-map-slider_text {

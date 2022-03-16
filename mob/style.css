@@ -3459,6 +3459,13 @@ textarea.w-input, textarea.w-select {
   justify-content: flex-end;
 }
 
+.image-bg-roadmap{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -4vh;
+}
+
 .text-block-8 {
   line-height: 180px;
 }
@@ -4610,6 +4617,7 @@ textarea.w-input, textarea.w-select {
   color: #fff;
   font-size: 40px;
   line-height: 130%;
+  padding-bottom: 5px;
 }
 
 .road-map-slider_text {
@@ -6866,7 +6874,6 @@ textarea.w-input, textarea.w-select {
 
 .div-for-relative-position {
   position: relative;
-  top: -18vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -8701,6 +8708,7 @@ textarea.w-input, textarea.w-select {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 5vh;
   }
 
   .text-block-28.header-title {
@@ -9460,15 +9468,14 @@ textarea.w-input, textarea.w-select {
   .video-play-icon {
     z-index: 1;
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 50%;
-    right: 0px;
+    right: 0;
     bottom: 0%;
-    width: 86px;
-    height: 86px;
-    background-image: url("./images/svg-8.svg");
-    background-position: 50% 50%;
-    background-size: contain;
+    width: 128px;
+    margin: 0 auto;
+    background-image: url('./images/play-btn.png');
+    height: 280px;
     background-repeat: no-repeat;
   }
 

@@ -158,21 +158,6 @@ $('.trigger-invite-btn').on('click', function () {
   $(this).addClass('hide')
 })
 
-$('.video-play-icon').on('click', function () {
-  if ($('.video-play-icon').hasClass('hide-play-btn') || $('.video-play-icon').css('opacity', 0)) {
-    vid2.pause()
-    $(this).removeClass('hide-play-btn')
-    $('.video-play-icon').css('opacity', 1)
-
-  } else {
-    $(this).addClass('hide-play-btn')
-    $('.video-play-icon').css('opacity', 0)
-    vid2.play()
-    vid2.muted = false
-    console.log('work')
-  }
-})
-
 
 let tl2 = gsap.timeline({
   paused: true
@@ -218,20 +203,22 @@ $('.button-8').on('click', function () {
   goToSection("label7", "label8");
 })
 
-$('.video-play-icon').on('click', function () {
+$('#video-play-icon').on('click', function () {
   if(!isVideoStarted){
     $('.big-video').css('visibility', 'visible');
     $('.big-video').css('opacity', '1');
     $('.video-play-icon').css('opacity', '0');
     $('.become-text').css('opacity', '0');
+    vid2.muted = false;
     isVideoStarted = true;
   }
 
   if (isVideoPlaying) {
     vid2.pause();
+    $('.video-play-icon').css('opacity', '1');
   } else {
     playVid2();
-    vid2.muted = false;
+    $('.video-play-icon').css('opacity', '0');
   }
 
   isVideoPlaying = !isVideoPlaying;
