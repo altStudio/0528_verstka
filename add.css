@@ -499,6 +499,7 @@ opacity: 0;
 
 .ways-slider .ways-slider-item .ways-slider-item_text {
     top: 20%;
+    z-index: 100;
 }
 
 
@@ -2731,7 +2732,9 @@ a.my-underline:hover {
         margin-right: 0;
     }
     
-    
+    .text-block-26 {
+        margin-top: 60px;
+    }
     
     .section-offer .columns-11 {
         margin-top: 0px;

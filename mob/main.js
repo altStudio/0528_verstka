@@ -204,7 +204,7 @@ $('.button-8').on('click', function () {
 })
 
 $('#video-play-icon').on('click', function () {
-  if(!isVideoStarted){
+  if (!isVideoStarted) {
     $('.big-video').css('visibility', 'visible');
     $('.big-video').css('opacity', '1');
     $('.video-play-icon').css('opacity', '0');
@@ -290,7 +290,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   tl2.addLabel("start")
 
     .to(".image-40", { x: 450, duration: 1.5 })
-    .to(".image-bg-map", {opacity: 0}, "<")
+    .to(".image-bg-map", { opacity: 0 }, "<")
     .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
     .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
     .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
@@ -418,6 +418,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-7', { opacity: 0, visibility: 'hidden' })
     .set('.section-ways-slider', { zIndex: 20 },)
     .to('#howto', { y: '-100vh', duration: 1.5, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })
+    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')
+    .set('#embed-video-6', { display: 'inline-block' })
+    .set('#embed-video-7', { display: 'inline-block' })
+    .set('#embed-video-8', { display: 'inline-block' })
+    .set('#embed-img-5', { display: 'none' })
     .to('.white-section', { opacity: 0, duration: 0.6 }, '<')
     .addLabel("label13")
 

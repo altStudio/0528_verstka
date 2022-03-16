@@ -1251,6 +1251,15 @@ textarea.w-input, textarea.w-select {
   height: 50%;
 }
 
+#embed-video-5, #embed-video-6, #embed-video-7, #embed-video-8 {
+  display: none;
+}
+
+#embed-img-5 {
+  height: 100%;
+  z-index: -100;
+}
+
 .w-background-video>video::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none
