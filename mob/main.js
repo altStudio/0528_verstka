@@ -291,7 +291,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to(".image-40", { x: 450, duration: 1.5 })
     .to(".image-bg-map", {opacity: 0}, "<")
-    .to('.scroll-dv', { left: 0, right: 0, top: 0, bottom: 0, width: '100vw', duration: 1.5 }, "<")
+    .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
     .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
     .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
     .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
@@ -368,7 +368,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } })
     .set('.section-6', { zIndex: 17, visibility: 'visible' },)
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
-    .from('.text-block-58 ', { scale: 100, y: 300, duration: 1.5 }, '<')
+    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 300, duration: 1 }, '-=0.5')
     .set('.special-sect', { visibility: 'hidden' })
     .to('.alantext', { opacity: 1, duration: 0.5 })
     .addLabel("label8")

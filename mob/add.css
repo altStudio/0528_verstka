@@ -4029,6 +4029,14 @@ a.my-underline:hover {
             margin-bottom: 60px !important;
             margin-top: 0 !important;
         }
+
+        .section-road-map .road-map-slider_text {
+            font-size: 14px;
+        }
+
+        .road-map-slider_content {
+            width: 140px;
+        }
     }
 
     /*.mother .section {*/
