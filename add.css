@@ -1577,7 +1577,7 @@ body {
 
 
 /* Меню */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
     .image-7 {
         top: 10%;
     }
@@ -2863,10 +2863,6 @@ a.my-underline:hover {
         margin-top: 5vh;
         margin-bottom: 25px;
     }
-
-    .pax-creator-content{
-        justify-content: space-around;
-    }
     .section-invert .image-26 {
         max-width: 200px;
         object-fit: contain;
@@ -2874,7 +2870,10 @@ a.my-underline:hover {
     .section-invert .image-27 {
         object-fit: contain;
         max-width: 312px;
-        right: auto;
+        right: -40px;
+    }
+    .pax-creator-content{
+        justify-content: space-around;
     }
     .section-invert .text-block-33.gradient-text.font-size-120 {
         font-size: 85px;
@@ -2940,7 +2939,6 @@ a.my-underline:hover {
         height: 330px;
         object-fit: contain;
         top: -10px;
-        left: -45px;
     }
     .section-earn .div-block-27 {
         margin-bottom: 0;

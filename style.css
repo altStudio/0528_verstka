@@ -4612,9 +4612,6 @@ textarea.w-input, textarea.w-select {
   margin-right: auto;
   margin-bottom: 0;
   padding-right: 0px;
-  -webkit-transform: translate(20%, 0px);
-  -ms-transform: translate(20%, 0px);
-  transform: translate(20%, 0px);
 }
 
 .column-8 {
@@ -4719,9 +4716,9 @@ textarea.w-input, textarea.w-select {
   max-height: none;
   max-width: 100%;
   margin-top: -25px;
-  -webkit-transform: translate(5px, 0px);
-  -ms-transform: translate(5px, 0px);
-  transform: translate(5px, 0px);
+  -webkit-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate(100px, 0px);
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -6767,7 +6764,7 @@ textarea.w-input, textarea.w-select {
   z-index: -100;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .image-6 {
     top: -100%;
     right: 0%;
@@ -7414,9 +7411,6 @@ textarea.w-input, textarea.w-select {
     top: -8px;
     z-index: 10;
     margin-bottom: 0px;
-    -webkit-transform: translate(20%, 0px);
-    -ms-transform: translate(20%, 0px);
-    transform: translate(20%, 0px);
     text-align: left;
   }
 
@@ -7447,16 +7441,13 @@ textarea.w-input, textarea.w-select {
 
   .image-27 {
     position: relative;
-    left: 0%;
+    left: 20px;
     top: 33px;
     right: 0px;
     bottom: 0%;
     width: auto;
     max-width: 400px;
     margin-left: 0px;
-    -webkit-transform: translate(-25%, 0px);
-    -ms-transform: translate(-25%, 0px);
-    transform: translate(-25%, 0px);
     -o-object-fit: contain;
     object-fit: contain;
   }
