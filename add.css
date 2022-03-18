@@ -633,6 +633,7 @@ opacity: 0;
 .icons-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .star-container .star {
@@ -2966,9 +2967,6 @@ a.my-underline:hover {
     .earns-section-2 .icons-container svg {
         max-width: 60px;
     }
-    .earns-section-2 .botton-bar {
-        padding-right: 14.7vw;
-    }
     .section-ways-slider .universe-bottom-text {
         opacity: 1;
     }
@@ -2989,9 +2987,6 @@ a.my-underline:hover {
     }
     .earns-section-2 .div-block-17 img {
         max-width: 200px;
-    }
-    .earns-section-2 .text-block-47 {
-        font-size: 18px;
     }
     .section-10.section-offer {
         padding-top: 6vh !important;
