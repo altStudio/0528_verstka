@@ -94,6 +94,7 @@ function textblock7() {
 
 const vid2 = document.querySelector('.big-video');
 vid2.muted = true;
+vid2.setAttribute('playsinline', 'playsinline');
 
 Pace.once("done", function () {
   //   $('#embed-video-1').html(`
