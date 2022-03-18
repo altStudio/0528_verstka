@@ -2702,6 +2702,10 @@ a.my-underline:hover {
         height: 400px;
     }
 
+    .last-section{
+        justify-content: flex-start!important;
+    }
+
     .text-block-33.font-size-120 {
         font-size: 100px;
         margin: 70px auto;
@@ -3121,6 +3125,7 @@ a.my-underline:hover {
         left: 50%;
         transform: translateX(-50%);
         bottom: 110px;
+        top: auto;
         min-width: 300px;
         min-height: 300px;
     }

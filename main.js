@@ -564,7 +564,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-6', { zIndex: 17, visibility: 'visible' })
     .fromTo('.image-43', { scale: 6 }, { scale: 0.4, duration: 1 }, '<')
     .to('.alantext', { opacity: 1, duration: 1 }, '<')
-    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 0, duration: 1}, '-=0.5')
+    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 0, duration: 1 }, '-=0.5')
     .addLabel("label8")
 
     .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.2 },)
@@ -731,7 +731,16 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.blockchain-section', { opacity: 0, duration: 1 })
     .set('.section-form', { zIndex: 31, top: 0, visibility: 'visible' })
     .to('.section-form', { opacity: 1, duration: 1.2 })
-    .set('.blockchain-section', { visibility: 'hidden' })
+    .set('.blockchain-section', {
+      visibility: 'hidden', onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+        let i = 0;
+        setInterval(() => {
+          i -= 0.25;
+          if (i <= -360) i = 0;
+          $('.image-36').css('transform', `rotate(${i}deg)`);
+        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+      }
+    })
     .addLabel("label27")
 
 
@@ -797,7 +806,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: function () { vid2.play() } },) // исчезает старое видео
     .set('.section-6', { zIndex: 17, visibility: 'visible' },) // показываем слой "глаза"
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<') // уменьшаем глаз
-    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 0, duration: 1}, '-=0.5')
+    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 0, duration: 1 }, '-=0.5')
     .to('.alantext', { opacity: 1, duration: 1 })
     .set('.special-sect', { visibility: 'hidden' })
     .addLabel("label8")
@@ -966,7 +975,16 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.blockchain-section', { opacity: 0, duration: 1 })
     .set('.section-form', { zIndex: 31, top: 0, visibility: 'visible' })
     .to('.section-form', { opacity: 1, duration: 1 })
-    .set('.blockchain-section', { visibility: 'hidden' })
+    .set('.blockchain-section', {
+      visibility: 'hidden', onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+        let i = 0;
+        setInterval(() => {
+          i -= 0.25;
+          if (i <= -360) i = 0;
+          $('.image-36').css('transform', `rotate(${i}deg)`)
+        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+      }
+    })
     .addLabel("label27")
 
 }

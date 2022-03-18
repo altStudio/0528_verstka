@@ -541,14 +541,16 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.blockchain-section', { visibility: 'hidden' })
     .set('.site-logo', { opacity: 1 })
     .set('.section-form', { zIndex: 31, visibility: 'visible' },)
-    .to('.section-form', { opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутить текст
-      let i = 0;
-      setInterval(() => {
-        i-=0.25;
-        if(i < -360) i = 0;
-        $('.image-36').css('transform', `rotate(${i}deg)`)
-      }, 24.5); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 35 сек.
-    } },)
+    .to('.section-form', {
+      opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+        let i = 0;
+        setInterval(() => {
+          i -= 0.25;
+          if (i <= -360) i = 0;
+          $('.image-36').css('transform', `rotate(${i}deg)`)
+        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+      }
+    })
     .addLabel("label27")
 
 } else if (window.matchMedia("(min-width: 1100px)").matches && window.matchMedia("(max-width: 1440px)").matches) {
