@@ -351,6 +351,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } })
     .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
+    .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<')
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")
@@ -540,7 +541,14 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.blockchain-section', { visibility: 'hidden' })
     .set('.site-logo', { opacity: 1 })
     .set('.section-form', { zIndex: 31, visibility: 'visible' },)
-    .to('.section-form', { opacity: 1, duration: 1 },)
+    .to('.section-form', { opacity: 1, duration: 1, onComplete: () => {
+      let i = 0;
+      setInterval(() => {
+        i-=0.25;
+        if(i < -360) i = 0;
+        $('.image-36').css('transform', `rotate(${i}deg)`)
+      }, 24.5);
+    } },)
     .addLabel("label27")
 
 } else if (window.matchMedia("(min-width: 1100px)").matches && window.matchMedia("(max-width: 1440px)").matches) {

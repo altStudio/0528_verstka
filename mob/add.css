@@ -4037,6 +4037,10 @@ a.my-underline:hover {
         .road-map-slider_content {
             width: 140px;
         }
+
+        .road-map-slider_content {
+            font-size: 14px;
+        }
     }
 
     /*.mother .section {*/

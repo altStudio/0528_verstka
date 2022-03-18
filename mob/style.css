@@ -9481,10 +9481,11 @@ textarea.w-input, textarea.w-select {
     top: 50%;
     right: 0;
     bottom: 0%;
-    width: 128px;
+    width: 115px;
     margin: 0 auto;
     background-image: url('./images/play-btn.png');
-    height: 280px;
+    background-size: cover;
+    height: 272px;
     background-repeat: no-repeat;
   }
 
