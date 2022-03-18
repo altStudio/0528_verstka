@@ -1258,6 +1258,7 @@ textarea.w-input, textarea.w-select {
 #embed-img-5 {
   height: 100%;
   z-index: -100;
+  width: 100%;
 }
 
 .w-background-video>video::-webkit-media-controls-start-playback-button {
@@ -5613,9 +5614,7 @@ textarea.w-input, textarea.w-select {
   display: block;
   height: 50vh;
   margin-right: 14%;
-  margin-left: auto;
-  -webkit-filter: blur(7px);
-  filter: blur(7px);
+  margin-left: auto;;
 }
 
 .image-38 {
@@ -6623,6 +6622,7 @@ textarea.w-input, textarea.w-select {
 
 .image-50 {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }

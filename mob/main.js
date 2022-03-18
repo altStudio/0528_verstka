@@ -487,8 +487,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.marque-glasses', { visibility: 'hidden' })
     .to('.time-matters', { zIndex: 27, visibility: 'visible' },)
     .to('.time-matters', { opacity: 1, duration: 1 },)
-    .to('.blur-1', { x: '-50vw', duration: 1, onComplete: function () { $('.blur-1').addClass('unblur'); }, onReverseComplete: function () { $('.blur-1').removeClass('unblur'); } })
-    .to('.blur-2', { x: '20vw', duration: 1, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } }, '<')
+    .to('.blur-1', { x: '-50vw', duration: 1, onComplete: function () { $('.blur-1').attr('src', './images/man-screen.svg'); }, onReverseComplete: function () { $('.blur-1').attr('src', './images/man-screen-blur.png'); } })
+    .to('.blur-2', { x: '20vw', duration: 1, onComplete: function () { $('.blur-2').attr('src', './images/man-laptop-blur.png'); }, onReverseComplete: function () { $('.blur-2').attr('src', './images/man-laptop.svg'); } }, '<')
     .to('#text-block-46-first', { opacity: 0, duration: 1.5 }, '+=4')
     .to('#text-block-46-second', { opacity: 1, duration: 1.5 }, '<')
     .addLabel("label21")
@@ -541,13 +541,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.blockchain-section', { visibility: 'hidden' })
     .set('.site-logo', { opacity: 1 })
     .set('.section-form', { zIndex: 31, visibility: 'visible' },)
-    .to('.section-form', { opacity: 1, duration: 1, onComplete: () => {
+    .to('.section-form', { opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутить текст
       let i = 0;
       setInterval(() => {
         i-=0.25;
         if(i < -360) i = 0;
         $('.image-36').css('transform', `rotate(${i}deg)`)
-      }, 24.5);
+      }, 24.5); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 35 сек.
     } },)
     .addLabel("label27")
 
