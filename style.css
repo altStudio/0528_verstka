@@ -6763,6 +6763,7 @@ textarea.w-input, textarea.w-select {
 #embed-img-5 {
   height: 100%;
   z-index: -100;
+  width: 100%;
 }
 
 @media screen and (min-width: 1441px) {
