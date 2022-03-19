@@ -9,6 +9,8 @@ function playVid() {
   vid.play()
 }
 
+let rotateInterval;
+let degree = 0;
 let debugMessages = [];
 
 function renderDebug(message) {
@@ -544,13 +546,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-form', { zIndex: 31, visibility: 'visible' },)
     .to('.section-form', {
       opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
-        let i = 0;
-        setInterval(() => {
-          i -= 0.25;
-          if (i <= -360) i = 0;
-          $('.image-36').css('transform', `rotate(${i}deg)`)
+        rotateInterval = setInterval(() => {
+          degree -= 0.25;
+          if (degree <= -360) degree = 0;
+          $('.image-36').css('transform', `rotate(${degree}deg)`)
         }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
-      }
+      }, onReverseComplete: () => { clearInterval(rotateInterval); }
     })
     .addLabel("label27")
 

@@ -3187,7 +3187,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .being-beholder-text {
-  top: calc(180px + 1.6vh);
+  top: calc(180px + 3.6vh);
 }
 
 .content-bottom.flex-end.margin-top-auto, .content-center {
@@ -4128,7 +4128,6 @@ textarea.w-input, textarea.w-select {
 
 .regular-text {
   max-width: 100% !important;
-  margin-top: 60px !important;
 }
 
 .image-20 {
@@ -4493,6 +4492,12 @@ textarea.w-input, textarea.w-select {
   color: #fff;
   font-size: 72px;
   line-height: 120%;
+}
+
+.front-div{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 .text-block-29 {
@@ -5211,7 +5216,7 @@ textarea.w-input, textarea.w-select {
 
 .mission-text.mis-text-invs.misson-sto {
   max-width: 100%;
-  top: 35px;
+  top: 20px;
 }
 
 .border-text {
@@ -5227,7 +5232,7 @@ textarea.w-input, textarea.w-select {
   right: auto;
   bottom: auto;
   opacity: 0;
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 16px;
 }
 
@@ -8228,12 +8233,12 @@ textarea.w-input, textarea.w-select {
 
   .center-text.hidden-text-2 {
     max-width: 100%;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .center-text.visible-text {
     max-width: 100%;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .image-9 {
@@ -8371,7 +8376,7 @@ textarea.w-input, textarea.w-select {
   .left-text {
     margin-right: auto;
     margin-left: auto;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 130%;
     text-align: center;
   }
@@ -8596,13 +8601,13 @@ textarea.w-input, textarea.w-select {
 
   .text-go.center-text {
     max-width: 100%;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 130%;
   }
 
   .text-go.center-text._w-960 {
     max-width: 100%;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 130%;
   }
 
@@ -8616,7 +8621,7 @@ textarea.w-input, textarea.w-select {
 
   .text-go.marcel-3 {
     opacity: 1;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 130%;
   }
 
@@ -8729,7 +8734,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-29 {
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
@@ -8850,7 +8855,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-65 {
-    margin-top: 7vh;
+    margin-top: 3vh;
     margin-bottom: 0 !important;
   }
 
@@ -8926,7 +8931,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-39 {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .image-32.arrow-down {
@@ -9004,7 +9009,7 @@ textarea.w-input, textarea.w-select {
 
   .mission-text.mis-text-vis {
     margin-bottom: 24px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
@@ -9012,7 +9017,7 @@ textarea.w-input, textarea.w-select {
     left: 0px;
     top: 0px;
     opacity: 0;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .mission-content-container {
@@ -9022,7 +9027,7 @@ textarea.w-input, textarea.w-select {
 
   .border-text.vis-mis {
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
   }
@@ -9061,7 +9066,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-41 {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .form {
@@ -9123,7 +9128,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-46 {
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
@@ -9253,8 +9258,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .text-block-54 {
-    margin-bottom: 24px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
@@ -9408,7 +9412,7 @@ textarea.w-input, textarea.w-select {
     max-width: 100%;
     min-width: 100%;
     opacity: 0;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 130%;
   }
 
@@ -9532,12 +9536,12 @@ textarea.w-input, textarea.w-select {
 
   .text-block-63 {
     opacity: 0;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
   .text-block-64 {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 130%;
   }
 

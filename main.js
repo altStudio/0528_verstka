@@ -10,6 +10,8 @@ function playVid() {
   vid.play()
 }
 
+let rotateInterval;
+let degree = 0;
 let debugMessages = [];
 
 function renderDebug(message) {
@@ -730,17 +732,17 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.blockchain-section', { opacity: 0, duration: 1 })
     .set('.section-form', { zIndex: 31, top: 0, visibility: 'visible' })
-    .to('.section-form', { opacity: 1, duration: 1.2 })
+    .to('.section-form', { opacity: 1, duration: 1.2, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+      rotateInterval = setInterval(() => {
+        degree -= 0.25;
+        if (degree <= -360) degree = 0;
+        $('.image-36').css('transform', `rotate(${degree}deg)`);
+      }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+    }, onReverseComplete: () => {
+      clearInterval(rotateInterval);
+    } })
     .set('.blockchain-section', {
-      visibility: 'hidden', onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
-        let i = 0;
-        setInterval(() => {
-          i -= 0.25;
-          if (i <= -360) i = 0;
-          $('.image-36').css('transform', `rotate(${i}deg)`);
-        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
-      }
-    })
+      visibility: 'hidden'})
     .addLabel("label27")
 
 
@@ -876,33 +878,33 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-ways-slider', { visibility: 'hidden' })
     .addLabel("label14")
 
-    .to('.section-invert', { opacity: 0, duration: 0.6 })
+    .to('.section-invert', { opacity: 0, duration: 1 })
     .set('.section-monic', { zIndex: 22, top: 0, visibility: 'visible' })
     .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 })
     .set('.section-invert', { visibility: 'hidden' })
     .addLabel("label15")
 
-    .to('.section-monic', { opacity: 0, duration: 0.6 })
+    .to('.section-monic', { opacity: 0, duration: 1 })
     .set('.section-earn', { zIndex: 23, top: 0, visibility: 'visible' })
     .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 })
     .set('.section-monic', { visibility: 'hidden' })
     .addLabel("label16")
 
-    .to('.section-earn', { opacity: 0, duration: 0.6 })
+    .to('.section-earn', { opacity: 0, duration: 1 })
     .set('.section-offer', { zIndex: 24, top: 0, visibility: 'visible' })
     .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
     .set('.section-earn', { visibility: 'hidden' })
     .addLabel("label17")
 
-    .set('.vis-mis', { opacity: 0, duration: 1 })
-    .to('.section-offer', { opacity: 0, duration: 0.6 })
     .set('.vis-mis', { opacity: 0 })
-    .set('.how-works-section', { zIndex: 25, opacity: 1, top: 0, visibility: 'visible' })
+    .set('.how-works-section', { zIndex: 25, top: 0, visibility: 'visible' })
     .set('.how-works-rotate-image1', { opacity: 0 })
     .set('.how-works-rotate-container', { rotation: -40 })
     .set('.hiw-vis', { x: -200, opacity: 0 })
     .set('.text-block-38', { opacity: 0, x: -200 })
-    .to('.how-works-rotate-image1', { opacity: 1, duration: 1 })
+    .to('.section-offer', { opacity: 0, duration: 1 })
+    .to('.how-works-section', { opacity: 1, duration: 1 })
+    .to('.how-works-rotate-image1', { opacity: 1, duration: 1 }, '<')
     .to('.how-works-rotate-container', { rotation: 0, duration: 1 }, '<')
     .to('.text-block-38', { opacity: 1, x: 0, duration: 1 }, '<')
     .to('.hiw-vis', { opacity: 1, x: 0, duration: 1 }, '<')
@@ -917,13 +919,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.hiw-unvis', { opacity: 1, duration: 1 }, '<')
     .addLabel("label19")
 
-    .to('.how-works-section', { opacity: 0, duration: 0.6 })
+    .to('.how-works-section', { opacity: 0, duration: 1 })
     .set('.marque-glasses', { zIndex: 26, top: 0, visibility: 'visible' })
     .fromTo('.marque-glasses', { opacity: 0 }, { opacity: 1, duration: 1 })
     .set('how-works-section', { visibility: 'hidden' })
     .addLabel("label20")
 
-    .to('.marque-glasses', { opacity: 0, duration: 0.8 })
+    .to('.marque-glasses', { opacity: 0, duration: 1 })
     .set('.time-matters', { zIndex: 27, opacity: 1, top: 0, visibility: 'visible' })
     .to('.blur-2', { x: 300, duration: 1.8, onComplete: function () { $('.blur-2').addClass('blur-effect'); }, onReverseComplete: function () { $('.blur-2').removeClass('blur-effect'); } },)
     .to('.image-53', { x: '30%', y: '-45%', duration: 1.8 }, "<+0.2")
@@ -942,14 +944,14 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
     .addLabel("label22")
 
-    .to('.time-matters', { opacity: 0, duration: 0.6 })
+    .to('.time-matters', { opacity: 0, duration: 1 })
     .set('.section-road-map', { zIndex: 28, opacity: 1, top: 0, visibility: 'visible' })
     .fromTo('.road-map-slider', { y: 3000, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2 })
     .set('.time-matters', { visibility: 'hidden' })
     .addLabel("label23")
 
 
-    .to('.section-road-map', { opacity: 0, duration: 0.6 })
+    .to('.section-road-map', { opacity: 0, duration: 1 })
     .set('.vis-mis', { opacity: 1 })
     .set('.sect-mission', { zIndex: 29, top: 0, visibility: 'visible' })
     .to('.sect-mission', { opacity: 1, duration: 1 })
@@ -974,17 +976,15 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.blockchain-section', { opacity: 0, duration: 1 })
     .set('.section-form', { zIndex: 31, top: 0, visibility: 'visible' })
-    .to('.section-form', { opacity: 1, duration: 1 })
+    .to('.section-form', { opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+      rotateInterval = setInterval(() => {
+        degree -= 0.25;
+        if (degree <= -360) degree = 0;
+        $('.image-36').css('transform', `rotate(${degree}deg)`)
+      }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+    }, onReverseComplete: () => { clearInterval(rotateInterval);} })
     .set('.blockchain-section', {
-      visibility: 'hidden', onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
-        let i = 0;
-        setInterval(() => {
-          i -= 0.25;
-          if (i <= -360) i = 0;
-          $('.image-36').css('transform', `rotate(${i}deg)`)
-        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
-      }
-    })
+      visibility: 'hidden'})
     .addLabel("label27")
 
 }

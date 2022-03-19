@@ -3606,7 +3606,6 @@ a.my-underline:hover {
 
     .guy-glasses {
         height: auto;
-        margin-top: 20px;
         margin-bottom: 9vh;
         max-width: 80%;
     }
@@ -3777,7 +3776,6 @@ a.my-underline:hover {
         }
 
         #time .text-go {
-            padding: 0 10%;
             white-space: pre-line;
         }
 
@@ -3962,7 +3960,7 @@ a.my-underline:hover {
 
         #howto .ways-sliders-container .slider-bottom-text {
             top: 88%;
-            max-width: 85%;
+            max-width: 100%;
         }
 
         #howto .ways-sliders-container .slider-bottom-text .text-block-64 .text-span-34 {
