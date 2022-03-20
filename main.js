@@ -119,7 +119,7 @@ Pace.once("done", function () {
 `);
 
   $('#embed-video-5').html(`
-  <source src="./images/parachute-video.webm" data-wf-ignore="true" />
+  <source src="./images/new-parachute-video.mp4" data-wf-ignore="true" />
 `);
 
   $('#embed-video-6').html(`
@@ -634,19 +634,19 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-ways-slider', { visibility: 'hidden' })
     .addLabel("label14")
 
-    .to('.section-invert', { opacity: 0, duration: 1 })
+    .to('.section-invert', { opacity: 0, duration: 1.5 })
     .set('.section-monic', { zIndex: 22, top: 0, visibility: 'visible' })
     .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-invert', { visibility: 'hidden' })
     .addLabel("label15")
 
-    .to('.section-monic', { opacity: 0, duration: 1 })
+    .to('.section-monic', { opacity: 0, duration: 1.5 })
     .set('.section-earn', { zIndex: 23, top: 0, visibility: 'visible' })
     .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-monic', { visibility: 'hidden' })
     .addLabel("label16")
 
-    .to('.section-earn', { opacity: 0, duration: 1 })
+    .to('.section-earn', { opacity: 0, duration: 1.5 })
     .set('.section-offer', { zIndex: 24, top: 0, visibility: 'visible' })
     .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-earn', { visibility: 'hidden' })
@@ -881,19 +881,19 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-ways-slider', { visibility: 'hidden' })
     .addLabel("label14")
 
-    .to('.section-invert', { opacity: 0, duration: 1 })
+    .to('.section-invert', { opacity: 0, duration: 1.5 })
     .set('.section-monic', { zIndex: 22, top: 0, visibility: 'visible' })
     .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-invert', { visibility: 'hidden' })
     .addLabel("label15")
 
-    .to('.section-monic', { opacity: 0, duration: 1 })
+    .to('.section-monic', { opacity: 0, duration: 1.5 })
     .set('.section-earn', { zIndex: 23, top: 0, visibility: 'visible' })
     .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-monic', { visibility: 'hidden' })
     .addLabel("label16")
 
-    .to('.section-earn', { opacity: 0, duration: 1 })
+    .to('.section-earn', { opacity: 0, duration: 1.5 })
     .set('.section-offer', { zIndex: 24, top: 0, visibility: 'visible' })
     .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-earn', { visibility: 'hidden' })

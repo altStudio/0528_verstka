@@ -118,7 +118,7 @@ Pace.once("done", function () {
 `);
 
   $('#embed-video-5').html(`
-  <source src="./images/parachute-video.webm" data-wf-ignore="true" />
+  <source src="./images/new-parachute-video.mp4" data-wf-ignore="true" />
 `);
 
   $('#embed-video-6').html(`
