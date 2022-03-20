@@ -607,12 +607,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.section-ways-slider', { zIndex: 20, visibility: 'visible' },)
     .to('.white-section', { opacity: 0, top: '-100vh', duration: 1.5 })
-    .to('#howto', { top: '0vh', duration: 1.8, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } }, '<')
-    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')
+    .to('#howto', { top: '0vh', duration: 1.8, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } }, '<') // плеится видео только после появления слайда
+    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1') // появляютяс все видео
     .set('#embed-video-6', { display: 'inline-block' })
     .set('#embed-video-7', { display: 'inline-block' })
     .set('#embed-video-8', { display: 'inline-block' })
-    .set('#embed-img-5', { display: 'none' })
+    .set('#embed-img-5', { display: 'none' })//исчезает картинка-постер
     .set('.white-section', { visibility: 'hidden' })
     .to('.bg-ways', { opacity: 1, duration: 1 })
     .addLabel("label13")
@@ -854,12 +854,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.section-ways-slider', { zIndex: 20, visibility: 'visible' },)
     .to('.white-section', { opacity: 0, top: '-100vh', duration: 1.5 })
-    .to('#howto', { top: 0, duration: 1.8, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } }, '<')
-    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')
+    .to('#howto', { top: 0, duration: 1.8, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } }, '<') // видео плеится только после появления слайду
+    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1') // появляются все видео
     .set('#embed-video-6', { display: 'inline-block' })
     .set('#embed-video-7', { display: 'inline-block' })
     .set('#embed-video-8', { display: 'inline-block' })
-    .set('#embed-img-5', { display: 'none' })
+    .set('#embed-img-5', { display: 'none' })//исчезает фотка постер
     .to('.bg-ways', { opacity: 1, duration: 1 })
     .set('.white-section', { visibility: 'hidden' })
     .addLabel("label13")

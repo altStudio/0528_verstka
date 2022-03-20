@@ -204,8 +204,8 @@ $('.button-8').on('click', function () {
   goToSection("label7", "label8");
 })
 
-$('#video-play-icon').on('click', function () {
-  if (!isVideoStarted) {
+$('#video-play-icon').on('click', function () { //на клик стартуется/паузится видео
+  if (!isVideoStarted) {//если еще не начинался видик, скрыть там всякие элементы, размутить видик
     $('.big-video').css('visibility', 'visible');
     $('.big-video').css('opacity', '1');
     $('.video-play-icon').css('opacity', '0');
@@ -214,10 +214,10 @@ $('#video-play-icon').on('click', function () {
     isVideoStarted = true;
   }
 
-  if (isVideoPlaying) {
+  if (isVideoPlaying) { //если видео идет, поставить на паузу и показать кнопку
     vid2.pause();
     $('.video-play-icon').css('opacity', '1');
-  } else {
+  } else { // если видик на паузе запустить и скрыть кнопку
     playVid2();
     $('.video-play-icon').css('opacity', '0');
   }
@@ -349,10 +349,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label6")
 
     .set('.special-sect', { visibility: 'visible' })
-    .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } })
+    .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится видео или плеится
     .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
-    .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<')
+    .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")
@@ -367,7 +367,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     // .set('.video-play-icon', { display: 'none' })
     // .addLabel("label8")
 
-    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } })
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится/плеится видео
     .set('.section-6', { zIndex: 17, visibility: 'visible' },)
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
     .from('.text-block-58 ', { scale: 10, opacity: 0, y: 300, duration: 1 }, '-=0.5')
@@ -419,8 +419,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
     .set('.section-7', { opacity: 0, visibility: 'hidden' })
     .set('.section-ways-slider', { zIndex: 20 },)
-    .to('#howto', { y: '-100vh', duration: 1.5, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })
-    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')
+    .to('#howto', { y: '-100vh', duration: 1.5, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })//играется видео, когда слайд не на экране - на его месте фотка
+    .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')//поялвляются все 4 видео
     .set('#embed-video-6', { display: 'inline-block' })
     .set('#embed-video-7', { display: 'inline-block' })
     .set('#embed-video-8', { display: 'inline-block' })
