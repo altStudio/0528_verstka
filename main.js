@@ -576,11 +576,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 },)
     .addLabel("label9")
 
-    .to('.section-6', { opacity: 0, duration: 1.5 },)
+    .to('.section-6', { opacity: 0, duration: 1 },)
     .set('.marcel-1', { x: -100, opacity: 0 }, '<')
     .set('.marcel-3', { x: -100, opacity: 0 }, '<')
     .set('.text-block-16', { x: -100, opacity: 0 }, '<')
     .set('.section-7', { zIndex: 18, visibility: 'visible' })
+    .fromTo('.section-7', { opacity: 0 }, { opacity: 1, duration: 1 })
     .to('.text-block-16', { x: 0, opacity: 1, duration: 1 },)
     .to('.image-19', { opacity: 1, duration: 1 }, '<')
     .to('.marcel-1', { x: 0, opacity: 1, duration: 1 }, '<')
@@ -591,12 +592,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
     .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
     .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
-    .to('.marcel-2', { opacity: 1, duration: 1 }, '-=0.5')
-    .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
     .to('.image-19', { opacity: 0, duration: 1 }, '<')
-    .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
     .to('.change-text', { opacity: 0, duration: 1 }, '<')
+    .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
+    .to('.marcel-4', { opacity: 1, duration: 1 }, '-=1')
     .to('.give', { opacity: 1, duration: 1 }, '<')
+    .to('.marcel-2', { opacity: 1, duration: 1 }, '<')
     .addLabel("label11")
 
     .set('.white-section', { zIndex: 19, x: 2000, visibility: 'visible' },)
@@ -691,10 +692,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label21")
 
 
-    .to('.blur-1', { opacity: 0, duration: 1.8 })
-    .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
+    .to('.blur-1', { opacity: 0, duration: 1 })
+    .to('.blur-2', { opacity: 0, duration: 1 }, '<')
     //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
-    .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
+    .to('.text-block-46', { opacity: 0, duration: 1 }, '<')
     .to('.blur-3', { opacity: 1, duration: 1 })
     .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
     .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
@@ -732,17 +733,20 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.blockchain-section', { opacity: 0, duration: 1 })
     .set('.section-form', { zIndex: 31, top: 0, visibility: 'visible' })
-    .to('.section-form', { opacity: 1, duration: 1.2, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
-      rotateInterval = setInterval(() => {
-        degree -= 0.25;
-        if (degree <= -360) degree = 0;
-        $('.image-36').css('transform', `rotate(${degree}deg)`);
-      }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
-    }, onReverseComplete: () => {
-      clearInterval(rotateInterval);
-    } })
+    .to('.section-form', {
+      opacity: 1, duration: 1.2, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+        rotateInterval = setInterval(() => {
+          degree -= 0.25;
+          if (degree <= -360) degree = 0;
+          $('.image-36').css('transform', `rotate(${degree}deg)`);
+        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+      }, onReverseComplete: () => {
+        clearInterval(rotateInterval);
+      }
+    })
     .set('.blockchain-section', {
-      visibility: 'hidden'})
+      visibility: 'hidden'
+    })
     .addLabel("label27")
 
 
@@ -835,11 +839,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
     .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
     .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
-    .to('.marcel-2', { opacity: 1, duration: 1 }, '-=0.5')
-    .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
     .to('.image-19', { opacity: 0, duration: 1 }, '<')
-    .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
     .to('.change-text', { opacity: 0, duration: 1 }, '<')
+    .to('.glasses-rotate', { opacity: 1, duration: 2 }, '<')
+    .to('.marcel-2', { opacity: 1, duration: 1 }, '-=1')
+    .to('.marcel-4', { opacity: 1, duration: 1 }, '<')
     .to('.give', { opacity: 1, duration: 1 }, '<')
     .addLabel("label11")
 
@@ -935,18 +939,18 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label21")
 
 
-    .to('.blur-1', { opacity: 0, duration: 1.8 })
-    .to('.blur-2', { opacity: 0, duration: 1.8 }, '<')
+    .to('.blur-1', { opacity: 0, duration: 1 })
+    .to('.blur-2', { opacity: 0, duration: 1 }, '<')
     //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
-    .to('.text-block-46', { opacity: 0, duration: 1.8 }, '<')
-    .to('.blur-3', { opacity: 1, duration: 1.8 })
+    .to('.text-block-46', { opacity: 0, duration: 1 }, '<')
+    .to('.blur-3', { opacity: 1, duration: 1 })
     .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
-    .to('.text-block-63', { opacity: 1, duration: 1.8 }, '<')
+    .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
     .addLabel("label22")
 
     .to('.time-matters', { opacity: 0, duration: 1 })
     .set('.section-road-map', { zIndex: 28, opacity: 1, top: 0, visibility: 'visible' })
-    .fromTo('.road-map-slider', { y: 3000, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2 })
+    .fromTo('.road-map-slider', { y: 3000, opacity: 0 }, { y: 0, opacity: 1, duration: 1 })
     .set('.time-matters', { visibility: 'hidden' })
     .addLabel("label23")
 
@@ -976,15 +980,18 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.blockchain-section', { opacity: 0, duration: 1 })
     .set('.section-form', { zIndex: 31, top: 0, visibility: 'visible' })
-    .to('.section-form', { opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
-      rotateInterval = setInterval(() => {
-        degree -= 0.25;
-        if (degree <= -360) degree = 0;
-        $('.image-36').css('transform', `rotate(${degree}deg)`)
-      }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
-    }, onReverseComplete: () => { clearInterval(rotateInterval);} })
+    .to('.section-form', {
+      opacity: 1, duration: 1, onComplete: () => { // после того, как пройдут все анимации, начинает крутиться текст
+        rotateInterval = setInterval(() => {
+          degree -= 0.25;
+          if (degree <= -360) degree = 0;
+          $('.image-36').css('transform', `rotate(${degree}deg)`)
+        }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
+      }, onReverseComplete: () => { clearInterval(rotateInterval); }
+    })
     .set('.blockchain-section', {
-      visibility: 'hidden'})
+      visibility: 'hidden'
+    })
     .addLabel("label27")
 
 }

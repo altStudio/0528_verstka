@@ -3754,6 +3754,7 @@ textarea.w-input, textarea.w-select {
 .what-do-text {
   position: relative;
   max-width: 50%;
+  padding-top: 6.25vh;
 }
 
 .what-do-laptop {
