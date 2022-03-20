@@ -2331,7 +2331,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .place-img{
-  height: 60px;
+  height: 90px;
 }
 
 .link {
@@ -6269,7 +6269,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .image-44 {
-  height: 450px;
+  height: 50vh;
   max-height: none;
   opacity: 1;
   -o-object-fit: contain;

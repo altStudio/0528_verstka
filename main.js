@@ -524,7 +524,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, x: 2000, visibility: 'visible' })
+    .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible' })
     .to('.secondsect', { x: 0, duration: 2 })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', { opacity: 1, duration: 1, onComplete: function () { vid.play() } },)
@@ -599,9 +599,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.marcel-2', { opacity: 1, duration: 1 }, '<')
     .addLabel("label11")
 
-    .set('.white-section', { zIndex: 19, x: 2000, visibility: 'visible' },)
+    .set('.white-section', { zIndex: 19, x: '100vw', visibility: 'visible' },)
     .to('.white-section', { x: 0, duration: 2 }, '<')
-    .to('.text-block-26', { x: -1000, duration: 1.5 }, '-=0.5')
+    .to('.text-block-26', { x: '-58vw', duration: 1.5 }, '-=0.5')
     .set('.section-7', { visibility: 'hidden' })
     .addLabel("label12")
 
@@ -634,21 +634,21 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-ways-slider', { visibility: 'hidden' })
     .addLabel("label14")
 
-    .to('.section-invert', { opacity: 0, duration: 0.6 })
+    .to('.section-invert', { opacity: 0, duration: 1 })
     .set('.section-monic', { zIndex: 22, top: 0, visibility: 'visible' })
-    .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-invert', { visibility: 'hidden' })
     .addLabel("label15")
 
-    .to('.section-monic', { opacity: 0, duration: 0.6 })
+    .to('.section-monic', { opacity: 0, duration: 1 })
     .set('.section-earn', { zIndex: 23, top: 0, visibility: 'visible' })
-    .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-monic', { visibility: 'hidden' })
     .addLabel("label16")
 
-    .to('.section-earn', { opacity: 0, duration: 0.6 })
+    .to('.section-earn', { opacity: 0, duration: 1 })
     .set('.section-offer', { zIndex: 24, top: 0, visibility: 'visible' })
-    .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-earn', { visibility: 'hidden' })
     .addLabel("label17")
 
@@ -695,8 +695,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.blur-2', { opacity: 0, duration: 1 }, '<')
     //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
     .to('.text-block-46', { opacity: 0, duration: 1 }, '<')
+    .to('.black-bg', { opacity: 1, duration: 0.3 })
     .to('.blur-3', { opacity: 1, duration: 1 })
-    .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
     .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
     .addLabel("label22")
 
@@ -773,7 +773,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1") // нижняя подпись
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, x: 2000, visibility: 'visible' })
+    .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible' })
     .to('.secondsect', { x: 0, zIndex: 13, duration: 2 }) // выезжает экран справа
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', { opacity: 1, duration: 1, onComplete: function () { vid.play() } }) // проявляется текст, после проявления запускается видос
@@ -846,9 +846,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.give', { opacity: 1, duration: 1 }, '<')
     .addLabel("label11")
 
-    .set('.white-section', { zIndex: 19, x: 2000, visibility: 'visible' },)
+    .set('.white-section', { zIndex: 19, x: '100vw', visibility: 'visible' },)
     .to('.white-section', { x: 0, duration: 2 }, '<')
-    .to('.text-block-26', { x: -1550, duration: 1.5 }, '-=0.5')
+    .to('.text-block-26', { x: '-81vw', duration: 1.5 }, '-=0.5')
     .set('.section-7', { opacity: 0, visibility: 'hidden' })
     .addLabel("label12")
 
@@ -883,29 +883,29 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .to('.section-invert', { opacity: 0, duration: 1 })
     .set('.section-monic', { zIndex: 22, top: 0, visibility: 'visible' })
-    .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo('.section-monic', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-invert', { visibility: 'hidden' })
     .addLabel("label15")
 
     .to('.section-monic', { opacity: 0, duration: 1 })
     .set('.section-earn', { zIndex: 23, top: 0, visibility: 'visible' })
-    .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo('.section-earn', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-monic', { visibility: 'hidden' })
     .addLabel("label16")
 
     .to('.section-earn', { opacity: 0, duration: 1 })
     .set('.section-offer', { zIndex: 24, top: 0, visibility: 'visible' })
-    .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1 })
+    .fromTo('.section-offer', { opacity: 0 }, { opacity: 1, duration: 1.8 })
     .set('.section-earn', { visibility: 'hidden' })
     .addLabel("label17")
 
+    .to('.section-offer', { opacity: 0, duration: 1 })
     .set('.vis-mis', { opacity: 0 })
     .set('.how-works-section', { zIndex: 25, top: 0, visibility: 'visible' })
     .set('.how-works-rotate-image1', { opacity: 0 })
     .set('.how-works-rotate-container', { rotation: -40 })
     .set('.hiw-vis', { x: -200, opacity: 0 })
     .set('.text-block-38', { opacity: 0, x: -200 })
-    .to('.section-offer', { opacity: 0, duration: 1 })
     .to('.how-works-section', { opacity: 1, duration: 1 })
     .to('.how-works-rotate-image1', { opacity: 1, duration: 1 }, '<')
     .to('.how-works-rotate-container', { rotation: 0, duration: 1 }, '<')
@@ -942,8 +942,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.blur-2', { opacity: 0, duration: 1 }, '<')
     //.to('.image-53', { opacity: 0, duration: 1.8 }, "<")
     .to('.text-block-46', { opacity: 0, duration: 1 }, '<')
+    .to('.black-bg', { opacity: 1, duration: 0.3 })
     .to('.blur-3', { opacity: 1, duration: 1 })
-    .to('.black-bg', { opacity: 1, duration: 0.3 }, '<')
     .to('.text-block-63', { opacity: 1, duration: 1 }, '<')
     .addLabel("label22")
 
