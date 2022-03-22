@@ -96,6 +96,9 @@ function textblock7() {
 
 const vid2 = document.querySelector('.big-video');
 vid2.muted = true;
+vid2.addEventListener("webkitendfullscreen", function () {
+  goToSection("label7", "label8");
+}, false);
 
 Pace.once("done", function () {
   //   $('#embed-video-1').html(`
@@ -517,7 +520,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.time-matters', { visibility: 'hidden' })
     .set('.section-road-map', { zIndex: 28, visibility: 'visible' },)
     .to('.section-road-map', { opacity: 1, duration: 1 },)
-    .addLabel("label23")
+    .addLabel("label24")
 
     // .to(slickScroll, {x:-3000, duration: 3})
     .to('.section-road-map', { opacity: 0, duration: 0.5 },)

@@ -244,7 +244,7 @@ td, th {
 }
 
 html {
-  height: 100%
+  height: 100vh;
 }
 
 body {
@@ -254,7 +254,8 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333
+  color: #333;
+  height: 100vh;
 }
 
 img {
