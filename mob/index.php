@@ -183,7 +183,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=1.9">
+    <link rel="stylesheet" href="./add.css?ver=2.0">
 </head>
 
 <body class="body">
@@ -1659,7 +1659,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.2"></script>
+    <script src="./main.js?ver=2.3"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
 </body>
