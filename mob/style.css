@@ -245,8 +245,6 @@ td, th {
 
 html {
   height: 100vh;
-  transform: translate(0, 100px);
-  z-index: 10000;
 }
 
 body {
@@ -8226,6 +8224,8 @@ textarea.w-input, textarea.w-select {
   .secondsect.section.connect-section {
     padding-top: 4vh;
     padding-bottom: 45px;
+    height: 150vh;
+    z-index: 10000;
   }
 
   .text-block-4 {
