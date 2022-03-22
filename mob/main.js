@@ -378,7 +378,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.5 },)
     .to('.alantext', { opacity: 0, duration: 1 }, '<')
     .to('.image-43', { scale: 0.7, duration: 1 }, '<')
-    .to('.text-block-56', { scale: 1, y: 0, duration: 1.5 }, '<')
+    .to('.text-block-56', { scale: 1, opacity: 1, duration: 1 }, '-=0.5')
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
     .addLabel("label9")
 
@@ -488,11 +488,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.marque-glasses', { visibility: 'hidden' })
     .to('.time-matters', { zIndex: 27, visibility: 'visible' },)
     .to('.time-matters', { opacity: 1, duration: 1 },)
+    .addLabel("label21")
+
     .to('.blur-1', { x: '-50vw', duration: 1, onComplete: function () { $('.blur-1').attr('src', './images/man-screen.svg'); }, onReverseComplete: function () { $('.blur-1').attr('src', './images/man-screen-blur.png'); } })
     .to('.blur-2', { x: '20vw', duration: 1, onComplete: function () { $('.blur-2').attr('src', './images/man-laptop-blur.png'); }, onReverseComplete: function () { $('.blur-2').attr('src', './images/man-laptop.svg'); } }, '<')
-    .to('#text-block-46-first', { opacity: 0, duration: 1.5 }, '+=4')
+    .to('#text-block-46-first', { opacity: 0, duration: 1.5 }, '<')
     .to('#text-block-46-second', { opacity: 1, duration: 1.5 }, '<')
-    .addLabel("label21")
+    .addLabel("label22")
 
     .to('.blur-1', { opacity: 0, duration: 1 })
     .to('.blur-2', { opacity: 0, duration: 1 }, '<')
@@ -509,7 +511,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         $('.surfing-man-image').addClass('blur-effect-2');
       }
     }, '+=2')
-    .addLabel("label22")
+    .addLabel("label23")
 
     .to('.time-matters', { opacity: 0, duration: 0.5 },)
     .set('.time-matters', { visibility: 'hidden' })
@@ -522,7 +524,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-road-map', { visibility: 'hidden' })
     .set('.sect-mission', { zIndex: 29, visibility: 'visible' },)
     .to('.sect-mission', { opacity: 1, duration: 1 },)
-    .addLabel("label24")
+    .addLabel("label25")
 
     .to('.vis-mis', { opacity: 0, duration: 0.5 })
     .to('.mis-text-vis', { opacity: 0, duration: 0.5 }, '<')
@@ -530,13 +532,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.mis-text-invs', { opacity: 1, duration: 1 })
     .to('.invis-mis', { opacity: 1, duration: 1 }, '<')
     .to('.new-way-bg', { opacity: 1, duration: 1 }, '<')
-    .addLabel("label25")
+    .addLabel("label26")
 
     .to('.sect-mission', { opacity: 0, duration: 0.5 },)
     .set('.sect-mission', { visibility: 'hidden' })
     .set('.blockchain-section', { zIndex: 30, visibility: 'visible' },)
     .to('.blockchain-section', { opacity: 1, duration: 1 },)
-    .addLabel("label26")
+    .addLabel("label27")
 
     .to('.blockchain-section', { opacity: 0, duration: 0.5 },)
     .set('.blockchain-section', { visibility: 'hidden' })
@@ -551,7 +553,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         }, 15.3); // эту цифру менять, если надо ускорить/замедлить. сейчас полный оборот - 22 сек.
       }, onReverseComplete: () => { clearInterval(rotateInterval); }
     })
-    .addLabel("label27")
+    .addLabel("label28")
 
 } else if (window.matchMedia("(min-width: 1100px)").matches && window.matchMedia("(max-width: 1440px)").matches) {
   // Анимация для ноута, tl2 - таймлайн для экранов

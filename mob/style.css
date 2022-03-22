@@ -8553,14 +8553,14 @@ textarea.w-input, textarea.w-select {
 
   .text-block-16 {
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
   .text-block-16.change-text {
     display: block;
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: left;
   }
 
@@ -9130,6 +9130,10 @@ textarea.w-input, textarea.w-select {
   .text-block-46 {
     font-size: 17px;
     text-align: center;
+  }
+
+  .f-size-17 {
+    font-size: 17px!important;
   }
 
   .text-sect {
