@@ -19,6 +19,8 @@ function renderDebug(message) {
   document.querySelector('.mobile-debug').scrollTop = document.querySelector('.mobile-debug').scrollHeight;
 }
 
+document.getElementsByClassName('scroll-dv')[0].innerHTML = browserName;
+
 $('.hidden-how-btn-1').on('click', function () {
   $('body').addClass('no-scroll')
   $([document.documentElement, document.body]).animate({
