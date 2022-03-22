@@ -1768,7 +1768,8 @@ body {
 }
 
 .text-block-56 {
-    transform: scale(100);
+    transform: scale(10);
+    opacity: 0;
 
 }
 
@@ -3732,7 +3733,7 @@ a.my-underline:hover {
 
     @media screen and (max-width: 900px) {
         .text-block-56 {
-            transform: scale(100) translate(0, -80px);
+            transform: scale(10) /*translate(0, -80px);*/
         }
 
         .image-40 {

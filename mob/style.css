@@ -244,7 +244,7 @@ td, th {
 }
 
 html {
-  height: 100%
+  height: 100vh;
 }
 
 body {
@@ -254,7 +254,8 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333
+  color: #333;
+  height: 100vh;
 }
 
 img {
@@ -8553,14 +8554,14 @@ textarea.w-input, textarea.w-select {
 
   .text-block-16 {
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
   .text-block-16.change-text {
     display: block;
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: left;
   }
 
@@ -9130,6 +9131,10 @@ textarea.w-input, textarea.w-select {
   .text-block-46 {
     font-size: 17px;
     text-align: center;
+  }
+
+  .f-size-17 {
+    font-size: 17px!important;
   }
 
   .text-sect {
