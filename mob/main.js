@@ -5,6 +5,8 @@ function stopVid() {
 }
 stopVid();
 
+document.getElementsByClassName('scroll-dv')[0].innerHTML = navigator.userAgent;
+
 function playVid() {
   vid.play()
 }

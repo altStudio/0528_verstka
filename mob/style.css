@@ -8224,9 +8224,6 @@ textarea.w-input, textarea.w-select {
   .secondsect.section.connect-section {
     padding-top: 4vh;
     padding-bottom: 45px;
-    min-height: 102vh;
-    -webkit-box-align: center;
-    display: flex;
   }
 
   .text-block-4 {
