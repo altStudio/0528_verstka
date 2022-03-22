@@ -4499,6 +4499,7 @@ textarea.w-input, textarea.w-select {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.101);
 }
 
 .text-block-29 {
@@ -9617,4 +9618,8 @@ textarea.w-input, textarea.w-select {
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+video {
+  outline: none;
 }
