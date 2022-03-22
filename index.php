@@ -263,7 +263,7 @@ if ($detect->isMobile()) {
                 </div><img src="./images/glasses-1.png" width="3000" loading="eager" alt="" class="image-41" /><img
                     src="./images/glasses-2.png" width="2700" loading="eager" alt="" class="image-42" />
             </div>
-            <div id="start" class="secondsect section connect-section wf-section" style="position: relative;">
+            <div id="start" class="secondsect section connect-section wf-section hidden-vis" style="position: relative;">
                 <div class="section-inner-2">
                     <div class="section-inner-3">
                         <div class="container-4 wrapper w-container">
@@ -309,7 +309,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div id="3sec" class="section-3 section wf-section">
+            <div id="3sec" class="section-3 section wf-section hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="section-content space-between margin-top-none not-padding">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -369,7 +369,7 @@ if ($detect->isMobile()) {
                     srcset="./images/colorful-circle2-500.png 500w, ./images/colorful-circle2-800.png 800w, ./images/colorful-circle2-1080.png 1080w, ./images/colorful-circle2.png 1395w"
                     alt="" class="image-11" />
             </div>
-            <div class="section-4 section black-section wf-section">
+            <div class="section-4 section black-section wf-section hidden-vis">
                 <div data-poster-url="./images/now-you-can.jpg"
                     data-video-urls="./images/now-you-can-video-mp4.mp4,./images/now-you-can-video-webm.webm"
                     data-autoplay="true" data-loop="true" data-wf-ignore="true"
@@ -393,7 +393,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div class="section-5 section special-sect wf-section">
+            <div class="section-5 section special-sect wf-section hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="div-block-6 section-content">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -430,7 +430,7 @@ if ($detect->isMobile()) {
                     </video>
                 </div>
             </div>
-            <div class="section-5 section section-6 eye-section wf-section">
+            <div class="section-5 section section-6 eye-section wf-section hidden-vis">
                 <div data-poster-url="./images/space-poster.jpg"
                     data-video-urls="./images/space-mp4.mp4,./images/space-webm.webm" data-autoplay="true"
                     data-loop="true" data-wf-ignore="true"
@@ -477,7 +477,7 @@ if ($detect->isMobile()) {
                     <div class="text-block-58">The line between<br />real and virtual is gone</div>
                 </div>
             </div>
-            <div id="get" class="section section-7 platform-section wf-section">
+            <div id="get" class="section section-7 platform-section wf-section hidden-vis">
                 <div class="wrapper w-container">
                     <div class="circle-layers"><img src="./images/bg-purple-circl.svg" alt="" class="layers-1" /><img
                             src="./images/bg-green-circl.svg" alt="" class="layers-3" /><img
@@ -540,7 +540,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div id="time" class="section white-section time-section wf-section">
+            <div id="time" class="section white-section time-section wf-section hidden-vis">
                 <div class="bg-circle-container"><img src="./images/time-bg.png" loading="lazy" sizes="100vw"
                         srcset="./images/time-bg-500.png 500w, ./images/time-bg-800.png 800w, ./images/time-bg-1080.png 1080w, ./images/time-bg-1600.png 1600w, ./images/time-bg.png 1920w"
                         alt="" class="image-50" /></div>
@@ -573,7 +573,8 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div id="howto" class="section section-ways-slider _wf-section wf-section mother">
+            <div id="howto" class="section section-ways-slider _wf-section wf-section mother hidden-vis">
+                <img src="./images/ways-to-bg.png" alt="" class="bg-ways">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -595,6 +596,7 @@ if ($detect->isMobile()) {
                                         data-video-urls="./images/parachute-video-mp4.mp4,./images/parachute-video-webm.webm"
                                         data-autoplay="true" data-loop="true" data-wf-ignore="true"
                                         class="ways-slider-item_video w-background-video w-background-video-atom">
+                                        <img src="./images/parachute-poster.jpg" alt="" id="embed-img-5">
                                         <video id="embed-video-5" autoplay="" loop=""
                                             style="background-image:url(&quot;./images/parachute-poster.jpg&quot;)"
                                             muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
@@ -612,7 +614,7 @@ if ($detect->isMobile()) {
                                 </div>
                                 <div class="ways-slider-item">
                                     <div class="ways-slider-item_text">
-                                        <h3 class="heading-2">Science &amp; research</h3>
+                                        <h3 class="heading-2">Science <br>&amp; research</h3>
                                     </div>
                                     <div class="ways-slider-item_image ways-slider-item_image2"></div>
                                     <div data-poster-url="./images/petri-poster.jpg"
@@ -666,7 +668,7 @@ if ($detect->isMobile()) {
                                         data-autoplay="true" data-loop="true" data-wf-ignore="true"
                                         class="ways-slider-item_video w-background-video w-background-video-atom">
                                         <video id="embed-video-8" autoplay="" loop=""
-                                            style="background-image:url(&quot;./images/package-poster.jpg&quot;)"
+                                            style="background-image:url(&quot;./images/package-poster.jpg&quot;);"
                                             muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
                                             <source>
                                         </video>
@@ -732,7 +734,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div class="section-10 section section-invert _wf-section wf-section bg-pax-creator mother">
+            <div class="section-10 section section-invert _wf-section wf-section bg-pax-creator mother hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -765,7 +767,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div class="section-10 section-monic section _wf-section magic-section wf-section bg-pax-creator mother">
+            <div class="section-10 section-monic section _wf-section magic-section wf-section bg-pax-creator mother hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -807,7 +809,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div class="section-10 section-monic section _wf-section magic-section wf-section bg-pax-creator mother">
+            <div class="section-10 section-monic section _wf-section magic-section wf-section bg-pax-creator mother hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -849,7 +851,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div class="section-10 section section-earn _wf-section wf-section bg-earn-learn-evolve mother">
+            <div class="section-10 section section-earn _wf-section wf-section bg-earn-learn-evolve mother hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="section-content space-between margin-top-none not-padding">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -893,8 +895,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div
-                class="section-10 section-offer _wf-section earns-section-2 section wf-section bg-earn-learn-evolve2 mother">
+            <div class="section-10 section-offer _wf-section earns-section-2 section wf-section bg-earn-learn-evolve2 mother hidden-vis">
                 <div class="container-4 wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -913,12 +914,12 @@ if ($detect->isMobile()) {
                             </div>
                             <div class="column-9 w-col w-col-6">
                                 <div class="div-block-19"><img src="./images/boy-with-glasses.svg" loading="lazy" alt=""
-                                        class="image-44 guy-glasses" /></div>
+                                        class="image-44 guy-glasses" style="transform: translate(25px, 40px);"/></div>
                             </div>
                             <div class="column-29 w-col w-col-3">
                                 <div class="div-block-22">
                                     <div class="div-block-18">
-                                        <div class="text-block-49 mobile-hidden">Oslo, Norway</div>
+                                        <div class="text-block-49 mobile-hidden" style="margin-bottom: 20px;">Oslo, Norway</div>
                                         <div class="icons-container">
                                             <div class="mobile-hidden w-embed"><a href="" class="hover-icon">
                                                     <svg width="42" height="29" viewBox="0 0 42 29" fill="none"
@@ -978,18 +979,18 @@ if ($detect->isMobile()) {
                                 <div class="botton-bar">
                                     <div class="div-block-16">
                                         <div class="div-block-17"><img src="./images/mountains.svg" loading="lazy"
-                                                alt="" />
+                                                alt="" class="place-img" />
                                         </div>
                                         <div class="text-block-47">The Norhern Light</div>
                                     </div>
                                     <div class="div-block-16 block-illiustration2">
                                         <div class="div-block-17 block-bg-3"><img src="./images/town.svg" loading="lazy"
-                                                alt="" /></div>
+                                                alt="" class="place-img" /></div>
                                         <div class="text-block-47">A day of Oslo citizen</div>
                                     </div>
                                     <div class="div-block-16 block-bg-4">
                                         <div class="div-block-17 block-bg-5"><img src="./images/rock.svg" loading="lazy"
-                                                alt="" /></div>
+                                                alt="" class="place-img" /></div>
                                         <div class="text-block-47">Preikestolen Rock</div>
                                     </div>
                                 </div>
@@ -1002,7 +1003,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div id="howitworks" class="section how-works-section _wf-section wf-section mother">
+            <div id="howitworks" class="section how-works-section _wf-section wf-section mother hidden-vis">
                 <div class="wrapper wrapper-relative w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -1071,7 +1072,7 @@ if ($detect->isMobile()) {
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxODgwIDE4ODAiPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2ZfNjNfOSkiPjxyZWN0IHdpZHRoPSIxMjcwLjk2IiBoZWlnaHQ9IjEyNjkuNDkiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF82M185KSIgcng9IjYxMC4zNjUiIHRyYW5zZm9ybT0ic2NhbGUoMSAtMSkgcm90YXRlKDMwLjA0MyAzNzIxLjA4MiA0MTQuNzM3KSIvPjwvZz48ZGVmcz48ZmlsdGVyIGlkPSJmaWx0ZXIwX2ZfNjNfOSIgd2lkdGg9IjE4NzkuMzUiIGhlaWdodD0iMTg3OC44MSIgeD0iLjIxIiB5PSIuMjExIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0ic2hhcGUiLz48ZmVHYXVzc2lhbkJsdXIgcmVzdWx0PSJlZmZlY3QxX2ZvcmVncm91bmRCbHVyXzYzXzkiIHN0ZERldmlhdGlvbj0iMTQ3LjYzMiIvPjwvZmlsdGVyPjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQwX3JhZGlhbF82M185IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJyb3RhdGUoMTUxLjEzMyA0MTAuNjkgNTAxLjA4Mykgc2NhbGUoNTk5LjYwNyA2MDAuMzA1KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkY5QzUiLz48c3RvcCBvZmZzZXQ9Ii43NTUiIHN0b3AtY29sb3I9IiNGRjVDMDAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjQ1MUMiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48L3N2Zz4="
                     alt="" class="how-works-bg how-works-bg2" />
             </div>
-            <div class="section marque-glasses _wf-section wf-section mother">
+            <div class="section marque-glasses _wf-section wf-section mother hidden-vis">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none align-center">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -1117,7 +1118,7 @@ if ($detect->isMobile()) {
                         alt="" class="text-circle text-circle-right" />
                 </div>
             </div>
-            <div id="roadmap" class="section section-road-map _wf-section wf-section mother">
+            <div id="roadmap" class="section section-road-map _wf-section wf-section mother hidden-vis">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -1185,7 +1186,7 @@ if ($detect->isMobile()) {
                     srcset="./images/road-bg-500.png 500w, ./images/road-bg-800.png 800w, ./images/road-bg-1080.png 1080w, ./images/road-bg-1600.png 1600w, ./images/road-bg.png 1920w"
                     alt="" class="road-map-bg" />
             </div>
-            <div class="section time-matters _wf-section how-earn-section wf-section mother">
+            <div class="section time-matters _wf-section how-earn-section wf-section mother hidden-vis">
                 <div class="black-bg"></div>
                 <div class="wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none time-matters-container">
@@ -1230,11 +1231,10 @@ if ($detect->isMobile()) {
                             </div>
                         </div>
                     </div>
-                </div><img src="./images/how-to-earn-bg.png" loading="lazy" sizes="(max-width: 2509px) 100vw, 2509px"
-                    srcset="./images/how-to-earn-bg-500.png 500w, ./images/how-to-earn-bg-800.png 800w, ./images/how-to-earn-bg.png 2509w"
+                </div><img src="./images/how-to-earn-bg-2.png" loading="lazy" sizes="(max-width: 2509px) 100vw, 2509px"
                     alt="" class="image-53" />
             </div>
-            <div id="mission" class="section-11 sect-mission _wf-section mission-section section wf-section mother">
+            <div id="mission" class="section-11 sect-mission _wf-section mission-section section wf-section mother hidden-vis">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none sect-mission-container">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -1248,9 +1248,9 @@ if ($detect->isMobile()) {
                                     <div class="text-block-37 mission-title vis-mis">Technology <br />of
                                         dissolving<br />the
                                         borders</div>
-                                    <div class="border-text invis-mis invis-title-border"><span class="text-span-11">More than
+                                    <!-- <div class="border-text invis-mis invis-title-border"><span class="text-span-11">More than
                                             platform.</span>
-                                    </div>
+                                    </div> -->
                                     <div class="text-block-37 mission-title invis-mis invis-title">It&#x27;s a new<br />way to
                                         life,<br />leisure<br />and work</div>
                                 </div>
@@ -1306,7 +1306,7 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div id="blockchain" class="section blockchain-section wf-section bg-pax-creator mother">
+            <div id="blockchain" class="section blockchain-section wf-section bg-pax-creator mother hidden-vis">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -1337,9 +1337,9 @@ if ($detect->isMobile()) {
                     </div>
                 </div>
             </div>
-            <div class="section-11 section-form _wf-section section contact-section wf-section mother">
+            <div class="section-11 section-form _wf-section section contact-section wf-section mother hidden-vis">
                 <div class="wrapper w-container">
-                    <div class="section-content not-padding">
+                    <div class="section-content not-padding margin-top-none space-between last-section">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
                                 class="site-logo" />
                             <div class="site-menu custom-menu">menu</div>
@@ -1430,7 +1430,7 @@ if ($detect->isMobile()) {
                             </div>
                         </div><img src="./images/nlo.svg" loading="lazy" alt="" class="image-35" />
                     </div>
-                </div><img src="./images/white-text-circle.png" loading="lazy" alt="" class="image-36" />
+                </div><img src="./images/white-text-circle.svg" loading="lazy" alt="" class="image-36" />
             </div>
         </div>
         <div class="scroll-section first"></div>
