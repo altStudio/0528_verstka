@@ -5,8 +5,6 @@ function stopVid() {
 }
 stopVid();
 
-document.getElementsByClassName('scroll-dv')[0].innerHTML = navigator.userAgent;
-
 function playVid() {
   vid.play()
 }
@@ -320,7 +318,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-3', { visibility: 'visible' })
     .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
-    .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
+    .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () {  } },)
     .addLabel("label3")
 
     .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
