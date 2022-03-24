@@ -286,6 +286,7 @@ scrollSections.forEach((section, i) => {
 
 let windowHeight = $(window).height(); 
 $('#start').css('height', `${windowHeight}px`)
+$('#height-p').html($(window).height())
 
 function getEdgePosition() {
   let topPosition = 12 * $('.scroll-section').height();
@@ -304,7 +305,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
     .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
-    .to('.second-anim-text', { opacity: 1, duration: 1 }, '<')
+    .to('.second-anim-text', { opacity: 1, duration: 1, onComplete: () => {
+      $('#height-p').html($(window).height())
+    } }, '<')
     .addLabel("label1")
 
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
@@ -314,12 +317,16 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
-    .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
+    .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1, onComplete: () => {
+      $('#height-p').html($(window).height())
+    } }, "-=1")
     .addLabel("label2")
 
     .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible' })
     .set('.section-3', { visibility: 'visible' })
-    .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
+    .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5, onComplete: () => {
+      $('#height-p').html($(window).height())
+    } })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
     .addLabel("label3")
@@ -329,7 +336,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.secondsect', { visibility: 'hidden' })
     .set('.section-3', { zIndex: 14 })
     .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
-    .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
+    .to('.visible-text', { opacity: 1, duration: 1.5, onComplete: () => {
+      $('#height-p').html($(window).height())
+    } }, "<")
     .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
     .addLabel("label4")
 
@@ -338,7 +347,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
     .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-    .to('.image-10', { x: -500, opacity: 0, duration: 1.5 }, "<")
+    .to('.image-10', { x: -500, opacity: 0, duration: 1.5, onComplete: () => {
+      $('#height-p').html($(window).height())
+    } }, "<")
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
 
