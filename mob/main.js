@@ -284,6 +284,9 @@ scrollSections.forEach((section, i) => {
 
 });
 
+let windowHeight = $(window).height(); 
+$('#start').css('height', `${windowHeight}px`)
+
 function getEdgePosition() {
   let topPosition = 12 * $('.scroll-section').height();
   return { pos: topPosition, height: $('.scroll-section').height() };
@@ -293,97 +296,97 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   // Анимация для мобилок, tl2 - таймлайн для экранов
   tl2.addLabel("start")
 
-    // .to(".image-40", { x: 450, duration: 1.5 })
-    // .to(".image-bg-map", { opacity: 0 }, "<")
-    // .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
-    // .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
-    // .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
-    // .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
-    // .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
-    // .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
-    // .to('.second-anim-text', { opacity: 1, duration: 1 }, '<')
-    // .addLabel("label1")
+    .to(".image-40", { x: 450, duration: 1.5 })
+    .to(".image-bg-map", { opacity: 0 }, "<")
+    .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
+    .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
+    .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
+    .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
+    .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
+    .to('.second-anim-text', { opacity: 1, duration: 1 }, '<')
+    .addLabel("label1")
 
-    // .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
-    // .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
-    // .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
-    // .to(".image-42", { x: -2000, opacity: 0, duration: 1 }, '<')
-    // .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
-    // .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
-    // .to(".image-8", { x: 0, opacity: 1, duration: 1 })
-    // .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
-    // .addLabel("label2")
+    .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
+    .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
+    .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
+    .to(".image-42", { x: -2000, opacity: 0, duration: 1 }, '<')
+    .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
+    .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
+    .to(".image-8", { x: 0, opacity: 1, duration: 1 })
+    .to(".text-block-7", { opacity: 1, y: textblock7, duration: 1 }, "-=1")
+    .addLabel("label2")
 
-    // .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible' })
-    // .set('.section-3', { visibility: 'visible' })
-    // .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
-    // .set('.screenone', { opacity: 0, visibility: 'hidden' })
-    // .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
-    // .addLabel("label3")
+    .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible' })
+    .set('.section-3', { visibility: 'visible' })
+    .to('.secondsect', { x: 0, zIndex: 13, duration: 1.5 })
+    .set('.screenone', { opacity: 0, visibility: 'hidden' })
+    .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
+    .addLabel("label3")
 
-    // .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
-    // .to('.secondsect', { opacity: 0, duration: 1 })
-    // .set('.secondsect', { visibility: 'hidden' })
-    // .set('.section-3', { zIndex: 14 })
-    // .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
-    // .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
-    // .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
-    // .addLabel("label4")
+    .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
+    .to('.secondsect', { opacity: 0, duration: 1 })
+    .set('.secondsect', { visibility: 'hidden' })
+    .set('.section-3', { zIndex: 14 })
+    .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
+    .to('.visible-text', { opacity: 1, duration: 1.5 }, "<")
+    .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
+    .addLabel("label4")
 
-    // .to('.laptop-int', { opacity: 1, duration: 1.5 },)
-    // .to('.mobile-section-title-item', { opacity: 0, duration: 1.5 }, "<")
-    // .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
-    // .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
-    // .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-    // .to('.image-10', { x: -500, opacity: 0, duration: 1.5 }, "<")
-    // .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
-    // .addLabel("label5")
+    .to('.laptop-int', { opacity: 1, duration: 1.5 },)
+    .to('.mobile-section-title-item', { opacity: 0, duration: 1.5 }, "<")
+    .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
+    .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
+    .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
+    .to('.image-10', { x: -500, opacity: 0, duration: 1.5 }, "<")
+    .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
+    .addLabel("label5")
 
-    // .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() } })
-    // .set('.text-block-14', { scale: 1 })
-    // .set('.text-block-15', { scale: 1 })
-    // .to('.section-3', { opacity: 0, duration: 1 })//исчезает предыдущий слайд
-    // .to('.mobile-section-title-item-hidden', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
-    // .to('.hidden-text-2', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
-    // .to('.text-block-14', { y: '-75px', duration: 1.5 }, '<')//поднимается новый текст на место пред.
-    // .to('.text-block-15', { y: '-75px', duration: 1.5 }, '<')//поднимается новый текст на место пред.
-    // .set('.section-4', { zIndex: 15 })//новый слайд выходит на первый план
-    // .set('.section-3', { visibility: 'hidden' })//убирается пред. див
-    // .addLabel("label6")
+    .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() } })
+    .set('.text-block-14', { scale: 1 })
+    .set('.text-block-15', { scale: 1 })
+    .to('.section-3', { opacity: 0, duration: 1 })//исчезает предыдущий слайд
+    .to('.mobile-section-title-item-hidden', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
+    .to('.hidden-text-2', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
+    .to('.text-block-14', { y: '-75px', duration: 1.5 }, '<')//поднимается новый текст на место пред.
+    .to('.text-block-15', { y: '-75px', duration: 1.5 }, '<')//поднимается новый текст на место пред.
+    .set('.section-4', { zIndex: 15 })//новый слайд выходит на первый план
+    .set('.section-3', { visibility: 'hidden' })//убирается пред. див
+    .addLabel("label6")
 
-    // .set('.special-sect', { visibility: 'visible' })
-    // .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится видео или плеится
-    // .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
-    // .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
-    // .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
-    // .set('.special-sect', { zIndex: 16 })
-    // .set('.section-4', { visibility: 'hidden' })
-    // .addLabel("label7")
+    .set('.special-sect', { visibility: 'visible' })
+    .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится видео или плеится
+    .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
+    .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
+    .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
+    .set('.special-sect', { zIndex: 16 })
+    .set('.section-4', { visibility: 'hidden' })
+    .addLabel("label7")
 
-    // .set('.big-video', { visibility: 'visible' })
-    // .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
-    // .to('.become-text', { opacity: 0, duration: 1 })
-    // .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
-    // .to('.big-video', { opacity: 1, duration: 1.5 }, '<')
-    // .to('.img-bg', { opacity: 0, duration: 1.5 }, '<')
-    // .to('.button-8', { opacity: 0, duration: 1, }, '<')
-    // .set('.video-play-icon', { display: 'none' })
-    // .addLabel("label8")
+    .set('.big-video', { visibility: 'visible' })
+    .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
+    .to('.become-text', { opacity: 0, duration: 1 })
+    .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
+    .to('.big-video', { opacity: 1, duration: 1.5 }, '<')
+    .to('.img-bg', { opacity: 0, duration: 1.5 }, '<')
+    .to('.button-8', { opacity: 0, duration: 1, }, '<')
+    .set('.video-play-icon', { display: 'none' })
+    .addLabel("label8")
 
-    // .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится/плеится видео
-    // .set('.section-6', { zIndex: 17, visibility: 'visible' },)
-    // .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
-    // .from('.text-block-58 ', { scale: 10, opacity: 0, y: 300, duration: 1 }, '-=0.5')
-    // .set('.special-sect', { visibility: 'hidden' })
-    // .to('.alantext', { opacity: 1, duration: 0.5 })
-    // .addLabel("label8")
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится/плеится видео
+    .set('.section-6', { zIndex: 17, visibility: 'visible' },)
+    .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
+    .from('.text-block-58 ', { scale: 10, opacity: 0, y: 300, duration: 1 }, '-=0.5')
+    .set('.special-sect', { visibility: 'hidden' })
+    .to('.alantext', { opacity: 1, duration: 0.5 })
+    .addLabel("label8")
 
-    // .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.5 },)
-    // .to('.alantext', { opacity: 0, duration: 1 }, '<')
-    // .to('.image-43', { scale: 0.7, duration: 1 }, '<')
-    // .to('.text-block-56', { scale: 1, opacity: 1, duration: 1 }, '-=0.5')
-    // .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
-    // .addLabel("label9")
+    .to('.text-block-58', { scale: 0.4, opacity: 0, y: 0, duration: 1.5 },)
+    .to('.alantext', { opacity: 0, duration: 1 }, '<')
+    .to('.image-43', { scale: 0.7, duration: 1 }, '<')
+    .to('.text-block-56', { scale: 1, opacity: 1, duration: 1 }, '-=0.5')
+    .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
+    .addLabel("label9")
 
     .set('.section-7', { visibility: 'visible' })
     .set('.layers-1', { x: 300 },)
