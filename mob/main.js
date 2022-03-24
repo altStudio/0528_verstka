@@ -322,7 +322,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label2")
 
     .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible', height: window.screen.height + 'px' })
-    .set('.intro-section', { height: $(window).height() + 'px' })
     .set('.section-3', { visibility: 'visible' })
     .to('.secondsect', {
       x: 0, zIndex: 13, duration: 1.5,
@@ -331,10 +330,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
     .addLabel("label3")
 
+    .set('.section-3', { height: window.screen.height + 'px' })
     .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
     .to('.secondsect', { opacity: 0, duration: 1 })
     .set('.secondsect', { visibility: 'hidden' })
-    .set('.section-3', { zIndex: 14, height: window.screen.height + 'px' })
+    .set('.section-3', { zIndex: 14 })
     .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
     .to('.visible-text', {
       opacity: 1, duration: 1.5,
@@ -353,7 +353,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
 
-    .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() } })
+    .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() }, height: window.screen.height + 'px' })
     .set('.text-block-14', { scale: 1 })
     .set('.text-block-15', { scale: 1 })
     .to('.section-3', { opacity: 0, duration: 1 })//исчезает предыдущий слайд
@@ -361,20 +361,20 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.hidden-text-2', { y: '-75px', duration: 1.5 }, '<')//поднимается текст пред. слайда
     .to('.text-block-14', { y: '-75px', duration: 1.5 }, '<')//поднимается новый текст на место пред.
     .to('.text-block-15', { y: '-75px', duration: 1.5 }, '<')//поднимается новый текст на место пред.
-    .set('.section-4', { zIndex: 15, height: window.screen.height + 'px' })//новый слайд выходит на первый план
+    .set('.section-4', { zIndex: 15 })//новый слайд выходит на первый план
     .set('.section-3', { visibility: 'hidden' })//убирается пред. див
     .addLabel("label6")
 
-    .set('.special-sect', { visibility: 'visible' })
+    .set('.special-sect', { visibility: 'visible', height: window.screen.height + 'px' })
     .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится видео или плеится
     .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
     .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
-    .set('.special-sect', { zIndex: 16, height: window.screen.height + 'px' })
+    .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
     .addLabel("label7")
 
-    .set('.big-video', { visibility: 'visible' })
+    .set('.big-video', { visibility: 'visible', height: window.screen.height + 'px' })
     .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
     .to('.become-text', { opacity: 0, duration: 1 })
     .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
@@ -399,7 +399,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.content-bottom-second-hiiden-text', { opacity: 1, duration: 0.5 })
     .addLabel("label9")
 
-    .set('.section-7', { visibility: 'visible' })
+    .set('.section-7', { visibility: 'visible', height: window.screen.height + 'px' })
     .set('.layers-1', { x: 300 },)
     .set('.layers-2', { y: -300 },)
     .set('.layers-3', { x: -300, y: -100 },)
@@ -407,7 +407,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.marcel-3', { x: -100, opacity: 0, })
     .set('.text-block-16', { x: -100, opacity: 0 })
     .to('.section-6', { opacity: 0, duration: 0.5 },)
-    .set('.section-7', { zIndex: 18, height: window.screen.height + 'px' })
+    .set('.section-7', { zIndex: 18 })
     .set('.section-6', { visibility: 'hidden' })
     .to('.text-block-16', { x: 0, opacity: 1, duration: 0.5 })
     .to('.image-19', { opacity: 1, duration: 0.5 }, '<')
@@ -431,11 +431,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-7', { visibility: 'hidden' })
     .addLabel("label12")
 
-    .set('#howto', { visibility: 'visible' })
+    .set('#howto', { visibility: 'visible', height: window.screen.height + 'px' })
     .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
     .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
     .set('.section-7', { opacity: 0, visibility: 'hidden' })
-    .set('.section-ways-slider', { zIndex: 20, height: window.screen.height + 'px' },)
+    .set('.section-ways-slider', { zIndex: 20 },)
     .to('#howto', { y: '-100vh', duration: 1.5, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })//играется видео, когда слайд не на экране - на его месте фотка
     .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')//поялвляются все 4 видео
     .set('#embed-video-6', { display: 'inline-block' })
