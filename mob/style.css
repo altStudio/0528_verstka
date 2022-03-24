@@ -3121,7 +3121,7 @@ textarea.w-input, textarea.w-select {
 
 .vertical-glasses-img {
   position: absolute;
-  bottom: 4%;
+  bottom: 0;
   right: 0;
   left: 0;
   margin: auto;
@@ -3130,7 +3130,7 @@ textarea.w-input, textarea.w-select {
 
 .music-waves-img {
   position: absolute;
-  bottom: 4%;
+  bottom: 0;
   right: 12%;
   z-index: -1;
   height: 56vw;
@@ -5048,7 +5048,7 @@ textarea.w-input, textarea.w-select {
   position: absolute;
   display: inline-block !important;
   width: 37%;
-  top: 59.5%;
+  bottom: 0;
   right: 0;
 }
 
@@ -5057,7 +5057,7 @@ textarea.w-input, textarea.w-select {
   display: inline-block !important;
   left: 0;
   width: 47%;
-  top: 60%;
+  bottom: 2vh;
 }
 
 .section.marque-glasses._wf-section.wf-section .text-circle-container {
@@ -8311,11 +8311,6 @@ textarea.w-input, textarea.w-select {
     align-items: center;
   }
 
-  .section-5.section.section-6 {
-    padding-top: 3vh;
-    padding-bottom: 50px;
-  }
-
   .section-5.section.section-6.eye-section {
     padding-top: 4vh;
     padding-bottom: 45px;
@@ -8831,11 +8826,6 @@ textarea.w-input, textarea.w-select {
   .section-10.section {
     padding-top: 4vh;
     padding-bottom: 45px;
-  }
-
-  .section-10.section.section-invert._wf-section {
-    padding-top: 3vh;
-    padding-bottom: 50px;
   }
 
   .section-10.section-monic.section {
