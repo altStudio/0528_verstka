@@ -2499,9 +2499,7 @@ textarea.w-input, textarea.w-select {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2518,9 +2516,7 @@ textarea.w-input, textarea.w-select {
   padding-right: 15px;
   padding-left: 15px;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
@@ -5252,12 +5248,6 @@ textarea.w-input, textarea.w-select {
   color: #fff;
 }
 
-.section-11.sect-mission._wf-section.mission-section.section {
-  background-image: url("./images/61f7bf23e86d1d1f75c847c3_Group_2046.png");
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
 .section-11.section-form._wf-section.section.contact-section {
   background-image: url("./images/follow-us-bg.png");
   background-size: cover;
@@ -6648,7 +6638,7 @@ textarea.w-input, textarea.w-select {
 .bg-tech, .new-way-bg, .bg-first-video-img {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .bg-first-video-img {
@@ -6883,8 +6873,7 @@ textarea.w-input, textarea.w-select {
   -webkit-box-shadow: 0px -34px 11px 30px #161616;
   -moz-box-shadow: 0px -34px 11px 30px #161616;
   box-shadow: 0px -34px 11px 30px #161616;
-  height: 50px;
-  top: 150px;
+  top: 100px;
   z-index: -1;
 }
 
