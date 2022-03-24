@@ -372,17 +372,17 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
+    .set('.big-video', { visibility: 'visible', height: window.screen.height + 'px' })
     .addLabel("label7")
 
-    .set('.big-video', { visibility: 'visible', height: window.screen.height + 'px' })
-    .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
-    .to('.become-text', { opacity: 0, duration: 1 })
-    .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
-    .to('.big-video', { opacity: 1, duration: 1.5 }, '<')
-    .to('.img-bg', { opacity: 0, duration: 1.5 }, '<')
-    .to('.button-8', { opacity: 0, duration: 1, }, '<')
-    .set('.video-play-icon', { display: 'none' })
-    .addLabel("label8")
+    // .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
+    // .to('.become-text', { opacity: 0, duration: 1 })
+    // .to('.video-play-icon', { opacity: 0, duration: 0.5 }, '<')
+    // .to('.big-video', { opacity: 1, duration: 1.5 }, '<')
+    // .to('.img-bg', { opacity: 0, duration: 1.5 }, '<')
+    // .to('.button-8', { opacity: 0, duration: 1, }, '<')
+    // .set('.video-play-icon', { display: 'none' })
+    // .addLabel("label8")
 
     .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится/плеится видео
     .set('.section-6', { zIndex: 17, visibility: 'visible', height: window.screen.height + 'px' },)
