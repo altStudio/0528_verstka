@@ -431,12 +431,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-7', { visibility: 'hidden' })
     .addLabel("label12")
 
-    .set('#howto', { visibility: 'visible', height: window.screen.height + 'px' })
+    .set('#howto', { visibility: 'visible', height: window.screen.height + 'px', y: window.screen.height  })
     .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
     .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
     .set('.section-7', { opacity: 0, visibility: 'hidden' })
     .set('.section-ways-slider', { zIndex: 20 },)
-    .to('#howto', { y: '-100vh', duration: 1.5, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })//играется видео, когда слайд не на экране - на его месте фотка
+    .to('#howto', { y: -window.screen.height, duration: 1.5, onComplete: () => { parachuteVid.play(); }, onReverseComplete: () => { parachuteVid.pause() } })//играется видео, когда слайд не на экране - на его месте фотка
     .set('#embed-video-5', { display: 'inline-block' }, '+=0.1')//поялвляются все 4 видео
     .set('#embed-video-6', { display: 'inline-block' })
     .set('#embed-video-7', { display: 'inline-block' })
