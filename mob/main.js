@@ -100,49 +100,49 @@ vid2.addEventListener("webkitendfullscreen", function () {
   goToSection("label7", "label8");
 }, false);
 
-// Pace.once("done", function () {
-//   //   $('#embed-video-1').html(`
-//   //   <source src="./images/foot-mp4.mp4" data-wf-ignore="true" />
-//   // `);
+Pace.once("done", function () {
+  //   $('#embed-video-1').html(`
+  //   <source src="./images/foot-mp4.mp4" data-wf-ignore="true" />
+  // `);
 
-//   $('#embed-video-2').html(`
-//   <source src="./images/video-in-laptop-mp4.mp4" data-wf-ignore="true" />
-//   <source src="./images/video-in-laptop-webm.webm" data-wf-ignore="true" />
-// `);
+  $('#embed-video-2').html(`
+  <source src="./images/video-in-laptop-mp4.mp4" data-wf-ignore="true" />
+  <source src="./images/video-in-laptop-webm.webm" data-wf-ignore="true" />
+`);
 
-//   $('#embed-video-3').html(`
-//   <source src="./images/now-you-can-video-mp4.mp4" data-wf-ignore="true" />
-//   <source src="./images/now-you-can-video-webm.webm" data-wf-ignore="true" />
-// `);
+  $('#embed-video-3').html(`
+  <source src="./images/now-you-can-video-mp4.mp4" data-wf-ignore="true" />
+  <source src="./images/now-you-can-video-webm.webm" data-wf-ignore="true" />
+`);
 
-//   $('#embed-video-4').html(`
-//   <source src="./images/space-mp4.mp4" data-wf-ignore="true" />
-//   <source src="./images/space-webm.webm" data-wf-ignore="true" />
-// `);
+  $('#embed-video-4').html(`
+  <source src="./images/space-mp4.mp4" data-wf-ignore="true" />
+  <source src="./images/space-webm.webm" data-wf-ignore="true" />
+`);
 
-//   $('#embed-video-5').html(`
-//   <source src="./images/new-parachute-video.mp4" data-wf-ignore="true" />
-// `);
+  $('#embed-video-5').html(`
+  <source src="./images/new-parachute-video.mp4" data-wf-ignore="true" />
+`);
 
-//   $('#embed-video-6').html(`
-//   <source src="./images/petri-mp4.mp4" data-wf-ignore="true" />
-//   <source src="./images/petri-webm.webm" data-wf-ignore="true" />
-// `);
+  $('#embed-video-6').html(`
+  <source src="./images/petri-mp4.mp4" data-wf-ignore="true" />
+  <source src="./images/petri-webm.webm" data-wf-ignore="true" />
+`);
 
-//   $('#embed-video-7').html(`
-//   <source src="./images/backyard-mp4.mp4" data-wf-ignore="true" />
-//   <source src="/images/backyard-webm.webm" data-wf-ignore="true" />
-// `);
+  $('#embed-video-7').html(`
+  <source src="./images/backyard-mp4.mp4" data-wf-ignore="true" />
+  <source src="/images/backyard-webm.webm" data-wf-ignore="true" />
+`);
 
-//   $('#embed-video-8').html(`
-//   <source src="./images/package-mp4.mp4" data-wf-ignore="true" />
-//   <source src="./images/package-webm.webm" data-wf-ignore="true" />
-// `);
+  $('#embed-video-8').html(`
+  <source src="./images/package-mp4.mp4" data-wf-ignore="true" />
+  <source src="./images/package-webm.webm" data-wf-ignore="true" />
+`);
 
-//   $('.big-video').html(`
-//   <source src="./images/MetapaxFinal1080p.mp4" type="video/mp4">
-// `);
-// });
+  $('.big-video').html(`
+  <source src="./images/MetapaxFinal1080p.mp4" type="video/mp4">
+`);
+});
 
 const parachuteVid = document.querySelector('#embed-video-5');
 parachuteVid.muted = true;
@@ -284,6 +284,9 @@ scrollSections.forEach((section, i) => {
 
 });
 
+console.log(window.innerHeight);
+console.log(window.screen.height);
+
 function getEdgePosition() {
   let topPosition = 12 * $('.scroll-section').height();
   return { pos: topPosition, height: $('.scroll-section').height() };
@@ -302,10 +305,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
     .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
     .to('.second-anim-text', {
-      opacity: 1, duration: 1, onComplete: () => {
-        $('#height-p').html($(window).height())
-      }
-    }, '<')
+      opacity: 1, duration: 1,}, '<')
     .addLabel("label1")
 
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
@@ -316,20 +316,14 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", {
-      opacity: 1, y: textblock7, duration: 1, onComplete: () => {
-        $('#height-p').html($(window).height())
-      }
-    }, "-=1")
+      opacity: 1, y: textblock7, duration: 1,}, "-=1")
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible', height: $(window).height() + 'px' })
+    .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible', height: window.screen.height + 'px' })
     .set('.intro-section', { height: $(window).height() + 'px' })
     .set('.section-3', { visibility: 'visible' })
     .to('.secondsect', {
-      x: 0, zIndex: 13, duration: 1.5, onComplete: () => {
-        $('#height-p').html($(window).height())
-      }
-    })
+      x: 0, zIndex: 13, duration: 1.5,})
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
     .addLabel("label3")
@@ -337,13 +331,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
     .to('.secondsect', { opacity: 0, duration: 1 })
     .set('.secondsect', { visibility: 'hidden' })
-    .set('.section-3', { zIndex: 14 })
+    .set('.section-3', { zIndex: 14, height: window.innerHeight + 'px' })
     .to('.mobile-section-title-item', { opacity: 1, duration: 1.5 },)
     .to('.visible-text', {
-      opacity: 1, duration: 1.5, onComplete: () => {
-        $('#height-p').html($(window).height())
-      }
-    }, "<")
+      opacity: 1, duration: 1.5, }, "<")
     .from('.laptop-video', { scale: scaleNote, y: scaleNoteY, duration: 1.5 }, "-=1")
     .addLabel("label4")
 
@@ -353,10 +344,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
     .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
     .to('.image-10', {
-      x: -500, opacity: 0, duration: 1.5, onComplete: () => {
-        $('#height-p').html($(window).height())
-      }
-    }, "<")
+      x: -500, opacity: 0, duration: 1.5, }, "<")
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
 
