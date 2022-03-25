@@ -540,7 +540,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         $('.drowning-man-image').removeClass('blur-effect-2');
         $('.surfing-man-image').addClass('blur-effect-2');
       }
-    }, '+=2')
+    }, '+=0.8')
     .addLabel("label23")
 
     .to('.time-matters', { opacity: 0, duration: 0.5 },)
