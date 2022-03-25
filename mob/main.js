@@ -1,4 +1,7 @@
 const initialScreenHeight = window.screen.height;
+const windowHeight = $(window).height();
+const awailHeight = window.screen.availHeight;
+const innerHeight = window.innerHeight;
 
 const vid = document.querySelector('.background-video video');
 function stopVid() {
@@ -331,7 +334,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
         vid.play();
-        $('.left-text').html(`then: ${initialScreenHeight}, now: ${window.screen.height}`)
+        $('.left-text').html(`initScreenHeight: ${initialScreenHeight}, initScreenHeight2: ${windowHeight}, initAwailHeight: ${awailHeight}, initInnerHeight: ${innerHeight} ||| now: ${window.screen.height}, ${$(window).height()}, ${window.screen.availHeight}, ${window.innerHeight}`)
         if (window.screen.height > initialScreenHeight) {
           $('.image-34').css('bottom', 0);
           let div = document.createElement('div');
