@@ -331,6 +331,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
         vid.play();
+        $('.left-text').html(`then: ${initialScreenHeight}, now: ${window.screen.height}`)
         if (window.screen.height > initialScreenHeight) {
           $('.image-34').css('bottom', 0);
           let div = document.createElement('div');
