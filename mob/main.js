@@ -1,4 +1,4 @@
-const initialScreenHeight = { ...window.screen.height };
+const initialScreenHeight = window.screen.height;
 
 const vid = document.querySelector('.background-video video');
 function stopVid() {
@@ -331,8 +331,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
         vid.play();
-        if(window.screen.height > initialScreenHeight){
+        if (window.screen.height > initialScreenHeight) {
           $('.image-34').css('bottom', 0);
+          let div = document.createElement('div');
+          div.className = 'scroll-section';
+          document.getElementsByClassName('sections-block')[0].appendChild(div);
         }
       }
     })
