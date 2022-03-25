@@ -334,8 +334,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
         vid.play();
-        $('.left-text').html(`initScreenHeight: ${initialScreenHeight}, initScreenHeight2: ${windowHeight}, initAwailHeight: ${awailHeight}, initInnerHeight: ${innerHeight} ||| now: ${window.screen.height}, ${$(window).height()}, ${window.screen.availHeight}, ${window.innerHeight}`)
-        if (window.screen.height > initialScreenHeight) {
+        if (innerHeight < window.innerHeight) {
           $('.image-34').css('bottom', 0);
           let div = document.createElement('div');
           div.className = 'scroll-section';
