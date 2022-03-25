@@ -1,5 +1,3 @@
-const initialScreenHeight = window.screen.height;
-
 const vid = document.querySelector('.background-video video');
 function stopVid() {
   vid.pause();
