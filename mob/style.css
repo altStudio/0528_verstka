@@ -6503,9 +6503,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .text-block-59.marcel-4 {
-  position: absolute;
+  position: relative;
   left: 10px;
-  top: auto;
+  top: -15vh;
   right: auto;
   bottom: 0px;
   display: block;
