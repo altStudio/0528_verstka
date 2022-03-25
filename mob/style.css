@@ -2861,7 +2861,7 @@ textarea.w-input, textarea.w-select {
 .img-bg {
   position: absolute;
   width: 100vw;
-  height: 104vh;
+  height: 104%;
   top: -4vh;
   filter: blur(7px);
 }
