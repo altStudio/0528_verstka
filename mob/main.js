@@ -334,11 +334,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
         vid.play();
-        if (innerHeight < window.innerHeight) {
-          $('.image-34').css('bottom', 0);
-          let div = document.createElement('div');
-          div.className = 'scroll-section';
-          document.getElementsByClassName('sections-block')[0].appendChild(div);
+        if (innerHeight >= window.innerHeight) {
+          $('.image-34').css('bottom', '6vh');
+          let div = document.getElementsByClassName('removable')[0];
+          div.parentNode.removeChild(div);
         }
       }
     })

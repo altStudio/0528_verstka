@@ -9022,7 +9022,7 @@ textarea.w-input, textarea.w-select {
     position: absolute;
     left: 0;
     right: 3px;
-    bottom: 6vh;
+    bottom: 0;
   }
 
   .image-35 {
