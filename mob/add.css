@@ -2424,7 +2424,6 @@ a.my-underline:hover {
 
 .text-block-59.marcel-4 {
     left: 0;
-    top: 0;
 }
 
 /*.section.time-matters._wf-section.how-earn-section {
@@ -3766,7 +3765,7 @@ a.my-underline:hover {
         }
 
         .text-block-59.marcel-4.hide-for-desk {
-            top: 65%;
+            bottom: 25%;
             text-align: center;
         }
 

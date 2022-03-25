@@ -2861,8 +2861,8 @@ textarea.w-input, textarea.w-select {
 .img-bg {
   position: absolute;
   width: 100vw;
-  height: 104%;
-  top: -4vh;
+  height: 100%;
+  top: 0;
   filter: blur(7px);
 }
 
@@ -4148,10 +4148,6 @@ textarea.w-input, textarea.w-select {
   width: 79%;
 }
 
-.image-20.image-scale.not-auto-width.glasses-rotate {
-  max-width: 85vh;
-}
-
 .bg-circle-container {
   position: absolute;
   left: 0%;
@@ -4494,7 +4490,7 @@ textarea.w-input, textarea.w-select {
 .front-div{
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.101);
 }
 
@@ -9392,7 +9388,6 @@ textarea.w-input, textarea.w-select {
 
   .text-block-59.marcel-4 {
     left: 0%;
-    top: 0%;
     right: 0%;
     bottom: auto;
     max-width: 100%;
