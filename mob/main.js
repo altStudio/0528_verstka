@@ -1,3 +1,4 @@
+const initialScreenHeight = window.screen.height;
 
 const vid = document.querySelector('.background-video video');
 function stopVid() {
@@ -321,13 +322,17 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     }, "-=1")
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, x: 1000, visibility: 'visible', height: window.screen.height + 'px' })
+    .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible', height: window.screen.height + 'px' })
     .set('.section-3', { visibility: 'visible' })
     .to('.secondsect', {
       x: 0, zIndex: 13, duration: 1.5,
     })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
-    .to('.div-block-7', { opacity: 1, duration: 1.5, onComplete: function () { vid.play() } },)
+    .to('.div-block-7', {
+      opacity: 1, duration: 1.5, onComplete: function () {
+        vid.play();
+      }
+    })
     .addLabel("label3")
 
     .set('.section-3', { height: window.screen.height + 'px' })
@@ -431,7 +436,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-7', { visibility: 'hidden' })
     .addLabel("label12")
 
-    .set('#howto', { visibility: 'visible', height: window.screen.height + 'px', y: window.screen.height  })
+    .set('#howto', { visibility: 'visible', height: window.screen.height + 'px', y: window.screen.height })
     .to('.h2', { scale: 1.5, y: -200, opacity: 0, duration: 0.5 })
     .to('.text-block-18', { scale: 1.5, y: 200, opacity: 0, duration: 0.5 }, '<')
     .set('.section-7', { opacity: 0, visibility: 'hidden' })
