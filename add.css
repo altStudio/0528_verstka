@@ -2566,12 +2566,13 @@ a.my-underline:hover {
 }
 
 .image-21 {
-    left: -20%;
-    top: 0%;
+    left: -83%;
+    top: -50%;
     right: 0%;
     bottom: 0%;
-    width: 100%;
-    height: auto;
+    width: 147vw;
+    height: 247vh;
+    max-width: none;
 }
 
 .section-11.sect-mission._wf-section.mission-section.section {
@@ -2595,7 +2596,9 @@ a.my-underline:hover {
        59 = 50
        24 = 18
         */
-
+    .image-21{
+        left: -50%;
+    }
 
     .image-8.first-screen-logo {
         margin-bottom: 80px;
