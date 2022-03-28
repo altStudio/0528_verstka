@@ -1484,16 +1484,21 @@
     <div class="subscribe-modal main-modal">
         <div class="backdrop-filter-menu"></div>
         <div class="subscribe-modal-content">
+            <div class="modal-success-block">
+                <p style="text-align: center;">Thank you for joining us,<br>your info was sent correctly!</p>
+            </div>
             <div class="text-block-50">Get early access and exclusive updates</div>
             <div class="form-block-2 w-form">
                 <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2">
                     <div class="modal-input">
                         <label for="email" class="modal-label">Email</label>
-                        <input type="email" placeholder="example@email.com" class="text-field-2 w-input" name="email" id="email-input">
+                        <input type="text" placeholder="example@email.com" class="text-field-2 w-input" name="email" id="email-input">
+                        <label for="email" id="email-error" class="modal-error">error</label>
                     </div>
                     <div class="modal-input">
                         <label for="name" class="modal-label">Name</label>
                         <input type="text" placeholder="Name" class="text-field-2 w-input" name="name" id="name-input">
+                        <label for="name" id="name-error" class="modal-error">error</label>
                     </div>
                     <button type="submit" class="modal-submit-btn">Join Metapax</button>
                 </form>

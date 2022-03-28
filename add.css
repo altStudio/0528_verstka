@@ -3343,7 +3343,7 @@ a.my-underline:hover {
         line-height: 130%;
     }
 
-    .subscribe-modal .text-block-50 {
+    .subscribe-modal .text-block-50, .modal-success-block {
         font-size: 42px;
     }
 
