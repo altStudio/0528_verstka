@@ -1030,7 +1030,7 @@ $('.video-mutte-stop').on('click', function () {
 
 // СВГ для вебфлоу
 $('.talents').html(`<a href="#" class="hover-icon star-container">
-<svg class="" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1049,7 +1049,7 @@ $('.talents').html(`<a href="#" class="hover-icon star-container">
   </svg>                      
 </a>
 <a href="#" class="hover-icon shark-container">
-<svg class="" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_870" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1072,7 +1072,7 @@ $('.talents').html(`<a href="#" class="hover-icon star-container">
   
 </a>
 <a href="#" class="hover-icon gutar-container">
-<svg class="" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_854" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1093,7 +1093,7 @@ $('.talents').html(`<a href="#" class="hover-icon star-container">
 
 
 $('.hobbies').html(`<a href="#" class="hover-icon">
-<svg class="book" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="book round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_967" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1108,7 +1108,7 @@ $('.hobbies').html(`<a href="#" class="hover-icon">
   
 </a>
 <a  href="#" class="hover-icon">
-<svg class="cat" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="cat round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_936" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1145,7 +1145,7 @@ $('.hobbies').html(`<a href="#" class="hover-icon">
   
 </a>
 <a href="#" class="hover-icon">
-<svg class="plant" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="plant round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_900" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1170,7 +1170,7 @@ $('.hobbies').html(`<a href="#" class="hover-icon">
 </a>`)
 
 $('.vehicles').html(`<a href="#" class="hover-icon">
-<svg class="bike" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="bike round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_830" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>
@@ -1199,7 +1199,7 @@ $('.vehicles').html(`<a href="#" class="hover-icon">
 </a>
 
 <a href="#" class="hover-icon">
-<svg class="car" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="car round-svg" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_395_792" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
   <circle cx="37.5" cy="37.5" r="37.5" fill="#C4C4C4"/>
   </mask>

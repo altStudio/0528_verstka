@@ -2334,6 +2334,10 @@ textarea.w-input, textarea.w-select {
   height: 90px;
 }
 
+.round-svg{
+  width: 65px;
+}
+
 .link {
   display: block;
   margin-right: 0px;
