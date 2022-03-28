@@ -2330,12 +2330,22 @@ textarea.w-input, textarea.w-select {
   background-image: none;
 }
 
-.place-img{
+.place-img {
   height: 90px;
 }
 
-.round-svg{
+.round-svg {
   width: 65px;
+}
+
+button.modal-menu-link {
+  background-color: white;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+button.my-underline:hover {
+  border-bottom: 2px solid #f48b44;
 }
 
 .link {
@@ -5697,24 +5707,14 @@ textarea.w-input, textarea.w-select {
 .text-block-50 {
   margin-bottom: 80px;
   font-family: Manrope, sans-serif;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 130%;
-  text-align: center;
 }
 
 .form-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 .text-field-2 {
@@ -5728,11 +5728,11 @@ textarea.w-input, textarea.w-select {
   font-family: Manrope, sans-serif;
   font-size: 24px;
   line-height: 130%;
+  color: white;
 }
 
 .form-block-2 {
   position: relative;
-  max-width: 60%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -5878,12 +5878,41 @@ textarea.w-input, textarea.w-select {
   display: none;
 }
 
+.modal-input{
+  width: 45%;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.modal-label{
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.modal-submit-btn{
+  width: 260px;
+  height: 80px;
+  background-color: #F48B44;
+  border-radius: 50px;
+  color: #161616;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.modal-submit-btn:hover{
+  background-color: #ff9752;
+}
+
 .subscribe-modal-content {
   position: relative;
-  width: 60%;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #161616;
+  width: 70%;
+  padding: 60px 40px 90px 40px;
+  background-color: black;
+  -webkit-box-shadow: 0px 4px 81px white;
+  -moz-box-shadow: 0px 4px 81px white;
+  box-shadow: 0px 4px 81px white;
+  border-radius: 25px;
 }
 
 .privacy-modal-content {

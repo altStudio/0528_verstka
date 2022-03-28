@@ -1395,7 +1395,7 @@
                             <div class="form-block w-form">
                                 <form id="email-form" name="email-form" data-name="Email Form" method="post"
                                     class="form">
-                                    <input type="email" class="text-field w-input" maxlength="256" name="email"
+                                    <input type="text" class="text-field w-input" maxlength="256" name="email"
                                         data-name="Email" placeholder="Email" id="email" required="" />
                                     <div class="how-btn-container"><input type="submit" value="Submit" data-wait=""
                                             class="submit-button how-btn-1 button-2 w-button" /><a href="#"
@@ -1472,6 +1472,8 @@
                     target="_blank">White Paper</a>
                 <a href="./images/metapax-pitch-deck.pdf" class="modal-menu-link my-underline download" target="_blank"
                     download="">Pitch-deck</a>
+                <button href="#" class="modal-menu-link my-underline subscribe-open" data-label-number="27"
+                    data-section-class="contact-section" style="margin-top: 20px;" id="openModal">Join Us</button>
             </div>
             <div class="menu-footer">
                 <!-- <div class="menu-policy-container"><a href="#" class="menu-policy-btn policy-btn-for-modal w-button">Privacy Policy</a><a href="#" class="menu-policy-btn menu-policy-btn-margin-bottom-none cookie-btn-for-modal w-button">Cookie Policy</a></div>
@@ -1482,24 +1484,19 @@
     <div class="subscribe-modal main-modal">
         <div class="backdrop-filter-menu"></div>
         <div class="subscribe-modal-content">
-            <h3 class="heading-12">Stay with <span class="text-span-20">MetaPax</span></h3>
-            <div class="text-block-50">please leave your contact details so we can<br /> find you as soon as we&#x27;ll
-                have updates</div>
+            <div class="text-block-50">Get early access and exclusive updates</div>
             <div class="form-block-2 w-form">
-                <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="post" class="form-2"><input
-                        type="email" class="text-field-2 w-input" maxlength="256" name="email-2" data-name="Email 2"
-                        placeholder="Email" id="email-2" required="" />
-                    <div class="how-btn-container"><input type="submit" value="Submit" data-wait=""
-                            class="submit-button how-btn-1 button-2 w-button" /><a href="#"
-                            class="button-2 how-btn-2 w-button"><span class="btn-sticky-text new-text">Submit</span></a>
+                <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2">
+                    <div class="modal-input">
+                        <label for="email" class="modal-label">Email</label>
+                        <input type="email" placeholder="example@email.com" class="text-field-2 w-input" name="email" id="email-input">
                     </div>
+                    <div class="modal-input">
+                        <label for="name" class="modal-label">Name</label>
+                        <input type="text" placeholder="Name" class="text-field-2 w-input" name="name" id="name-input">
+                    </div>
+                    <button type="submit" class="modal-submit-btn">Join Metapax</button>
                 </form>
-                <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
             </div><a href="#" class="button-5 close-btn w-button"></a>
         </div>
     </div>
