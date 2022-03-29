@@ -196,7 +196,7 @@ if ($detect->isMobile()) {
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=2.0">
+    <link rel="stylesheet" href="./add.css?ver=2.1">
 </head>
 
 <body class="body">
@@ -240,7 +240,7 @@ if ($detect->isMobile()) {
                 style="position: fixed; z-index: 13;">
                 <div class="section-inner first-inner">
                     <div class="container-3 wrapper w-container">
-                        <div class="div-block-32"><img src="./images/main-logo.svg" loading="lazy" width="577" alt=""
+                        <div class="div-block-32"><img src="./images/main-logo.png" loading="lazy" width="577" alt=""
                                 class="image-8 first-screen-logo" />
                             <div class="text-block-7">In Vision the future</div>
                         </div>
@@ -482,7 +482,7 @@ if ($detect->isMobile()) {
                     <div class="circle-layers"><img src="./images/bg-purple-circl.svg" alt="" class="layers-1" /><img
                             src="./images/bg-green-circl.svg" alt="" class="layers-3" /><img
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyMTc2IDIxNzQiPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2ZfNTNfNykiPjxyZWN0IHdpZHRoPSIxNDMxLjQ2IiBoZWlnaHQ9IjE0MjkuNzkiIHg9IjE0OTguNzQiIHk9IjIwMTEuNzQiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF81M183KSIgcng9IjcxNC44OTUiIHRyYW5zZm9ybT0icm90YXRlKC0xNTguOTA0IDE0OTguNzQgMjAxMS43NCkiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iZmlsdGVyMF9mXzUzXzciIHdpZHRoPSIyMTc0LjY4IiBoZWlnaHQ9IjIxNzMuNDEiIHg9Ii45NTUiIHk9Ii40MzUiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPjxmZUJsZW5kIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJzaGFwZSIvPjxmZUdhdXNzaWFuQmx1ciByZXN1bHQ9ImVmZmVjdDFfZm9yZWdyb3VuZEJsdXJfNTNfNyIgc3RkRGV2aWF0aW9uPSIxODUuNzg5Ii8+PC9maWx0ZXI+PHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDBfcmFkaWFsXzUzXzciIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCg3OS44NDQgNjY3LjIxNDYxIC03ODIuMzA0NDggOTMuNjE2NTMgMjUwMC40MSAyNDA2LjI2KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iLjQ0OCIgc3RvcC1jb2xvcj0iI0ZGNEQ0RCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0icmVkIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48L3N2Zz4="
-                            alt="" class="layers-2" /><img src="./images/gradient-5.png" sizes="100vw" alt=""
+                            alt="" class="layers-2" /><img src="./images/bg-in-one-role.png" sizes="100vw" alt=""
                             class="image-21" /></div>
                     <div class="section-content space-between margin-top-none padding-top-mini padding-top-8">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -923,7 +923,7 @@ if ($detect->isMobile()) {
                                         <div class="icons-container">
                                             <div class="mobile-hidden w-embed"><a href="" class="hover-icon">
                                                     <svg width="42" height="29" viewBox="0 0 42 29" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        xmlns="http://www.w3.org/2000/svg" class="round-svg">
                                                         <path d="M42 0H0V29H42V0Z" fill="#FA1B43" />
                                                         <path d="M19.0905 0H11.4541V29H19.0905V0Z" fill="white" />
                                                         <path d="M42 10.875H0V18.125H42V10.875Z" fill="white" />
@@ -933,7 +933,7 @@ if ($detect->isMobile()) {
                                                 </a>
                                                 <a href="" class="hover-icon">
                                                     <svg width="42" height="29" viewBox="0 0 42 29" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        xmlns="http://www.w3.org/2000/svg" class="round-svg">
                                                         <g clip-path="url(#clip0_395_1142)">
                                                             <path d="M0 0V29H42V0H0Z" fill="#2853A4" />
                                                             <path d="M0 0L42 29L0 0ZM42 0L0 29L42 0Z" fill="#161616" />
@@ -1079,8 +1079,7 @@ if ($detect->isMobile()) {
                                 class="site-logo" />
                             <div class="site-menu custom-menu">menu</div>
                         </div>
-                        <h3 class="heading-6 header-title">No language barrier.<span class="text-span-16">
-                                instant</span>
+                        <h3 class="heading-6 header-title">No language barrier.
                         </h3><img src="./images/understanding-camera.png" loading="eager"
                             sizes="(max-width: 479px) 94vw, (max-width: 767px) 67vw, (max-width: 991px) 68vw, (max-width: 1439px) 69vw, 68vw"
                             srcset="./images/understanding-camera-500.png 500w, ./images/understanding-camera-800.png 800w, ./images/understanding-camera-1080.png 1080w, ./images/understanding-camera.png 1293w"
@@ -1107,7 +1106,7 @@ if ($detect->isMobile()) {
                 </div>
                 <!-- <img src="./images/Mask_Group.svg" class="text-circle-container__right-text" />
                     <img src="./images/Mask_Group2.svg" class="text-circle-container__left-text" /> -->
-                <div class="text-circle-container">
+                <!-- <div class="text-circle-container">
                     <img src="./images/text-round.png" loading="eager" sizes="(max-width: 2269px) 100vw, 2269px"
                         srcset="./images/text-round-500.png 500w, ./images/text-round-800.png 800w, ./images/text-round-1080.png 1080w, ./images/text-round-1600.png 1600w, ./images/text-round.png 2269w"
                         alt="" class="text-circle" />
@@ -1116,7 +1115,8 @@ if ($detect->isMobile()) {
                     <img src="./images/doutsh-text-round.png" loading="eager" sizes="(max-width: 2310px) 100vw, 2310px"
                         srcset="./images/doutsh-text-round-500.png 500w, ./images/doutsh-text-round-800.png 800w, ./images/doutsh-text-round-1080.png 1080w, ./images/doutsh-text-round-1600.png 1600w, ./images/doutsh-text-round.png 2310w"
                         alt="" class="text-circle text-circle-right" />
-                </div>
+                </div> -->
+                <img src="./images/circle-text-bottom.png" alt="" style="position: absolute; bottom: 0; width: 100vw; height: 75vh;">
             </div>
             <div id="roadmap" class="section section-road-map _wf-section wf-section mother hidden-vis">
                 <div class="wrapper w-container">
@@ -1405,7 +1405,7 @@ if ($detect->isMobile()) {
                             <div class="form-block w-form">
                                 <form id="email-form" name="email-form" data-name="Email Form" method="post"
                                     class="form">
-                                    <input type="email" class="text-field w-input" maxlength="256" name="email"
+                                    <input type="text" class="text-field w-input" maxlength="256" name="email"
                                         data-name="Email" placeholder="Email" id="email" required="" />
                                     <div class="how-btn-container"><input type="submit" value="Submit" data-wait=""
                                             class="submit-button how-btn-1 button-2 w-button" /><a href="#"
@@ -1492,24 +1492,24 @@ if ($detect->isMobile()) {
     <div class="subscribe-modal main-modal">
         <div class="backdrop-filter-menu"></div>
         <div class="subscribe-modal-content">
-            <h3 class="heading-12">Stay with <span class="text-span-20">MetaPax</span></h3>
-            <div class="text-block-50">please leave your contact details so we can<br /> find you as soon as we&#x27;ll
-                have updates</div>
+            <div class="modal-success-block">
+                <p style="text-align: center;">Thank you for joining us,<br>your info was sent correctly!</p>
+            </div>
+            <div class="text-block-50">Get early access and exclusive updates</div>
             <div class="form-block-2 w-form">
-                <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="post" class="form-2"><input
-                        type="email" class="text-field-2 w-input" maxlength="256" name="email-2" data-name="Email 2"
-                        placeholder="Email" id="email-2" required="" />
-                    <div class="how-btn-container"><input type="submit" value="Submit" data-wait=""
-                            class="submit-button how-btn-1 button-2 w-button" /><a href="#"
-                            class="button-2 how-btn-2 w-button"><span class="btn-sticky-text new-text">Submit</span></a>
+                <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2">
+                    <div class="modal-input">
+                        <label for="email" class="modal-label">Email</label>
+                        <input type="text" placeholder="example@email.com" class="text-field-2 w-input" name="email" id="email-input">
+                        <label for="email" id="email-error" class="modal-error">error</label>
                     </div>
+                    <div class="modal-input">
+                        <label for="name" class="modal-label">Name</label>
+                        <input type="text" placeholder="Name" class="text-field-2 w-input" name="name" id="name-input">
+                        <label for="name" id="name-error" class="modal-error">error</label>
+                    </div>
+                    <button type="submit" class="modal-submit-btn">Join Metapax</button>
                 </form>
-                <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
             </div><a href="#" class="button-5 close-btn w-button"></a>
         </div>
     </div>
@@ -1645,7 +1645,7 @@ if ($detect->isMobile()) {
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.3"></script>
+    <script src="./main.js?ver=2.4"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
 </body>

@@ -183,7 +183,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=2.0">
+    <link rel="stylesheet" href="./add.css?ver=2.1">
 </head>
 
 <body class="body">
@@ -213,7 +213,6 @@
             }
         })(window.navigator.userAgent.toLowerCase());
 
-        console.log(browserName);
         var animation = bodymovin.loadAnimation({
             container: document.querySelector('#preload-animation'),
             renderer: 'svg',
@@ -229,9 +228,9 @@
                 <div class="div-for-absolute-position bg-map">
                     <div class="div-block-32">
                         <img src="./images/bg-map-first-screen.png" class="image-bg-map">
-                        <img src="./images/logo.svg" loading="lazy" width="577" alt=""
+                        <img src="./images/logo.png" loading="lazy" width="577" alt=""
                             class="image-8 first-screen-logo not-margin-bottom" />
-                        <img src="./images/text.svg" loading="lazy" width="577" alt=""
+                        <img src="./images/MetaPax.png" loading="lazy" width="577" alt=""
                             class="image-8 first-screen-logo" />
                         <div class="text-block-7">In Vision the future</div>
                     </div>
@@ -440,7 +439,7 @@
                 </div>
                 <div class="become-video">
                     <div class="front-div"></div>
-                    <video class="big-video" width="100%" height="100%" poster="./images/video-placeholder.png">
+                    <video class="big-video" width="100%" height="100%" poster="./images/video-placeholder.png" playsinline>
                         <source>
                     </video>
                 </div>
@@ -588,7 +587,7 @@
                     </div>
                 </div>
             </div>
-            <div id="howto" class="section section-ways-slider _wf-section wf-section mother not-rendering">
+            <div id="howto" class="section section-ways-slider _wf-section wf-section not-rendering">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -935,7 +934,7 @@
                                 class="site-logo" />
                             <div class="site-menu custom-menu">menu</div>
                         </div>
-                        <div class="text-block-48 header-title"><span class="text-span-13">Paxer</span></div>
+                        <div class="text-block-48 header-title f-size-17"><span class="text-span-13">Paxer</span></div>
                         <div class="columns-11 w-row div-for-absolute-position">
                             <div class="w-col w-col-3">
                                 <div class="div-block-21">
@@ -1137,7 +1136,7 @@
                                 class="site-logo" />
                             <div class="site-menu custom-menu">menu</div>
                         </div>
-                        <h3 class="heading-9 header-title" style="margin-top: 30vh;">Road <span class="text-span-12">map</span></h3>
+                        <h3 class="heading-9 header-title" style="margin-top: 20vh;">Road <span class="text-span-12">map</span></h3>
                         <div class="columns-7 columns-flex-end content-bottom column-mini w-row">
                             <div class="w-col w-col-10">
                                 <div class="universe-bottom-text margin-right-text"></div>
@@ -1465,6 +1464,7 @@
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
+        <div class="scroll-section"></div>
         <div class="scroll-section how-it-works-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
@@ -1476,6 +1476,7 @@
         <div class="scroll-section"></div>
         <div class="scroll-section"></div>
         <div class="scroll-section contact-section"></div>
+        <div class="scroll-section removable"></div>
     </div>
 
     <div class="menu-modal main-modal">
@@ -1489,9 +1490,9 @@
                     data-section-class="how-it-works-section">How it works</a>
                 <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="7"
                     data-section-class="video-section">Video</a>
-                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="23"
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="24"
                     data-section-class="roadmap-section">Roadmap</a>
-                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="27"
+                <a href="#" class="modal-menu-link my-underline go-to-section close-btn-trigger" data-label-number="28"
                     data-section-class="contact-section">Contact</a>
                 <a href="https://whitepaper.metapax.io/" class="modal-menu-link my-underline" download=""
                     target="_blank">White Paper</a>
@@ -1659,7 +1660,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.3"></script>
+    <script src="./main.js?ver=2.4"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
 </body>
