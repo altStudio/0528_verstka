@@ -102,6 +102,7 @@ const vid2 = document.querySelector('.big-video');
 vid2.muted = true;
 vid2.addEventListener("fullscreenchange", function () {
   goToSection("label6", "label7");
+  console.log('HEllo');
 }, false);
 
 Pace.once("done", function () {
