@@ -3216,6 +3216,10 @@ textarea.w-input, textarea.w-select {
   font-weight: 400;
 }
 
+video::backdrop {
+  background-color: rgba(68, 68, 136, 0);
+}
+
 .section-inner {
   width: 100%;
 }
