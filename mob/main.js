@@ -237,6 +237,8 @@ $('#video-play-icon').on('click', function () { //на клик стартует
 function openFullscreen() {
   if (vid2.requestFullscreen) {
     vid2.requestFullscreen();
+    scrollTriggers.forEach((trigger) => { trigger.disable() });
+    scrolling.disable();
   } else if (vid2.webkitRequestFullscreen) { /* Safari */
     vid2.webkitRequestFullscreen();
   } else if (vid2.msRequestFullscreen) { /* IE11 */
