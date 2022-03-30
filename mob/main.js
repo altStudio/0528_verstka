@@ -218,7 +218,6 @@ $('#video-play-icon').on('click', function () { //на клик стартует
     $('.become-video').css('z-index', '1000000');
     $('.video-play-icon').css('opacity', '0');
     $('.become-text').css('opacity', '0');
-    openFullscreen();
     vid2.muted = false;
     isVideoStarted = true;
   }
@@ -233,16 +232,6 @@ $('#video-play-icon').on('click', function () { //на клик стартует
 
   isVideoPlaying = !isVideoPlaying;
 })
-
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
 
 
 $(".go-to-section").click(function (event) {
