@@ -215,8 +215,10 @@ $('#video-play-icon').on('click', function () { //на клик стартует
   if (!isVideoStarted) {//если еще не начинался видик, скрыть там всякие элементы, размутить видик
     $('.big-video').css('visibility', 'visible');
     $('.big-video').css('opacity', '1');
+    $('.become-video').css('z-index', '1000000');
     $('.video-play-icon').css('opacity', '0');
     $('.become-text').css('opacity', '0');
+    openFullscreen();
     vid2.muted = false;
     isVideoStarted = true;
   }
@@ -231,6 +233,16 @@ $('#video-play-icon').on('click', function () { //на клик стартует
 
   isVideoPlaying = !isVideoPlaying;
 })
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
 
 
 $(".go-to-section").click(function (event) {
@@ -288,12 +300,19 @@ scrollSections.forEach((section, i) => {
 
 });
 
-console.log(window.innerHeight);
-console.log(window.screen.height);
-
 function getEdgePosition() {
   let topPosition = 12 * $('.scroll-section').height();
   return { pos: topPosition, height: $('.scroll-section').height() };
+}
+
+function openFullscreen() {
+  if (vid2.requestFullscreen) {
+    vid2.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    vid2.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    vid2.msRequestFullscreen();
+  }
 }
 
 if (window.matchMedia("(max-width: 1100px)").matches) {
