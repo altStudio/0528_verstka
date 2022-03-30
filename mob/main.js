@@ -220,6 +220,7 @@ $('#video-play-icon').on('click', function () { //на клик стартует
     $('.become-text').css('opacity', '0');
     vid2.muted = false;
     isVideoStarted = true;
+    goToSection('label6', 'label7');
   }
 
   if (isVideoPlaying) { //если видео идет, поставить на паузу и показать кнопку
