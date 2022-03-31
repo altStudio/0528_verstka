@@ -366,10 +366,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
     .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-    // .to('.image-10', {
-    //   x: -500, opacity: 0, duration: 1.5,
-    // }, "<")
-    // .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
+    .to('.image-10', {
+      x: -500, duration: 1.5,
+    }, "<")
+    .to('.image-11', { y: 90, x: -65, width: '180vw', duration: 1.5 }, "<")
     .addLabel("label5")
 
     .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() }, height: window.screen.height + 'px' })
