@@ -404,7 +404,7 @@
                         </div>
                         <!-- <div class="video-play-icon"></div> -->
                         <div class="video-play-icon">
-                            <div style="height: 112px; width: 100%;" id="video-play-icon"></div>
+                            <div style="height: 112px; width: 100%;" id="video-play-icon" class="open-video-modal"></div>
                         </div>
                         <div class="block8 become-text">
                             <div class="text-left">
@@ -428,11 +428,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="become-video">
-                    <video class="big-video" width="100%" height="100%" poster="./images/video-placeholder.png" controls playsinline>
-                        <source>
-                    </video>
                 </div>
             </div>
             <div class="section-5 section section-6 eye-section wf-section not-rendering">
@@ -1518,6 +1513,18 @@
                     <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
             </div><a href="#" class="button-5 close-btn w-button"></a>
+        </div>
+    </div>
+
+    <div class="video-modal main-modal">
+        <div class="backdrop-filter-video"></div>
+        <div class="video-modal-content">
+            <div class="become-video">
+                <video class="big-video" width="100%" poster="./images/video-placeholder.png" controls playsinline>
+                    <source>
+                </video>
+            </div>
+            <div><a href="#" class="button-5 close-btn w-button" id="skip-video-btn"></a></div>
         </div>
     </div>
     <div id="cookie_notification" class="cookie-modal cookie_notification main-modal">

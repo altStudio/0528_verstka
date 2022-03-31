@@ -25,3 +25,4 @@ openModal('site-menu', 'menu-modal', 'close-btn-trigger');
 openModal('subscribe-open', 'subscribe-modal', 'close-btn');
 openModal('policy-btn-for-modal', 'privacy-policy', 'close-btn');
 openModal('cookie-btn-for-modal', 'cookie-policy', 'close-btn');
+openModal('open-video-modal', 'video-modal', 'close-btn');

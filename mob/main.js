@@ -207,30 +207,16 @@ let isNotMob = window.matchMedia("(min-width: 768px)").matches;
 let isVideoStarted = false;
 let isVideoPlaying = false;
 
-$('.button-8').on('click', function () {
+$('#skip-video-btn').on('click', function () {
   goToSection("label7", "label8");
+  vid2.pause();
 })
 
-$('#video-play-icon').on('click', function () { //на клик стартуется/паузится видео
-  if (!isVideoStarted) {//если еще не начинался видик, скрыть там всякие элементы, размутить видик
-    $('.big-video').css('visibility', 'visible');
-    $('.big-video').css('opacity', '1');
-    $('.become-video').css('z-index', '1000000');
-    $('.video-play-icon').css('opacity', '0');
-    $('.become-text').css('opacity', '0');
-    vid2.muted = false;
-    isVideoStarted = true;
-  }
-
-  if (isVideoPlaying) { //если видео идет, поставить на паузу и показать кнопку
-    vid2.pause();
-    $('.video-play-icon').css('opacity', '1');
-  } else { // если видик на паузе запустить и скрыть кнопку
-    playVid2();
-    $('.video-play-icon').css('opacity', '0');
-  }
-
-  isVideoPlaying = !isVideoPlaying;
+$('#video-play-icon').on('click', function () {
+  $('.big-video').css('visibility', 'visible');
+  $('.big-video').css('opacity', '1');
+  vid2.muted = false;
+  playVid2();
 })
 
 
@@ -387,13 +373,13 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label6")
 
     .set('.special-sect', { visibility: 'visible', height: window.screen.height + 'px' })
-    .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() }, onComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится видео или плеится
+    .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() } }) // паузится видео или плеится
     .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
     .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
     .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
-    .set('.big-video', { visibility: 'visible', height: window.screen.height + 'px' })
+    .set('.big-video', { visibility: 'visible', /*height: window.screen.height + 'px'*/ })
     .addLabel("label7")
 
     // .to('.nothing', { display: 'none', duration: 0.01, onComplete: () => { playVid2(); vid2.muted = false; }, onReverseComplete: () => { vid2.pause(), $('.video-play-icon').css('display', 'block') } })
@@ -405,7 +391,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     // .set('.video-play-icon', { display: 'none' })
     // .addLabel("label8")
 
-    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }, onReverseComplete: () => { if (isVideoPlaying) playVid2() } }) // паузится/плеится видео
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }}) // паузится/плеится видео
     .set('.section-6', { zIndex: 17, visibility: 'visible', height: window.screen.height + 'px' },)
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
     .from('.text-block-58 ', { scale: 10, opacity: 0, y: 300, duration: 1 }, '-=0.5')

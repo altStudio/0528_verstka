@@ -2057,12 +2057,22 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.backdrop-filter-menu {
+.backdrop-filter-menu{
     display: none;
     animation: backdropAnim 0.4s;
     animation-fill-mode: both;
     animation-delay: 0.8s;
     background: rgba(4, 4, 4, 0.21);
+}
+
+.backdrop-filter-video{
+    background-color: black;
+    display: none;
+}
+
+.main-modal.video-modal.modal-show .backdrop-filter-video {
+    display: block;
+    z-index: -1;
 }
 
 .main-modal.modal-show .backdrop-filter-menu {
