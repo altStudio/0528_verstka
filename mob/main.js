@@ -367,7 +367,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
     .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
     .to('.image-10', {
-      x: '-50%', duration: 1.5,
+      y: '-50%', duration: 1.5,
     }, "<")
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
