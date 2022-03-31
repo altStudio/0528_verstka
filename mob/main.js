@@ -277,7 +277,7 @@ scrollSections.forEach((section, i) => {
     start: "top bottom-=1",
     end: "bottom top+=1",
     onEnter: () => {
-      if (tl2.currentLabel() !== undefined) { 
+      if (tl2.currentLabel() !== undefined) {
         goToSection(tl2.currentLabel(), tl2.nextLabel())
       }
     },
@@ -309,7 +309,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-bg-map", { opacity: 0 }, "<")
     .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
     .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
-    .to(".image-42", { x: -280, opacity: 1, duration: 1.5 }, '<')
+    .to(".image-42", { x: '-72vw', opacity: 1, duration: 1.5 }, '<')
     .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
     .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
@@ -321,20 +321,18 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
     .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
     .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
-    .to(".image-42", { x: -2000, opacity: 0, duration: 1 }, '<')
+    .to(".image-42", { x: '-500vw', opacity: 0, duration: 1 }, '<')
     .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", {
       opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
     }, "-=1")
-    .set(".image-42", {visibility: "hidden", opacity: "0", display: "none"})
+    .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible', height: window.screen.height + 'px' })
     .addLabel("label2")
 
-    .to('.secondsect', {
-      x: 0, zIndex: 13, duration: 1.5,
-    })
+    .to('.secondsect', { x: '0vw', duration: 1.5,})
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
@@ -349,7 +347,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     })
     .addLabel("label3")
 
-    .set('.section-3', { height: window.screen.height + 'px', visibility: 'visible'  })
+    .set('.section-3', { height: window.screen.height + 'px', visibility: 'visible' })
     .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
     .to('.secondsect', { opacity: 0, duration: 1 })
     .set('.secondsect', { visibility: 'hidden' })
@@ -366,9 +364,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
     .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-    // .to('.image-10', {
-    //   x: -500, duration: 1.5,
-    // }, "<")
+    .to('.image-10', {
+      x: '-100vw', duration: 1.5,
+    }, "<")
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
 
