@@ -328,11 +328,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".text-block-7", {
       opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
     }, "-=1")
-    .set(".image-42", {visibility: "hidden", opacity: "0"})
+    .set(".image-42", {visibility: "hidden", opacity: "0", display: "none"})
+    .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible', height: window.screen.height + 'px' })
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible', height: window.screen.height + 'px' })
-    .set('.section-3', { visibility: 'visible' })
     .to('.secondsect', {
       x: 0, zIndex: 13, duration: 1.5,
     })
@@ -350,7 +349,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     })
     .addLabel("label3")
 
-    .set('.section-3', { height: window.screen.height + 'px' })
+    .set('.section-3', { height: window.screen.height + 'px', visibility: 'visible'  })
     .to('.div-block-7', { y: -500, opacity: 0, duration: 1 },)
     .to('.secondsect', { opacity: 0, duration: 1 })
     .set('.secondsect', { visibility: 'hidden' })
