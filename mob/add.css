@@ -2083,6 +2083,10 @@ body {
     display: block;
 }
 
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+
 
 @keyframes display {
     0% {
