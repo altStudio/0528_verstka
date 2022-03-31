@@ -1642,8 +1642,8 @@ body {
 
 .image-42 {
     left: auto;
-    right: -730px;
-    bottom: -200px;
+    right: -190%;
+    bottom: -23%;
 
     width: 1050px;
     max-width: none;
