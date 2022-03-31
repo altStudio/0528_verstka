@@ -233,12 +233,15 @@ $(".go-to-section").click(function (event) {
   goToSection(`label` + (Number(this.dataset.labelNumber) - 1), `label` + Number(this.dataset.labelNumber));
 });
 
+let alreadyScrolled = false;
+
 function getSectionNumber(animationLabelString) {
   return animationLabelString.substr(5) ? parseInt(animationLabelString.substr(5)) : 0;
 }
 
 function goToSection(from, to, duration = 0.2) {
   console.log('goto section fired', from, to);
+  if (getSectionNumber(to) <= 3) alreadyScrolled = true;
 
   if (scrolling.enabled && to) { // skip if a scroll tween is in progress
     scrollTriggers.forEach((trigger) => { trigger.disable() });
@@ -273,7 +276,15 @@ scrollSections.forEach((section, i) => {
     trigger: section,
     start: "top bottom-=1",
     end: "bottom top+=1",
-    onEnter: () => goToSection(tl2.currentLabel(), tl2.nextLabel()),
+    onEnter: () => {
+      if (tl2.currentLabel() !== undefined) {
+        if (!alreadyScrolled) goToSection(tl2.currentLabel(), tl2.nextLabel())
+        // else {
+        //   console.log('ki');
+        //   tl2.pause();
+        // }
+      }
+    },
     onEnterBack: () => goToSection(tl2.currentLabel(), tl2.previousLabel())
   }));
 
@@ -307,7 +318,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
     .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
     .to('.second-anim-text', {
-      opacity: 1, duration: 1,
+      opacity: 1, duration: 1, onComplete: () => { alreadyScrolled = false; }
     }, '<')
     .addLabel("label1")
 
@@ -319,7 +330,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
     .to(".image-8", { x: 0, opacity: 1, duration: 1 })
     .to(".text-block-7", {
-      opacity: 1, y: textblock7, duration: 1,
+      opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
     }, "-=1")
     .addLabel("label2")
 
@@ -336,6 +347,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
           $('.image-34').css('bottom', '6vh');
           let div = document.getElementsByClassName('removable')[0];
           div.parentNode.removeChild(div);
+          alreadyScrolled = false;
         }
       }
     })
