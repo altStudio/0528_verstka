@@ -208,8 +208,10 @@ let isVideoStarted = false;
 let isVideoPlaying = false;
 
 $('#skip-video-btn').on('click', function () {
-  goToSection("label7", "label8");
   vid2.pause();
+  scrollTriggers.forEach((trigger) => { trigger.enable() });
+  scrolling.enable();
+  goToSection("label7", "label8");
 })
 
 $('#video-play-icon').on('click', function () {
@@ -217,6 +219,8 @@ $('#video-play-icon').on('click', function () {
   $('.big-video').css('opacity', '1');
   vid2.muted = false;
   playVid2();
+  scrollTriggers.forEach((trigger) => { trigger.disable() });
+  scrolling.disable();
 })
 
 
@@ -391,7 +395,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     // .set('.video-play-icon', { display: 'none' })
     // .addLabel("label8")
 
-    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() }}) // паузится/плеится видео
+    .to('.special-sect', { scale: 0.6, opacity: 0, duration: 1, onComplete: function () { vid2.pause() } }) // паузится/плеится видео
     .set('.section-6', { zIndex: 17, visibility: 'visible', height: window.screen.height + 'px' },)
     .fromTo('.image-43', { scale: 6 }, { scale: 0.5, duration: 1 }, '<')
     .from('.text-block-58 ', { scale: 10, opacity: 0, y: 300, duration: 1 }, '-=0.5')

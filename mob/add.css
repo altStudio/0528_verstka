@@ -2075,6 +2075,10 @@ body {
     z-index: -1;
 }
 
+.main-modal {
+    z-index: 100000;
+}
+
 .main-modal.modal-show .backdrop-filter-menu {
     display: block;
 }
