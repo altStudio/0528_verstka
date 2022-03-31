@@ -8220,6 +8220,7 @@ video::backdrop {
     padding-top: 4vh;
     padding-bottom: 45px;
     left: 100%;
+    opacity: 0;
   }
 
   .text-block-4 {
