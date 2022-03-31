@@ -2629,6 +2629,7 @@ textarea.w-input, textarea.w-select {
   top: -50%;
   right: -35%;
   bottom: 0%;
+  -webkit-transform-style: preserve-3d;
 }
 
 .now-you-can-bg {
@@ -2681,6 +2682,7 @@ textarea.w-input, textarea.w-select {
   right: auto;
   bottom: auto;
   z-index: 0;
+  -webkit-transform-style: preserve-3d;
 }
 
 .section-3 {
@@ -8267,6 +8269,7 @@ video::backdrop {
     bottom: -25%;
     width: 150%;
     max-width: 200%;
+    -webkit-transform-style: preserve-3d;
   }
 
   .text-block-6.visible-title {
@@ -8280,6 +8283,7 @@ video::backdrop {
     bottom: auto;
     width: 275%;
     max-width: 300%;
+    -webkit-transform-style: preserve-3d;
   }
 
   .section-3.section {
@@ -9335,6 +9339,7 @@ video::backdrop {
     height: 105px;
     max-width: 150%;
     display: flex;
+    -webkit-transform-style: preserve-3d;
   }
 
   .text-block-56 {

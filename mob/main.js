@@ -277,12 +277,8 @@ scrollSections.forEach((section, i) => {
     start: "top bottom-=1",
     end: "bottom top+=1",
     onEnter: () => {
-      if (tl2.currentLabel() !== undefined) {
-        if (!alreadyScrolled) goToSection(tl2.currentLabel(), tl2.nextLabel())
-        // else {
-        //   console.log('ki');
-        //   tl2.pause();
-        // }
+      if (tl2.currentLabel() !== undefined) { 
+        goToSection(tl2.currentLabel(), tl2.nextLabel())
       }
     },
     onEnterBack: () => goToSection(tl2.currentLabel(), tl2.previousLabel())
@@ -332,6 +328,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to(".text-block-7", {
       opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
     }, "-=1")
+    .set(".image-42", {visibility: "hidden", opacity: "0"})
     .addLabel("label2")
 
     .set('.secondsect', { zIndex: 13, x: '100vw', visibility: 'visible', height: window.screen.height + 'px' })
