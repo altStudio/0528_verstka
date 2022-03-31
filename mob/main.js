@@ -332,7 +332,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.secondsect', { zIndex: 13, visibility: 'visible', height: window.screen.height + 'px' })
     .addLabel("label2")
 
-    .to('.secondsect', { x: '-100%', duration: 1.5, })
+    .to('.secondsect', { left: '0%', duration: 1.5, })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
