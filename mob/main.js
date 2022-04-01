@@ -439,8 +439,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.special-sect', { visibility: 'visible', height: window.screen.height + 'px' })
     .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() } }) // паузится видео или плеится
-    .to('.text-block-14', { scale: 0.3, y: '-100px', duration: 1.5 }, '<') // уменьшается и поднимается текст
-    .to('.text-block-15', { scale: 0.1, y: '-100px', duration: 1.5 }, '<')  // уменьшается и поднимается текст
+    .to('.text-block-14', { scale: 0.3, y: -100, duration: 1.5 }, '<') // уменьшается и поднимается текст
+    .to('.text-block-15', { scale: 0.1, y: -100, duration: 1.5 }, '<')  // уменьшается и поднимается текст
     .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
