@@ -382,7 +382,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     // .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .addLabel("label2")
 
-    .to('.secondsect', { duration: 1.5, onStart: () => sectAnim('front') })
+    .to('.lala', { duration: 1.5, onStart: () => sectAnim('front') })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
