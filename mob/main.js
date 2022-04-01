@@ -354,6 +354,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   tl2.addLabel("start")
 
     .set(".screenone", { height: window.screen.height + 'px' })
+    .set('.secondsect', { height: window.screen.height + 'px' })
     .set(".scroll-section", { height: window.outerHeight + 'px' })
     .to(".image-40", { x: 450, duration: 1.5 })
     .to(".image-bg-map", { opacity: 0 }, "<")
@@ -381,7 +382,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .addLabel("label2")
 
-    .set('.secondsect', { height: window.screen.height + 'px' })
     .to('.secondsect', { duration: 1.5, onStart: () => sectAnim('front') })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
