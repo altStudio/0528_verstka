@@ -357,8 +357,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set(".scroll-section", { height: window.outerHeight + 'px' })
     .to(".image-40", { x: 450, duration: 1.5 })
     .to(".image-bg-map", { opacity: 0 }, "<")
-    // .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
-    // .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
+    .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
+    .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
     .to(".image-42", { x: '-20%', opacity: 1, duration: 1.5 }, '<')
     .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
@@ -369,15 +369,15 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label1")
 
     .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
-    // .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
-    // .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
+    .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
+    .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
     // .to(".image-42", { x: '-150%', opacity: 0, duration: 1 }, '<')
     .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
     .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
-    // .to(".image-8", { x: 0, opacity: 1, duration: 1 })
-    // .to(".text-block-7", {
-    //   opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
-    // }, "<")
+    .to(".image-8", { x: 0, opacity: 1, duration: 1 })
+    .to(".text-block-7", {
+      opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
+    }, "<")
     .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .addLabel("label2")
 
