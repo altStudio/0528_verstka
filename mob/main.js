@@ -322,7 +322,7 @@ function sliderAnim(way) {
   }
 }
 
-function sectAnim(way){
+function sectAnim(way) {
   if (way === 'front') {
     let offset = 0;
     let interval = setInterval(() => {
@@ -353,7 +353,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   // Анимация для мобилок, tl2 - таймлайн для экранов
   tl2.addLabel("start")
 
-    .set(".screenone", {height: window.screen.height + 'px'})
+    .set(".screenone", { height: window.screen.height + 'px' })
+    .set(".scroll-section", { height: window.outerHeight + 'px' })
     .to(".image-40", { x: 450, duration: 1.5 })
     .to(".image-bg-map", { opacity: 0 }, "<")
     .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
@@ -392,8 +393,6 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
           let div = document.getElementsByClassName('removable')[0];
           if (div != undefined) {
             div.parentNode.removeChild(div);
-          } else {
-            $('.scroll-section').css('height', window.screen.width + 'px');
           }
         }
       }, onReverseComplete: () => sectAnim('back')
