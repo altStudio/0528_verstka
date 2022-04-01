@@ -299,16 +299,29 @@ function openFullscreen() {
   }
 }
 
-function sliderAnim(){
-  let offset = 0;
+function sliderAnim(way) {
 
-  let interval = setInterval(() => {
-    $(".image-10").css('transform', `translate(${offset}%, 0px)`);
-    if(offset <= -50){
-      clearInterval(interval);
-    }
-    offset -= 0.66;
-  }, 20);
+
+  if (way === 'front') {
+    let offset = 0;
+    let interval = setInterval(() => {
+      $(".image-10").css('transform', `translate(${offset}%, 0px)`);
+      if (offset <= -50) {
+        clearInterval(interval);
+      }
+      offset -= 0.66;
+    }, 20);
+  }
+  else if (way === 'back') {
+    let offset = -50;
+    let interval = setInterval(() => {
+      $(".image-10").css('transform', `translate(${offset}%, 0px)`);
+      if (offset >= 0) {
+        clearInterval(interval);
+      }
+      offset += 0.66;
+    }, 20);
+  }
 }
 
 if (window.matchMedia("(max-width: 1100px)").matches) {
@@ -353,6 +366,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
           let div = document.getElementsByClassName('removable')[0];
           if (div != undefined) {
             div.parentNode.removeChild(div);
+          } else {
+            $('.scroll-section').css('height', window.screen.width + 'px');
           }
         }
       }
@@ -375,11 +390,12 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.mobile-section-title-item', { opacity: 0, duration: 1.5 }, "<")
     .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
-    .to('.hidden-text-2', { opacity: 1, duration: 1.5, onStart: () => sliderAnim() }, "<")
+    .to('.hidden-text-2', { opacity: 1, duration: 1.5, onStart: () => sliderAnim('front') }, "<")
     // .to('.image-10', {
     //   x: '-50%', duration: 1.5,
     // }, "<")
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
+    .to('.image-11', { onReverseComplete: () => sliderAnim('back'), duration: 0.01 })
     .addLabel("label5")
 
     .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() }, height: window.screen.height + 'px' })
