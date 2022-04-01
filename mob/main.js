@@ -241,7 +241,7 @@ function getSectionNumber(animationLabelString) {
 
 function goToSection(from, to, duration = 0.2) {
   console.log('goto section fired', from, to);
-  if (getSectionNumber(to) <= 3) alreadyScrolled = true;
+  // if (getSectionNumber(to) <= 3) alreadyScrolled = true;
 
   if (scrolling.enabled && to) { // skip if a scroll tween is in progress
     scrollTriggers.forEach((trigger) => { trigger.disable() });

@@ -6649,6 +6649,7 @@ video::backdrop {
 .bg-first-video-img {
   height: 120vh;
   bottom: 0;
+  display: flex;
 }
 
 .new-way-bg {
@@ -8285,6 +8286,7 @@ video::backdrop {
     width: 275%;
     max-width: 300%;
     -webkit-transform-style: preserve-3d;
+    display: flex;
   }
 
   .section-3.section {
