@@ -353,6 +353,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   // Анимация для мобилок, tl2 - таймлайн для экранов
   tl2.addLabel("start")
 
+    .set(".screenone", {height: window.screen.height + 'px'})
     .to(".image-40", { x: 450, duration: 1.5 })
     .to(".image-bg-map", { opacity: 0 }, "<")
     .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
