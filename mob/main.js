@@ -527,8 +527,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set('.section-invert', { visibility: 'hidden' })
     .set('.section-monic', { zIndex: 22, visibility: 'visible', height: window.screen.height + 'px' })
     .to('.section-monic', { opacity: 1, duration: 0.5 },)
-    .to('.op-0', { opacity: 1, duration: 1 }, '+=1')
-    .to('#mac-svg-second', { opacity: 0, duration: 2 }, '<')
+    .to('.op-0', { opacity: 1, duration: 1 }, '<')
     .addLabel("label15")
 
     .to('.section-monic', { opacity: 0, duration: 0.5 },)
@@ -597,7 +596,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         $('.drowning-man-image').removeClass('blur-effect-2');
         $('.surfing-man-image').addClass('blur-effect-2');
       }
-    }, '+=0.8')
+    })
     .addLabel("label23")
 
     .to('.time-matters', { opacity: 0, duration: 0.5 },)
