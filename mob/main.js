@@ -329,9 +329,9 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
       opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
     }, "-=1")
     .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
-    .set('.secondsect', { zIndex: 13, visibility: 'visible', height: window.screen.height + 'px' })
     .addLabel("label2")
 
+    .set('.secondsect', { zIndex: 13, visibility: 'visible', height: window.screen.height + 'px' })
     .to('.secondsect', { left: '0%', duration: 1.5, })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {

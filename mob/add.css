@@ -1824,10 +1824,6 @@ body {
     transition: 1s;
 }
 
-.image-19 {
-    max-width: 90%;
-}
-
 .section-7 .image-19 {
     opacity: 0;
 }
@@ -2619,7 +2615,6 @@ a.my-underline:hover {
 
 .image-10 {
     left: -145%;
-    opacity: 0;
 }
 
 .image-11 {
@@ -4060,6 +4055,14 @@ a.my-underline:hover {
 
         .road-map-slider_content {
             font-size: 14px;
+        }
+
+        .text-block-17.marcel-1 {
+            font-size: 22px;
+        }
+
+        .text-block-17.marcel-2 {
+            font-size: 22px;
         }
     }
 
