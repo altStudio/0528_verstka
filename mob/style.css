@@ -8221,6 +8221,8 @@ video::backdrop {
     padding-top: 4vh;
     padding-bottom: 45px;
     left: 100%;
+    visibility: visible;
+    z-index: 13;
   }
 
   .text-block-4 {

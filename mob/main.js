@@ -300,8 +300,6 @@ function openFullscreen() {
 }
 
 function sliderAnim(way) {
-
-
   if (way === 'front') {
     let offset = 0;
     let interval = setInterval(() => {
@@ -321,6 +319,33 @@ function sliderAnim(way) {
       }
       offset += 0.66;
     }, 20);
+  }
+}
+
+function sectAnim(way){
+  if (way === 'front') {
+    let offset = 0;
+    let interval = setInterval(() => {
+      if (offset <= -100) {
+        clearInterval(interval);
+        $(".secondsect").css('transform', `translate(-100%, 0px)`);
+        return;
+      }
+      $(".secondsect").css('transform', `translate(${offset}%, 0px)`);
+      offset -= 0.66;
+    }, 10);
+  }
+  else if (way === 'back') {
+    let offset = -100;
+    let interval = setInterval(() => {
+      if (offset >= 0) {
+        clearInterval(interval);
+        $(".secondsect").css('transform', `translate(100%, 0px)`);
+        return;
+      }
+      $(".secondsect").css('transform', `translate(${offset}%, 0px)`);
+      offset += 0.66;
+    }, 10);
   }
 }
 
@@ -354,8 +379,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .addLabel("label2")
 
-    .set('.secondsect', { zIndex: 13, visibility: 'visible', height: window.screen.height + 'px' })
-    .to('.secondsect', { left: '0%', duration: 1.5, })
+    .set('.secondsect', { height: window.screen.height + 'px' })
+    .to('.secondsect', { duration: 1.5, onStart: () => sectAnim('front') })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
@@ -370,7 +395,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
             $('.scroll-section').css('height', window.screen.width + 'px');
           }
         }
-      }
+      }, onReverseComplete: () => sectAnim('back')
     })
     .addLabel("label3")
 
