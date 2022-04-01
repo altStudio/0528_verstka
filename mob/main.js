@@ -299,6 +299,18 @@ function openFullscreen() {
   }
 }
 
+function sliderAnim(){
+  let offset = 0;
+
+  let interval = setInterval(() => {
+    $(".image-10").css('transform', `translate(${offset}%, 0px)`);
+    if(offset <= -50){
+      clearInterval(interval);
+    }
+    offset -= 0.66;
+  }, 20);
+}
+
 if (window.matchMedia("(max-width: 1100px)").matches) {
   // Анимация для мобилок, tl2 - таймлайн для экранов
   tl2.addLabel("start")
@@ -363,10 +375,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.mobile-section-title-item', { opacity: 0, duration: 1.5 }, "<")
     .to('.visible-text', { opacity: 0, duration: 1.5 }, "<")
     .to('.mobile-section-title-item-hidden', { opacity: 1, duration: 1.5 }, "<")
-    .to('.hidden-text-2', { opacity: 1, duration: 1.5 }, "<")
-    .to('.image-10', {
-      x: '-50%', duration: 1.5,
-    }, "<")
+    .to('.hidden-text-2', { opacity: 1, duration: 1.5, onStart: () => sliderAnim() }, "<")
+    // .to('.image-10', {
+    //   x: '-50%', duration: 1.5,
+    // }, "<")
     .to('.image-11', { y: '11%', x: '-17%', width: '180%', duration: 1.5 }, "<")
     .addLabel("label5")
 
