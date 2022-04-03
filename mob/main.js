@@ -275,7 +275,7 @@ scrollSections.forEach((section, i) => {
     start: "top bottom-=1",
     end: "bottom top+=1",
     onEnter: () => {
-      if (tl2.currentLabel() !== undefined) {
+      if (tl2.currentLabel() !== undefined && tl2.nextLabel() !== undefined) {
         goToSection(tl2.currentLabel(), tl2.nextLabel())
       }
     },
