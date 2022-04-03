@@ -354,34 +354,34 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
   tl2.addLabel("start")
 
     .set(".screenone", { height: window.screen.height + 'px' })
+    .set('.secondsect', { height: window.screen.height + 'px' })
     .set(".scroll-section", { height: window.outerHeight + 'px' })
-    .to(".image-40", { x: 450, duration: 1.5 })
-    .to(".image-bg-map", { opacity: 0 }, "<")
-    .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
-    .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
-    .to(".image-42", { x: '-20%', opacity: 1, duration: 1.5 }, '<')
-    .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
-    .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
-    .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
-    .to('.second-anim-text', {
-      opacity: 1, duration: 1, onComplete: () => { alreadyScrolled = false; }
-    }, '<')
+    // .to(".image-40", { x: 450, duration: 1.5 })
+    // .to(".image-bg-map", { opacity: 0 }, "<")
+    // .to('.scroll-dv', { left: 0, right: 0, top: '10vh', bottom: 0, width: '100vw', duration: 1.5 }, "<")
+    // .to('.arrow-down', { margin: '0 49vw', duration: 1.5 }, '<')
+    // .to(".image-42", { x: '-20%', opacity: 1, duration: 1.5 }, '<')
+    // .to(".image-7", { x: '-19vw', y: '-5vh', duration: 1.5 }, '<')
+    // .to(".image-6", { x: '15.5vw', y: '30vh', rotation: -62, duration: 1.5 }, '<')
+    // .to('.first-anim-text', { y: -500, opacity: 0, duration: 1.5 }, '<')
+    // .to('.second-anim-text', {
+    //   opacity: 1, duration: 1, onComplete: () => { alreadyScrolled = false; }
+    // }, '<')
     .addLabel("label1")
 
-    .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
-    .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
-    .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
-    .to(".image-42", { x: '-150%', opacity: 0, duration: 1 }, '<')
-    .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
-    .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
-    .to(".image-8", { x: 0, opacity: 1, duration: 1 })
-    .to(".text-block-7", {
-      opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
-    }, "<")
+    // .to(".text-block-3", { y: -300, opacity: 0, duration: 1 },)
+    // .to(".scroll-dv", { opacity: 0, duration: 1 }, '<')
+    // .to(".image-40", { y: -560, opacity: 0, duration: 1.5 })
+    // .to(".image-42", { x: '-150%', opacity: 0, duration: 1 }, '<')
+    // .to(".image-7", { x: '70vw', y: '-28vh', width: '160vw', height: '85vh', duration: 1.5 }, '<')
+    // .to(".image-6", { x: '-50vw', y: '70vh', width: '195vw', height: '100vh', rotation: 0, duration: 1.5 }, '<')
+    // .to(".image-8", { x: 0, opacity: 1, duration: 1 })
+    // .to(".text-block-7", {
+    //   opacity: 1, y: textblock7, duration: 1, onComplete: () => { alreadyScrolled = false; }
+    // }, "<")
     .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .addLabel("label2")
 
-    .set('.secondsect', { height: window.screen.height + 'px' })
     .to('.secondsect', { duration: 1.5, onStart: () => sectAnim('front') })
     .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
@@ -439,8 +439,8 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
     .set('.special-sect', { visibility: 'visible', height: window.screen.height + 'px' })
     .to('.section-4 ', { opacity: 0, duration: 1.5, onReverseComplete: () => { vid2.pause() } }) // паузится видео или плеится
-    .to('.text-block-14', { scale: 0.3, y: -100, duration: 1.5 }, '<') // уменьшается и поднимается текст
-    .to('.text-block-15', { scale: 0.1, y: -100, duration: 1.5 }, '<')  // уменьшается и поднимается текст
+    // .to('.text-block-14', { scale: 0.3, y: -100, duration: 1.5 }, '<') // уменьшается и поднимается текст
+    // .to('.text-block-15', { scale: 0.1, y: -100, duration: 1.5 }, '<')  // уменьшается и поднимается текст
     .to('.glasses-in-now-you-can', { opacity: 0, duration: 1 }, '<') // очки пропадают
     .set('.special-sect', { zIndex: 16 })
     .set('.section-4', { visibility: 'hidden' })
