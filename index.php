@@ -14,8 +14,12 @@ if ($detect->isMobile()) {
 <head>
     <meta charset="utf-8">
     <title>MetaPax - in vision the future</title>
-    <meta name="description" content="MetaPax is a social platform 3.0 for Real Time First person view streaming via Glasses with an ability to remotely guide a person as you need.">
+    <!-- <meta name="description" content="MetaPax is a social platform 3.0 for Real Time First person view streaming via Glasses with an ability to remotely guide a person as you need."> -->
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta property="og:title" content="MetaPax - in vision the future">
+    <meta property="og:description" content="MetaPax is a social platform 3.0 for Real Time First person view streaming via Glasses with an ability to remotely guide a person as you need. ">
+    <meta property="og:image" content="https://drive.google.com/file/d/1_fFJML4MQ873EyjrDUMmQFMW3SQVSexo/view?usp=sharing">
+    <meta property="og:type" content="website">
     <link href="./style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:300,regular&amp;subset=cyrillic,latin"
