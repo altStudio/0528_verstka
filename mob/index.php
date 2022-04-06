@@ -302,12 +302,12 @@
                         data-video-urls="./images/foot-mp4.mp4,./images/foot-webm.webm" data-autoplay="true"
                         data-loop="true" data-wf-ignore="true"
                         class="background-video w-background-video w-background-video-atom">
-                        <video id="embed-video-1" loop="" style="background-image:url(&quot;./images/foot.jpg&quot;)"
+                        <!-- <video id="embed-video-1" loop="" style="background-image:url(&quot;./images/foot.jpg&quot;)"
                             muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
                             <source src="./images/foot-mp4.mp4" data-wf-ignore="true" />
-                        </video>
+                        </video> -->
                     </div>
-                    <!-- <div class="div-for-absolute-position div-for-box-shadow"></div> -->
+                    <div class="div-for-absolute-position div-for-box-shadow"></div>
                 </div>
             </div>
             <div id="3sec" class="section-3 section wf-section not-rendering">
@@ -331,11 +331,11 @@
                                         data-video-urls="./images/video-in-laptop-mp4.mp4,./images/video-in-laptop-webm.webm"
                                         data-autoplay="true" data-loop="true" data-wf-ignore="true"
                                         class="laptop-video-content w-background-video w-background-video-atom">
-                                        <!-- <video id="embed-video-2" autoplay="" loop=""
+                                        <video id="embed-video-2" autoplay="" loop=""
                                             style="background-image:url(&quot;./images/poster-for-video-in-laptop.jpg&quot;)"
                                             muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
                                             <source>
-                                        </video> -->
+                                        </video>
                                     </div><img src="./images/footer-in-laptop.png" loading="lazy" alt=""
                                         class="image-31 laptop-int" />
                                 </div>
