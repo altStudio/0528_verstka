@@ -196,7 +196,7 @@ if ($detect->isMobile()) {
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./add.css?ver=2.1">
+    <link rel="stylesheet" href="./add.css?ver=2.2">
 </head>
 
 <body class="body">
@@ -1482,6 +1482,8 @@ if ($detect->isMobile()) {
                     target="_blank">White Paper</a>
                 <a href="./images/metapax-pitch-deck.pdf" class="modal-menu-link my-underline download" target="_blank"
                     download="">Pitch-deck</a>
+                <!-- <button href="#" class="modal-menu-link my-underline subscribe-open" data-label-number="27"
+                    data-section-class="contact-section" style="margin-top: 20px;" id="openModal">Join Us</button> -->
             </div>
             <div class="menu-footer">
                 <!-- <div class="menu-policy-container"><a href="#" class="menu-policy-btn policy-btn-for-modal w-button">Privacy Policy</a><a href="#" class="menu-policy-btn menu-policy-btn-margin-bottom-none cookie-btn-for-modal w-button">Cookie Policy</a></div>
@@ -1500,12 +1502,12 @@ if ($detect->isMobile()) {
                 <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2">
                     <div class="modal-input">
                         <label for="email" class="modal-label">Email</label>
-                        <input type="text" placeholder="example@email.com" class="text-field-2 w-input" name="email" id="email-input">
+                        <input type="text" placeholder="example@email.com" class="text-field-2 w-input" name="email" id="email-input" autocomplete="off">
                         <label for="email" id="email-error" class="modal-error">error</label>
                     </div>
                     <div class="modal-input">
                         <label for="name" class="modal-label">Name</label>
-                        <input type="text" placeholder="Name" class="text-field-2 w-input" name="name" id="name-input">
+                        <input type="text" placeholder="Name" class="text-field-2 w-input" name="name" id="name-input" autocomplete="off">
                         <label for="name" id="name-error" class="modal-error">error</label>
                     </div>
                     <button type="submit" class="modal-submit-btn">Join Metapax</button>
@@ -1645,9 +1647,10 @@ if ($detect->isMobile()) {
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="./main-slider.js"></script>
-    <script src="./main.js?ver=2.4"></script>
+    <script src="./main.js?ver=2.5"></script>
     <script src="./popup.js"></script>
     <script src="./cookie.js"></script>
+    <script src="./requests.js"></script>
 </body>
 
 </html>
