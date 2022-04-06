@@ -246,7 +246,7 @@ if ($detect->isMobile()) {
                         </div>
                         <div class="text-block-3">
                             <div class="text-sect first-anim-text">Imagine that you can see the world through someone
-                                else’s eyes... <br>Literally</div>
+                                else’s eyes... <br>LiterallyППП</div>
                             <div class="text-sect second-anim-text">You can guide that person <br />and make him act as
                                 you <br />wish...</div>
                         </div>
