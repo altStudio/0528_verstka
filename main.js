@@ -838,7 +838,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .addLabel("label10")
 
     .to('.rotate-container-1', { rotation: -180, duration: 2, ease: "none" })
-    // .to('.image-21', {rotation: -180, duration: 2}, '<')
+    // .to('.image-21', {rotation: -180, duration: 2}, '<')//test
     .to('.in-one-role-right-bg', {opacity: 1, duration: 2}, '<')
     .to('.marcel-1', { opacity: 0, duration: 1 }, '<')
     .to('.marcel-3', { opacity: 0, duration: 1 }, '<')
