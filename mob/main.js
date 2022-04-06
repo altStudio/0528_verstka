@@ -3,12 +3,12 @@ const innerHeight = window.innerHeight;
 
 const vid = document.querySelector('.background-video video');
 function stopVid() {
-  // vid.pause();
+  vid.pause();
 }
 stopVid();
 
 function playVid() {
-  // vid.play()
+  vid.play()
 }
 
 let rotateInterval;
@@ -382,11 +382,11 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .set(".image-42", { visibility: "hidden", opacity: "0", display: "none" })
     .addLabel("label2")
 
-    // .to('.secondsect', { duration: 5, x: '-100%', force3D: true, z: 0.1, rotationZ: 0.01 })
-    // .set('.screenone', { opacity: 0, visibility: 'hidden' })
+    .to('.secondsect', { duration: 1.5, x: '-100%', force3D: true, z: 0.1, rotationZ: 0.01 })
+    .set('.screenone', { opacity: 0, visibility: 'hidden' })
     .to('.div-block-7', {
       opacity: 1, duration: 1.5, onComplete: function () {
-        // vid.play();
+        vid.play();
         alreadyScrolled = false;
         if (innerHeight >= window.innerHeight) {
           $('.image-34').css('bottom', '6vh');
@@ -425,7 +425,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
     .to('.image-11', { onReverseComplete: () => sliderAnim('back'), duration: 0.01 })
     .addLabel("label5")
 
-    .set('.section-4', { visibility: 'visible', onComplete: () => { /*vid.pause() */}, onReverseComplete: () => {/* vid.play()*/ }, height: window.screen.height + 'px' })
+    .set('.section-4', { visibility: 'visible', onComplete: () => { vid.pause() }, onReverseComplete: () => { vid.play() }, height: window.screen.height + 'px' })
     .set('.text-block-14', { scale: 1 })
     .set('.text-block-15', { scale: 1 })
     .to('.section-3', { opacity: 0, duration: 1 })//исчезает предыдущий слайд
