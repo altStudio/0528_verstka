@@ -2972,12 +2972,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-7 {
+  padding-top: calc(100% + 4vh);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  padding-top: 30vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -8238,7 +8238,8 @@ video::backdrop {
   }
 
   .center-text.visible-text {
-    max-width: 100%;
+    max-width: 286px;
+    margin: 0 auto;
     font-size: 17px;
   }
 
@@ -8551,16 +8552,17 @@ video::backdrop {
   }
 
   .text-block-16 {
-    margin-bottom: 0px;
-    font-size: 17px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 130%;
     text-align: center;
   }
 
   .text-block-16.change-text {
     display: block;
-    margin-bottom: 0px;
-    font-size: 17px;
-    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 130%;
   }
 
   .text-block-17.marcel-1 {
@@ -9456,6 +9458,7 @@ video::backdrop {
     font-size: 22px;
     line-height: 150%;
     text-align: center;
+    margin-bottom: 11px;
   }
 
   .text-block-60 {
