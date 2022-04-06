@@ -4910,13 +4910,21 @@ button.my-underline:hover {
   width: auto;
   max-width: 70%;
   min-height: auto;
-  margin: 115px auto auto;
+  margin: 12.3vh auto auto;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.in-one-role-right-bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
 }
 
 .image-29.copyglasses {
