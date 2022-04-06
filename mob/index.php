@@ -190,6 +190,8 @@
     <script src="./lottie.js"></script>
     <script src="./pace.min.js"></script>
     <script type="text/javascript">
+        screen.orientation.lock('portrait');
+
         window.paceOptions = {
             ajax: false, // disabled
             eventLag: false,
@@ -244,7 +246,7 @@
                         </div>
                         <div class="text-block-3">
                             <div class="text-sect first-anim-text">Imagine that you can see the world through someone
-                                else’s eyes... Literally</div>
+                                else's eyes... Literally</div>
                             <div class="text-sect second-anim-text">You can guide that person and make him act as
                                 you wish...</div>
                         </div>
@@ -292,8 +294,6 @@
                     </div>
                 </div>
                 <div class="glasses">
-                    <div class="blur"></div>
-                    <div class="blur blur2"></div>
                     <div data-poster-url="./images/foot.jpg"
                         data-video-urls="./images/foot-mp4.mp4,./images/foot-webm.webm" data-autoplay="true"
                         data-loop="true" data-wf-ignore="true"
@@ -412,7 +412,7 @@
                         </div>
                         <!-- <div class="video-play-icon"></div> -->
                         <div class="video-play-icon">
-                            <div style="height: 112px; width: 100%;" id="video-play-icon"></div>
+                            <div style="height: 112px; width: 100%;" id="video-play-icon" class="open-video-modal"></div>
                         </div>
                         <div class="block8 become-text">
                             <div class="text-left">
@@ -436,12 +436,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="become-video">
-                    <div class="front-div"></div>
-                    <video class="big-video" width="100%" height="100%" poster="./images/video-placeholder.png" playsinline>
-                        <source>
-                    </video>
                 </div>
             </div>
             <div class="section-5 section section-6 eye-section wf-section not-rendering">
@@ -851,10 +845,6 @@
                                     Surprise everyone.</div>
                             </div>
                             <div class="mac-svg" id="mac-svg-first">
-                                <div class="mac-svg" id="mac-svg-second">
-                                    <img src="./images/monitor-without-circle.svg" alt="" class="laptop-with-circles-image">
-                                    <img src="./images/transparent-boy-and-girl.svg" alt="" class="boy-and-girl-image">
-                                </div>
                                 <img src="./images/monitor-with-circles.svg" alt="" class="laptop-with-circles-image op-0">
                                 <img src="./images/boy-and-girl.svg" alt="" class="boy-and-girl-image op-0">
                             </div>
@@ -1527,6 +1517,18 @@
                     <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
             </div><a href="#" class="button-5 close-btn w-button"></a>
+        </div>
+    </div>
+
+    <div class="video-modal main-modal">
+        <div class="backdrop-filter-video"></div>
+        <div class="video-modal-content">
+            <div class="become-video">
+                <video class="big-video" width="100%" poster="./images/video-placeholder.png" controls playsinline>
+                    <source>
+                </video>
+            </div>
+            <div><a href="#" class="button-5 close-btn w-button" id="skip-video-btn"></a></div>
         </div>
     </div>
     <div id="cookie_notification" class="cookie-modal cookie_notification main-modal">
