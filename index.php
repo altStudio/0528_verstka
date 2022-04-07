@@ -240,6 +240,7 @@ if ($detect->isMobile()) {
     </script>
     <div class="sections-block">
         <div class="secondsect-father">
+            
             <div class="section-2 screenone section first not-padding-top first-head-section wf-section"
                 style="position: fixed; z-index: 13;">
                 <div class="section-inner first-inner">
@@ -482,6 +483,7 @@ if ($detect->isMobile()) {
                 </div>
             </div>
             <div id="get" class="section section-7 platform-section wf-section hidden-vis">
+                <img src="./images/in-one-role-second-gr.png" alt="" class="in-one-role-right-bg">
                 <div class="wrapper w-container">
                     <div class="circle-layers"><img src="./images/bg-purple-circl.svg" alt="" class="layers-1" /><img
                             src="./images/bg-green-circl.svg" alt="" class="layers-3" /><img
@@ -1239,6 +1241,8 @@ if ($detect->isMobile()) {
                     alt="" class="image-53" />
             </div>
             <div id="mission" class="section-11 sect-mission _wf-section mission-section section wf-section mother hidden-vis">
+                <img src="./images/image-many-people.png" alt="" class="many-people-image">
+                <img src="./images/superhero.png" alt="" class="superhero-image">
                 <div class="wrapper w-container">
                     <div class="section-content not-padding space-between margin-top-none sect-mission-container">
                         <div class="section-header"><img src="./images/logo.svg" loading="lazy" alt=""
@@ -1248,52 +1252,54 @@ if ($detect->isMobile()) {
                         <h3 class="heading-7 header-title"><span class="text-span-16">Mission</span> and vision</h3>
                         <div class="mission-content-container">
                             <div class="columns-8 mission-content w-row">
-                                <div class="left-padding-column w-col w-col-5">
+                                <div class="left-padding-column w-col">
                                     <div class="text-block-37 mission-title vis-mis">Technology <br />of
                                         dissolving<br />the
                                         borders</div>
-                                    <!-- <div class="border-text invis-mis invis-title-border"><span class="text-span-11">More than
+                                    <div class="border-text invis-mis invis-title-border"><span class="text-span-11">More than
                                             platform.</span>
-                                    </div> -->
-                                    <div class="text-block-37 mission-title invis-mis invis-title">It&#x27;s a new<br />way to
-                                        life,<br />leisure<br />and work</div>
-                                </div>
-                                <div class="padding-right-column w-col w-col-5">
-                                    <div class="border-text vis-mis"><span class="text-span-11">The world is
-                                            evolving.</span></div>
-                                    <div class="mission-text mis-text-vis">We all are seeing a singification change in
-                                        the
-                                        internet landscape. Just think of it for a moment -- we're devices that were
-                                        invented 14 years ago (think iPhone) and are spending time in social networks
-                                        that
-                                        are almost 20 years old (think Facebook). We're literally living in the past and
-                                        the
-                                        change is inevitable - the future should come. We are building this future.
                                     </div>
-                                    <div class="mission-text mis-text-invs">How often have you been unable to meet your
-                                        goals because you just couldn't be present in another place that very second?
-                                        Think of having a teleportation unit at your home -- how that would change your
-                                        life? Now it's possible! <br><br>
-
-                                        In a blink of an eye you can 'teleport' yourself wherever you want and interact
-                                        with
-                                        the world through someone else’s eyes. Future has come.</div>
-                                    <div class="border-text invis-mis invis-subtitle"><span class="text-span-11">MetaPax is a
-                                            future</span>
-                                    </div>
+                                    <div class="text-block-37 mission-title invis-mis invis-title">It&#x27;s a new way of<br />
+                                        life, leisure and work</div>
                                 </div>
-                                <div class="not-padding-col w-col w-col-2">
-                                    <div class="border-text vis-mis"><span class="text-span-11">Our mission</span></div>
-                                    <div class="border-text invis-mis invis-subtitle-2"><span class="text-span-11">True time
-                                            disruption.</span></div>
-                                    <div class="mission-text mis-text-vis mission-sto">Inspire people to interact with
-                                        each
-                                        other in real time and bring joy in a whole new way</div>
-                                    <div class="mission-text mis-text-invs misson-sto">Never before you were able to be
-                                        present in more than one place at the same time. It's possible now -- with
-                                        MetaPax.
+                                <div style="display: flex; position: relative; top: 5vh;">
+                                    <div class="padding-right-column w-col w-col-5 mission-first-text">
+                                        <div class="border-text vis-mis"><span class="text-span-11">The world is
+                                                evolving.</span></div>
+                                        <div class="mission-text mis-text-vis">We all are seeing a singification change in
+                                            the
+                                            internet landscape. Just think of it for a moment -- we're devices that were
+                                            invented 14 years ago (think iPhone) and are spending time in social networks
+                                            that
+                                            are almost 20 years old (think Facebook). We're literally living in the past and
+                                            the
+                                            change is inevitable - the future should come. We are building this future.
+                                        </div>
+                                        <div class="mission-text mis-text-invs">How often have you been unable to meet your
+                                            goals because you just couldn't be present in another place that very second?
+                                            Think of having a teleportation unit at your home -- how that would change your
+                                            life? Now it's possible! <br><br>
+    
+                                            In a blink of an eye you can 'teleport' yourself wherever you want and interact
+                                            with
+                                            the world through someone else’s eyes. Future has come.</div>
+                                        <div class="border-text invis-mis invis-subtitle"><span class="text-span-11">MetaPax is a
+                                                future</span>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="not-padding-col w-col w-col-2 mission-second-text">
+                                        <div class="border-text vis-mis"><span class="text-span-11">Our mission</span></div>
+                                        <div class="border-text invis-mis invis-subtitle-2"><span class="text-span-11">True time
+                                                disruption.</span></div>
+                                        <div class="mission-text mis-text-vis mission-sto">Inspire people to interact with
+                                            each
+                                            other in real time and bring joy in a whole new way</div>
+                                        <div class="mission-text mis-text-invs misson-sto">Never before you were able to be
+                                            present in more than one place at the same time. It's possible now -- with
+                                            MetaPax.
+                                        </div>
+                                    </div></div>
+                                
                             </div><img src="./images/quotes.png" loading="lazy" sizes="(max-width: 479px) 67px, 287px"
                                 srcset="./images/quotes-500.png 500w, ./images/quotes-800.png 800w, ./images/quotes.png 974w"
                                 alt="" class="image-33" />
@@ -1486,8 +1492,8 @@ if ($detect->isMobile()) {
                     target="_blank">White Paper</a>
                 <a href="./images/metapax-pitch-deck.pdf" class="modal-menu-link my-underline download" target="_blank"
                     download="">Pitch-deck</a>
-                <!-- <button href="#" class="modal-menu-link my-underline subscribe-open" data-label-number="27"
-                    data-section-class="contact-section" style="margin-top: 20px;" id="openModal">Join Us</button> -->
+                <button href="#" class="modal-menu-link my-underline subscribe-open" data-label-number="27"
+                    data-section-class="contact-section" style="margin-top: 20px;" id="openModal">Join Us</button>
             </div>
             <div class="menu-footer">
                 <!-- <div class="menu-policy-container"><a href="#" class="menu-policy-btn policy-btn-for-modal w-button">Privacy Policy</a><a href="#" class="menu-policy-btn menu-policy-btn-margin-bottom-none cookie-btn-for-modal w-button">Cookie Policy</a></div>
