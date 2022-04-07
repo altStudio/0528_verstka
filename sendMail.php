@@ -37,7 +37,10 @@ else {
     $to = "gertyn07@gmail.com";
     $subject = "Новый пользователь";
     $message = "<p>Email: $email</p><br/><p>Имя: $name</p>";
-    $headers = "Content-type: text/html; charset=windows-1251 \r\n";
+    $header = "From: server@metapax.io \r\n";
+    $header .= "Cc: afgh@somedomain.com \r\n";
+    $header .= "MIME-Version: 1.0\r\n";
+    $header .= "Content-type: text/html\r\n";
     mail($to, $subject, $message, $headers);
     setStatus("200", "OK");
 }
