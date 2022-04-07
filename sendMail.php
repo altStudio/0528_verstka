@@ -41,8 +41,13 @@ else {
     $header .= "Cc: afgh@somedomain.com \r\n";
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-type: text/html\r\n";
-    mail($to, $subject, $message, $headers);
-    setStatus("200", "OK");
+    $result = mail($to, $subject, $message, $headers);
+    if($result == true){
+        setStatus("200", "OK");
+    } else {
+        setStatus("500", "Didn't send");
+    }
+    
 }
 
 function setStatus($status = "200", $message = null)
