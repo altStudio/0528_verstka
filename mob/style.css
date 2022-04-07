@@ -4935,6 +4935,61 @@ video::backdrop {
   display: none;
 }
 
+.subscribe-modal {
+  position: relative;
+  max-width: 60%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #161616;
+  color: #fff;
+}
+
+.subscribe-modal.main-modal {
+  display: none;
+  max-width: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+
+.subscribe-modal-content {
+  background-image: url("./images/modal-bg.png");
+  background-size: cover;
+  position: relative;
+  width: 70%;
+  padding: 60px 40px 90px 40px;
+  background-color: black;
+  -webkit-box-shadow: 0px 4px 81px white;
+  -moz-box-shadow: 0px 4px 81px white;
+  box-shadow: 0px 4px 81px white;
+  border-radius: 25px;
+}
+
+.subscribe-modal.main-modal {
+  display: none;
+}
+
+button.modal-menu-link {
+  background-color: white;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.modal-menu-link {
+  border: 1px none #000;
+  font-family: Manrope, sans-serif;
+  color: #161616;
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-menu-link.my-underline {
+  font-size: 28px;
+}
+
 .how-works-bg2.how-works-bg {
   position: absolute;
   left: 65%;
@@ -5819,18 +5874,14 @@ video::backdrop {
 }
 
 .text-block-50 {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   font-family: Manrope, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 130%;
-  text-align: center;
+  text-align: left;
 }
 
 .form-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -5839,24 +5890,24 @@ video::backdrop {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  margin-top: 20px;
 }
 
 .text-field-2 {
   height: auto;
   margin-bottom: 0px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 16px;
   border: 1px solid #fff;
   background-color: transparent;
   font-family: Manrope, sans-serif;
-  font-size: 24px;
+  font-size: 17px;
   line-height: 130%;
 }
 
 .form-block-2 {
   position: relative;
-  max-width: 60%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -6004,12 +6055,110 @@ video::backdrop {
   display: none;
 }
 
+.modal-submit-btn{
+  width: 50vw;
+  height: 7vh;
+  background-color: #F48B44;
+  border-radius: 50px;
+  color: #161616;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.modal-error{
+  color: #FA1B43;
+  float: right;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: transparent;
+}
+
+.modal-input{
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.modal-label{
+  font-size: 17px;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.modal-submit-btn:hover{
+  background-color: #ff9752;
+}
+
+.button-5.form-btn{
+  position: absolute;
+  top: -130%;
+  border-color: transparent;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  background-image: url("./images/cross-exit copy.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: Manrope, sans-serif;
+  color: #161616;
+  font-size: 60px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-success-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.modal-success-block{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0;
+  color: #3D3D3D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 130%;
+  padding: 20px;
+}
+
 .subscribe-modal-content {
   position: relative;
-  width: 60%;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  width: 100%;
+  height: fit-content;
   background-color: #161616;
+}
+
+.subscribe-modal-content.second {
+  background-image: url("./images/Group 2237 (1).png");
+  background-size: cover;
+  position: relative;
+  width: 95%;
+  padding: 30px 35px 45px 20px;
+  background-color: black;
+  -webkit-box-shadow: 0px 4px 81px white;
+  -moz-box-shadow: 0px 4px 81px white;
+  box-shadow: 0px 4px 81px white;
+  border-radius: 25px;
 }
 
 .privacy-modal-content {

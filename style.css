@@ -5923,7 +5923,15 @@ button.my-underline:hover {
   font-size: 24px;
   font-weight: 400;
   margin-top: 5px;
-  color: black;
+  color: transparent;
+}
+
+.modal-success-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 25px;
 }
 
 .modal-success-block{
@@ -5965,6 +5973,8 @@ button.my-underline:hover {
 }
 
 .subscribe-modal-content {
+  background-image: url("./images/modal-bg.png");
+  background-size: cover;
   position: relative;
   width: 70%;
   padding: 60px 40px 90px 40px;
