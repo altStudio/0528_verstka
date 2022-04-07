@@ -45,7 +45,7 @@ else {
     if($result == true){
         setStatus("200", "OK");
     } else {
-        setStatus("500", "Didn't send");
+        return phpinfo();
     }
     
 }
