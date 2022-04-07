@@ -967,8 +967,10 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
 
 
     .to('.vis-mis', { opacity: 0, duration: 1 })
+    .to('.many-people-image', {opacity: 0, duration: 1}, '<')
     .to('.mis-text-vis', { opacity: 0, duration: 1 }, '<')
     .to('.mis-text-invs', { opacity: 1, duration: 1 })
+    .to('.superhero-image', {opacity: 1, duration: 1}, '<')
     .to('.invis-title-border', { opacity: 1, duration: 1.6 }, '<')
     .to('.invis-title', { opacity: 1, zIndex: 30, duration: 1.6 }, '<')
     .to('.invis-subtitle', { opacity: 1, duration: 1.6 }, '<')

@@ -5027,7 +5027,7 @@ button.my-underline:hover {
 .mission-title {
   font-family: 'Agrandir grand 800', sans-serif;
   font-size: 59px;
-  line-height: 150%;
+  line-height: 115%;
 }
 
 .mission-title.invis-mis {
@@ -5035,6 +5035,22 @@ button.my-underline:hover {
   left: 0%;
   right: auto;
   bottom: auto;
+  opacity: 0;
+  top: 5vh;
+}
+
+.many-people-image{
+  position: absolute;
+  right: 0;
+  top: 5vh;
+  width: 50%;
+}
+
+.superhero-image{
+  height: 80%;
+  top: 15vh;
+  position: absolute;
+  right: 0;
   opacity: 0;
 }
 
@@ -5045,8 +5061,11 @@ button.my-underline:hover {
 
 .image-33 {
   position: absolute;
-  width: 287px;
-  height: 195px;
+  width: 220px;
+  height: 150px;
+  margin-top: 160px;
+  z-index: -1;
+  top: 0;
 }
 
 .left-padding-column {
@@ -5056,6 +5075,8 @@ button.my-underline:hover {
 .columns-8 {
   margin-right: 0px;
   margin-left: 0px;
+  flex-direction: column;
+  display: flex;
 }
 
 .heading-7 {
@@ -5131,8 +5152,8 @@ button.my-underline:hover {
 }
 
 .section-11.sect-mission._wf-section.mission-section.section {
-  background-image: url("./images/61f7bf23e86d1d1f75c847c3_Group_2046.png");
-  background-position: 50% 50%;
+  background-image: url("./images/Group 2046 (2).png");
+  /* background-position: 50% 50%; */
   background-size: cover;
 }
 
@@ -5150,6 +5171,10 @@ button.my-underline:hover {
   padding-right: 91px;
   padding-left: 91px;
   font-family: Manrope, sans-serif;
+}
+
+.mission-second-text{
+  width: 18%;
 }
 
 .image-34 {
@@ -7559,6 +7584,7 @@ button.my-underline:hover {
     margin-left: 0px;
     -o-object-fit: contain;
     object-fit: contain;
+    margin-left: -100px;
   }
 
   .left-padding-column {

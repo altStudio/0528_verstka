@@ -1381,9 +1381,9 @@ body {
     filter: blur(7px);
 }
 
-.mission-title {
+/* .mission-title {
     position: absolute;
-}
+} */
 
 .mission-title_invis {
     position: absolute;
@@ -2576,7 +2576,7 @@ a.my-underline:hover {
 }
 
 .section-11.sect-mission._wf-section.mission-section.section {
-    background-position: bottom;
+    background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -3252,8 +3252,9 @@ a.my-underline:hover {
     .mission-section .image-33 {
         width: 220px;
         height: 150px;
-        margin-top: -60px;
+        margin-top: 160px;
         z-index: -1;
+        top: 0;
     }
 
     .blockchain-section .header-title {
