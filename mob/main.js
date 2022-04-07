@@ -389,7 +389,7 @@ if (window.matchMedia("(max-width: 1100px)").matches) {
         vid.play();
         alreadyScrolled = false;
         if (innerHeight >= window.innerHeight) {
-          $('.image-34').css('bottom', '6vh');
+          $('.image-34').css('bottom', '2vh');
           let div = document.getElementsByClassName('removable')[0];
           if (div != undefined) {
             div.parentNode.removeChild(div);
