@@ -2575,11 +2575,11 @@ a.my-underline:hover {
 }
 
 .youtube-icon img {
-    position: absolute;
-    left: -12px;
-    top: -13px;
-    width: 73px;
-    max-width: none;
+    /*position: absolute;*/
+    /*left: -12px;*/
+    /*top: -13px;*/
+    /*width: 73px;*/
+    /*max-width: none;*/
 }
 
 .text-block-19, .button-8, .text-block-34, .earns-section-2 .text-block-49, .section-road-map .road-map-slider_text, .mission-text, .border-text {
