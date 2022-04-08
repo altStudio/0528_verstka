@@ -34,7 +34,7 @@ if (!is_null(nameValidation($name))) $errorMessage[] = nameValidation($name);
 
 if (count($errorMessage)) setStatus('400', $errorMessage);
 else {
-    $to = "petefew665@royins.com";
+    $to = "hapas30859@nuesond.com";
     $subject = "Новый пользователь";
     $message = "<p>Email: $email</p><br/><p>Имя: $name</p>";
     $header = "";
