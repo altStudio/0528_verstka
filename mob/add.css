@@ -409,12 +409,6 @@ opacity: 0;
     position: absolute;
 }
 
-.section-inner.first-inner {
-    max-width: 270px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .section-4.section {
     background: black;
 }

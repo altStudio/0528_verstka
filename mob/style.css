@@ -8541,12 +8541,10 @@ button.modal-menu-link {
     position: relative;
     height: auto;
     min-height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     -ms-grid-row-align: auto;
-    align-self: auto;
+    align-self: center;
   }
 
   .section-header {
