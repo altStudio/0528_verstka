@@ -8,6 +8,8 @@ const openModal = (triggerOpen, modal, triggerClose) => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
             modalContent.classList.add('modal-show');
+            scrollTriggers.forEach((trigger) => { trigger.disable() });
+            scrolling.disable();
         });
     })
 
@@ -17,6 +19,8 @@ const openModal = (triggerOpen, modal, triggerClose) => {
             modalContent.classList.remove('modal-show');
             $('.modal-success-block').css('z-index', '0');
             $('.modal-success-block').css('opacity', '0');
+            scrollTriggers.forEach((trigger) => { trigger.enable() });
+            scrolling.enable();
         });
     })
 

@@ -1,13 +1,15 @@
 
-const openModal = (triggerOpen,modal,triggerClose) => {
-    let openBtn = document.querySelectorAll('.'+triggerOpen),
-        modalContent = document.querySelector('.'+modal),
-        closeBtn = document.querySelectorAll('.'+modal + ' ' + '.'+triggerClose);
+const openModal = (triggerOpen, modal, triggerClose) => {
+    let openBtn = document.querySelectorAll('.' + triggerOpen),
+        modalContent = document.querySelector('.' + modal),
+        closeBtn = document.querySelectorAll('.' + modal + ' ' + '.' + triggerClose);
 
     openBtn.forEach(item => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
             modalContent.classList.add('modal-show');
+            scrollTriggers.forEach((trigger) => { trigger.disable() });
+            scrolling.disable();
         });
     })
 
@@ -15,7 +17,8 @@ const openModal = (triggerOpen,modal,triggerClose) => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
             modalContent.classList.remove('modal-show');
-
+            scrollTriggers.forEach((trigger) => { trigger.enable() });
+            scrolling.enable();
         });
     })
 
