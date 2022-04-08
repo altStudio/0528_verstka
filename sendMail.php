@@ -34,14 +34,13 @@ if (!is_null(nameValidation($name))) $errorMessage[] = nameValidation($name);
 
 if (count($errorMessage)) setStatus('400', $errorMessage);
 else {
-    $to = "gertyn07@gmail.com";
+    $to = "petefew665@royins.com";
     $subject = "Новый пользователь";
     $message = "<p>Email: $email</p><br/><p>Имя: $name</p>";
-    $header = "From: server@metapax.io \r\n";
-    $header .= "Cc: afgh@somedomain.com \r\n";
+    $header = "";
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-type: text/html\r\n";
-    $result = mail($to, $subject, $message, $headers);
+    $result = mail($to, $subject, $message, $header);
     if($result == true){
         setStatus("200", "OK");
     } else {
