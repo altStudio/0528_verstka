@@ -2972,12 +2972,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .div-block-7 {
+  padding-top: calc(100% + 4vh);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  padding-top: 30vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3076,7 +3076,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .section-content.space-between.margin-top-none.padding-top-mini.padding-top-8 {
-  padding-top: 8vh;
+  /*padding-top: 8vh;*/
 }
 
 .section-content.no-flex {
@@ -8387,7 +8387,8 @@ button.modal-menu-link {
   }
 
   .center-text.visible-text {
-    max-width: 100%;
+    max-width: 286px;
+    margin: 0 auto;
     font-size: 17px;
   }
 
@@ -8501,7 +8502,7 @@ button.modal-menu-link {
 
   .section-content.space-between.margin-top-none.padding-top-mini.padding-top-8 {
     min-height: 91vh;
-    padding-top: 7vh;
+    /*padding-top: 7vh;*/
   }
 
   .section-content.not-padding {
@@ -8698,16 +8699,17 @@ button.modal-menu-link {
   }
 
   .text-block-16 {
-    margin-bottom: 0px;
-    font-size: 17px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 130%;
     text-align: center;
   }
 
   .text-block-16.change-text {
     display: block;
-    margin-bottom: 0px;
-    font-size: 17px;
-    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 130%;
   }
 
   .text-block-17.marcel-1 {
@@ -9233,7 +9235,7 @@ button.modal-menu-link {
 
   .image-36 {
     left: -50%;
-    top: 50%;
+    top: 55%;
     width: 200%;
     max-width: 200%;
   }
@@ -9604,6 +9606,7 @@ button.modal-menu-link {
     font-size: 22px;
     line-height: 150%;
     text-align: center;
+    margin-bottom: 11px;
   }
 
   .text-block-60 {
